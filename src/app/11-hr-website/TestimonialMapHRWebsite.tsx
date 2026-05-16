@@ -1,0 +1,166 @@
+import HROdometer from "./HROdometer";
+
+const lookbooks = [
+    {
+        image: "avatar8.webp",
+        name: "Lisa W.",
+        positionClass: "portion-md",
+        vertical: 23,
+        horizontal: 15,
+        placement: "placed-right",
+        text: "Their team is always available to answer Our questions. I trust them completely with Our business insurance.",
+    },
+    {
+        image: "avatar9.webp",
+        name: "Katherine",
+        positionClass: "portion-lg",
+        vertical: 45,
+        horizontal: 30,
+        placement: "placed-top",
+        text: "Insurance Consulting made the process so simple. I finally feel secure with my home insurance!",
+    },
+    {
+        image: "avatar10.webp",
+        name: "Michael Burlie.",
+        positionClass: "portion-xm",
+        vertical: 10,
+        horizontal: 40,
+        placement: "placed-top",
+        text: "Their service is top-notch! I appreciate the personalized approach to my family's insurance needs.",
+    },
+    {
+        image: "avatar11.webp",
+        name: "Emily Rose",
+        positionClass: "",
+        vertical: 70,
+        horizontal: 54,
+        placement: "placed-top",
+        text: "Thanks to their guidance, I found the perfect business insurance plan. Highly recommend!",
+    },
+    {
+        image: "avatar12.webp",
+        name: "Sarah Tery.",
+        positionClass: "portion-xl",
+        vertical: 30,
+        horizontal: 73,
+        placement: "placed-top",
+        text: "The team at Insurance Consulting transformed our coverage strategy. Their expertise was invaluable!",
+    },
+    {
+        image: "avatar13.webp",
+        name: "Katherine",
+        positionClass: "portion-sm",
+        vertical: 82,
+        horizontal: 87,
+        placement: "placed-top",
+        text: "Professional, knowledgeable, and reliable. They made navigating insurance easy for me.",
+    },
+];
+
+function Rating() {
+    return (
+        <span className="tmp-fw-medium">
+            <span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 10 15" fill="none">
+                    <path
+                        d="M5.52447 1.15102C5.67415 0.690369 6.32585 0.69037 6.47553 1.15103L7.45934 4.17889C7.52628 4.3849 7.71826 4.52438 7.93487 4.52438H11.1186C11.6029 4.52438 11.8043 5.14419 11.4124 5.42889L8.83679 7.30021C8.66155 7.42753 8.58822 7.65322 8.65516 7.85923L9.63897 10.8871C9.78864 11.3477 9.2614 11.7308 8.86955 11.4461L6.29389 9.57479C6.11865 9.44747 5.88135 9.44747 5.70611 9.57479L3.13045 11.4461C2.73859 11.7308 2.21136 11.3477 2.36103 10.8871L3.34484 7.85923C3.41178 7.65322 3.33845 7.42753 3.16321 7.30021L0.587553 5.42889C0.195696 5.14419 0.397084 4.52438 0.881446 4.52438H4.06513C4.28174 4.52438 4.47372 4.3849 4.54066 4.17889L5.52447 1.15102Z"
+                        fill="#F7A51E"
+                    />
+                </svg>
+            </span>
+            4.9
+        </span>
+    );
+}
+
+function TestimonialMapHRWebsite() {
+    return (
+        <section className="tmp-section-gapTop bg-card position-relative overflow-hidden">
+            <div className="container">
+                <div className="row">
+                    <div className="col-12">
+                        <div className="tmp-section-title-border text-center">
+                            <div className="pres-line-separator-wrapper text-center mb--10">
+                                <div className="line-separator line-left" />
+                                <span className="subtitle">
+                                    <span className="number">+4</span>
+                                    <span className="subtitle-text">Testimonials</span>
+                                </span>
+                                <div className="line-separator line-right" />
+                            </div>
+                            <h2 className="title w-700 tmp-title-splitt">
+                                Our Customers <span className="theme-gradient">Success Stories</span>
+                            </h2>
+                        </div>
+                        <div className="tmp-section-title-border text-center" data-aos="fade-up" data-aos-duration="700" data-aos-delay="100">
+                            <p className="b2 d-flex flex-wrap tmp-col-gap-20 justify-content-center map-wrapper-subtitle">
+                                <span>August, 2025</span>
+                                <span className="tmp-separator-vertical tmp-bg-primary-500" />
+                                <span className="d-flex align-items-center">
+                                    <span className="tmp-counter tmp-count tmp-counter-gradient tmp-gradient-text-4 tmp-fw-semibold mr--5">
+                                        <HROdometer value={20} />
+                                        <span className="tmp-counter-suffix">k+</span>
+                                    </span>
+                                    Success People
+                                </span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div className="container-fluid">
+                <div className="tmp-testimonial-map-wrapper">
+                    <div className="tmp-inner position-relative z-2">
+                        <div className="tmp-testimonial-map-img">
+                            <img src="/assets/images/testimonial/map.png" alt="World Map" />
+                        </div>
+                        {lookbooks.map((item) => (
+                            <div
+                                className={`tmp-lookbook-portion ${item.positionClass}`}
+                                data-tmp-position-vertical={item.vertical}
+                                data-tmp-position-horigental={item.horizontal}
+                                key={`${item.image}-${item.vertical}`}
+                            >
+                                <div className="tmp-lookbook-thumb">
+                                    <img src={`/assets/images/avatar/${item.image}`} alt="Thumbnail" />
+                                </div>
+                                <div className="tmp-lookbook-content-box-wrapper">
+                                    <button className="tmp-lookbook-close-btn" type="button">
+                                        <i className="fas fa-times" />
+                                    </button>
+                                    <div className={`tmp-lookbook-content-box ${item.placement}`}>
+                                        <div className="tmp-message-shape" />
+                                        <div className="tmp-inner">
+                                            <p className="b2 tmp-text-heading mb--20">&quot;{item.text}&quot;</p>
+                                            <div className="tmp-separator tmp-bg-primary-opacity-400 mb--10" />
+                                            <div className="b4 d-flex justify-content-between">
+                                                <span>
+                                                    <span className="tmp-fw-medium tmp-text-heading">{item.name}</span> - UI/UX Designer
+                                                </span>
+                                                <Rating />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        ))}
+                    </div>
+                    <div className="tmp-round-blur-shape tmp-round-blur-top-left d-none d-lg-block">
+                        <div className="blur-shape-inner" />
+                    </div>
+                    <div className="tmp-testimonial-bottom-area">
+                        <h4 className="tmp-counter tmp-count tmp-w-fit mx-auto mb--0">
+                            <HROdometer value={216000} />
+                            <span className="counter-suffix">+</span>
+                        </h4>
+                        <p className="mb--5 mt--5">Worldwide Customers Feedback</p>
+                        <p className="b3 mb--0 tmp-text-heading tmp-fw-medium">Since 1989</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    );
+}
+
+export default TestimonialMapHRWebsite;

@@ -1,0 +1,35 @@
+import AgencyThirteenAnimations from '../13-agency/AgencyThirteenAnimations'
+import BannerAgencyThirteen from '../13-agency/BannerAgencyThirteen'
+import AboutAgencyThirteen from '../13-agency/AboutAgencyThirteen'
+import ServicesAgencyThirteen from '../13-agency/ServicesAgencyThirteen'
+import BrandAgencyThirteen from '../13-agency/BrandAgencyThirteen'
+import MissionAgencyThirteen from '../13-agency/MissionAgencyThirteen'
+import PortfolioAgencyThirteen from '../13-agency/PortfolioAgencyThirteen'
+import CounterAgencyThirteen from '../13-agency/CounterAgencyThirteen'
+import TeamAgencyThirteen from '../13-agency/TeamAgencyThirteen'
+import CtaAgencyThirteen from '../13-agency/CtaAgencyThirteen'
+import AppointmentAgencyThirteen from '../13-agency/AppointmentAgencyThirteen'
+import TestimonialAgencyThirteen from '../13-agency/TestimonialAgencyThirteen'
+import BlogAgencyThirteen from '../13-agency/BlogAgencyThirteen'
+
+function BodyContent() {
+  return (
+    <>
+      <AgencyThirteenAnimations />
+      <BannerAgencyThirteen />
+      <AboutAgencyThirteen />
+      <ServicesAgencyThirteen />
+      <BrandAgencyThirteen />
+      <MissionAgencyThirteen />
+      <PortfolioAgencyThirteen />
+      <CounterAgencyThirteen />
+      <TeamAgencyThirteen />
+      <CtaAgencyThirteen />
+      <AppointmentAgencyThirteen />
+      <TestimonialAgencyThirteen />
+      <BlogAgencyThirteen />
+    </>
+  )
+}
+
+export default BodyContent

@@ -1,0 +1,97 @@
+/* =========================
+   SAL Animation - Pure CSS
+   Converted from SCSS
+=========================== */
+
+/* Core */
+[data-sal] {
+  transition-duration: 0.2s;
+  transition-delay: 0s;
+  transition-timing-function: ease;
+}
+
+/* Fade */
+[data-sal|='fade'] {
+  opacity: 0;
+  transition-property: opacity;
+}
+
+[data-sal|='fade'].sal-animate,
+body.sal-disabled [data-sal|='fade'] {
+  opacity: 1;
+}
+
+/* Slide */
+[data-sal|='slide'] {
+  opacity: 0;
+  transition-property: opacity, transform;
+}
+
+[data-sal='slide-up'] {
+  transform: translateY(20%);
+}
+
+[data-sal='slide-down'] {
+  transform: translateY(-20%);
+}
+
+[data-sal='slide-left'] {
+  transform: translateX(20%);
+}
+
+[data-sal='slide-right'] {
+  transform: translateX(-20%);
+}
+
+[data-sal|='slide'].sal-animate,
+body.sal-disabled [data-sal|='slide'] {
+  opacity: 1;
+  transform: none;
+}
+
+/* Zoom */
+[data-sal|='zoom'] {
+  opacity: 0;
+  transition-property: opacity, transform;
+}
+
+[data-sal='zoom-in'] {
+  transform: scale(0.5);
+}
+
+[data-sal='zoom-out'] {
+  transform: scale(1.1);
+}
+
+[data-sal|='zoom'].sal-animate,
+body.sal-disabled [data-sal|='zoom'] {
+  opacity: 1;
+  transform: none;
+}
+
+/* Flip */
+[data-sal|='flip'] {
+  backface-visibility: hidden;
+  transition-property: transform;
+}
+
+[data-sal='flip-left'] {
+  transform: perspective(2000px) rotateY(-91deg);
+}
+
+[data-sal='flip-right'] {
+  transform: perspective(2000px) rotateY(91deg);
+}
+
+[data-sal='flip-up'] {
+  transform: perspective(2000px) rotateX(-91deg);
+}
+
+[data-sal='flip-down'] {
+  transform: perspective(2000px) rotateX(91deg);
+}
+
+[data-sal|='flip'].sal-animate,
+body.sal-disabled [data-sal|='flip'] {
+  transform: none;
+}

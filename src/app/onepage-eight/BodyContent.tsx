@@ -1,0 +1,35 @@
+import BusinessAnimations from '../08-business/BusinessAnimations'
+import BannerBusiness from '../08-business/BannerBusiness'
+import TeamBusiness from '../08-business/TeamBusiness'
+import AboutBusiness from '../08-business/AboutBusiness'
+import BrandBusiness from '../08-business/BrandBusiness'
+import PortfolioBusiness from '../08-business/PortfolioBusiness'
+import AboutBusinessFluid from '../08-business/AboutBusinessFluid'
+import ServicesBusiness from '../08-business/ServicesBusiness'
+import CounterBusiness from '../08-business/CounterBusiness'
+import WorkingProcessBusiness from '../08-business/WorkingProcessBusiness'
+import CtaBusiness from '../08-business/CtaBusiness'
+import BlogBusiness from '../08-business/BlogBusiness'
+import CtaModernBusiness from '../08-business/CtaModernBusiness'
+
+function BodyContent() {
+  return (
+    <>
+      <BusinessAnimations />
+      <BannerBusiness />
+      <TeamBusiness />
+      <AboutBusiness />
+      <BrandBusiness />
+      <PortfolioBusiness />
+      <AboutBusinessFluid />
+      <ServicesBusiness />
+      <CounterBusiness />
+      <WorkingProcessBusiness />
+      <CtaBusiness />
+      <BlogBusiness />
+      <CtaModernBusiness />
+    </>
+  )
+}
+
+export default BodyContent

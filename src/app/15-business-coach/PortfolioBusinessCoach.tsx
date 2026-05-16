@@ -1,0 +1,55 @@
+const projects = [
+    { image: "05.webp", className: "col-lg-8 col-md-12 col-sm-12" },
+    { image: "06.webp", className: "col-lg-4 col-md-6 col-sm-12" },
+    { image: "07.webp", className: "col-lg-4 col-md-6 col-sm-12" },
+    { image: "08.webp", className: "col-lg-4 col-md-6 col-sm-12" },
+    { image: "09.webp", className: "col-lg-4 col-md-6 col-sm-12" },
+];
+
+function PortfolioBusinessCoach() {
+    return (
+        <div className="tmp-portfolio-area tmp-section-gapBottom">
+            <div className="container">
+                <div className="row">
+                    <div className="col-lg-12">
+                        <div className="tmp-section-title-border text-center">
+                            <div className="pres-line-separator-wrapper text-center mb--10">
+                                <div className="line-separator line-left" />
+                                <span className="subtitle">
+                                    <span className="number">4</span>
+                                    <span className="subtitle-text">Portfolio</span>
+                                </span>
+                                <div className="line-separator line-right" />
+                            </div>
+                            <h2 className="title w-700">Our Case Studies.</h2>
+                        </div>
+                    </div>
+                </div>
+                <div className="row g-5 mt--10">
+                    {projects.map((project) => (
+                        <div className={project.className} key={project.image}>
+                            <div className="single-modern-case-studies">
+                                <a href="/portfolio/brand-refresh-venture" className="thumbnail invers-anime">
+                                    <img src={`/assets/images/portfolio/${project.image}`} alt="case-studies" />
+                                </a>
+                                <div className="inner-content-area">
+                                    <span className="tags">2025, Business</span>
+                                    <a href="#" className="tmponhover">
+                                        <h3 className="title">Business Solution</h3>
+                                        <div className="tmp-icon">
+                                            <span className="default">
+                                                <i className="feather-arrow-up-right" />
+                                            </span>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    ))}
+                </div>
+            </div>
+        </div>
+    );
+}
+
+export default PortfolioBusinessCoach;

@@ -1,0 +1,35 @@
+.image-auto{
+  width: auto;
+  height: auto;
+}
+
+.section-title .subtitle::before {
+    content: "";
+    pointer-events: none;
+    user-select: none !important;
+    position: absolute;
+    inset: 0px;
+    border-radius: inherit;
+    padding: 1px;
+    background: linear-gradient(55deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.05) 15%, rgba(255, 255, 255, 0.05) 45%, rgba(255, 255, 255, 0.3) 50%, rgba(255, 255, 255, 0.05) 55%, rgba(255, 255, 255, 0.05) 70%, rgba(255, 255, 255, 0.1) 75%, rgba(255, 255, 255, 0.05) 100%);
+    background-size: 400% 400%;
+    -webkit-mask: linear-gradient(black, black) content-box content-box, linear-gradient(black, black);
+    -webkit-mask-composite: xor !important;
+    animation: overlayAnimate 6s ease 10s infinite reverse;
+}
+
+.creative-portfolio-grid {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+}
+
+.creative-portfolio-grid .portfolio-3 {
+  position: relative !important;
+  left: auto !important;
+  top: auto !important;
+}
+
+.creative-portfolio-grid .resizer {
+  display: none;
+}
