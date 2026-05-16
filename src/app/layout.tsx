@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import "./globals.css";
 import "../../public/assets/css/bootstrap.min.css";
 // import "../../public/assets/css/swiper.css";
 import "../../public/assets/css/odometer.css";
@@ -12,11 +11,14 @@ import "../../public/assets/css/slick.css";
 import "../../public/assets/css/style.css";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import "./globals.css";
 // import "swiper/css";
 // import "swiper/css/pagination";
 // import "swiper/css/autoplay";
-import Script from "next/script";
+import AosProvider from "./components/AosProvider";
+import BootstrapClient from "./components/BootstrapClient";
 import FloatingImagesAnimation from "./components/FloatingImagesAnimation";
+import SmoothScroll from "./components/SmoothScroll";
 
 export const metadata: Metadata = {
   title: "Corpox Business and Consulting NextJs Template",
@@ -46,10 +48,11 @@ export default function RootLayout({
         />
       </head>
       <body>
+        <AosProvider />
+        <BootstrapClient />
+        <SmoothScroll />
         {children}
         <FloatingImagesAnimation />
-        <Script src="/assets/js/smooth-scroll.js" strategy="afterInteractive" />
-        <Script src="/assets/js/bootstrap.min.js" strategy="afterInteractive" />
       </body>
     </html>
   );

@@ -134,7 +134,7 @@ export default function MultipageInnerFooter() {
           </div>
         </div>
       </div>
-      <div className="shape-area wow move-right" data-wow-offset={250}>
+      <div className="shape-area" data-aos="fade-left" data-aos-offset={250}>
         <img src="/assets/images/shape/02.png" alt="consulting_business" />
       </div>
     </footer>

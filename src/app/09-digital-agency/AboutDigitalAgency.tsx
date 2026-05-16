@@ -9,7 +9,7 @@ function AboutDigitalAgency() {
                         <div className="video-btn">
                             <div className="video-popup icon-center">
                                 <div className="overlay-content">
-                                    <div className="thumbnail wow fadeInUp">
+                                    <div className="thumbnail" data-aos="fade-up">
                                         <img
                                             className="radius-small rts-reveal-image-one"
                                             src="/assets/images/about/contact-image.png"

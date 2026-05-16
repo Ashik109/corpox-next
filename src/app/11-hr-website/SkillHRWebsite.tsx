@@ -69,7 +69,7 @@ function SkillHRWebsite() {
                                     <h6 className="title">{title}</h6>
                                     <div className="progress">
                                         <div
-                                            className="progress-bar wow fadeInLeft"
+                                            className="progress-bar" data-aos="fade-right"
                                             role="progressbar"
                                             style={{ width: `${value}%` }}
                                             aria-valuenow={Number(value)}

@@ -15,21 +15,21 @@ function SectionSrartAboutArea6() {
       <div className="single-progress">
       <h6 className="title">Web Development</h6>
       <div className="progress">
-      <div className="progress-bar wow fadeInLeft" data-wow-duration="0.5s" data-wow-delay=".3s" role="progressbar" style={{ width: '90%' }} aria-valuenow={90} aria-valuemin={0} aria-valuemax={100}></div>
+      <div className="progress-bar" data-aos="fade-right" data-aos-duration="0.5s" data-aos-delay=".3s" role="progressbar" style={{ width: '90%' }} aria-valuenow={90} aria-valuemin={0} aria-valuemax={100}></div>
       <span className="progress-number">90%</span>
       </div>
       </div>
       <div className="single-progress">
       <h6 className="title">Photoshop Design</h6>
       <div className="progress">
-      <div className="progress-bar wow fadeInLeft" data-wow-duration="0.5s" data-wow-delay=".3s" role="progressbar" style={{ width: '75%' }} aria-valuenow={75} aria-valuemin={0} aria-valuemax={100}></div>
+      <div className="progress-bar" data-aos="fade-right" data-aos-duration="0.5s" data-aos-delay=".3s" role="progressbar" style={{ width: '75%' }} aria-valuenow={75} aria-valuemin={0} aria-valuemax={100}></div>
       <span className="progress-number">75%</span>
       </div>
       </div>
       <div className="single-progress">
       <h6 className="title">App Development</h6>
       <div className="progress">
-      <div className="progress-bar wow fadeInLeft" data-wow-duration="0.5s" data-wow-delay=".3s" role="progressbar" style={{ width: '95%' }} aria-valuenow={95} aria-valuemin={0} aria-valuemax={100}></div>
+      <div className="progress-bar" data-aos="fade-right" data-aos-duration="0.5s" data-aos-delay=".3s" role="progressbar" style={{ width: '95%' }} aria-valuenow={95} aria-valuemin={0} aria-valuemax={100}></div>
       <span className="progress-number">95%</span>
       </div>
       </div>

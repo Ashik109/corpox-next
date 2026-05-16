@@ -94,9 +94,6 @@ function CtaOne() {
                                                 </div>
                                             </div>
                                         </div>
-                                        {/* <div class="shape-image wow move-out">
-                  <img src="/assets/images/shape/01.png" alt="call-to-action">
-              </div> */}
                                         <div className="person-stand images-left-right-float">
                                             <img
                                                 loading="lazy"

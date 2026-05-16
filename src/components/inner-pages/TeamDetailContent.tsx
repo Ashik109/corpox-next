@@ -66,7 +66,7 @@ export default function TeamDetailContent({ member, detailRoute }: Props) {
                               </div>
                               <div className="progress">
                                 <div
-                                  className="progress-bar wow fadeInLeft"
+                                  className="progress-bar" data-aos="fade-right"
                                   role="progressbar"
                                   style={{ width: `${skill.percent}%` }}
                                   aria-valuenow={skill.percent}

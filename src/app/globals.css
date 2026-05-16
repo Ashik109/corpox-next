@@ -1,4 +1,6 @@
-.image-auto{
+/* Full-page smooth scroll is handled by Lenis (SmoothScroll.tsx). */
+
+.image-auto {
   width: auto;
   height: auto;
 }

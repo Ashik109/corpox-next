@@ -5,7 +5,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 
 /**
- * Initializes AOS once per mount for scroll-in animations (replaces legacy WOW.js).
+ * Initializes AOS once per mount for scroll-in animations.
  */
 export function useAosOnce() {
     useEffect(() => {

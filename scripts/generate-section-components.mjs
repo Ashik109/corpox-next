@@ -196,16 +196,26 @@ function nodeToJsx(node, indent = 0) {
   return `<${tag}${attrPart}>${children}</${tag}>`
 }
 
-/** Convert SAL scroll-animation attributes/classes to AOS equivalents */
-function salToAos(jsx) {
+/** Convert legacy scroll-animation attributes (SAL/WOW) to AOS equivalents */
+function legacyScrollAnimToAos(jsx) {
   return jsx
     .replace(/data-sal-delay/g, 'data-aos-delay')
     .replace(/data-sal-duration/g, 'data-aos-duration')
     .replace(/data-sal-easing/g, 'data-aos-easing')
     .replace(/data-sal=/g, 'data-aos=')
+    .replace(/data-wow-delay/g, 'data-aos-delay')
+    .replace(/data-wow-duration/g, 'data-aos-duration')
+    .replace(/data-wow-offset/g, 'data-aos-offset')
     .replace(/ className="sal-animate"/g, '')
     .replace(/className="sal-animate" /g, '')
     .replace(/ sal-animate/g, '')
+    .replace(/\bwow fadeInLeft\b/g, '')
+    .replace(/\bwow fadeInUp\b/g, '')
+    .replace(/\bwow move-right\b/g, '')
+    .replace(/\bwow move-out\b/g, '')
+    .replace(/\bwow tmp-title-split\b/g, 'tmp-title-split')
+    .replace(/\btmp-title-split wow\b/g, 'tmp-title-split')
+    .replace(/\s{2,}/g, ' ')
 }
 
 function htmlToJsx(html) {
@@ -213,10 +223,10 @@ function htmlToJsx(html) {
   const stripped = html.replace(/<!--[\s\S]*?-->/g, '')
   try {
     const root = parse(stripped, { lowerCaseTagName: true })
-    return salToAos(nodeToJsx(root))
+    return legacyScrollAnimToAos(nodeToJsx(root))
   } catch {
     // Fallback: basic regex approach
-    return salToAos(stripped
+    return legacyScrollAnimToAos(stripped
       .replace(/\bclass=/g, 'className=')
       .replace(/\bfor=/g, 'htmlFor=')
       .replace(/\btabindex=/g, 'tabIndex=')

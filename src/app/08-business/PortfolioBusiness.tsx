@@ -110,7 +110,7 @@ function PortfolioBusiness() {
                                 </span>
                                 <div className="line-separator line-right" />
                             </div>
-                            <h2 className="title w-700 wow tmp-title-split">
+                            <h2 className="title w-700 tmp-title-split">
                                 Our <span className="theme-gradient">Awesome Projects.</span>
                             </h2>
                         </div>

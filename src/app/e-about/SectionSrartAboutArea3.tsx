@@ -8,7 +8,7 @@ function SectionSrartAboutArea3() {
       <div className="video-btn">
       <div className="video-popup icon-center">
       <div className="overlay-content">
-      <div className="thumbnail wow fadeInUp"><img className="radius-small rts-reveal-image-one" src="/assets/images/about/contact-image.png" alt="Corporate Image" /></div>
+      <div className="thumbnail" data-aos="fade-up"><img className="radius-small rts-reveal-image-one" src="/assets/images/about/contact-image.png" alt="Corporate Image" /></div>
       <div className="video-icon">
       <a className="tmp-btn rounded-player popup-video" href="https://www.youtube.com/watch?v=4jnzf1yj48M">
       <span><i className="feather-play"></i></span>

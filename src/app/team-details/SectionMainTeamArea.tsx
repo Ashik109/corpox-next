@@ -66,7 +66,7 @@ function SectionMainTeamArea() {
       <span className="digit">90%</span>
       </div>
       <div className="progress">
-      <div className="progress-bar wow fadeInLeft" role="progressbar" style={{ width: '90%' }} aria-valuenow={50} aria-valuemin={0} aria-valuemax={100}></div>
+      <div className="progress-bar" data-aos="fade-right" role="progressbar" style={{ width: '90%' }} aria-valuenow={50} aria-valuemin={0} aria-valuemax={100}></div>
       </div>
       </div>
       <div className="single-progress">
@@ -75,7 +75,7 @@ function SectionMainTeamArea() {
       <span className="digit">80%</span>
       </div>
       <div className="progress">
-      <div className="progress-bar wow fadeInLeft" role="progressbar" style={{ width: '80%' }} aria-valuenow={25} aria-valuemin={0} aria-valuemax={100}></div>
+      <div className="progress-bar" data-aos="fade-right" role="progressbar" style={{ width: '80%' }} aria-valuenow={25} aria-valuemin={0} aria-valuemax={100}></div>
       </div>
       </div>
       <div className="single-progress">
@@ -84,7 +84,7 @@ function SectionMainTeamArea() {
       <span className="digit">95%</span>
       </div>
       <div className="progress">
-      <div className="progress-bar wow fadeInLeft" role="progressbar" style={{ width: '95%' }} aria-valuenow={25} aria-valuemin={0} aria-valuemax={100}></div>
+      <div className="progress-bar" data-aos="fade-right" role="progressbar" style={{ width: '95%' }} aria-valuenow={25} aria-valuemin={0} aria-valuemax={100}></div>
       </div>
       </div>
       </div>
