@@ -1,4 +1,6 @@
 "use client";
+import Link from 'next/link'
+
 
 import React, { useEffect, useRef, useState } from "react";
 import "jarallax/dist/jarallax.css";
@@ -79,9 +81,9 @@ export default function CtaTwo() {
           <div className="right-wrapper">
             <p>
               Looking for Collaboration? <br />
-              <a href="mailto:info@yourdomain.com">
+              <Link href="mailto:info@yourdomain.com">
                 info@yourdomain.com
-              </a>
+              </Link>
             </p>
           </div>
         </div>

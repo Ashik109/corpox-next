@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import React from "react";
 
 const SOCIAL_LINKS = [
@@ -66,9 +67,9 @@ function TeamThree() {
                     <ul className="social-icon social-default icon-naked mt--5">
                       {SOCIAL_LINKS.map((social) => (
                         <li key={social.name}>
-                          <a href={social.href} target="_blank" rel="noreferrer" aria-label={social.name}>
+                          <Link href={social.href} target="_blank" rel="noreferrer" aria-label={social.name}>
                             <i className={social.icon} />
-                          </a>
+                          </Link>
                         </li>
                       ))}
                     </ul>

@@ -1,3 +1,4 @@
+import Link from 'next/link'
 const blogs = [
     {
         image: "blog-01.jpg",
@@ -37,19 +38,19 @@ function BlogBusinessThree() {
                                 <div className="tmp-card box-card-style-default card-list-view tmponhover">
                                     <div className="inner">
                                         <div className="thumbnail">
-                                            <a className="image" href="/blog/best-corporate-tips">
+                                            <Link className="image" href="/blog/best-corporate-tips">
                                                 <img src={`/assets/images/blog/${blog.image}`} alt="Blog" />
-                                            </a>
+                                            </Link>
                                         </div>
                                         <div className="content">
                                             <h4 className="title">
-                                                <a href="/blog/corporate-success-strategy">{blog.title}</a>
+                                                <Link href="/blog/corporate-success-strategy">{blog.title}</Link>
                                             </h4>
                                             <p className="descriptiion">{blog.text}</p>
                                             <div className="read-more-btn">
-                                                <a className="btn-read-more" href="/blog/leadership-confidence">
+                                                <Link className="btn-read-more" href="/blog/leadership-confidence">
                                                     <span>Read More</span>
-                                                </a>
+                                                </Link>
                                             </div>
                                         </div>
                                     </div>

@@ -1,3 +1,4 @@
+import Link from 'next/link'
 function SectionStartSingleTestimonial2() {
   return (
     <>
@@ -11,11 +12,11 @@ function SectionStartSingleTestimonial2() {
       <p className="description">When taking on new projects, I primarily look for a strong visual and aesthetic alignment, as well as a meaningful personal connection.
                                                   </p>
       <div className="rating mb--15">
-      <a href="#"><i className="feather-star"></i></a>
-      <a href="#"><i className="feather-star"></i></a>
-      <a href="#"><i className="feather-star"></i></a>
-      <a href="#"><i className="feather-star"></i></a>
-      <a href="#"><i className="feather-star"></i></a>
+      <Link href="#"><i className="feather-star"></i></Link>
+      <Link href="#"><i className="feather-star"></i></Link>
+      <Link href="#"><i className="feather-star"></i></Link>
+      <Link href="#"><i className="feather-star"></i></Link>
+      <Link href="#"><i className="feather-star"></i></Link>
       </div>
       <div className="client-info">
       <h4 className="title">Mohima Ale</h4>

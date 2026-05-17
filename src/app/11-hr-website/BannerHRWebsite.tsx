@@ -1,3 +1,4 @@
+import Link from 'next/link'
 const socialLinks = [
     { href: "https://www.facebook.com/", icon: "feather-facebook", delay: 200 },
     { href: "https://www.twitter.com", icon: "feather-twitter", delay: 300 },
@@ -21,19 +22,19 @@ function BannerHRWebsite() {
                                         Our experienced consultants work closely with you to understand your unique business challenges and ultimate goals.
                                     </p>
                                     <div className="view-more-project">
-                                        <a className="btn-read-more" href="/contact">
+                                        <Link className="btn-read-more" href="/contact">
                                             <span>
                                                 Contact With Us<i className="feather-arrow-right" />
                                             </span>
-                                        </a>
+                                        </Link>
                                     </div>
                                 </div>
                                 <ul className="social-icon social-default transparent-with-border justify-content-center mt--40 mt_md--20 mt_sm--20">
                                     {socialLinks.map((link) => (
                                         <li key={link.icon} data-aos="fade-up" data-aos-duration="400" data-aos-delay={link.delay}>
-                                            <a href={link.href}>
+                                            <Link href={link.href}>
                                                 <i className={link.icon} />
-                                            </a>
+                                            </Link>
                                         </li>
                                     ))}
                                 </ul>

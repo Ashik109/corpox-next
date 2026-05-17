@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import AgencyThirteenOdometer from "./AgencyThirteenOdometer";
 
 const avatars = ["tooltip-01.png", "tooltip-02.png", "tooltip-03.png"];
@@ -6,9 +7,9 @@ function ProfileAvatars({ centered = false }: { centered?: boolean }) {
     return (
         <div className={`profile-share ${centered ? "justify-content-center" : "justify-content-start"}`}>
             {avatars.map((avatar) => (
-                <a href="#" className="avatar" data-tooltip="Mark" tabIndex={0} key={avatar}>
+                <Link href="#" className="avatar" data-tooltip="Mark" tabIndex={0} key={avatar}>
                     <img src={`/assets/images/testimonial/${avatar}`} alt="education" />
-                </a>
+                </Link>
             ))}
         </div>
     );
@@ -47,12 +48,12 @@ function AboutAgencyThirteen() {
                                     <ProfileAvatars />
                                 </div>
                                 <div className="read-more-btn btn-group gap-4 mt--40">
-                                    <a className="tmp-btn btn-primary round btn-large" href="/about">
+                                    <Link className="tmp-btn btn-primary round btn-large" href="/about">
                                         More About Us
-                                    </a>
-                                    <a className="tmp-btn btn-border round btn-large" href="/contact">
+                                    </Link>
+                                    <Link className="tmp-btn btn-border round btn-large" href="/contact">
                                         Contact With Us
-                                    </a>
+                                    </Link>
                                 </div>
                             </div>
                         </div>
@@ -65,11 +66,11 @@ function AboutAgencyThirteen() {
                                         <img className="radius-small" src="/assets/images/about/03.webp" alt="Corporate" />
                                     </div>
                                     <div className="video-icon">
-                                        <a className="tmp-btn rounded-player popup-video" href="https://www.youtube.com/watch?v=4jnzf1yj48M">
+                                        <Link className="tmp-btn rounded-player popup-video" href="https://www.youtube.com/watch?v=4jnzf1yj48M">
                                             <span>
                                                 <i className="feather-play" />
                                             </span>
-                                        </a>
+                                        </Link>
                                     </div>
                                 </div>
                                 <div className="absolute-rating-area images-left-right-float image">

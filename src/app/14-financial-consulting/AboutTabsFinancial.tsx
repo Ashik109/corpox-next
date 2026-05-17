@@ -1,4 +1,6 @@
 "use client";
+import Link from 'next/link'
+
 
 import { useState } from "react";
 
@@ -77,9 +79,9 @@ function AboutTabsFinancial() {
                                             Our team is driven by trust, transparency, and innovation. We believe every financial journey is unique, and we craft strategies tailored to each
                                             client&apos;s goals.
                                         </p>
-                                        <a className="tmp-btn btn-small" href="/about">
+                                        <Link className="tmp-btn btn-small" href="/about">
                                             Read More
-                                        </a>
+                                        </Link>
                                     </div>
                                 ))}
                             </div>

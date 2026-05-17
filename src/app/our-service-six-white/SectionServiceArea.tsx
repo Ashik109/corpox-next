@@ -1,3 +1,4 @@
+import Link from 'next/link'
 function SectionServiceArea() {
   return (
     <>
@@ -22,70 +23,70 @@ function SectionServiceArea() {
       <div className="row g-5 service-wrapper mt--10">
       <div className="col-lg-12">
       <div className="inversweb-service-main-wrapper-list">
-      <a href="/service-details" className="single-service-wrapper tmponhover">
+      <Link href="/service/management-leadership" className="single-service-wrapper tmponhover">
       <div className="thumbnail invers-anime">
       <img src="/assets/images/services/01.webp" alt="service" />
       </div>
       <div className="content">
       <h5 className="title">Business Strategy Planning</h5>
       </div>
-      </a>
-      <a href="/service-details" className="single-service-wrapper tmponhover">
+      </Link>
+      <Link href="/service/management-leadership" className="single-service-wrapper tmponhover">
       <div className="thumbnail invers-anime">
       <img src="/assets/images/services/02.webp" alt="service" />
       </div>
       <div className="content">
       <h5 className="title">Executive Coaching Programs</h5>
       </div>
-      </a>
-      <a href="/service-details" className="single-service-wrapper tmponhover">
+      </Link>
+      <Link href="/service/management-leadership" className="single-service-wrapper tmponhover">
       <div className="thumbnail invers-anime">
       <img src="/assets/images/services/03.webp" alt="service" />
       </div>
       <div className="content">
       <h5 className="title">Digital Marketing Solutions</h5>
       </div>
-      </a>
-      <a href="/service-details" className="single-service-wrapper tmponhover">
+      </Link>
+      <Link href="/service/management-leadership" className="single-service-wrapper tmponhover">
       <div className="thumbnail invers-anime">
       <img src="/assets/images/services/04.webp" alt="service" />
       </div>
       <div className="content">
       <h5 className="title">Financial Growth Advisory</h5>
       </div>
-      </a>
-      <a href="/service-details" className="single-service-wrapper tmponhover">
+      </Link>
+      <Link href="/service/management-leadership" className="single-service-wrapper tmponhover">
       <div className="thumbnail invers-anime">
       <img src="/assets/images/services/04.webp" alt="service" />
       </div>
       <div className="content">
       <h5 className="title">Financial Advisory</h5>
       </div>
-      </a>
-      <a href="/service-details" className="single-service-wrapper tmponhover">
+      </Link>
+      <Link href="/service/management-leadership" className="single-service-wrapper tmponhover">
       <div className="thumbnail invers-anime">
       <img src="/assets/images/services/05.webp" alt="service" />
       </div>
       <div className="content">
       <h5 className="title">Risk Management Consulting</h5>
       </div>
-      </a>
-      <a href="/service-details" className="single-service-wrapper tmponhover">
+      </Link>
+      <Link href="/service/management-leadership" className="single-service-wrapper tmponhover">
       <div className="thumbnail invers-anime">
       <img src="/assets/images/services/06.webp" alt="service" />
       </div>
       <div className="content">
       <h5 className="title">Technology Implementation Support</h5>
       </div>
-      </a>
-      <a href="/service-details" className="single-service-wrapper tmponhover">
+      </Link>
+      <Link href="/service/management-leadership" className="single-service-wrapper tmponhover">
       <div className="thumbnail invers-anime">
       <img src="/assets/images/services/07.webp" alt="service" />
       </div>
       <div className="content">
       <h5 className="title">Retail Operations Consulting</h5>
       </div>
-      </a>
+      </Link>
       </div>
       </div>
       </div>

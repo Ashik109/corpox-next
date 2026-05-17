@@ -1,3 +1,4 @@
+import Link from 'next/link'
 const sections = [
     {
         label: "ABOUT US",
@@ -33,11 +34,11 @@ function Media({ image }: { image: string }) {
                             <img className="radius-small jarallax-img rts-reveal-image-one" src={`/assets/images/about/${image}`} alt="Corporate Image" />
                         </div>
                         <div className="video-icon">
-                            <a className="tmp-btn rounded-player popup-video" href="https://www.youtube.com/watch?v=4jnzf1yj48M">
+                            <Link className="tmp-btn rounded-player popup-video" href="https://www.youtube.com/watch?v=4jnzf1yj48M">
                                 <span>
                                     <i className="feather-play" />
                                 </span>
-                            </a>
+                            </Link>
                         </div>
                     </div>
                 </div>
@@ -77,9 +78,9 @@ function Content({ section }: { section: (typeof sections)[number] }) {
                         ))}
                     </ul>
                     <div className="about-btn mt--30" data-aos="slide-up">
-                        <a className="tmp-btn round text-center" href="/about">
+                        <Link className="tmp-btn round text-center" href="/about">
                             About Our Corpox
-                        </a>
+                        </Link>
                     </div>
                 </div>
             </div>

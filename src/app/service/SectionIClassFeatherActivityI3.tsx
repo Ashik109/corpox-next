@@ -1,3 +1,4 @@
+import Link from 'next/link'
 function SectionIClassFeatherActivityI3() {
   return (
     <>
@@ -5,17 +6,17 @@ function SectionIClassFeatherActivityI3() {
 
       <div className="content">
       <h4 className="title w-600">
-      <a href="/service-details">Business Solution</a>
+      <Link href="/service/management-leadership">Business Solution</Link>
       </h4>
       <p className="description mb--0">There are many variations variations of passages of Lorem available.</p>
       <div className="discover-btn mt--20">
-      <a className="tmp-btn round btn-small btn-border hover-icon-reverse" href="/service-details">
+      <Link className="tmp-btn round btn-small btn-border hover-icon-reverse" href="/service/management-leadership">
       <span className="icon-reverse-wrapper">
       <span className="btn-text">Discover services</span>
       <span className="btn-icon"><i className="feather-arrow-right"></i></span>
       <span className="btn-icon"><i className="feather-arrow-right"></i></span>
       </span>
-      </a>
+      </Link>
       </div>
       </div>
 

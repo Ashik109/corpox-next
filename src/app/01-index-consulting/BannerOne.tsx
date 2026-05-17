@@ -1,4 +1,6 @@
 "use client";
+import Link from 'next/link'
+
 
 import React, { useEffect, useRef } from "react";
 import Slider from "react-slick";
@@ -72,7 +74,7 @@ const BannerOne: React.FC = () => {
                         faster development and revenue.
                       </p>
                       <div className="read-more-btn">
-                        <a
+                        <Link
                           className="tmp-btn btn-large round hover-icon-reverse"
                           href="#"
                         >
@@ -85,7 +87,7 @@ const BannerOne: React.FC = () => {
                               <i className="feather-arrow-right" />
                             </span>
                           </span>
-                        </a>
+                        </Link>
                       </div>
                     </div>
                   </div>
@@ -111,7 +113,7 @@ const BannerOne: React.FC = () => {
                         faster development and revenue.
                       </p>
                       <div className="read-more-btn">
-                        <a
+                        <Link
                           className="tmp-btn btn-large round hover-icon-reverse"
                           href="#"
                         >
@@ -124,7 +126,7 @@ const BannerOne: React.FC = () => {
                               <i className="feather-arrow-right" />
                             </span>
                           </span>
-                        </a>
+                        </Link>
                       </div>
                     </div>
                   </div>
@@ -150,7 +152,7 @@ const BannerOne: React.FC = () => {
                         faster development and revenue.
                       </p>
                       <div className="read-more-btn">
-                        <a
+                        <Link
                           className="tmp-btn btn-large round hover-icon-reverse"
                           href="#"
                         >
@@ -163,7 +165,7 @@ const BannerOne: React.FC = () => {
                               <i className="feather-arrow-right" />
                             </span>
                           </span>
-                        </a>
+                        </Link>
                       </div>
                     </div>
                   </div>

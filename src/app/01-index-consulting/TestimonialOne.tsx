@@ -1,4 +1,6 @@
 "use client";
+import Link from 'next/link'
+
 
 import React from "react";
 import { useTitleSplitAnimation } from "../components/useTitleSplitAnimation";
@@ -89,9 +91,9 @@ const TestimonialOne = () => {
                     <p className="description">{item.description}</p>
                     <div className="rating mb--15">
                       {[...Array(5)].map((_, i) => (
-                        <a key={i} href="#" tabIndex={0}>
+                        <Link key={i} href="#" tabIndex={0}>
                           <img src="/assets/images/icons/stars.svg" alt="" />
-                        </a>
+                        </Link>
                       ))}
                     </div>
                     <div className="client-info">

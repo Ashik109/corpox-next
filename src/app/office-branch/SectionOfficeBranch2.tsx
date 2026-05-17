@@ -1,3 +1,4 @@
+import Link from 'next/link'
 function SectionOfficeBranch2() {
   return (
     <>
@@ -9,7 +10,7 @@ function SectionOfficeBranch2() {
       <div className="content">
       <h5 className="title">Corpox Kuala Lumpur</h5>
       <p className="desc">350 West Washington Street, Suite 600 <br /> Tempe, Arizona 85288 US</p>
-      <a href="/contact" className="tmp-btn btn-primary btn-two">Get Direction <i className="feather-arrow-right"></i></a>
+      <Link href="/contact" className="tmp-btn btn-primary btn-two">Get Direction <i className="feather-arrow-right"></i></Link>
       </div>
       <div className="image-area">
       <img src="/assets/images/story/17.webp" width={645} alt="" />
@@ -19,7 +20,7 @@ function SectionOfficeBranch2() {
       <div className="content">
       <h5 className="title">North America Office(Maxico)</h5>
       <p className="desc">Corporativo Paseo Interlomas <br /> Av. Paseo de la Reforma 5009, Piso 16</p>
-      <a href="/contact" className="tmp-btn btn-primary btn-two">Get Direction <i className="feather-arrow-right"></i></a>
+      <Link href="/contact" className="tmp-btn btn-primary btn-two">Get Direction <i className="feather-arrow-right"></i></Link>
       </div>
       <div className="image-area">
       <img src="/assets/images/story/18.webp" width={645} alt="" />
@@ -29,7 +30,7 @@ function SectionOfficeBranch2() {
       <div className="content">
       <h5 className="title">South America Office(Brazil)</h5>
       <p className="desc">Eldorado Business Tower <br /> Av Doutora Ruth Cardoso, 8501 – 17th Floor</p>
-      <a href="/contact" className="tmp-btn btn-primary btn-two">Get Direction <i className="feather-arrow-right"></i></a>
+      <Link href="/contact" className="tmp-btn btn-primary btn-two">Get Direction <i className="feather-arrow-right"></i></Link>
       </div>
       <div className="image-area">
       <img src="/assets/images/story/19.webp" width={645} alt="" />
@@ -39,7 +40,7 @@ function SectionOfficeBranch2() {
       <div className="content">
       <h5 className="title">Europe and Africa Offices(Brussels)</h5>
       <p className="desc">Corpox Solar Manufacturing GmbH – Recycling Facility <br /> Marie-Curie-Straße 3</p>
-      <a href="/contact" className="tmp-btn btn-primary btn-two">Get Direction <i className="feather-arrow-right"></i></a>
+      <Link href="/contact" className="tmp-btn btn-primary btn-two">Get Direction <i className="feather-arrow-right"></i></Link>
       </div>
       <div className="image-area">
       <img src="/assets/images/story/20.webp" width={645} alt="" />

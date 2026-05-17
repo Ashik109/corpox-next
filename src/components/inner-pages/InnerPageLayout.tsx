@@ -8,16 +8,17 @@ type Props = {
   children: React.ReactNode
   lightMode?: boolean
   bodyClass?: string
+  header?: React.ReactNode
 }
 
-export default function InnerPageLayout({ children, lightMode, bodyClass }: Props) {
+export default function InnerPageLayout({ children, lightMode, bodyClass, header }: Props) {
   const cls = [lightMode ? 'active-light-mode' : '', bodyClass].filter(Boolean).join(' ')
   return (
     <>
       {cls ? <BodyClass className={cls} /> : null}
       <main className="page-wrapper">
         <InnerPageAnimations />
-        <MultipageHeader />
+        {header ?? <MultipageHeader />}
         {children}
         <MultipageInnerFooter />
       </main>

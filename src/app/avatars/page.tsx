@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import InnerPageLayout from '../../components/inner-pages/InnerPageLayout'
 import BodyContent from './BodyContent'
+import HeaderAvatars from './HeaderAvatars'
 
 export const metadata: Metadata = {
   title: 'Avatars || Corpox',
@@ -8,7 +9,7 @@ export const metadata: Metadata = {
 
 export default function Page() {
   return (
-    <InnerPageLayout>
+    <InnerPageLayout header={<HeaderAvatars />}>
       <BodyContent />
     </InnerPageLayout>
   )

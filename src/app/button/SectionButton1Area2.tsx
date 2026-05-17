@@ -1,3 +1,4 @@
+import Link from 'next/link'
 function SectionButton1Area2() {
   return (
     <>
@@ -21,11 +22,11 @@ function SectionButton1Area2() {
       <div className="row mt--30">
       <div className="col-lg-12">
       <div className="tmp-button-group">
-      <a className="tmp-btn btn-small btn-border" href="#">Button SM</a>
-      <a className="tmp-btn btn-border" href="#">Button MD</a>
-      <a className="tmp-btn btn-large btn-border" href="#">Button LG</a>
-      <a className="tmp-btn btn-large btn-border" href="#">Button XL</a>
-      <a className="tmp-btn btn-extra-large btn-border" href="#">Button XXL</a>
+      <Link className="tmp-btn btn-small btn-border" href="#">Button SM</Link>
+      <Link className="tmp-btn btn-border" href="#">Button MD</Link>
+      <Link className="tmp-btn btn-large btn-border" href="#">Button LG</Link>
+      <Link className="tmp-btn btn-large btn-border" href="#">Button XL</Link>
+      <Link className="tmp-btn btn-extra-large btn-border" href="#">Button XXL</Link>
       </div>
       </div>
       </div>

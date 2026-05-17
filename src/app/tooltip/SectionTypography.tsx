@@ -1,3 +1,4 @@
+import Link from 'next/link'
 function SectionTypography() {
   return (
     <>
@@ -13,9 +14,9 @@ function SectionTypography() {
       <div className="row g-5">
       <div className="col-lg-6">
       <div className="profile-share">
-      <a href="#" className="avatar" data-tooltip="Mark JOrdan" tabIndex={0}><img src="/assets/images/testimonial/tooltip-01.png" alt="education" /></a>
-      <a href="#" className="avatar" data-tooltip="Mark" tabIndex={0}><img src="/assets/images/testimonial/tooltip-02.png" alt="education" /></a>
-      <a href="#" className="avatar" data-tooltip="Jordan" tabIndex={0}><img src="/assets/images/testimonial/tooltip-03.png" alt="education" /></a>
+      <Link href="#" className="avatar" data-tooltip="Mark JOrdan" tabIndex={0}><img src="/assets/images/testimonial/tooltip-01.png" alt="education" /></Link>
+      <Link href="#" className="avatar" data-tooltip="Mark" tabIndex={0}><img src="/assets/images/testimonial/tooltip-02.png" alt="education" /></Link>
+      <Link href="#" className="avatar" data-tooltip="Jordan" tabIndex={0}><img src="/assets/images/testimonial/tooltip-03.png" alt="education" /></Link>
       <div className="more-author-text">
       <h5 className="total-join-students">Join Over 3000+ Clients</h5>
       <p className="subtitle">Have a new ideas every week.</p>

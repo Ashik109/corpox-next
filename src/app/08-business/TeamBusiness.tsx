@@ -1,3 +1,4 @@
+import Link from 'next/link'
 const teamMembers = [
     { image: "/assets/images/team/team-04.jpg", name: "Sr Janen Sara", role: "Sr Product Designer" },
     { image: "/assets/images/team/team-05.jpg", name: "John Deon", role: "App Developer" },
@@ -40,9 +41,9 @@ function TeamBusiness() {
                                                     data-aos-delay={200 + socialIndex * 100}
                                                     key={social.icon}
                                                 >
-                                                    <a href={social.href}>
+                                                    <Link href={social.href}>
                                                         <i className={social.icon} />
-                                                    </a>
+                                                    </Link>
                                                 </li>
                                             ))}
                                         </ul>

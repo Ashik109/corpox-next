@@ -1,3 +1,4 @@
+import Link from 'next/link'
 function SectionAutoSliderService() {
   return (
     <>
@@ -15,7 +16,7 @@ function SectionAutoSliderService() {
       <div className="advance-tab-button advance-tab-button-1">
       <ul className="nav nav-tabs splash-nav-tabs tab-button-list" id="splashLayoutTab" role="tablist">
       <li className="nav-item active-nav" role="presentation">
-      <a href="#" className="nav-link tab-button active" id="layouttab1-tab" data-bs-toggle="tab" data-bs-target="#layouttab1" role="tab" aria-controls="layouttab1" aria-selected="false">
+      <Link href="#" className="nav-link tab-button active" id="layouttab1-tab" data-bs-toggle="tab" data-bs-target="#layouttab1" role="tab" aria-controls="layouttab1" aria-selected="false">
       <div className="tab">
       <span>01</span>
       <div className="inner">
@@ -25,10 +26,10 @@ function SectionAutoSliderService() {
                                                                       </p>
       </div>
       </div>
-      </a>
+      </Link>
       </li>
       <li className="nav-item" role="presentation">
-      <a href="#" className="nav-link tab-button" id="layouttab2-tab" data-bs-toggle="tab" data-bs-target="#layouttab2" role="tab" aria-controls="layouttab2" aria-selected="true">
+      <Link href="#" className="nav-link tab-button" id="layouttab2-tab" data-bs-toggle="tab" data-bs-target="#layouttab2" role="tab" aria-controls="layouttab2" aria-selected="true">
       <div className="tab">
       <span>02</span>
       <div className="inner">
@@ -38,10 +39,10 @@ function SectionAutoSliderService() {
                                                                       </p>
       </div>
       </div>
-      </a>
+      </Link>
       </li>
       <li className="nav-item" role="presentation">
-      <a href="#" className="nav-link tab-button" id="layouttab3-tab" data-bs-toggle="tab" data-bs-target="#layouttab3" role="tab" aria-controls="layouttab3" aria-selected="false">
+      <Link href="#" className="nav-link tab-button" id="layouttab3-tab" data-bs-toggle="tab" data-bs-target="#layouttab3" role="tab" aria-controls="layouttab3" aria-selected="false">
       <div className="tab">
       <span>03</span>
       <div className="inner">
@@ -51,7 +52,7 @@ function SectionAutoSliderService() {
                                                                       </p>
       </div>
       </div>
-      </a>
+      </Link>
       </li>
       </ul>
       </div>

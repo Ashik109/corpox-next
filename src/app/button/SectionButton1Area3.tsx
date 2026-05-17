@@ -1,3 +1,4 @@
+import Link from 'next/link'
 function SectionButton1Area3() {
   return (
     <>
@@ -21,28 +22,28 @@ function SectionButton1Area3() {
       <div className="row mt--30">
       <div className="col-lg-12">
       <div className="tmp-button-group">
-      <a className="tmp-btn icon-hover" href="#">
+      <Link className="tmp-btn icon-hover" href="#">
       <span className="btn-text">Corpox Button</span>
       <span className="btn-icon"><i className="feather-arrow-right"></i></span>
-      </a>
-      <a className="tmp-btn round icon-hover" href="#">
+      </Link>
+      <Link className="tmp-btn round icon-hover" href="#">
       <span className="btn-text">Corpox Button</span>
       <span className="btn-icon"><i className="feather-arrow-right"></i></span>
-      </a>
-      <a className="tmp-btn hover-icon-reverse" href="#">
+      </Link>
+      <Link className="tmp-btn hover-icon-reverse" href="#">
       <span className="icon-reverse-wrapper">
       <span className="btn-text">Corpox Button</span>
       <span className="btn-icon"><i className="feather-arrow-right"></i></span>
       <span className="btn-icon"><i className="feather-arrow-right"></i></span>
       </span>
-      </a>
-      <a className="tmp-btn round hover-icon-reverse" href="#">
+      </Link>
+      <Link className="tmp-btn round hover-icon-reverse" href="#">
       <span className="icon-reverse-wrapper">
       <span className="btn-text">Corpox Button</span>
       <span className="btn-icon"><i className="feather-arrow-right"></i></span>
       <span className="btn-icon"><i className="feather-arrow-right"></i></span>
       </span>
-      </a>
+      </Link>
       </div>
       </div>
       </div>

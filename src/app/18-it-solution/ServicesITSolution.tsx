@@ -1,3 +1,4 @@
+import Link from 'next/link'
 const services = [
     ["01.png", "UI/UX Design", "Strong brand identity, enhance visibility, and build lasting customer trust."],
     ["02.png", "Development", "We provide dedicated assistance, resolve issues deliver exceptional customer."],
@@ -33,11 +34,11 @@ function ServicesITSolution() {
                                 </div>
                                 <div className="content">
                                     <h4 className="title w-600">
-                                        <a href="/service/management-leadership">{title}</a>
+                                        <Link href="/service/management-leadership">{title}</Link>
                                     </h4>
                                     <p className="description mb--0">{description}</p>
                                     <div className="discover-btn mt--30">
-                                        <a className="tmp-btn round btn-small btn-border hover-icon-reverse" href="/service/financial-growth">
+                                        <Link className="tmp-btn round btn-small btn-border hover-icon-reverse" href="/service/financial-growth">
                                             <span className="icon-reverse-wrapper">
                                                 <span className="btn-text">Discover services</span>
                                                 <span className="btn-icon">
@@ -47,7 +48,7 @@ function ServicesITSolution() {
                                                     <i className="feather-arrow-right" />
                                                 </span>
                                             </span>
-                                        </a>
+                                        </Link>
                                     </div>
                                 </div>
                                 <div className="shape-service-1">

@@ -1,3 +1,4 @@
+import Link from 'next/link'
 const avatars = [
     { image: "/assets/images/testimonial/tooltip-01.png", label: "Mark JOrdan" },
     { image: "/assets/images/testimonial/tooltip-02.png", label: "Mark" },
@@ -21,7 +22,7 @@ function CtaBusiness() {
                                             Finest choice for your home &amp; office
                                         </h6>
                                         <div className="call-to-btn d-flex justify-content-center">
-                                            <a className="tmp-btn btn-extra-large hover-icon-reverse" target="_blank" href="https://themeforest.net/item/corpox-business-consulting-bootstrap-5-html-template/59767866">
+                                            <Link className="tmp-btn btn-extra-large hover-icon-reverse" target="_blank" href="https://themeforest.net/item/corpox-business-consulting-bootstrap-5-html-template/59767866">
                                                 <span className="icon-reverse-wrapper">
                                                     <span className="btn-text">Purchase Corpox</span>
                                                     <span className="btn-icon">
@@ -31,22 +32,22 @@ function CtaBusiness() {
                                                         <i className="feather-arrow-right" />
                                                     </span>
                                                 </span>
-                                            </a>
+                                            </Link>
                                         </div>
                                     </div>
                                     <div className="tmp-profile-box mt--50">
                                         <div className="profile-share justify-content-center">
                                             {avatars.map((avatar) => (
-                                                <a href="#" className="avatar" data-tooltip={avatar.label} tabIndex={0} key={avatar.label}>
+                                                <Link href="#" className="avatar" data-tooltip={avatar.label} tabIndex={0} key={avatar.label}>
                                                     <img src={avatar.image} alt="education" />
-                                                </a>
+                                                </Link>
                                             ))}
                                             <div className="more-author-text">
                                                 <h5 className="total-join-students">Join Over 3000+ Students</h5>
                                                 <p className="subtitle">
-                                                    <a className="btn-read-more" target="_blank" href="https://themeforest.net/item/corpox-business-consulting-bootstrap-5-html-template/59767866">
+                                                    <Link className="btn-read-more" target="_blank" href="https://themeforest.net/item/corpox-business-consulting-bootstrap-5-html-template/59767866">
                                                         <span>Purchase Corpox</span>
-                                                    </a>
+                                                    </Link>
                                                 </p>
                                             </div>
                                         </div>

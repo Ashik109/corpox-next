@@ -21,7 +21,7 @@ function FooterArchitecture() {
                                         <ul className="footer-link link-hover">
                                             {column.links.map((link) => (
                                                 <li key={link}>
-                                                    <a href="#">{link}</a>
+                                                    <Link href="#">{link}</Link>
                                                 </li>
                                             ))}
                                         </ul>
@@ -37,9 +37,9 @@ function FooterArchitecture() {
                                     <ul className="social-icon social-default justify-content-start">
                                         {["facebook", "twitter", "instagram", "linkedin"].map((icon) => (
                                             <li key={icon}>
-                                                <a href={`https://www.${icon}.com/`}>
+                                                <Link href={`https://www.${icon}.com/`}>
                                                     <i className={`feather-${icon}`} />
-                                                </a>
+                                                </Link>
                                             </li>
                                         ))}
                                     </ul>
@@ -83,7 +83,7 @@ function FooterArchitecture() {
                                         <Link href="/privacy-policy">Privacy Policy</Link>
                                     </li>
                                     <li>
-                                        <a href="#">Terms And Condition</a>
+                                        <Link href="#">Terms And Condition</Link>
                                     </li>
                                     <li>
                                         <Link href="/contact">Contact Us</Link>

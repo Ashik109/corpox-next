@@ -1,3 +1,4 @@
+import Link from 'next/link'
 function SectionElementsArea() {
   return (
     <>
@@ -10,15 +11,15 @@ function SectionElementsArea() {
       <div className="tmp-widget-details">
       <nav className="onepagenav">
       <ul className="mainmenu tmp-default-sidebar-list">
-      <li className="current"><a href="#colorPalette"><span>1. Color Palette</span></a></li>
-      <li><a href="#gradient"><span>2. Color Gradient</span></a></li>
-      <li><a href="#typography"><span>3. Typography</span></a></li>
-      <li><a href="#formElements"><span>4. Form Elements</span></a></li>
-      <li><a href="#pagination"><span>5. Pagination</span></a></li>
-      <li><a href="#tooltips"><span>6. Tooltips</span></a></li>
-      <li><a href="#avatars"><span>7. Avatars</span></a></li>
-      <li><a href="#animatedHeading"><span>8. Animated Heading</span></a></li>
-      <li><a href="#prsBorderRadius"><span>9. Border Radius</span></a></li>
+      <li className="current"><Link href="#colorPalette"><span>1. Color Palette</span></Link></li>
+      <li><Link href="#gradient"><span>2. Color Gradient</span></Link></li>
+      <li><Link href="#typography"><span>3. Typography</span></Link></li>
+      <li><Link href="#formElements"><span>4. Form Elements</span></Link></li>
+      <li><Link href="#pagination"><span>5. Pagination</span></Link></li>
+      <li><Link href="#tooltips"><span>6. Tooltips</span></Link></li>
+      <li><Link href="#avatars"><span>7. Avatars</span></Link></li>
+      <li><Link href="#animatedHeading"><span>8. Animated Heading</span></Link></li>
+      <li><Link href="#prsBorderRadius"><span>9. Border Radius</span></Link></li>
       </ul>
       </nav>
       </div>

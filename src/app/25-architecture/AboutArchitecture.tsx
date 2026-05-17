@@ -1,3 +1,4 @@
+import Link from 'next/link'
 function AboutArchitecture() {
     return (
         <div className="about-us-area tmp-section-gap">
@@ -26,9 +27,9 @@ function AboutArchitecture() {
                             <p className="desc mb--35">
                                 Planner inilla duiman at elit finibus viverra nec a lacus themo the drudea seneoice misuscipit non sagie the fermen. Viverra tristique jusio the ivite dianne onen nivami acsestion augue artine.
                             </p>
-                            <a className="tmp-btn btn-primary" href="/about">
+                            <Link className="tmp-btn btn-primary" href="/about">
                                 More About Us
-                            </a>
+                            </Link>
                         </div>
                     </div>
                     <div className="col-lg-6">

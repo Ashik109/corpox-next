@@ -1,3 +1,4 @@
+import Link from 'next/link'
 const posts = [
     ["13.webp", "Event Tips", "Alice Johnson", "15 Dec 2025", "05", "Top Strategies to Host a Successful Event", "Organizing an impactful event requires careful planning, creativity, and effective communication."],
     ["15.webp", "Event Planning", "Michael Brown", "28 Dec 2025", "03", "Engaging Attendees for Maximum Impact", "Learn how to attract, engage, and retain attendees throughout your conference or event."],
@@ -30,17 +31,17 @@ function BlogEvent() {
                                 <div className="inner">
                                     {index === 1 ? <BlogContent author={author} date={date} comments={comments} title={title} text={text} /> : null}
                                     <div className="thumbnail invers-anime">
-                                        <a className="image" href="/blog/best-corporate-tips">
+                                        <Link className="image" href="/blog/best-corporate-tips">
                                             <img loading="lazy" className="w-100" src={`/assets/images/blog/${image}`} alt={title} />
-                                        </a>
+                                        </Link>
                                         <span className="tag-news">{tag}</span>
                                         {index === 2 ? (
                                             <div className="video-icon">
-                                                <a className="tmp-btn btn-small rounded-player popup-video" href="https://www.youtube.com/watch?v=4jnzf1yj48M">
+                                                <Link className="tmp-btn btn-small rounded-player popup-video" href="https://www.youtube.com/watch?v=4jnzf1yj48M">
                                                     <span>
                                                         <i className="feather-play" />
                                                     </span>
-                                                </a>
+                                                </Link>
                                             </div>
                                         ) : null}
                                     </div>
@@ -63,7 +64,7 @@ function BlogContent({ author, date, comments, title, text }: { author: string; 
                     <span>
                         <i className="feather-user" />
                     </span>
-                    <a href="#">{author}</a>
+                    <Link href="#">{author}</Link>
                 </li>
                 <li className="separator">-</li>
                 <li>{date}</li>
@@ -73,13 +74,13 @@ function BlogContent({ author, date, comments, title, text }: { author: string; 
                 </li>
             </ul>
             <h4 className="title">
-                <a href="/blog/corporate-success-strategy">{title}</a>
+                <Link href="/blog/corporate-success-strategy">{title}</Link>
             </h4>
             <p className="descriptiion">{text}</p>
             <div className="read-more-btn">
-                <a className="tmp-btn btn-border" href="/blog/leadership-confidence">
+                <Link className="tmp-btn btn-border" href="/blog/leadership-confidence">
                     <span>Read More</span>
-                </a>
+                </Link>
             </div>
         </div>
     );

@@ -1,3 +1,4 @@
+import Link from 'next/link'
 const gallery = ["portfolio-01.jpg", "portfolio-02.jpg", "portfolio-03.jpg", "portfolio-04.jpg", "portfolio-05.jpg", "portfolio-06.jpg"];
 
 function GalleryRealEstateTwo() {
@@ -14,7 +15,7 @@ function GalleryRealEstateTwo() {
                 </div>
                 <div className="row mt_dec--30 row--15" id="animated-lightbox">
                     {gallery.map((image) => (
-                        <a className="col-lg-4 col-md-6 col-sm-6 col-12 mt--30" data-aos="slide-up" data-aos-duration="700" href={`/assets/images/portfolio/${image}`} key={image}>
+                        <Link className="col-lg-4 col-md-6 col-sm-6 col-12 mt--30" data-aos="slide-up" data-aos-duration="700" href={`/assets/images/portfolio/${image}`} key={image}>
                             <div className="tmp-gallery icon-center">
                                 <div className="thumbnail">
                                     <img className="radius-small" src={`/assets/images/portfolio/${image}`} alt="Corporate Image" />
@@ -27,7 +28,7 @@ function GalleryRealEstateTwo() {
                                     </div>
                                 </div>
                             </div>
-                        </a>
+                        </Link>
                     ))}
                 </div>
             </div>

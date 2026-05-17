@@ -1,4 +1,6 @@
 "use client";
+import Link from 'next/link'
+
 
 import Slider from "react-slick";
 
@@ -41,9 +43,9 @@ function BrandAiAgency() {
                             {brands.map((brand, index) => (
                                 <div key={`${brand}-${index}`}>
                                     <li>
-                                        <a href="#">
+                                        <Link href="#">
                                             <img src={`/assets/images/ai-agency/brand/${brand}`} alt="Brand" />
-                                        </a>
+                                        </Link>
                                     </li>
                                 </div>
                             ))}

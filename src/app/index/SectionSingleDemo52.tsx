@@ -1,3 +1,4 @@
+import Link from 'next/link'
 function SectionSingleDemo52() {
   return (
     <>
@@ -8,14 +9,14 @@ function SectionSingleDemo52() {
       <div className="thumbnail">
       <img className="image-dark" loading="lazy" src="/assets/images/demo/white-19-personal-advisory.webp" alt="Corporate Images" />
       <div className="tmp-preview-wrap">
-      <a href="/onepage-nineteen-white" className="tmp-view-btn">One Page<svg className="tmp-icon-svg" xmlns="http://www.w3.org/2000/svg" width={9} height={9} viewBox="0 0 8 8" fill="currentColor">
+      <Link href="/onepage-nineteen-white" className="tmp-view-btn">One Page<svg className="tmp-icon-svg" xmlns="http://www.w3.org/2000/svg" width={9} height={9} viewBox="0 0 8 8" fill="currentColor">
       <path d="M0.861539 8L0 7.13846L5.90769 1.23077H0.615385V0H8V7.38462H6.76923V2.09231L0.861539 8Z"></path>
       </svg>
-      </a>
-      <a href="/white-19-personal-advisory" className="tmp-view-btn">Multi Page<svg className="tmp-icon-svg" xmlns="http://www.w3.org/2000/svg" width={9} height={9} viewBox="0 0 8 8" fill="currentColor">
+      </Link>
+      <Link href="/white-19-personal-advisory" className="tmp-view-btn">Multi Page<svg className="tmp-icon-svg" xmlns="http://www.w3.org/2000/svg" width={9} height={9} viewBox="0 0 8 8" fill="currentColor">
       <path d="M0.861539 8L0 7.13846L5.90769 1.23077H0.615385V0H8V7.38462H6.76923V2.09231L0.861539 8Z"></path>
       </svg>
-      </a>
+      </Link>
       </div>
       </div>
       <div className="content">
@@ -40,11 +41,11 @@ function SectionSingleDemo52() {
       </div>
       </div>
       </div>
-      <a href="/white-19-personal-advisory" className="invers-mobile-view">
+      <Link href="/white-19-personal-advisory" className="invers-mobile-view">
       <div className="inner">
       <img src="/assets/images/demo/white-demo-mobile-19.webp" alt="Corpox Images" />
       </div>
-      </a>
+      </Link>
       </div>
       </div>
     </>

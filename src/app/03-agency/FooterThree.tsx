@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import React from 'react'
 
 function FooterThree() {
@@ -12,16 +13,16 @@ function FooterThree() {
                                 <div className="inner">
                                     <ul className="footer-link link-hover">
                                         <li>
-                                            <a href="/about">About</a>
+                                            <Link href="/about">About</Link>
                                         </li>
                                         <li>
-                                            <a href="/portfolio/brand-refresh-venture">Portfolio</a>
+                                            <Link href="/portfolio/brand-refresh-venture">Portfolio</Link>
                                         </li>
                                         <li>
-                                            <a href="/contact">Contact</a>
+                                            <Link href="/contact">Contact</Link>
                                         </li>
                                         <li>
-                                            <a href="/service/management-leadership">Service</a>
+                                            <Link href="/service">Service</Link>
                                         </li>
                                     </ul>
                                 </div>
@@ -34,16 +35,16 @@ function FooterThree() {
                                     <div className="inner">
                                         <ul className="footer-link link-hover">
                                             <li>
-                                                <a href="/brand">Brand</a>
+                                                <Link href="/brand">Brand</Link>
                                             </li>
                                             <li>
-                                                <a href="/call-to-action">call To Action</a>
+                                                <Link href="/call-to-action">call To Action</Link>
                                             </li>
                                             <li>
-                                                <a href="/counter">Counter</a>
+                                                <Link href="/counter">Counter</Link>
                                             </li>
                                             <li>
-                                                <a href="/service/financial-growth">Service</a>
+                                                <Link href="/service">Service</Link>
                                             </li>
                                         </ul>
                                     </div>
@@ -56,16 +57,16 @@ function FooterThree() {
                                 <div className="inner">
                                     <ul className="footer-link link-hover">
                                         <li>
-                                            <a href="/pricing">Pricing</a>
+                                            <Link href="/pricing">Pricing</Link>
                                         </li>
                                         <li>
-                                            <a href="/tab">Tab Styles</a>
+                                            <Link href="/tab">Tab Styles</Link>
                                         </li>
                                         <li>
-                                            <a href="/service/digital-transformation">Service</a>
+                                            <Link href="/service">Service</Link>
                                         </li>
                                         <li>
-                                            <a href="/social-share">Social</a>
+                                            <Link href="/social-share">Social</Link>
                                         </li>
                                     </ul>
                                 </div>
@@ -77,16 +78,16 @@ function FooterThree() {
                                 <div className="inner">
                                     <ul className="footer-link link-hover">
                                         <li>
-                                            <a href="/team/benjamin-taylor">Team</a>
+                                            <Link href="/team">Team</Link>
                                         </li>
                                         <li>
-                                            <a href="/testimonial">Testimonial</a>
+                                            <Link href="/testimonial">Testimonial</Link>
                                         </li>
                                         <li>
-                                            <a href="/service/management-leadership">Service</a>
+                                            <Link href="/service">Service</Link>
                                         </li>
                                         <li>
-                                            <a href="/timeline">Timeline</a>
+                                            <Link href="/timeline">Timeline</Link>
                                         </li>
                                     </ul>
                                 </div>
@@ -104,24 +105,24 @@ function FooterThree() {
                                     </h6>
                                     <ul className="social-icon social-default justify-content-start">
                                         <li>
-                                            <a href="https://www.facebook.com/">
+                                            <Link href="https://www.facebook.com/">
                                                 <i className="feather-facebook" />
-                                            </a>
+                                            </Link>
                                         </li>
                                         <li>
-                                            <a href="https://www.twitter.com">
+                                            <Link href="https://www.twitter.com">
                                                 <i className="feather-twitter" />
-                                            </a>
+                                            </Link>
                                         </li>
                                         <li>
-                                            <a href="https://www.instagram.com/">
+                                            <Link href="https://www.instagram.com/">
                                                 <i className="feather-instagram" />
-                                            </a>
+                                            </Link>
                                         </li>
                                         <li>
-                                            <a href="https://www.linkdin.com/">
+                                            <Link href="https://www.linkdin.com/">
                                                 <i className="feather-linkedin" />
-                                            </a>
+                                            </Link>
                                         </li>
                                     </ul>
                                 </div>
@@ -161,13 +162,13 @@ function FooterThree() {
                             <div className="copyright-left">
                                 <ul className="ft-menu link-hover">
                                     <li>
-                                        <a href="/privacy-policy">Privacy Policy</a>
+                                        <Link href="/privacy-policy">Privacy Policy</Link>
                                     </li>
                                     <li>
-                                        <a href="#">Terms And Condition</a>
+                                        <Link href="#">Terms And Condition</Link>
                                     </li>
                                     <li>
-                                        <a href="/contact">Contact Us</a>
+                                        <Link href="/contact">Contact Us</Link>
                                     </li>
                                 </ul>
                             </div>

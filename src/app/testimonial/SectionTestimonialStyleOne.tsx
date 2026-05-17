@@ -1,3 +1,4 @@
+import Link from 'next/link'
 function SectionTestimonialStyleOne() {
   return (
     <>
@@ -28,11 +29,11 @@ function SectionTestimonialStyleOne() {
       <h2 className="title">Sr Janen Sara</h2>
       <h6 className="subtitle">inversweb.com</h6>
       <div className="rating mt--10">
-      <a href="#"><i className="feather-star"></i></a>
-      <a href="#"><i className="feather-star"></i></a>
-      <a href="#"><i className="feather-star"></i></a>
-      <a href="#"><i className="feather-star"></i></a>
-      <a href="#"><i className="feather-star"></i></a>
+      <Link href="#"><i className="feather-star"></i></Link>
+      <Link href="#"><i className="feather-star"></i></Link>
+      <Link href="#"><i className="feather-star"></i></Link>
+      <Link href="#"><i className="feather-star"></i></Link>
+      <Link href="#"><i className="feather-star"></i></Link>
       </div>
       </div>
       </div>
@@ -47,11 +48,11 @@ function SectionTestimonialStyleOne() {
       <h2 className="title">Mr. Jakob</h2>
       <h6 className="subtitle">inversweb.com</h6>
       <div className="rating mt--10">
-      <a href="#"><i className="feather-star"></i></a>
-      <a href="#"><i className="feather-star"></i></a>
-      <a href="#"><i className="feather-star"></i></a>
-      <a href="#"><i className="feather-star"></i></a>
-      <a href="#"><i className="feather-star"></i></a>
+      <Link href="#"><i className="feather-star"></i></Link>
+      <Link href="#"><i className="feather-star"></i></Link>
+      <Link href="#"><i className="feather-star"></i></Link>
+      <Link href="#"><i className="feather-star"></i></Link>
+      <Link href="#"><i className="feather-star"></i></Link>
       </div>
       </div>
       </div>
@@ -66,11 +67,11 @@ function SectionTestimonialStyleOne() {
       <h2 className="title">Mr. John Kabir</h2>
       <h6 className="subtitle">inversweb.com</h6>
       <div className="rating mt--10">
-      <a href="#"><i className="feather-star"></i></a>
-      <a href="#"><i className="feather-star"></i></a>
-      <a href="#"><i className="feather-star"></i></a>
-      <a href="#"><i className="feather-star"></i></a>
-      <a href="#"><i className="feather-star"></i></a>
+      <Link href="#"><i className="feather-star"></i></Link>
+      <Link href="#"><i className="feather-star"></i></Link>
+      <Link href="#"><i className="feather-star"></i></Link>
+      <Link href="#"><i className="feather-star"></i></Link>
+      <Link href="#"><i className="feather-star"></i></Link>
       </div>
       </div>
       </div>

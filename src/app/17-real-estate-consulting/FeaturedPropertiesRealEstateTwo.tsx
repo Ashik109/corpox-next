@@ -1,3 +1,4 @@
+import Link from 'next/link'
 const properties = [
     ["portfolio-07.jpg", "Casa Lomas De Machali Machas", "A wise leader seeks growth in every.", "A creative mind finds success beyond"],
     ["portfolio-08.jpg", "Villa Vista Del Sol Santiago", "A wise leader seeks growth in.", "A good traveler has no fixed plans"],
@@ -72,9 +73,9 @@ function FeaturedPropertiesRealEstateTwo() {
                                         foundation for housing, commerce, and investment opportunities.
                                     </p>
                                     <FeatureList one={one} two={two} id={image} />
-                                    <a className="tmp-btn btn-small" href="/contact">
+                                    <Link className="tmp-btn btn-small" href="/contact">
                                         Book Your Properties
-                                    </a>
+                                    </Link>
                                 </div>
                             </div>
                         </div>

@@ -1,3 +1,4 @@
+import Link from 'next/link'
 function SectionTmpBusinessCase() {
   return (
     <>
@@ -25,52 +26,52 @@ function SectionTmpBusinessCase() {
       <div className="row g-5 mt--10 tmp_jump_animation-wrapper">
       <div className="col-lg-6 col-md-6 col-sm-12 tmp-jump__item">
       <div className="single-project-style-three invers-anime">
-      <a href="/portfolio-details-white" className="thumbnail">
+      <Link href="/portfolio-details-white" className="thumbnail">
       <img loading="lazy" src="/assets/images/portfolio/01.webp" alt="project" />
-      </a>
+      </Link>
       <div className="inner-content tmponhover">
-      <a href="/portfolio-details-white">
+      <Link href="/portfolio-details-white">
       <h4 className="title">Business Growth</h4>
-      </a>
+      </Link>
       <span>Business Strategy</span>
       </div>
       </div>
       </div>
       <div className="col-lg-6 col-md-6 col-sm-12 tmp-jump__item">
       <div className="single-project-style-three invers-anime">
-      <a href="/portfolio-details-white" className="thumbnail">
+      <Link href="/portfolio-details-white" className="thumbnail">
       <img loading="lazy" src="/assets/images/portfolio/02.webp" alt="project" />
-      </a>
+      </Link>
       <div className="inner-content tmponhover">
-      <a href="/portfolio-details-white">
+      <Link href="/portfolio-details-white">
       <h4 className="title">Startup Solution</h4>
-      </a>
+      </Link>
       <span>Business Strategy</span>
       </div>
       </div>
       </div>
       <div className="col-lg-6 col-md-6 col-sm-12 tmp-jump__item">
       <div className="single-project-style-three invers-anime">
-      <a href="/portfolio-details-white" className="thumbnail">
+      <Link href="/portfolio-details-white" className="thumbnail">
       <img loading="lazy" src="/assets/images/portfolio/03.webp" alt="project" />
-      </a>
+      </Link>
       <div className="inner-content tmponhover">
-      <a href="/portfolio-details-white">
+      <Link href="/portfolio-details-white">
       <h4 className="title">Growth Manage</h4>
-      </a>
+      </Link>
       <span>Business Strategy</span>
       </div>
       </div>
       </div>
       <div className="col-lg-6 col-md-6 col-sm-12 tmp-jump__item">
       <div className="single-project-style-three invers-anime">
-      <a href="/portfolio-details-white" className="thumbnail">
+      <Link href="/portfolio-details-white" className="thumbnail">
       <img loading="lazy" src="/assets/images/portfolio/04.webp" alt="project" />
-      </a>
+      </Link>
       <div className="inner-content tmponhover">
-      <a href="/portfolio-details-white">
+      <Link href="/portfolio-details-white">
       <h4 className="title">Company Skills</h4>
-      </a>
+      </Link>
       <span>Business Strategy</span>
       </div>
       </div>

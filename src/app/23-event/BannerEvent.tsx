@@ -1,3 +1,4 @@
+import Link from 'next/link'
 function BannerEvent() {
     return (
         <div className="event-banner-area-start tmp-section-gap bg_image jarallax">
@@ -11,7 +12,7 @@ function BannerEvent() {
                                 Connecting brilliant minds from around the world to share ideas, inspire innovation, and shape the future. Join industry leaders, visionaries, and creators for an unforgettable conference experience.
                             </p>
                             <div className="button-group">
-                                <a className="tmp-btn round hover-icon-reverse" href="/pricing-three">
+                                <Link className="tmp-btn round hover-icon-reverse" href="/pricing-three">
                                     <span className="icon-reverse-wrapper">
                                         <span className="btn-text">Purchase Ticket</span>
                                         <span className="btn-icon">
@@ -21,8 +22,8 @@ function BannerEvent() {
                                             <i className="feather-arrow-right" />
                                         </span>
                                     </span>
-                                </a>
-                                <a className="tmp-btn btn-border round hover-icon-reverse" href="/contact">
+                                </Link>
+                                <Link className="tmp-btn btn-border round hover-icon-reverse" href="/contact">
                                     <span className="icon-reverse-wrapper">
                                         <span className="btn-text">Contact Us</span>
                                         <span className="btn-icon">
@@ -32,7 +33,7 @@ function BannerEvent() {
                                             <i className="feather-arrow-right" />
                                         </span>
                                     </span>
-                                </a>
+                                </Link>
                             </div>
                         </div>
                     </div>

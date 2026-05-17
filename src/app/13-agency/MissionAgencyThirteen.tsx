@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import AgencyThirteenOdometer from "./AgencyThirteenOdometer";
 import { ProfileAvatars } from "./AboutAgencyThirteen";
 
@@ -19,11 +20,11 @@ function MissionAgencyThirteen() {
                                         <img className="radius-small" src="/assets/images/about/04.webp" alt="Corporate" />
                                     </div>
                                     <div className="video-icon">
-                                        <a className="tmp-btn rounded-player popup-video" href="https://www.youtube.com/watch?v=4jnzf1yj48M">
+                                        <Link className="tmp-btn rounded-player popup-video" href="https://www.youtube.com/watch?v=4jnzf1yj48M">
                                             <span>
                                                 <i className="feather-play" />
                                             </span>
-                                        </a>
+                                        </Link>
                                     </div>
                                 </div>
                                 <div className="absolute-rating-area images-left-right-float image">
@@ -65,9 +66,9 @@ function MissionAgencyThirteen() {
                                     ))}
                                 </ul>
                                 <div className="read-more-btn mt--40">
-                                    <a className="tmp-btn round btn-large btn-border" href="/contact">
+                                    <Link className="tmp-btn round btn-large btn-border" href="/contact">
                                         Lets Contact Us
-                                    </a>
+                                    </Link>
                                 </div>
                             </div>
                         </div>

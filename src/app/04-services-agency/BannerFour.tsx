@@ -1,4 +1,6 @@
 'use client'
+import Link from 'next/link'
+
 import React from 'react'
 import { useTitleSplitAnimation } from "../components/useTitleSplitAnimation";
 
@@ -23,7 +25,7 @@ function BannerFour() {
                                     experiences, and print materials.
                                 </p>
                                 <div className="button-group mt--30 mt_sm--20 justify-content-start">
-                                    <a className="tmp-btn btn-large hover-icon-reverse" href="#">
+                                    <Link className="tmp-btn btn-large hover-icon-reverse" href="#">
                                         <span className="icon-reverse-wrapper">
                                             <span className="btn-text">Order a New Service Now</span>
                                             <span className="btn-icon">
@@ -33,7 +35,7 @@ function BannerFour() {
                                                 <i className="feather-arrow-right" />
                                             </span>
                                         </span>
-                                    </a>
+                                    </Link>
                                 </div>
                             </div>
                         </div>
@@ -49,14 +51,14 @@ function BannerFour() {
                                             />
                                         </div>
                                         <div className="video-icon">
-                                            <a
+                                            <Link
                                                 className="tmp-btn rounded-player popup-video"
                                                 href="https://www.youtube.com/watch?v=4jnzf1yj48M"
                                             >
                                                 <span>
                                                     <i className="feather-play" />
                                                 </span>
-                                            </a>
+                                            </Link>
                                         </div>
                                     </div>
                                 </div>

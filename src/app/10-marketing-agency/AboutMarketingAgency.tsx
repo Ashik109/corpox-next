@@ -1,3 +1,4 @@
+import Link from 'next/link'
 const aboutList = [
     "Track your teams progress with mobile app.",
     "Lorem ipsum dolor sit amet consectetur adipisicing.",
@@ -41,9 +42,9 @@ function AboutMarketingAgency() {
                                     ))}
                                 </ul>
                                 <div className="read-more-btn mt--40">
-                                    <a className="tmp-btn round btn-large" href="/our-history">
+                                    <Link className="tmp-btn round btn-large" href="/our-history">
                                         Check Our History
-                                    </a>
+                                    </Link>
                                 </div>
                             </div>
                         </div>

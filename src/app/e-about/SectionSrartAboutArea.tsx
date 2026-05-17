@@ -1,3 +1,4 @@
+import Link from 'next/link'
 function SectionSrartAboutArea() {
   return (
     <>
@@ -20,7 +21,7 @@ function SectionSrartAboutArea() {
       <p className="disc">Our Business ipsum dolor sit amet consectetur, adipisicing elit. Tempora sequi <br />
                           doloremque dicta quia unde odio nam minus reiciendis ullam aliquam.</p>
       <div className="read-more-btn mt--40">
-      <a className="tmp-btn round btn-large btn-border" href="#">Check Our History</a>
+      <Link className="tmp-btn round btn-large btn-border" href="#">Check Our History</Link>
       </div>
       </div>
       </div>

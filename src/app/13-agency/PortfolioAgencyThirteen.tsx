@@ -1,3 +1,4 @@
+import Link from 'next/link'
 const portfolios = [
     ["05.webp", "col-lg-8 col-md-12 col-sm-12"],
     ["06.webp", "col-lg-4 col-md-6 col-sm-12"],
@@ -29,19 +30,19 @@ function PortfolioAgencyThirteen() {
                     {portfolios.map(([image, className]) => (
                         <div className={className} key={image}>
                             <div className="single-modern-case-studies">
-                                <a href="/portfolio/brand-refresh-venture" className="thumbnail invers-anime">
+                                <Link href="/portfolio/brand-refresh-venture" className="thumbnail invers-anime">
                                     <img src={`/assets/images/portfolio/${image}`} alt="case-studies" />
-                                </a>
+                                </Link>
                                 <div className="inner-content-area">
                                     <span className="tags">2025, Business</span>
-                                    <a href="#" className="tmponhover">
+                                    <Link href="#" className="tmponhover">
                                         <h3 className="title">Business Solution</h3>
                                         <div className="tmp-icon">
                                             <span className="default">
                                                 <i className="feather-arrow-up-right" />
                                             </span>
                                         </div>
-                                    </a>
+                                    </Link>
                                 </div>
                             </div>
                         </div>

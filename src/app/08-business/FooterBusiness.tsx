@@ -31,7 +31,7 @@ function FooterBusiness() {
                                     <ul className="footer-link link-hover">
                                         {companyLinks.map((link) => (
                                             <li key={link}>
-                                                <a href="#">{link}</a>
+                                                <Link href="#">{link}</Link>
                                             </li>
                                         ))}
                                     </ul>
@@ -45,7 +45,7 @@ function FooterBusiness() {
                                     <ul className="footer-link link-hover">
                                         {resourceLinks.map((link) => (
                                             <li key={link}>
-                                                <a href="#">{link}</a>
+                                                <Link href="#">{link}</Link>
                                             </li>
                                         ))}
                                     </ul>
@@ -62,9 +62,9 @@ function FooterBusiness() {
                                     <ul className="social-icon social-default justify-content-start">
                                         {socials.map((social) => (
                                             <li key={social}>
-                                                <a href="#">
+                                                <Link href="#">
                                                     <i className={social} />
-                                                </a>
+                                                </Link>
                                             </li>
                                         ))}
                                     </ul>
@@ -81,13 +81,13 @@ function FooterBusiness() {
                             <div className="copyright-left">
                                 <ul className="ft-menu link-hover">
                                     <li>
-                                        <a href="/privacy-policy">Privacy Policy</a>
+                                        <Link href="/privacy-policy">Privacy Policy</Link>
                                     </li>
                                     <li>
-                                        <a href="#">Terms And Condition</a>
+                                        <Link href="#">Terms And Condition</Link>
                                     </li>
                                     <li>
-                                        <a href="/contact">Contact Us</a>
+                                        <Link href="/contact">Contact Us</Link>
                                     </li>
                                 </ul>
                             </div>

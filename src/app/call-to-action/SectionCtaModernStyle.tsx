@@ -1,3 +1,4 @@
+import Link from 'next/link'
 function SectionCtaModernStyle() {
   return (
     <>
@@ -20,7 +21,7 @@ function SectionCtaModernStyle() {
       </h2>
       <div className="right-wrapper mb--80 mb_sm--0">
       <p>
-                                          Looking for Collaboration? <br /> <a href="#">info@yourdomain.com</a></p>
+                                          Looking for Collaboration? <br /> <Link href="#">info@yourdomain.com</Link></p>
       </div>
       </div>
       </div>

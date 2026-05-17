@@ -1,4 +1,6 @@
 "use client";
+import Link from 'next/link'
+
 
 import { useEffect, useRef } from "react";
 import { gsap } from "gsap";
@@ -109,14 +111,14 @@ export default function AboutTwo() {
                                         alt="about"
                                     />
                                     <div className="video-icon">
-                                        <a
+                                        <Link
                                             className="tmp-btn rounded-player popup-video"
                                             href="/assets/images/video/01.mp4"
                                         >
                                             <span>
                                                 <i className="feather-play" />
                                             </span>
-                                        </a>
+                                        </Link>
                                     </div>
                                 </div>
                                 <div ref={floatRef} className="absolute-rating-area images-left-right-float image">
@@ -159,7 +161,7 @@ export default function AboutTwo() {
                                         Review form our <br /> Best Clients
                                     </p>
                                     <div className="profile-share justify-content-start">
-                                        <a
+                                        <Link
                                             href="#"
                                             className="avatar"
                                             data-tooltip="Mark JOrdan"
@@ -169,14 +171,14 @@ export default function AboutTwo() {
                                                 src="/assets/images/testimonial/tooltip-01.png"
                                                 alt="education"
                                             />
-                                        </a>
-                                        <a href="#" className="avatar" data-tooltip="Mark" tabIndex={0}>
+                                        </Link>
+                                        <Link href="#" className="avatar" data-tooltip="Mark" tabIndex={0}>
                                             <img
                                                 src="/assets/images/testimonial/tooltip-02.png"
                                                 alt="education"
                                             />
-                                        </a>
-                                        <a
+                                        </Link>
+                                        <Link
                                             href="#"
                                             className="avatar"
                                             data-tooltip="Jordan"
@@ -186,7 +188,7 @@ export default function AboutTwo() {
                                                 src="/assets/images/testimonial/tooltip-03.png"
                                                 alt="education"
                                             />
-                                        </a>
+                                        </Link>
                                     </div>
                                 </div>
                             </div>
@@ -237,9 +239,9 @@ export default function AboutTwo() {
                                         </li>
                                     </ul>
                                     <div className="about-btn mt--30">
-                                        <a className="tmp-btn round text-center" href="#">
+                                        <Link className="tmp-btn round text-center" href="#">
                                             About Our Corpox
-                                        </a>
+                                        </Link>
                                     </div>
                                 </div>
                             </div>

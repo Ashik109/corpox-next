@@ -1,3 +1,4 @@
+import Link from 'next/link'
 function SectionAboutArea() {
   return (
     <>
@@ -42,7 +43,7 @@ function SectionAboutArea() {
       <p>Lorem ipsum dolor sit consectetur adipiscing elit sed do eiusmod tempor incididunt.</p>
       </div>
       <div className="read-more-btn mt--40">
-      <a className="tmp-btn round btn-large btn-primary" href="/about">Purchase Corpox</a>
+      <Link className="tmp-btn round btn-large btn-primary" href="/about">Purchase Corpox</Link>
       </div>
       </div>
       </div>

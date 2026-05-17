@@ -1,3 +1,4 @@
+import Link from 'next/link'
 function SectionSrartAboutArea() {
   return (
     <>
@@ -12,9 +13,9 @@ function SectionSrartAboutArea() {
       <div className="small-iamge-area images-left-right-float">
       <img src="/assets/images/about/about-12.png" alt="" loading="lazy" />
       <div className="video-icon">
-      <a className="tmp-btn rounded-player popup-video" href="https://www.youtube.com/watch?v=4jnzf1yj48M">
+      <Link className="tmp-btn rounded-player popup-video" href="https://www.youtube.com/watch?v=4jnzf1yj48M">
       <span><i className="feather-play"></i></span>
-      </a>
+      </Link>
       </div>
       </div>
       </div>
@@ -190,7 +191,7 @@ function SectionSrartAboutArea() {
       <p>"Enimad minim veniam quis nostrud exercitation <br />
                               llamco laboris. Lorem ipsum dolor sit amet" </p>
       </div>
-      <a href="/service" className="tmp-btn btn-primary">Our Service</a>
+      <Link href="/service" className="tmp-btn btn-primary">Our Service</Link>
       </div>
       </div>
       </div>

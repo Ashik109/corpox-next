@@ -1,3 +1,4 @@
+import Link from 'next/link'
 function SectionStartSinglePortfolio2() {
   return (
     <>
@@ -6,18 +7,18 @@ function SectionStartSinglePortfolio2() {
       <div className="inner">
       <div className="thumbnail">
       <figure className="card-image">
-      <a href="/portfolio-details">
+      <Link href="/portfolio-details">
       <img src="/assets/images/portfolio/11.webp" alt="Portfolio-01" />
-      </a>
+      </Link>
       </figure>
-      <a className="tmp-overlay" href="/portfolio-details"></a>
+      <Link className="tmp-overlay" href="/portfolio-details"></Link>
       </div>
       <div className="content">
       <h5 className="title mb--20">
-      <a href="/portfolio-details">Business Development</a>
+      <Link href="/portfolio-details">Business Development</Link>
       </h5>
       <div className="tmp-badge-group">
-      <a href="#" className="tmp-badge-2">Design</a>
+      <Link href="#" className="tmp-badge-2">Design</Link>
       </div>
       </div>
       </div>

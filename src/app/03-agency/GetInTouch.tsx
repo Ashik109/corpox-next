@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import React from 'react'
 
 interface GetInTouchProps {
@@ -14,15 +15,15 @@ function GetInTouch({ className = ""}: GetInTouchProps) {
                     </div>
                     <div className="content">
                         <div className="icon">
-                            <a href="call-to:+00449922097788">
+                            <Link href="call-to:+00449922097788">
                                 <i className="feather-phone" />
-                            </a>
+                            </Link>
                         </div>
                         <div className="text">
                             <h4 className="title">Have Any Questions? Call Us free</h4>
-                            <a href="call-to:+00449922097788" className="phone">
+                            <Link href="call-to:+00449922097788" className="phone">
                                 +00449922097788
-                            </a>
+                            </Link>
                             <p className="desc">
                                 As the world's largest producer of business service agency, Corpox
                                 stands at the forefront of the Business sector.

@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import React from 'react'
 
 function TopbarFour() {
@@ -8,10 +9,10 @@ function TopbarFour() {
                     <div className="col-lg-4 col-md-12 col-12">
                         <div className="header-left">
                             <p>
-                                <a href="#">
+                                <Link href="#">
                                     Discover the most advanced template
                                     <i className="feather-chevron-right" />
-                                </a>
+                                </Link>
                             </p>
                         </div>
                     </div>
@@ -25,31 +26,31 @@ function TopbarFour() {
                                 <p>
                                     <i className="feather-phone" />
                                     <span>
-                                        <a href="#">+06 98 68 23 22</a>
+                                        <Link href="#">+06 98 68 23 22</Link>
                                     </span>
                                 </p>
                             </div>
                             <div className="social-icon-wrapper">
                                 <ul className="social-icon social-default icon-naked">
                                     <li>
-                                        <a href="https://www.facebook.com/">
+                                        <Link href="https://www.facebook.com/">
                                             <i className="feather-facebook" />
-                                        </a>
+                                        </Link>
                                     </li>
                                     <li>
-                                        <a href="https://www.twitter.com">
+                                        <Link href="https://www.twitter.com">
                                             <i className="feather-twitter" />
-                                        </a>
+                                        </Link>
                                     </li>
                                     <li>
-                                        <a href="https://www.instagram.com/">
+                                        <Link href="https://www.instagram.com/">
                                             <i className="feather-instagram" />
-                                        </a>
+                                        </Link>
                                     </li>
                                     <li>
-                                        <a href="https://www.linkdin.com/">
+                                        <Link href="https://www.linkdin.com/">
                                             <i className="feather-linkedin" />
-                                        </a>
+                                        </Link>
                                     </li>
                                 </ul>
                             </div>

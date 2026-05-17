@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import DigitalAgencyOdometer from "./DigitalAgencyOdometer";
 
 const bannerCards = [
@@ -21,7 +22,7 @@ const bannerCards = [
 
 function GoButton() {
     return (
-        <a href="/service/management-leadership" className="mdbutton mdbutton--fenrir">
+        <Link href="/service/management-leadership" className="mdbutton mdbutton--fenrir">
             <svg aria-hidden="true" className="btnprogress" width="70" height="70" viewBox="0 0 70 70">
                 <path
                     className="btnprogress__circle"
@@ -34,7 +35,7 @@ function GoButton() {
                 />
             </svg>
             <span>Go</span>
-        </a>
+        </Link>
     );
 }
 
@@ -60,12 +61,12 @@ function BannerDigitalAgency() {
                                 We deliver custom Satisfaction for build a long term relationship.
                             </h6>
                             <div className="button-group justify-content-start mt--40">
-                                <a href="#" className="tmp-btn btn-primary">
+                                <Link href="#" className="tmp-btn btn-primary">
                                     Start Free Trail
-                                </a>
-                                <a href="#" className="tmp-btn btn-border">
+                                </Link>
+                                <Link href="#" className="tmp-btn btn-border">
                                     Get Started
-                                </a>
+                                </Link>
                             </div>
                         </div>
                     </div>
@@ -79,13 +80,13 @@ function BannerDigitalAgency() {
                                     <div className="inv-card content-overlay">
                                         <div className="inner">
                                             <div className="thumbnail">
-                                                <a href="/service/financial-growth">
+                                                <Link href="/service/financial-growth">
                                                     <img src={card.image} alt="Portfolio Images" />
-                                                </a>
+                                                </Link>
                                             </div>
                                             <div className="content">
                                                 <h4 className="title">
-                                                    <a href="/service/digital-transformation">{card.title}</a>
+                                                    <Link href="/service/digital-transformation">{card.title}</Link>
                                                 </h4>
                                                 <div className="view-button">
                                                     <GoButton />

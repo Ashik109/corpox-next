@@ -1,3 +1,4 @@
+import Link from 'next/link'
 function SectionMainTeamArea() {
   return (
     <>
@@ -23,33 +24,33 @@ function SectionMainTeamArea() {
       <div className="col-lg-3 col-md-6">
       <div className="team-wrapper5">
       <div className="image-area">
-      <a href="/team-details">
+      <Link href="/team-details">
       <img src="/assets/images/team/team-04.jpg" alt="" />
-      </a>
+      </Link>
       </div>
       <div className="content-area">
       <div className="left">
-      <h6 className="title"><a href="/team-details">James Johnson</a></h6>
+      <h6 className="title"><Link href="/team-details">James Johnson</Link></h6>
       <p className="designation">Solar Engineer</p>
       </div>
-      <a href="#" className="share"><i className="feather-share-2"></i></a>
+      <Link href="#" className="share"><i className="feather-share-2"></i></Link>
       </div>
       <div className="social-wrapper">
       <ul>
       <li>
-      <a href="#">
+      <Link href="#">
       <i className="feather-facebook"></i>
-      </a>
+      </Link>
       </li>
       <li>
-      <a href="#">
+      <Link href="#">
       <i className="feather-twitter"></i>
-      </a>
+      </Link>
       </li>
       <li>
-      <a href="#">
+      <Link href="#">
       <i className="feather-youtube"></i>
-      </a>
+      </Link>
       </li>
       </ul>
       </div>
@@ -58,33 +59,33 @@ function SectionMainTeamArea() {
       <div className="col-lg-3 col-md-6">
       <div className="team-wrapper5">
       <div className="image-area">
-      <a href="/team-details">
+      <Link href="/team-details">
       <img src="/assets/images/team/team-05.jpg" alt="" />
-      </a>
+      </Link>
       </div>
       <div className="content-area">
       <div className="left">
-      <h6 className="title"><a href="/team-details">David Miller</a></h6>
+      <h6 className="title"><Link href="/team-details">David Miller</Link></h6>
       <p className="designation">Solar Engineer</p>
       </div>
-      <a href="#" className="share"><i className="feather-share-2"></i></a>
+      <Link href="#" className="share"><i className="feather-share-2"></i></Link>
       </div>
       <div className="social-wrapper">
       <ul>
       <li>
-      <a href="#">
+      <Link href="#">
       <i className="feather-facebook"></i>
-      </a>
+      </Link>
       </li>
       <li>
-      <a href="#">
+      <Link href="#">
       <i className="feather-twitter"></i>
-      </a>
+      </Link>
       </li>
       <li>
-      <a href="#">
+      <Link href="#">
       <i className="feather-youtube"></i>
-      </a>
+      </Link>
       </li>
       </ul>
       </div>
@@ -93,33 +94,33 @@ function SectionMainTeamArea() {
       <div className="col-lg-3 col-md-6">
       <div className="team-wrapper5">
       <div className="image-area">
-      <a href="/team-details">
+      <Link href="/team-details">
       <img src="/assets/images/team/team-06.jpg" alt="" />
-      </a>
+      </Link>
       </div>
       <div className="content-area">
       <div className="left">
-      <h6 className="title"><a href="/team-details">William White</a></h6>
+      <h6 className="title"><Link href="/team-details">William White</Link></h6>
       <p className="designation">Solar Engineer</p>
       </div>
-      <a href="#" className="share"><i className="feather-share-2"></i></a>
+      <Link href="#" className="share"><i className="feather-share-2"></i></Link>
       </div>
       <div className="social-wrapper">
       <ul>
       <li>
-      <a href="#">
+      <Link href="#">
       <i className="feather-facebook"></i>
-      </a>
+      </Link>
       </li>
       <li>
-      <a href="#">
+      <Link href="#">
       <i className="feather-twitter"></i>
-      </a>
+      </Link>
       </li>
       <li>
-      <a href="#">
+      <Link href="#">
       <i className="feather-youtube"></i>
-      </a>
+      </Link>
       </li>
       </ul>
       </div>
@@ -128,33 +129,33 @@ function SectionMainTeamArea() {
       <div className="col-lg-3 col-md-6">
       <div className="team-wrapper5">
       <div className="image-area">
-      <a href="/team-details">
+      <Link href="/team-details">
       <img src="/assets/images/team/team-07.jpg" alt="" />
-      </a>
+      </Link>
       </div>
       <div className="content-area">
       <div className="left">
-      <h6 className="title"><a href="/team-details">William White</a></h6>
+      <h6 className="title"><Link href="/team-details">William White</Link></h6>
       <p className="designation">Solar Engineer</p>
       </div>
-      <a href="#" className="share"><i className="feather-share-2"></i></a>
+      <Link href="#" className="share"><i className="feather-share-2"></i></Link>
       </div>
       <div className="social-wrapper">
       <ul>
       <li>
-      <a href="#">
+      <Link href="#">
       <i className="feather-facebook"></i>
-      </a>
+      </Link>
       </li>
       <li>
-      <a href="#">
+      <Link href="#">
       <i className="feather-twitter"></i>
-      </a>
+      </Link>
       </li>
       <li>
-      <a href="#">
+      <Link href="#">
       <i className="feather-youtube"></i>
-      </a>
+      </Link>
       </li>
       </ul>
       </div>
@@ -163,33 +164,33 @@ function SectionMainTeamArea() {
       <div className="col-lg-3 col-md-6">
       <div className="team-wrapper5">
       <div className="image-area">
-      <a href="/team-details">
+      <Link href="/team-details">
       <img src="/assets/images/team/team-07.jpg" alt="" />
-      </a>
+      </Link>
       </div>
       <div className="content-area">
       <div className="left">
-      <h6 className="title"><a href="/team-details">William White</a></h6>
+      <h6 className="title"><Link href="/team-details">William White</Link></h6>
       <p className="designation">Solar Engineer</p>
       </div>
-      <a href="#" className="share"><i className="feather-share-2"></i></a>
+      <Link href="#" className="share"><i className="feather-share-2"></i></Link>
       </div>
       <div className="social-wrapper">
       <ul>
       <li>
-      <a href="#">
+      <Link href="#">
       <i className="feather-facebook"></i>
-      </a>
+      </Link>
       </li>
       <li>
-      <a href="#">
+      <Link href="#">
       <i className="feather-twitter"></i>
-      </a>
+      </Link>
       </li>
       <li>
-      <a href="#">
+      <Link href="#">
       <i className="feather-youtube"></i>
-      </a>
+      </Link>
       </li>
       </ul>
       </div>
@@ -198,33 +199,33 @@ function SectionMainTeamArea() {
       <div className="col-lg-3 col-md-6">
       <div className="team-wrapper5">
       <div className="image-area">
-      <a href="/team-details">
+      <Link href="/team-details">
       <img src="/assets/images/team/team-06.jpg" alt="" />
-      </a>
+      </Link>
       </div>
       <div className="content-area">
       <div className="left">
-      <h6 className="title"><a href="/team-details">William White</a></h6>
+      <h6 className="title"><Link href="/team-details">William White</Link></h6>
       <p className="designation">Solar Engineer</p>
       </div>
-      <a href="#" className="share"><i className="feather-share-2"></i></a>
+      <Link href="#" className="share"><i className="feather-share-2"></i></Link>
       </div>
       <div className="social-wrapper">
       <ul>
       <li>
-      <a href="#">
+      <Link href="#">
       <i className="feather-facebook"></i>
-      </a>
+      </Link>
       </li>
       <li>
-      <a href="#">
+      <Link href="#">
       <i className="feather-twitter"></i>
-      </a>
+      </Link>
       </li>
       <li>
-      <a href="#">
+      <Link href="#">
       <i className="feather-youtube"></i>
-      </a>
+      </Link>
       </li>
       </ul>
       </div>
@@ -233,33 +234,33 @@ function SectionMainTeamArea() {
       <div className="col-lg-3 col-md-6">
       <div className="team-wrapper5">
       <div className="image-area">
-      <a href="/team-details">
+      <Link href="/team-details">
       <img src="/assets/images/team/team-04.jpg" alt="" />
-      </a>
+      </Link>
       </div>
       <div className="content-area">
       <div className="left">
-      <h6 className="title"><a href="/team-details">James Johnson</a></h6>
+      <h6 className="title"><Link href="/team-details">James Johnson</Link></h6>
       <p className="designation">Solar Engineer</p>
       </div>
-      <a href="#" className="share"><i className="feather-share-2"></i></a>
+      <Link href="#" className="share"><i className="feather-share-2"></i></Link>
       </div>
       <div className="social-wrapper">
       <ul>
       <li>
-      <a href="#">
+      <Link href="#">
       <i className="feather-facebook"></i>
-      </a>
+      </Link>
       </li>
       <li>
-      <a href="#">
+      <Link href="#">
       <i className="feather-twitter"></i>
-      </a>
+      </Link>
       </li>
       <li>
-      <a href="#">
+      <Link href="#">
       <i className="feather-youtube"></i>
-      </a>
+      </Link>
       </li>
       </ul>
       </div>
@@ -268,33 +269,33 @@ function SectionMainTeamArea() {
       <div className="col-lg-3 col-md-6">
       <div className="team-wrapper5">
       <div className="image-area">
-      <a href="/team-details">
+      <Link href="/team-details">
       <img src="/assets/images/team/team-05.jpg" alt="" />
-      </a>
+      </Link>
       </div>
       <div className="content-area">
       <div className="left">
-      <h6 className="title"><a href="/team-details">David Miller</a></h6>
+      <h6 className="title"><Link href="/team-details">David Miller</Link></h6>
       <p className="designation">Solar Engineer</p>
       </div>
-      <a href="#" className="share"><i className="feather-share-2"></i></a>
+      <Link href="#" className="share"><i className="feather-share-2"></i></Link>
       </div>
       <div className="social-wrapper">
       <ul>
       <li>
-      <a href="#">
+      <Link href="#">
       <i className="feather-facebook"></i>
-      </a>
+      </Link>
       </li>
       <li>
-      <a href="#">
+      <Link href="#">
       <i className="feather-twitter"></i>
-      </a>
+      </Link>
       </li>
       <li>
-      <a href="#">
+      <Link href="#">
       <i className="feather-youtube"></i>
-      </a>
+      </Link>
       </li>
       </ul>
       </div>

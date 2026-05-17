@@ -1,4 +1,6 @@
 "use client";
+import Link from 'next/link'
+
 import { useEffect } from "react";
 import { useTitleSplitAnimation } from "../components/useTitleSplitAnimation";
 import AOS from "aos";
@@ -56,14 +58,14 @@ function ServiceTwo() {
                                 </div>
                                 <div className="content">
                                     <h4 className="title w-600">
-                                        <a href="/service/management-leadership">Design</a>
+                                        <Link href="/service/management-leadership">Design</Link>
                                     </h4>
                                     <p className="description mb--0">
                                         There are many variations variations of passages of Lorem
                                         available.
                                     </p>
                                     <div className="discover-btn mt--20">
-                                        <a
+                                        <Link
                                             className="tmp-btn round btn-small btn-border hover-icon-reverse"
                                             href="/service/financial-growth"
                                         >
@@ -76,7 +78,7 @@ function ServiceTwo() {
                                                     <i className="feather-arrow-right" />
                                                 </span>
                                             </span>
-                                        </a>
+                                        </Link>
                                     </div>
                                 </div>
                                 <div className="shape-service-1">
@@ -96,14 +98,14 @@ function ServiceTwo() {
                                 </div>
                                 <div className="content">
                                     <h4 className="title w-600">
-                                        <a href="/service/digital-transformation">Team</a>
+                                        <Link href="/service/digital-transformation">Team</Link>
                                     </h4>
                                     <p className="description mb--0">
                                         Passages there are many variations variations of of Lorem
                                         available.
                                     </p>
                                     <div className="discover-btn mt--20">
-                                        <a
+                                        <Link
                                             className="tmp-btn round btn-small btn-border hover-icon-reverse"
                                             href="/service/management-leadership"
                                         >
@@ -116,7 +118,7 @@ function ServiceTwo() {
                                                     <i className="feather-arrow-right" />
                                                 </span>
                                             </span>
-                                        </a>
+                                        </Link>
                                     </div>
                                 </div>
                                 <div className="shape-service-1">
@@ -136,14 +138,14 @@ function ServiceTwo() {
                                 </div>
                                 <div className="content">
                                     <h4 className="title w-600">
-                                        <a href="/service/financial-growth">Application</a>
+                                        <Link href="/service/financial-growth">Application</Link>
                                     </h4>
                                     <p className="description mb--0">
                                         Variations There are many variations of passages of Lorem
                                         available.
                                     </p>
                                     <div className="discover-btn mt--20">
-                                        <a
+                                        <Link
                                             className="tmp-btn round btn-small btn-border hover-icon-reverse"
                                             href="/service/digital-transformation"
                                         >
@@ -156,7 +158,7 @@ function ServiceTwo() {
                                                     <i className="feather-arrow-right" />
                                                 </span>
                                             </span>
-                                        </a>
+                                        </Link>
                                     </div>
                                 </div>
                                 <div className="shape-service-1">
@@ -176,14 +178,14 @@ function ServiceTwo() {
                                 </div>
                                 <div className="content">
                                     <h4 className="title w-600">
-                                        <a href="/service/management-leadership">Support</a>
+                                        <Link href="/service/management-leadership">Support</Link>
                                     </h4>
                                     <p className="description mb--0">
                                         Variations There are many variations of passages of Lorem
                                         available.
                                     </p>
                                     <div className="discover-btn mt--20">
-                                        <a
+                                        <Link
                                             className="tmp-btn round btn-small btn-border hover-icon-reverse"
                                             href="/service/management-leadership"
                                         >
@@ -196,7 +198,7 @@ function ServiceTwo() {
                                                     <i className="feather-arrow-right" />
                                                 </span>
                                             </span>
-                                        </a>
+                                        </Link>
                                     </div>
                                 </div>
                                 <div className="shape-service-1">
@@ -215,14 +217,14 @@ function ServiceTwo() {
                                 </div>
                                 <div className="content">
                                     <h4 className="title w-600">
-                                        <a href="/service/financial-growth">Office</a>
+                                        <Link href="/service/financial-growth">Office</Link>
                                     </h4>
                                     <p className="description mb--0">
                                         Office are many variations variations of passages of Lorem
                                         available.
                                     </p>
                                     <div className="discover-btn mt--20">
-                                        <a
+                                        <Link
                                             className="tmp-btn round btn-small btn-border hover-icon-reverse"
                                             href="/service/digital-transformation"
                                         >
@@ -235,7 +237,7 @@ function ServiceTwo() {
                                                     <i className="feather-arrow-right" />
                                                 </span>
                                             </span>
-                                        </a>
+                                        </Link>
                                     </div>
                                 </div>
                                 <div className="shape-service-1">
@@ -255,14 +257,14 @@ function ServiceTwo() {
                                 </div>
                                 <div className="content">
                                     <h4 className="title w-600">
-                                        <a href="/service/management-leadership">Web Award</a>
+                                        <Link href="/service/management-leadership">Web Award</Link>
                                     </h4>
                                     <p className="description mb--0">
                                         Web App there are many variations variations of of Lorem
                                         available.
                                     </p>
                                     <div className="discover-btn mt--20">
-                                        <a
+                                        <Link
                                             className="tmp-btn round btn-small btn-border hover-icon-reverse"
                                             href="/service/financial-growth"
                                         >
@@ -275,7 +277,7 @@ function ServiceTwo() {
                                                     <i className="feather-arrow-right" />
                                                 </span>
                                             </span>
-                                        </a>
+                                        </Link>
                                     </div>
                                 </div>
                                 <div className="shape-service-1">
@@ -295,14 +297,14 @@ function ServiceTwo() {
                                 </div>
                                 <div className="content">
                                     <h4 className="title w-600">
-                                        <a href="/service/digital-transformation">Call Center</a>
+                                        <Link href="/service/digital-transformation">Call Center</Link>
                                     </h4>
                                     <p className="description mb--0">
                                         Call Center are many variations of passages passages of Lorem of
                                         Lorem available.
                                     </p>
                                     <div className="discover-btn mt--20">
-                                        <a
+                                        <Link
                                             className="tmp-btn round btn-small btn-border hover-icon-reverse"
                                             href="/service/management-leadership"
                                         >
@@ -315,7 +317,7 @@ function ServiceTwo() {
                                                     <i className="feather-arrow-right" />
                                                 </span>
                                             </span>
-                                        </a>
+                                        </Link>
                                     </div>
                                 </div>
                                 <div className="shape-service-1">
@@ -335,13 +337,13 @@ function ServiceTwo() {
                                 </div>
                                 <div className="content">
                                     <h4 className="title w-600">
-                                        <a href="/service/management-leadership">Managemenet</a>
+                                        <Link href="/service/management-leadership">Managemenet</Link>
                                     </h4>
                                     <p className="description mb--0">
                                         Managemenet are many variations of passages of Lorem available.
                                     </p>
                                     <div className="discover-btn mt--20">
-                                        <a
+                                        <Link
                                             className="tmp-btn round btn-small btn-border hover-icon-reverse"
                                             href="/service/financial-growth"
                                         >
@@ -354,7 +356,7 @@ function ServiceTwo() {
                                                     <i className="feather-arrow-right" />
                                                 </span>
                                             </span>
-                                        </a>
+                                        </Link>
                                     </div>
                                 </div>
                                 <div className="shape-service-1">

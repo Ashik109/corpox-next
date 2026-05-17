@@ -1,3 +1,4 @@
+import Link from 'next/link'
 const categories = [
     "Brand Strategy",
     "Logo Design",
@@ -57,7 +58,7 @@ function BannerCreativeAgency() {
                                 Quisquam molestiae maiores ea iste ipsum unde animi aliquid.
                             </p>
                             <div className="button-group" data-aos="fade-up" data-aos-duration="800" data-aos-delay="300">
-                                <a className="tmp-btn btn-extra-large btn-border hover-icon-reverse" href="/contact">
+                                <Link className="tmp-btn btn-extra-large btn-border hover-icon-reverse" href="/contact">
                                     <span className="icon-reverse-wrapper">
                                         <span className="btn-text">Looking to hire? Get in touch!</span>
                                         <span className="btn-icon">
@@ -67,10 +68,10 @@ function BannerCreativeAgency() {
                                             <i className="feather-arrow-right" />
                                         </span>
                                     </span>
-                                </a>
+                                </Link>
                             </div>
                             <div className="scroll-down-btn mt--60" data-aos="fade-up" data-aos-duration="800" data-aos-delay="400">
-                                <a className="mdbutton mdbutton--surtur button-auto-rotate smoth-animation" href="#porfolio">
+                                <Link className="mdbutton mdbutton--surtur button-auto-rotate smoth-animation" href="#porfolio">
                                     <svg className="textcircle" viewBox="0 0 500 500">
                                         <title>Scroll Down For More Content.</title>
                                         <defs>
@@ -83,7 +84,7 @@ function BannerCreativeAgency() {
                                         </text>
                                     </svg>
                                     <i className="icon feather-arrow-down" />
-                                </a>
+                                </Link>
                             </div>
                         </div>
                     </div>

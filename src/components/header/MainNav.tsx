@@ -9,7 +9,7 @@ export default function MainNav() {
   const [demoTab, setDemoTab] = useState<DemoTab>('multipage')
 
   return (
-    <nav className="mainmenu-nav d-none d-lg-block">
+    <nav className="mainmenu-nav d-none d-lg-block" data-lenis-prevent-wheel="">
         <ul className="mainmenu">
             <li className="with-megamenu has-menu-child-item">
                 <Link href="/#">Home</Link>
@@ -1728,7 +1728,7 @@ export default function MainNav() {
                                         <Link href="/about">About Company</Link>
                                     </li>
                                     <li>
-                                        <Link href="/our-service">Our Service</Link>
+                                        <Link href="/service">Our Service</Link>
                                     </li>
                                     <li>
                                         <Link href="/our-service-two">Our Service Two</Link>
@@ -1745,27 +1745,27 @@ export default function MainNav() {
                                         <Link href="/our-service-five">Our Service Five</Link>
                                     </li>
                                     <li>
-                                        <Link href="/service-details-two/management-leadership">
+                                        <Link href="/service/management-leadership">
                                             Service Details Two
                                         </Link>
                                     </li>
                                     <li>
                                         {" "}
-                                        <Link href="/service-details-three/management-leadership">
+                                        <Link href="/service/management-leadership">
                                             Service Details Three
                                         </Link>
                                     </li>
                                     <li>
                                         {" "}
-                                        <Link href="/service-details-four/management-leadership">
+                                        <Link href="/service/management-leadership">
                                             Service Details Four
                                         </Link>
                                     </li>
                                     <li>
-                                        <Link href="/service-details/management-leadership">Service Details</Link>
+                                        <Link href="/service/management-leadership">Service Details</Link>
                                     </li>
                                     <li>
-                                        <Link href="/team/benjamin-taylor">Our Team</Link>
+                                        <Link href="/team">Our Team</Link>
                                     </li>
                                     <li>
                                         <Link href="/team-two">Our Team Two</Link>
@@ -1808,7 +1808,7 @@ export default function MainNav() {
                                         <Link href="/pricing-three">Pricing Plan Three</Link>
                                     </li>
                                     <li>
-                                        <Link href="/portfolio/brand-refresh-venture">Portfolio Default</Link>
+                                        <Link href="/portfolio">Portfolio Default</Link>
                                     </li>
                                     <li>
                                         <Link href="/portfolio-three-column">
@@ -1985,7 +1985,7 @@ export default function MainNav() {
                 </div>
             </li>
             <li className="with-megamenu has-menu-child-item position-relative">
-                <Link href="/#">Service</Link>
+                <Link href="/service">Service</Link>
                 <div className="tmp-megamenu width-small-mega">
                     <div className="wrapper">
                         <div className="row">
@@ -2006,7 +2006,7 @@ export default function MainNav() {
                                 <h3 className="tmp-short-title">Service Layout</h3>
                                 <ul className="mega-menu-item">
                                     <li>
-                                        <Link href="/our-service">Our Service</Link>
+                                        <Link href="/service">Our Service</Link>
                                     </li>
                                     <li>
                                         <Link href="/our-service-two">Our Service Two</Link>
@@ -2038,30 +2038,30 @@ export default function MainNav() {
                                 <h3 className="tmp-short-title">Service Details</h3>
                                 <ul className="mega-menu-item">
                                     <li>
-                                        <Link href="/service-details/management-leadership">
+                                        <Link href="/service/management-leadership">
                                             Service Details{" "}
                                             <span className="tmp-badge-card">Popular</span>
                                         </Link>
                                     </li>
                                     <li>
-                                        <Link href="/service-details-center/management-leadership">
+                                        <Link href="/service/management-leadership">
                                             Service Details center
                                         </Link>
                                     </li>
                                     <li>
-                                        <Link href="/service-details-two/management-leadership">
+                                        <Link href="/service/management-leadership">
                                             Service Details Two
                                         </Link>
                                     </li>
                                     <li>
                                         {" "}
-                                        <Link href="/service-details-three/management-leadership">
+                                        <Link href="/service/management-leadership">
                                             Service Details Three
                                         </Link>
                                     </li>
                                     <li>
                                         {" "}
-                                        <Link href="/service-details-four/management-leadership">
+                                        <Link href="/service/management-leadership">
                                             Service Details Four
                                         </Link>
                                     </li>
@@ -2117,7 +2117,7 @@ export default function MainNav() {
                 <Link href="/#">Project</Link>
                 <ul className="submenu">
                     <li>
-                        <Link href="/portfolio/analytics-platform">Portfolio Default</Link>
+                        <Link href="/portfolio">Portfolio Default</Link>
                     </li>
                     <li>
                         <Link href="/portfolio-three-column">
@@ -2253,10 +2253,10 @@ export default function MainNav() {
                                         <Link href="/button">Button Page</Link>
                                     </li>
                                     <li>
-                                        <Link href="/service/management-leadership">Our Service</Link>
+                                        <Link href="/service">Our Service</Link>
                                     </li>
                                     <li>
-                                        <Link href="/service-details/management-leadership">Service Details</Link>
+                                        <Link href="/service/management-leadership">Service Details</Link>
                                     </li>
                                     <li>
                                         <Link href="/accordion">Accordion Style</Link>
@@ -2268,7 +2268,7 @@ export default function MainNav() {
                                         <Link href="/blog-grid">Blog Grid</Link>
                                     </li>
                                     <li>
-                                        <Link href="/team/monsur-mia">Our Team</Link>
+                                        <Link href="/team">Our Team</Link>
                                     </li>
                                     <li>
                                         <Link href="/modern-tab">Modern Tabs</Link>

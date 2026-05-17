@@ -1,3 +1,4 @@
+import Link from 'next/link'
 const features = [
     ["Inspiring keynote sessions", "Gain insights from renowned speakers through impactful talks and expert-led discussions."],
     ["Networking & collaboration", "Connect with professionals, build meaningful relationships, and expand your network."],
@@ -16,19 +17,19 @@ function AboutEvent() {
                                         <img className="radius-small" src="/assets/images/about/25.webp" alt="Corporate event audience" />
                                     </div>
                                     <div className="video-icon">
-                                        <a className="tmp-btn rounded-player popup-video" href="https://www.youtube.com/watch?v=4jnzf1yj48M">
+                                        <Link className="tmp-btn rounded-player popup-video" href="https://www.youtube.com/watch?v=4jnzf1yj48M">
                                             <span>
                                                 <i className="feather-play" />
                                             </span>
-                                        </a>
+                                        </Link>
                                     </div>
                                 </div>
                                 <div className="absolute-rating-area images-left-right-float image">
                                     <div className="profile-share justify-content-start">
                                         {["01", "02", "03"].map((image) => (
-                                            <a href="#" className="avatar" data-tooltip="Attendee" tabIndex={0} key={image}>
+                                            <Link href="#" className="avatar" data-tooltip="Attendee" tabIndex={0} key={image}>
                                                 <img src={`/assets/images/testimonial/tooltip-${image}.png`} alt="Attendee" />
-                                            </a>
+                                            </Link>
                                         ))}
                                     </div>
                                     <div className="stars-area">
@@ -72,9 +73,9 @@ function AboutEvent() {
                                     ))}
                                 </ul>
                                 <div className="read-more-btn mt--40">
-                                    <a className="tmp-btn round btn-large btn-border" href="/contact">
+                                    <Link className="tmp-btn round btn-large btn-border" href="/contact">
                                         Join The Event
-                                    </a>
+                                    </Link>
                                 </div>
                             </div>
                         </div>

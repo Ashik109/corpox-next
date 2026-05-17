@@ -1,4 +1,6 @@
 'use client'
+import Link from 'next/link'
+
 import { useEffect } from 'react';
 import AOS from 'aos';
 import { useTitleSplitAnimation } from "../components/useTitleSplitAnimation";
@@ -65,14 +67,14 @@ function BlogOne() {
               <div className="tmp-card box-card-style-default tmponhover">
                 <div className="inner">
                   <div className="thumbnail invers-anime">
-                    <a className="image" href="/blog/best-corporate-tips">
+                    <Link className="image" href="/blog/best-corporate-tips">
                       <img
                         loading="lazy"
                         className="w-100"
                         src="/assets/images/blog-grid/blog-01.jpg"
                         alt="Blog Image"
                       />
-                    </a>
+                    </Link>
                     <span className="tag-news">Business</span>
                   </div>
                   <div className="content">
@@ -81,7 +83,7 @@ function BlogOne() {
                         <span>
                           <i className="feather-user" />
                         </span>
-                        <a href="#">John Deon</a>
+                        <Link href="#">John Deon</Link>
                       </li>
                       <li className="separator">-</li>
                       <li>15 Dec 2025</li>
@@ -91,17 +93,17 @@ function BlogOne() {
                       </li>
                     </ul>
                     <h4 className="title">
-                      <a href="/blog/corporate-success-strategy">
+                      <Link href="/blog/corporate-success-strategy">
                         How to Analyze Your Best Pages for SEO Performance
-                      </a>
+                      </Link>
                     </h4>
                     <p className="descriptiion">
                       It is an established fact that corporate success is not achieved overnight.
                     </p>
                     <div className="read-more-btn">
-                      <a className="tmp-btn btn-border" href="/blog/leadership-confidence">
+                      <Link className="tmp-btn btn-border" href="/blog/leadership-confidence">
                         <span>Read More</span>
-                      </a>
+                      </Link>
                     </div>
                   </div>
                 </div>
@@ -122,7 +124,7 @@ function BlogOne() {
                         <span>
                           <i className="feather-user" />
                         </span>
-                        <a href="#">Kalvin Klin</a>
+                        <Link href="#">Kalvin Klin</Link>
                       </li>
                       <li className="separator">-</li>
                       <li>28 Dec 2025</li>
@@ -132,28 +134,28 @@ function BlogOne() {
                       </li>
                     </ul>
                     <h4 className="title">
-                      <a href="/blog/best-corporate-tips">
+                      <Link href="/blog/best-corporate-tips">
                         Corporate Success How to Achieve Your Goals
-                      </a>
+                      </Link>
                     </h4>
                     <p className="descriptiion">
                       Corporate success is an established fact that comes from strategic.
                     </p>
                     <div className="read-more-btn">
-                      <a className="tmp-btn btn-border" href="/blog/corporate-success-strategy">
+                      <Link className="tmp-btn btn-border" href="/blog/corporate-success-strategy">
                         <span>Read More</span>
-                      </a>
+                      </Link>
                     </div>
                   </div>
                   <div className="thumbnail invers-anime">
-                    <a className="image" href="/blog/leadership-confidence">
+                    <Link className="image" href="/blog/leadership-confidence">
                       <img
                         loading="lazy"
                         className="w-100"
                         src="/assets/images/blog-grid/blog-02.jpg"
                         alt="Blog Image"
                       />
-                    </a>
+                    </Link>
                     <span className="tag-news">Development</span>
                   </div>
                 </div>
@@ -169,24 +171,24 @@ function BlogOne() {
               <div className="tmp-card box-card-style-default tmponhover">
                 <div className="inner">
                   <div className="thumbnail invers-anime">
-                    <a className="image" href="/blog/best-corporate-tips">
+                    <Link className="image" href="/blog/best-corporate-tips">
                       <img
                         loading="lazy"
                         className="w-100"
                         src="/assets/images/blog-grid/blog-03.jpg"
                         alt="Blog Image"
                       />
-                    </a>
+                    </Link>
                     <span className="tag-news">Technology</span>
                     <div className="video-icon">
-                      <a
+                      <Link
                         className="tmp-btn btn-small rounded-player popup-video"
                         href="https://www.youtube.com/watch?v=4jnzf1yj48M"
                       >
                         <span>
                           <i className="feather-play" />
                         </span>
-                      </a>
+                      </Link>
                     </div>
                   </div>
                   <div className="content">
@@ -195,7 +197,7 @@ function BlogOne() {
                         <span>
                           <i className="feather-user" />
                         </span>
-                        <a href="#">Kalvin Klin</a>
+                        <Link href="#">Kalvin Klin</Link>
                       </li>
                       <li className="separator">-</li>
                       <li>12 Dec 2025</li>
@@ -205,17 +207,17 @@ function BlogOne() {
                       </li>
                     </ul>
                     <h4 className="title">
-                      <a href="/blog/corporate-success-strategy">
+                      <Link href="/blog/corporate-success-strategy">
                         Corporate Leadership How to Lead with Confidence
-                      </a>
+                      </Link>
                     </h4>
                     <p className="descriptiion">
                       Corporate success is widely recognized as the outcome of innovation.
                     </p>
                     <div className="read-more-btn">
-                      <a className="tmp-btn btn-border" href="/blog/leadership-confidence">
+                      <Link className="tmp-btn btn-border" href="/blog/leadership-confidence">
                         <span>Read More</span>
-                      </a>
+                      </Link>
                     </div>
                   </div>
                 </div>

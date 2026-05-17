@@ -1,3 +1,4 @@
+import Link from 'next/link'
 function SectionMainCounterUp5Area() {
   return (
     <>
@@ -64,11 +65,11 @@ function SectionMainCounterUp5Area() {
       </div>
       <div className="content">
       <div className="icon">
-      <a href="call-to:+00449922097788"><i className="feather-phone"></i></a>
+      <Link href="call-to:+00449922097788"><i className="feather-phone"></i></Link>
       </div>
       <div className="text">
       <h4 className="title">Have Any Questions? Call Us free</h4>
-      <a href="call-to:+00449922097788" className="phone">+00449922097788</a>
+      <Link href="call-to:+00449922097788" className="phone">+00449922097788</Link>
       <p className="desc">As the world's largest producer of business service agency, Corpox stands at the forefront of the Business sector.</p>
       </div>
       </div>

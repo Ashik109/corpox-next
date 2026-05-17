@@ -19,6 +19,8 @@ import AosProvider from "./components/AosProvider";
 import BootstrapClient from "./components/BootstrapClient";
 import FloatingImagesAnimation from "./components/FloatingImagesAnimation";
 import SmoothScroll from "./components/SmoothScroll";
+import ReactVideoPopup from "../components/ReactVideoPopup";
+import NextLightGallery from "../components/NextLightGallery";
 
 export const metadata: Metadata = {
   title: "Corpox Business and Consulting NextJs Template",
@@ -51,6 +53,8 @@ export default function RootLayout({
         <AosProvider />
         <BootstrapClient />
         <SmoothScroll />
+        <ReactVideoPopup />
+        <NextLightGallery />
         {children}
         <FloatingImagesAnimation />
       </body>

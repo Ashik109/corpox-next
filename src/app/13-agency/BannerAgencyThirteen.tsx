@@ -1,4 +1,6 @@
 "use client";
+import Link from 'next/link'
+
 
 import { useCallback, useEffect, useRef, useState } from "react";
 
@@ -116,7 +118,7 @@ function BannerAgencyThirteen() {
                             </h1>
                             <p>Design better websites with Corpox HTML Template.</p>
                             <div className="button-group justify-content-start mt--40 mt_sm--20">
-                                <a className="tmp-btn hover-icon-reverse btn-border round btn-large border-color-white" href="#">
+                                <Link className="tmp-btn hover-icon-reverse btn-border round btn-large border-color-white" href="#">
                                     <span className="icon-reverse-wrapper">
                                         <span className="btn-text">Get in touch with us</span>
                                         <span className="btn-icon">
@@ -126,7 +128,7 @@ function BannerAgencyThirteen() {
                                             <i className="feather-arrow-right" />
                                         </span>
                                     </span>
-                                </a>
+                                </Link>
                             </div>
                         </div>
                     </div>

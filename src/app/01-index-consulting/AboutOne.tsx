@@ -1,4 +1,6 @@
 "use client";
+import Link from 'next/link'
+
 
 import { useEffect, useRef } from "react";
 import { useTitleSplitAnimation } from "../components/useTitleSplitAnimation";
@@ -112,14 +114,14 @@ export default function AboutOne() {
                                     loading="lazy"
                                 />
                                 <div className="video-icon">
-                                    <a
+                                    <Link
                                         className="tmp-btn rounded-player popup-video"
                                         href="https://www.youtube.com/watch?v=4jnzf1yj48M"
                                     >
                                         <span>
                                             <i className="feather-play" />
                                         </span>
-                                    </a>
+                                    </Link>
                                 </div>
                             </div>
                         </div>
@@ -398,9 +400,9 @@ c-0.703,1.213-0.543,2.688-0.404,3.406C20.229,6.225,20.387,5.914,20.573,5.593z"
                                 </p>
                             </div>
 
-                            <a href="/service/management-leadership" className="tmp-btn btn-primary">
+                            <Link href="/service/management-leadership" className="tmp-btn btn-primary">
                                 Our Service
-                            </a>
+                            </Link>
                         </div>
                     </div>
                 </div>

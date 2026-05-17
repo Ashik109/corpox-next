@@ -1,3 +1,4 @@
+import Link from 'next/link'
 const listBlogs = [
     { image: "/assets/images/blog/blog-02.jpg", title: "How to Analyze Your Best Pages for SEO Performance" },
     { image: "/assets/images/blog/blog-03.jpg", title: "How to Analyze Your Best Pages for SEO Performance" },
@@ -24,7 +25,7 @@ function BlogDigitalAgency() {
                                 </h2>
                             </div>
                             <div className="tmp-load-more d-flex justify-content-center">
-                                <a className="tmp-btn btn-large hover-icon-reverse" href="#">
+                                <Link className="tmp-btn btn-large hover-icon-reverse" href="#">
                                     <span className="icon-reverse-wrapper">
                                         <span className="btn-text">View More News</span>
                                         <span className="btn-icon">
@@ -34,7 +35,7 @@ function BlogDigitalAgency() {
                                             <i className="feather-loader" />
                                         </span>
                                     </span>
-                                </a>
+                                </Link>
                             </div>
                         </div>
                     </div>
@@ -44,23 +45,23 @@ function BlogDigitalAgency() {
                         <div className="tmp-card box-card-style-default bentostyle-left-blog tmponhover">
                             <div className="inner">
                                 <div className="thumbnail invers-anime">
-                                    <a className="image" href="/blog/best-corporate-tips">
+                                    <Link className="image" href="/blog/best-corporate-tips">
                                         <img loading="lazy" className="w-100" src="/assets/images/blog/01.webp" alt="Blog Image" />
-                                    </a>
+                                    </Link>
                                 </div>
                                 <div className="content">
                                     <h4 className="title">
-                                        <a href="/blog/corporate-success-strategy">
+                                        <Link href="/blog/corporate-success-strategy">
                                             How to Analyze Your Best Pages for SEO Performance Marketing.
-                                        </a>
+                                        </Link>
                                     </h4>
                                     <p className="descriptiion">
                                         Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatem cumque unde culpa aut voluptates rem, adipisci nostrum libero dolor
                                     </p>
                                     <div className="read-more-btn">
-                                        <a className="btn-read-more" href="/blog/leadership-confidence">
+                                        <Link className="btn-read-more" href="/blog/leadership-confidence">
                                             <span>Read More</span>
-                                        </a>
+                                        </Link>
                                     </div>
                                 </div>
                             </div>
@@ -71,19 +72,19 @@ function BlogDigitalAgency() {
                             <div className="tmp-card box-card-style-default card-list-view bentostyle tmponhover" key={blog.image}>
                                 <div className="inner">
                                     <div className="thumbnail invers-anime">
-                                        <a className="image" href="/blog/best-corporate-tips">
+                                        <Link className="image" href="/blog/best-corporate-tips">
                                             <img loading="lazy" src={blog.image} alt="Blog Image" />
-                                        </a>
+                                        </Link>
                                     </div>
                                     <div className="content">
                                         <h4 className="title">
-                                            <a href="/blog/corporate-success-strategy">{blog.title}</a>
+                                            <Link href="/blog/corporate-success-strategy">{blog.title}</Link>
                                         </h4>
                                         <p className="descriptiion">It is a long established fact that a reader.</p>
                                         <div className="read-more-btn">
-                                            <a className="btn-read-more" href="/blog/leadership-confidence">
+                                            <Link className="btn-read-more" href="/blog/leadership-confidence">
                                                 <span>Read More</span>
-                                            </a>
+                                            </Link>
                                         </div>
                                     </div>
                                 </div>

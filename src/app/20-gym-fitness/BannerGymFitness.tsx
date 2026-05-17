@@ -1,4 +1,6 @@
 "use client";
+import Link from 'next/link'
+
 
 import { useEffect, useRef } from "react";
 import Slider from "react-slick";
@@ -88,7 +90,7 @@ function BannerGymFitness() {
                                         </h1>
                                         <p className="mb--40 b1">{slide.text}</p>
                                         <div className="read-more-btn">
-                                            <a className="tmp-btn btn-large round hover-icon-reverse" href="#">
+                                            <Link className="tmp-btn btn-large round hover-icon-reverse" href="#">
                                                 <span className="icon-reverse-wrapper">
                                                     <span className="btn-text">{slide.cta}</span>
                                                     <span className="btn-icon">
@@ -98,7 +100,7 @@ function BannerGymFitness() {
                                                         <i className="feather-arrow-right" />
                                                     </span>
                                                 </span>
-                                            </a>
+                                            </Link>
                                         </div>
                                     </div>
                                 </div>

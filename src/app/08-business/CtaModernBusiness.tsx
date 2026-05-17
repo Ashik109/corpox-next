@@ -1,4 +1,6 @@
 "use client";
+import Link from 'next/link'
+
 
 import { useEffect, useRef } from "react";
 import BusinessRotatingWords from "./BusinessRotatingWords";
@@ -50,7 +52,7 @@ function CtaModernBusiness() {
                             <img src="/assets/images/call-to-action/icons/01.svg" alt="icons" />
                         </div>
                         <p>
-                            Looking for Collaboration? <br /> <a href="#">info@yourdomain.com</a>
+                            Looking for Collaboration? <br /> <Link href="#">info@yourdomain.com</Link>
                         </p>
                     </div>
                 </div>

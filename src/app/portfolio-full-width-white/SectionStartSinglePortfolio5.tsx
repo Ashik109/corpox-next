@@ -1,3 +1,4 @@
+import Link from 'next/link'
 function SectionStartSinglePortfolio5() {
   return (
     <>
@@ -6,23 +7,23 @@ function SectionStartSinglePortfolio5() {
       <div className="inner">
       <div className="thumbnail">
       <figure className="card-image">
-      <a href="/portfolio-details">
+      <Link href="/portfolio-details">
       <img src="/assets/images/portfolio/14.webp" alt="Portfolio-01" />
-      </a>
+      </Link>
       <div className="video-icon">
-      <a className="tmp-btn btn-small rounded-player popup-video" href="https://www.youtube.com/watch?v=4jnzf1yj48M">
+      <Link className="tmp-btn btn-small rounded-player popup-video" href="https://www.youtube.com/watch?v=4jnzf1yj48M">
       <span><i className="feather-play"></i></span>
-      </a>
+      </Link>
       </div>
       </figure>
-      <a className="tmp-overlay" href="/portfolio-details"></a>
+      <Link className="tmp-overlay" href="/portfolio-details"></Link>
       </div>
       <div className="content">
       <h5 className="title mb--20">
-      <a href="/portfolio-details">React Development</a>
+      <Link href="/portfolio-details">React Development</Link>
       </h5>
       <div className="tmp-badge-group">
-      <a href="#" className="tmp-badge-2">Projects</a>
+      <Link href="#" className="tmp-badge-2">Projects</Link>
       </div>
       </div>
       </div>

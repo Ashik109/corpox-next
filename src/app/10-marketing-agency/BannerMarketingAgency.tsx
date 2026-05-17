@@ -1,3 +1,4 @@
+import Link from 'next/link'
 const bannerList = [
     "Track your teams progress with mobile app.",
     "Lorem ipsum dolor sit amet consectetur adipisicing.",
@@ -28,7 +29,7 @@ function BannerMarketingAgency() {
                             </ul>
                             <div className="button-group mt--40 mt_sm--20 justify-content-start">
                                 {["Get Started", "Contact Us"].map((label, index) => (
-                                    <a
+                                    <Link
                                         className={`tmp-btn round hover-icon-reverse ${index === 1 ? "btn-border" : ""}`}
                                         href="#"
                                         key={label}
@@ -42,7 +43,7 @@ function BannerMarketingAgency() {
                                                 <i className="feather-arrow-right" />
                                             </span>
                                         </span>
-                                    </a>
+                                    </Link>
                                 ))}
                             </div>
                         </div>
@@ -59,14 +60,14 @@ function BannerMarketingAgency() {
                                         />
                                     </div>
                                     <div className="video-icon">
-                                        <a
+                                        <Link
                                             className="tmp-btn rounded-player popup-video"
                                             href="https://www.youtube.com/watch?v=4jnzf1yj48M"
                                         >
                                             <span>
                                                 <i className="feather-play" />
                                             </span>
-                                        </a>
+                                        </Link>
                                     </div>
                                 </div>
                             </div>

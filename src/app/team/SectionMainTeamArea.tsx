@@ -1,3 +1,4 @@
+import Link from 'next/link'
 function SectionMainTeamArea() {
   return (
     <>
@@ -32,21 +33,21 @@ function SectionMainTeamArea() {
       <span className="location">CO Miego, AD,USA</span>
       </span>
       <ul className="social-icon social-default icon-naked mt--5">
-      <li><a href="https://www.facebook.com/">
+      <li><Link href="https://www.facebook.com/">
       <i className="feather-facebook"></i>
-      </a>
+      </Link>
       </li>
-      <li><a href="https://www.twitter.com">
+      <li><Link href="https://www.twitter.com">
       <i className="feather-twitter"></i>
-      </a>
+      </Link>
       </li>
-      <li><a href="https://www.instagram.com/">
+      <li><Link href="https://www.instagram.com/">
       <i className="feather-instagram"></i>
-      </a>
+      </Link>
       </li>
-      <li><a href="https://www.linkedin.com/">
+      <li><Link href="https://www.linkedin.com/">
       <i className="feather-linkedin"></i>
-      </a>
+      </Link>
       </li>
       </ul>
       </div>
@@ -65,21 +66,21 @@ function SectionMainTeamArea() {
       <span className="location">CO Miego, AD,USA</span>
       </span>
       <ul className="social-icon social-default icon-naked mt--5">
-      <li><a href="https://www.facebook.com/">
+      <li><Link href="https://www.facebook.com/">
       <i className="feather-facebook"></i>
-      </a>
+      </Link>
       </li>
-      <li><a href="https://www.twitter.com">
+      <li><Link href="https://www.twitter.com">
       <i className="feather-twitter"></i>
-      </a>
+      </Link>
       </li>
-      <li><a href="https://www.instagram.com/">
+      <li><Link href="https://www.instagram.com/">
       <i className="feather-instagram"></i>
-      </a>
+      </Link>
       </li>
-      <li><a href="https://www.linkedin.com/">
+      <li><Link href="https://www.linkedin.com/">
       <i className="feather-linkedin"></i>
-      </a>
+      </Link>
       </li>
       </ul>
       </div>
@@ -98,21 +99,21 @@ function SectionMainTeamArea() {
       <span className="location">CO Miego, AD,USA</span>
       </span>
       <ul className="social-icon social-default icon-naked mt--5">
-      <li><a href="https://www.facebook.com/">
+      <li><Link href="https://www.facebook.com/">
       <i className="feather-facebook"></i>
-      </a>
+      </Link>
       </li>
-      <li><a href="https://www.twitter.com">
+      <li><Link href="https://www.twitter.com">
       <i className="feather-twitter"></i>
-      </a>
+      </Link>
       </li>
-      <li><a href="https://www.instagram.com/">
+      <li><Link href="https://www.instagram.com/">
       <i className="feather-instagram"></i>
-      </a>
+      </Link>
       </li>
-      <li><a href="https://www.linkedin.com/">
+      <li><Link href="https://www.linkedin.com/">
       <i className="feather-linkedin"></i>
-      </a>
+      </Link>
       </li>
       </ul>
       </div>
@@ -131,21 +132,21 @@ function SectionMainTeamArea() {
       <span className="location">CO Miego, AD,USA</span>
       </span>
       <ul className="social-icon social-default icon-naked mt--5">
-      <li><a href="https://www.facebook.com/">
+      <li><Link href="https://www.facebook.com/">
       <i className="feather-facebook"></i>
-      </a>
+      </Link>
       </li>
-      <li><a href="https://www.twitter.com">
+      <li><Link href="https://www.twitter.com">
       <i className="feather-twitter"></i>
-      </a>
+      </Link>
       </li>
-      <li><a href="https://www.instagram.com/">
+      <li><Link href="https://www.instagram.com/">
       <i className="feather-instagram"></i>
-      </a>
+      </Link>
       </li>
-      <li><a href="https://www.linkedin.com/">
+      <li><Link href="https://www.linkedin.com/">
       <i className="feather-linkedin"></i>
-      </a>
+      </Link>
       </li>
       </ul>
       </div>
@@ -164,21 +165,21 @@ function SectionMainTeamArea() {
       <span className="location">CO Miego, AD,USA</span>
       </span>
       <ul className="social-icon social-default icon-naked mt--5">
-      <li><a href="https://www.facebook.com/">
+      <li><Link href="https://www.facebook.com/">
       <i className="feather-facebook"></i>
-      </a>
+      </Link>
       </li>
-      <li><a href="https://www.twitter.com">
+      <li><Link href="https://www.twitter.com">
       <i className="feather-twitter"></i>
-      </a>
+      </Link>
       </li>
-      <li><a href="https://www.instagram.com/">
+      <li><Link href="https://www.instagram.com/">
       <i className="feather-instagram"></i>
-      </a>
+      </Link>
       </li>
-      <li><a href="https://www.linkedin.com/">
+      <li><Link href="https://www.linkedin.com/">
       <i className="feather-linkedin"></i>
-      </a>
+      </Link>
       </li>
       </ul>
       </div>
@@ -197,21 +198,21 @@ function SectionMainTeamArea() {
       <span className="location">CO Miego, AD,USA</span>
       </span>
       <ul className="social-icon social-default icon-naked mt--5">
-      <li><a href="https://www.facebook.com/">
+      <li><Link href="https://www.facebook.com/">
       <i className="feather-facebook"></i>
-      </a>
+      </Link>
       </li>
-      <li><a href="https://www.twitter.com">
+      <li><Link href="https://www.twitter.com">
       <i className="feather-twitter"></i>
-      </a>
+      </Link>
       </li>
-      <li><a href="https://www.instagram.com/">
+      <li><Link href="https://www.instagram.com/">
       <i className="feather-instagram"></i>
-      </a>
+      </Link>
       </li>
-      <li><a href="https://www.linkedin.com/">
+      <li><Link href="https://www.linkedin.com/">
       <i className="feather-linkedin"></i>
-      </a>
+      </Link>
       </li>
       </ul>
       </div>
@@ -230,21 +231,21 @@ function SectionMainTeamArea() {
       <span className="location">CO Miego, AD,USA</span>
       </span>
       <ul className="social-icon social-default icon-naked mt--5">
-      <li><a href="https://www.facebook.com/">
+      <li><Link href="https://www.facebook.com/">
       <i className="feather-facebook"></i>
-      </a>
+      </Link>
       </li>
-      <li><a href="https://www.twitter.com">
+      <li><Link href="https://www.twitter.com">
       <i className="feather-twitter"></i>
-      </a>
+      </Link>
       </li>
-      <li><a href="https://www.instagram.com/">
+      <li><Link href="https://www.instagram.com/">
       <i className="feather-instagram"></i>
-      </a>
+      </Link>
       </li>
-      <li><a href="https://www.linkedin.com/">
+      <li><Link href="https://www.linkedin.com/">
       <i className="feather-linkedin"></i>
-      </a>
+      </Link>
       </li>
       </ul>
       </div>
@@ -263,21 +264,21 @@ function SectionMainTeamArea() {
       <span className="location">CO Miego, AD,USA</span>
       </span>
       <ul className="social-icon social-default icon-naked mt--5">
-      <li><a href="https://www.facebook.com/">
+      <li><Link href="https://www.facebook.com/">
       <i className="feather-facebook"></i>
-      </a>
+      </Link>
       </li>
-      <li><a href="https://www.twitter.com">
+      <li><Link href="https://www.twitter.com">
       <i className="feather-twitter"></i>
-      </a>
+      </Link>
       </li>
-      <li><a href="https://www.instagram.com/">
+      <li><Link href="https://www.instagram.com/">
       <i className="feather-instagram"></i>
-      </a>
+      </Link>
       </li>
-      <li><a href="https://www.linkedin.com/">
+      <li><Link href="https://www.linkedin.com/">
       <i className="feather-linkedin"></i>
-      </a>
+      </Link>
       </li>
       </ul>
       </div>

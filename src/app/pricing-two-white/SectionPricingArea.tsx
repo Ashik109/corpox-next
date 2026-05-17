@@ -1,3 +1,4 @@
+import Link from 'next/link'
 function SectionPricingArea() {
   return (
     <>
@@ -40,7 +41,7 @@ function SectionPricingArea() {
       <li>Work in business days, no weekend.</li>
       <li>Support 6 months</li>
       </ul>
-      <a href="" className="tmp-btn btn-primary w-100">pick this package</a>
+      <Link href="" className="tmp-btn btn-primary w-100">pick this package</Link>
       </div>
       </div>
       <div className="col-md-6">
@@ -63,13 +64,13 @@ function SectionPricingArea() {
       <li>Your project alway be priority</li>
       <li>Customer care gifts</li>
       </ul>
-      <a href="" className="tmp-btn btn-primary w-100">pick this package</a>
+      <Link href="" className="tmp-btn btn-primary w-100">pick this package</Link>
       </div>
       </div>
       </div>
       <p className="info text-center">
                                       Don't find any package match with your plan!<br />
-              Want to setup a new tailor-made package for only you?. <a href="/contact">Contact Us</a>
+              Want to setup a new tailor-made package for only you?. <Link href="/contact">Contact Us</Link>
       </p>
       </div>
       </div>

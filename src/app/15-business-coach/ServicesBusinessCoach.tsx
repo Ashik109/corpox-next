@@ -1,3 +1,4 @@
+import Link from 'next/link'
 const services = [
     { title: "Awarded Design", image: "galery-image-01.png", delay: 0 },
     { title: "Design & Creative", image: "galery-image-02.png", delay: 100 },
@@ -30,14 +31,14 @@ function ServicesBusinessCoach() {
                                 <div className="inner">
                                     <div className="content">
                                         <h4 className="title mb--20">
-                                            <a href="/service/management-leadership">{service.title}</a>
+                                            <Link href="/service/management-leadership">{service.title}</Link>
                                         </h4>
                                     </div>
                                     <div className="image invers-anime">
                                         <img src={`/assets/images/services/${service.image}`} alt="card Images" />
                                     </div>
                                     <div className="discover-btn">
-                                        <a className="tmp-btn mt--20 round btn-small btn-border hover-icon-reverse" href="/service/financial-growth">
+                                        <Link className="tmp-btn mt--20 round btn-small btn-border hover-icon-reverse" href="/service/financial-growth">
                                             <span className="icon-reverse-wrapper">
                                                 <span className="btn-text">Discover services</span>
                                                 <span className="btn-icon">
@@ -47,7 +48,7 @@ function ServicesBusinessCoach() {
                                                     <i className="feather-arrow-right" />
                                                 </span>
                                             </span>
-                                        </a>
+                                        </Link>
                                     </div>
                                 </div>
                             </div>

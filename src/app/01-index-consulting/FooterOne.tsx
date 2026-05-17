@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import React from 'react'
 
 interface FooterOneProps {
@@ -17,17 +18,17 @@ function FooterOne({ className = ""}: FooterOneProps) {
                                 <div className="footer-message-and-form">
                                     <p className="colophon">
                                         Corpox is powered by{" "}
-                                        <a
+                                        <Link
                                             target="_blank"
                                             href="https://themeforest.net/user/inversweb"
                                         >
                                             InversWeb
-                                        </a>
+                                        </Link>
                                         .
                                     </p>
                                     <div className="footer-form-wrap">
                                         <h4>
-                                            Keep up to date on <a href="">InversWeb</a>
+                                            Keep up to date on <Link href="">InversWeb</Link>
                                         </h4>
                                         <p>with our hand-crafted newsletter</p>
                                         <form id="#" action="#">
@@ -46,7 +47,7 @@ function FooterOne({ className = ""}: FooterOneProps) {
                             <div className="col-lg-4 col-md-6 col-sm-6 col-12">
                                 <div className="tmp-footer-widget">
                                     <div className="logo">
-                                        <a href="/">
+                                        <Link href="/">
                                             <img
                                                 className="logo-light"
                                                 src="/assets/images/logo/logo.png"
@@ -57,7 +58,7 @@ function FooterOne({ className = ""}: FooterOneProps) {
                                                 src="/assets/images/logo/logo-dark.png"
                                                 alt="Corporate Logo"
                                             />
-                                        </a>
+                                        </Link>
                                     </div>
                                     <p className="subtitle mt--30">
                                         If you want to create a corporate template you can purshace now
@@ -71,16 +72,16 @@ function FooterOne({ className = ""}: FooterOneProps) {
                                     <div className="inner">
                                         <ul className="footer-link link-hover">
                                             <li>
-                                                <a href="/pricing">Pricing</a>
+                                                <Link href="/pricing">Pricing</Link>
                                             </li>
                                             <li>
-                                                <a href="/tab">Tab Styles</a>
+                                                <Link href="/tab">Tab Styles</Link>
                                             </li>
                                             <li>
-                                                <a href="/service/management-leadership">Service</a>
+                                                <Link href="/service">Service</Link>
                                             </li>
                                             <li>
-                                                <a href="/social-share">Social</a>
+                                                <Link href="/social-share">Social</Link>
                                             </li>
                                         </ul>
                                     </div>
@@ -92,16 +93,16 @@ function FooterOne({ className = ""}: FooterOneProps) {
                                     <div className="inner">
                                         <ul className="footer-link link-hover">
                                             <li>
-                                                <a href="/team/benjamin-taylor">Team</a>
+                                                <Link href="/team">Team</Link>
                                             </li>
                                             <li>
-                                                <a href="/testimonial">Testimonial</a>
+                                                <Link href="/testimonial">Testimonial</Link>
                                             </li>
                                             <li>
-                                                <a href="/service/financial-growth">Service</a>
+                                                <Link href="/service">Service</Link>
                                             </li>
                                             <li>
-                                                <a href="/timeline">Timeline</a>
+                                                <Link href="/timeline">Timeline</Link>
                                             </li>
                                         </ul>
                                     </div>
@@ -116,24 +117,24 @@ function FooterOne({ className = ""}: FooterOneProps) {
                                         </h6>
                                         <ul className="social-icon social-default justify-content-start">
                                             <li>
-                                                <a href="https://www.facebook.com/">
+                                                <Link href="https://www.facebook.com/">
                                                     <i className="feather-facebook" />
-                                                </a>
+                                                </Link>
                                             </li>
                                             <li>
-                                                <a href="https://www.twitter.com">
+                                                <Link href="https://www.twitter.com">
                                                     <i className="feather-twitter" />
-                                                </a>
+                                                </Link>
                                             </li>
                                             <li>
-                                                <a href="https://www.instagram.com/">
+                                                <Link href="https://www.instagram.com/">
                                                     <i className="feather-instagram" />
-                                                </a>
+                                                </Link>
                                             </li>
                                             <li>
-                                                <a href="https://www.linkdin.com/">
+                                                <Link href="https://www.linkdin.com/">
                                                     <i className="feather-linkedin" />
-                                                </a>
+                                                </Link>
                                             </li>
                                         </ul>
                                     </div>
@@ -151,13 +152,13 @@ function FooterOne({ className = ""}: FooterOneProps) {
                                 <div className="copyright-left">
                                     <ul className="ft-menu link-hover">
                                         <li>
-                                            <a href="/privacy-policy">Privacy Policy</a>
+                                            <Link href="/privacy-policy">Privacy Policy</Link>
                                         </li>
                                         <li>
-                                            <a href="#">Terms And Condition</a>
+                                            <Link href="#">Terms And Condition</Link>
                                         </li>
                                         <li>
-                                            <a href="/contact">Contact Us</a>
+                                            <Link href="/contact">Contact Us</Link>
                                         </li>
                                     </ul>
                                 </div>

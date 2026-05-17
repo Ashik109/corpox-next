@@ -1,15 +1,11 @@
-import SectionBreadcarumbArea from './SectionBreadcarumbArea'
-import SectionSliderArea from './SectionSliderArea'
-import SectionSeperatorArea from './SectionSeperatorArea'
-import SectionSliderArea2 from './SectionSliderArea2'
+import BannerOne from '../01-index-consulting/BannerOne'
+import BannerTwo from '../02-index-business-consulting-2/BannerTwo'
 
 function BodyContent() {
   return (
     <>
-      <SectionBreadcarumbArea />
-      <SectionSliderArea />
-      <SectionSeperatorArea />
-      <SectionSliderArea2 />
+      <BannerTwo />
+      <BannerOne />
     </>
   )
 }

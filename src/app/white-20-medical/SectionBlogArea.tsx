@@ -1,3 +1,4 @@
+import Link from 'next/link'
 function SectionBlogArea() {
   return (
     <>
@@ -27,16 +28,16 @@ function SectionBlogArea() {
       <div className="tmp-card box-card-style-default tmponhover">
       <div className="inner">
       <div className="thumbnail invers-anime">
-      <a className="image" href="/blog-details">
+      <Link className="image" href="/blog-details">
       <img loading="lazy" className="w-100" src="/assets/images/blog/06.webp" alt="Blog Image" />
-      </a>
+      </Link>
       <span className="tag-news">Healthcare</span>
       </div>
       <div className="content">
       <ul className="inversweb-meta-list">
       <li>
       <span><i className="feather-user"></i></span>
-      <a href="#">Dr. John Care</a>
+      <Link href="#">Dr. John Care</Link>
       </li>
       <li className="separator">-</li>
       <li>15 Dec 2025</li>
@@ -46,13 +47,13 @@ function SectionBlogArea() {
       </li>
       </ul>
       <h4 className="title">
-      <a href="/blog-details">How to Improve Patient Care with Modern Health care Medical service</a>
+      <Link href="/blog-details">How to Improve Patient Care with Modern Health care Medical service</Link>
       </h4>
       <p className="descriptiion">
                                               It is an established fact that quality healthcare improves patient trust.
                                           </p>
       <div className="read-more-btn">
-      <a className="tmp-btn btn-border" href="/blog-details"><span>Read More</span></a>
+      <Link className="tmp-btn btn-border" href="/blog-details"><span>Read More</span></Link>
       </div>
       </div>
       </div>
@@ -65,7 +66,7 @@ function SectionBlogArea() {
       <ul className="inversweb-meta-list">
       <li>
       <span><i className="feather-user"></i></span>
-      <a href="#">Dr. Kalvin Ross</a>
+      <Link href="#">Dr. Kalvin Ross</Link>
       </li>
       <li className="separator">-</li>
       <li>28 Dec 2025</li>
@@ -75,19 +76,19 @@ function SectionBlogArea() {
       </li>
       </ul>
       <h4 className="title">
-      <a href="/blog-details">Hospital Management Systems for Better Patient Care</a>
+      <Link href="/blog-details">Hospital Management Systems for Better Patient Care</Link>
       </h4>
       <p className="descriptiion">
                                               Effective healthcare systems are built through planning and expertise.
                                           </p>
       <div className="read-more-btn">
-      <a className="tmp-btn btn-border" href="/blog-details"><span>Read More</span></a>
+      <Link className="tmp-btn btn-border" href="/blog-details"><span>Read More</span></Link>
       </div>
       </div>
       <div className="thumbnail invers-anime">
-      <a className="image" href="/blog-details">
+      <Link className="image" href="/blog-details">
       <img loading="lazy" className="w-100" src="/assets/images/blog/07.webp" alt="Blog Image" />
-      </a>
+      </Link>
       <span className="tag-news">Medical</span>
       </div>
       </div>
@@ -97,21 +98,21 @@ function SectionBlogArea() {
       <div className="tmp-card box-card-style-default tmponhover">
       <div className="inner">
       <div className="thumbnail invers-anime">
-      <a className="image" href="/blog-details">
+      <Link className="image" href="/blog-details">
       <img loading="lazy" className="w-100" src="/assets/images/blog/08.webp" alt="Blog Image" />
-      </a>
+      </Link>
       <span className="tag-news">Technology</span>
       <div className="video-icon">
-      <a className="tmp-btn btn-small rounded-player popup-video" href="https://www.youtube.com/watch?v=4jnzf1yj48M">
+      <Link className="tmp-btn btn-small rounded-player popup-video" href="https://www.youtube.com/watch?v=4jnzf1yj48M">
       <span><i className="feather-play"></i></span>
-      </a>
+      </Link>
       </div>
       </div>
       <div className="content">
       <ul className="inversweb-meta-list">
       <li>
       <span><i className="feather-user"></i></span>
-      <a href="#">Dr. Kalvin Ross</a>
+      <Link href="#">Dr. Kalvin Ross</Link>
       </li>
       <li className="separator">-</li>
       <li>12 Dec 2025</li>
@@ -121,13 +122,13 @@ function SectionBlogArea() {
       </li>
       </ul>
       <h4 className="title">
-      <a href="/blog-details">Medical Technology Advancing Modern Patient Treatment</a>
+      <Link href="/blog-details">Medical Technology Advancing Modern Patient Treatment</Link>
       </h4>
       <p className="descriptiion">
                                               Modern medical technology plays a key role in patient recovery.
                                           </p>
       <div className="read-more-btn">
-      <a className="tmp-btn btn-border" href="/blog-details"><span>Read More</span></a>
+      <Link className="tmp-btn btn-border" href="/blog-details"><span>Read More</span></Link>
       </div>
       </div>
       </div>

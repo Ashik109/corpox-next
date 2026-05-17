@@ -1,4 +1,6 @@
 'use client'
+import Link from 'next/link'
+
 import { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -69,21 +71,21 @@ function TeamTwo() {
                     <ul className="social-icon social-default icon-naked justify-content-start">
 
                       <li data-aos="fade-up" data-aos-delay="200">
-                        <a href="https://www.facebook.com/">
+                        <Link href="https://www.facebook.com/">
                           <i className="feather-facebook"></i>
-                        </a>
+                        </Link>
                       </li>
 
                       <li data-aos="fade-up" data-aos-delay="300">
-                        <a href="https://www.twitter.com">
+                        <Link href="https://www.twitter.com">
                           <i className="feather-twitter"></i>
-                        </a>
+                        </Link>
                       </li>
 
                       <li data-aos="fade-up" data-aos-delay="400">
-                        <a href="https://www.instagram.com/">
+                        <Link href="https://www.instagram.com/">
                           <i className="feather-instagram"></i>
-                        </a>
+                        </Link>
                       </li>
 
                     </ul>
@@ -118,21 +120,21 @@ function TeamTwo() {
                     <ul className="social-icon social-default icon-naked justify-content-start">
 
                       <li data-aos="fade-up" data-aos-delay="200">
-                        <a href="https://www.facebook.com/">
+                        <Link href="https://www.facebook.com/">
                           <i className="feather-facebook"></i>
-                        </a>
+                        </Link>
                       </li>
 
                       <li data-aos="fade-up" data-aos-delay="300">
-                        <a href="https://www.twitter.com">
+                        <Link href="https://www.twitter.com">
                           <i className="feather-twitter"></i>
-                        </a>
+                        </Link>
                       </li>
 
                       <li data-aos="fade-up" data-aos-delay="400">
-                        <a href="https://www.instagram.com/">
+                        <Link href="https://www.instagram.com/">
                           <i className="feather-instagram"></i>
-                        </a>
+                        </Link>
                       </li>
 
                     </ul>
@@ -167,21 +169,21 @@ function TeamTwo() {
                     <ul className="social-icon social-default icon-naked justify-content-start">
 
                       <li data-aos="fade-up" data-aos-delay="200">
-                        <a href="https://www.facebook.com/">
+                        <Link href="https://www.facebook.com/">
                           <i className="feather-facebook"></i>
-                        </a>
+                        </Link>
                       </li>
 
                       <li data-aos="fade-up" data-aos-delay="300">
-                        <a href="https://www.twitter.com">
+                        <Link href="https://www.twitter.com">
                           <i className="feather-twitter"></i>
-                        </a>
+                        </Link>
                       </li>
 
                       <li data-aos="fade-up" data-aos-delay="400">
-                        <a href="https://www.instagram.com/">
+                        <Link href="https://www.instagram.com/">
                           <i className="feather-instagram"></i>
-                        </a>
+                        </Link>
                       </li>
 
                     </ul>
@@ -216,21 +218,21 @@ function TeamTwo() {
                     <ul className="social-icon social-default icon-naked justify-content-start">
 
                       <li data-aos="fade-up" data-aos-delay="200">
-                        <a href="https://www.facebook.com/">
+                        <Link href="https://www.facebook.com/">
                           <i className="feather-facebook"></i>
-                        </a>
+                        </Link>
                       </li>
 
                       <li data-aos="fade-up" data-aos-delay="300">
-                        <a href="https://www.twitter.com">
+                        <Link href="https://www.twitter.com">
                           <i className="feather-twitter"></i>
-                        </a>
+                        </Link>
                       </li>
 
                       <li data-aos="fade-up" data-aos-delay="400">
-                        <a href="https://www.instagram.com/">
+                        <Link href="https://www.instagram.com/">
                           <i className="feather-instagram"></i>
-                        </a>
+                        </Link>
                       </li>
 
                     </ul>

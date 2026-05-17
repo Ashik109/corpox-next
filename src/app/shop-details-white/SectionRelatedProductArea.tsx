@@ -1,3 +1,4 @@
+import Link from 'next/link'
 function SectionRelatedProductArea() {
   return (
     <>
@@ -25,13 +26,13 @@ function SectionRelatedProductArea() {
       <img className="main" src="/assets/images/shop/01.webp" alt="" />
       <span className="tag new">New</span>
       <div className="popup-area">
-      <a href="#" className="wishlist"><img src="/assets/images/shop/heart.svg" alt="" /></a>
-      <a href="#" className="repeat"><img src="/assets/images/shop/repeat.svg" alt="" /></a>
-      <a href="#" className="view"><img src="/assets/images/shop/eye.svg" alt="" /></a>
+      <Link href="#" className="wishlist"><img src="/assets/images/shop/heart.svg" alt="" /></Link>
+      <Link href="#" className="repeat"><img src="/assets/images/shop/repeat.svg" alt="" /></Link>
+      <Link href="#" className="view"><img src="/assets/images/shop/eye.svg" alt="" /></Link>
       </div>
       </div>
       <div className="content">
-      <h6 className="title"><a href="/shop-details-white">Solar Panel Boards stop&nbsp;</a></h6>
+      <h6 className="title"><Link href="/shop-details-white">Solar Panel Boards stop&nbsp;</Link></h6>
       <p className="price">$99 <span>$390</span></p>
       <div className="star-rating">
       <ul>
@@ -44,7 +45,7 @@ function SectionRelatedProductArea() {
       <p className="stock">In Stock: 42</p>
       </div>
       <div className="button-area">
-      <a href="javascript:void(0)" className="tmp-btn cart-btn btn-primary">Add To Cart <i className="feather-shopping-cart"></i></a>
+      <Link href="javascript:void(0)" className="tmp-btn cart-btn btn-primary">Add To Cart <i className="feather-shopping-cart"></i></Link>
       </div>
       </div>
       </div>
@@ -55,13 +56,13 @@ function SectionRelatedProductArea() {
       <img className="main" src="/assets/images/shop/02.webp" alt="" />
       <span className="tag new">New</span>
       <div className="popup-area">
-      <a href="#" className="wishlist"><img src="/assets/images/shop/heart.svg" alt="" /></a>
-      <a href="#" className="repeat"><img src="/assets/images/shop/repeat.svg" alt="" /></a>
-      <a href="#" className="view"><img src="/assets/images/shop/eye.svg" alt="" /></a>
+      <Link href="#" className="wishlist"><img src="/assets/images/shop/heart.svg" alt="" /></Link>
+      <Link href="#" className="repeat"><img src="/assets/images/shop/repeat.svg" alt="" /></Link>
+      <Link href="#" className="view"><img src="/assets/images/shop/eye.svg" alt="" /></Link>
       </div>
       </div>
       <div className="content">
-      <h6 className="title"><a href="/shop-details-white">Picker Panel Boards stop&nbsp;</a></h6>
+      <h6 className="title"><Link href="/shop-details-white">Picker Panel Boards stop&nbsp;</Link></h6>
       <p className="price">$99 <span>$390</span></p>
       <div className="star-rating">
       <ul>
@@ -74,7 +75,7 @@ function SectionRelatedProductArea() {
       <p className="stock">In Stock: 42</p>
       </div>
       <div className="button-area">
-      <a href="javascript:void(0)" className="tmp-btn cart-btn btn-primary">Add To Cart <i className="feather-shopping-cart"></i></a>
+      <Link href="javascript:void(0)" className="tmp-btn cart-btn btn-primary">Add To Cart <i className="feather-shopping-cart"></i></Link>
       </div>
       </div>
       </div>
@@ -85,13 +86,13 @@ function SectionRelatedProductArea() {
       <img className="main" src="/assets/images/shop/03.webp" alt="" />
       <span className="tag new">New</span>
       <div className="popup-area">
-      <a href="#" className="wishlist"><img src="/assets/images/shop/heart.svg" alt="" /></a>
-      <a href="#" className="repeat"><img src="/assets/images/shop/repeat.svg" alt="" /></a>
-      <a href="#" className="view"><img src="/assets/images/shop/eye.svg" alt="" /></a>
+      <Link href="#" className="wishlist"><img src="/assets/images/shop/heart.svg" alt="" /></Link>
+      <Link href="#" className="repeat"><img src="/assets/images/shop/repeat.svg" alt="" /></Link>
+      <Link href="#" className="view"><img src="/assets/images/shop/eye.svg" alt="" /></Link>
       </div>
       </div>
       <div className="content">
-      <h6 className="title"><a href="/shop-details-white">Boost Panel Boards stop&nbsp;</a></h6>
+      <h6 className="title"><Link href="/shop-details-white">Boost Panel Boards stop&nbsp;</Link></h6>
       <p className="price">$99 <span>$390</span></p>
       <div className="star-rating">
       <ul>
@@ -104,7 +105,7 @@ function SectionRelatedProductArea() {
       <p className="stock">In Stock: 42</p>
       </div>
       <div className="button-area">
-      <a href="javascript:void(0)" className="tmp-btn cart-btn btn-primary">Add To Cart <i className="feather-shopping-cart"></i></a>
+      <Link href="javascript:void(0)" className="tmp-btn cart-btn btn-primary">Add To Cart <i className="feather-shopping-cart"></i></Link>
       </div>
       </div>
       </div>

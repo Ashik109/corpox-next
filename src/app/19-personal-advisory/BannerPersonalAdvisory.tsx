@@ -1,3 +1,4 @@
+import Link from 'next/link'
 function BannerPersonalAdvisory() {
     return (
         <div className="banner-slider-it-solution personal-advisory tmp-section-gap shape-move">
@@ -10,9 +11,9 @@ function BannerPersonalAdvisory() {
                                 Business ideas &amp; advisory, ready <br /> for you
                             </h1>
                             <p className="disc">Proactively coordinate quality quality vectors vis-a-vis supply chains. Quickly engage client-centric web services.</p>
-                            <a className="tmp-btn btn-large round" href="/contact">
+                            <Link className="tmp-btn btn-large round" href="/contact">
                                 REQUEST A QUOTE
-                            </a>
+                            </Link>
                         </div>
                     </div>
                     <div className="col-lg-6 pl--80 pl_md--10 pl_sm--10 order-lg-2 order-md-1 order-sm-1 order-1">

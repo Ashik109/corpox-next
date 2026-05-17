@@ -1,3 +1,4 @@
+import Link from 'next/link'
 function SectionSrartAboutArea3() {
   return (
     <>
@@ -10,9 +11,9 @@ function SectionSrartAboutArea3() {
       <div className="overlay-content">
       <div className="thumbnail" data-aos="fade-up"><img className="radius-small rts-reveal-image-one" src="/assets/images/about/contact-image.png" alt="Corporate Image" /></div>
       <div className="video-icon">
-      <a className="tmp-btn rounded-player popup-video" href="https://www.youtube.com/watch?v=4jnzf1yj48M">
+      <Link className="tmp-btn rounded-player popup-video" href="https://www.youtube.com/watch?v=4jnzf1yj48M">
       <span><i className="feather-play"></i></span>
-      </a>
+      </Link>
       </div>
       </div>
       </div>
@@ -53,7 +54,7 @@ function SectionSrartAboutArea3() {
       </li>
       </ul>
       <div className="about-btn mt--30">
-      <a className="tmp-btn round text-center" href="/about">About Our Corpox</a>
+      <Link className="tmp-btn round text-center" href="/about">About Our Corpox</Link>
       </div>
       </div>
       </div>

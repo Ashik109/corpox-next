@@ -1,3 +1,4 @@
+import Link from 'next/link'
 const members = [
     ["team-04.jpg", "James Johnson", "HR Manager"],
     ["team-05.jpg", "David Miller", "CEO Corpox"],
@@ -29,28 +30,28 @@ function TeamITSolution() {
                         <div className="col-xl-3 col-lg-4 col-md-6" key={`${image}-${role}`}>
                             <div className="team-wrapper5 tmponhover">
                                 <div className="image-area">
-                                    <a href="/team/benjamin-taylor">
+                                    <Link href="/team/benjamin-taylor">
                                         <img src={`/assets/images/team/${image}`} alt="" />
-                                    </a>
+                                    </Link>
                                 </div>
                                 <div className="content-area">
                                     <div className="left">
                                         <h6 className="title">
-                                            <a href="/team/monsur-mia">{name}</a>
+                                            <Link href="/team/monsur-mia">{name}</Link>
                                         </h6>
                                         <p className="designation">{role}</p>
                                     </div>
-                                    <a href="#" className="share">
+                                    <Link href="#" className="share">
                                         <i className="feather-share-2" />
-                                    </a>
+                                    </Link>
                                 </div>
                                 <div className="social-wrapper">
                                     <ul>
                                         {["facebook", "twitter", "youtube"].map((icon) => (
                                             <li key={icon}>
-                                                <a href="#">
+                                                <Link href="#">
                                                     <i className={`feather-${icon}`} />
-                                                </a>
+                                                </Link>
                                             </li>
                                         ))}
                                     </ul>

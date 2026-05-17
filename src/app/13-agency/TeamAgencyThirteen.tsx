@@ -1,3 +1,4 @@
+import Link from 'next/link'
 const team = [
     ["team-04.jpg", "Sr Janen Sara", "Sr Product Designer"],
     ["team-05.jpg", "John Deon", "App Developer"],
@@ -38,9 +39,9 @@ function TeamAgencyThirteen() {
                                         <ul className="social-icon social-default icon-naked justify-content-start">
                                             {["feather-facebook", "feather-twitter", "feather-instagram"].map((icon, socialIndex) => (
                                                 <li data-aos="fade-up" data-aos-duration="400" data-aos-delay={200 + socialIndex * 100} key={icon}>
-                                                    <a href="#">
+                                                    <Link href="#">
                                                         <i className={icon} />
-                                                    </a>
+                                                    </Link>
                                                 </li>
                                             ))}
                                         </ul>

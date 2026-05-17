@@ -1,4 +1,6 @@
 'use client'
+import Link from 'next/link'
+
 import React, { useEffect } from 'react'
 import AOS from "aos"
 import "aos/dist/aos.css"
@@ -117,9 +119,9 @@ function AboutSix() {
                                     </div>
                                     <div className="content">
                                         <h4 className="title">
-                                            <a href="/service/management-leadership">
+                                            <Link href="/service/management-leadership">
                                                 Cloud based, secured software
-                                            </a>
+                                            </Link>
                                         </h4>
                                     </div>
                                 </div>
@@ -136,7 +138,7 @@ function AboutSix() {
                                     </div>
                                     <div className="content">
                                         <h4 className="title">
-                                            <a href="/service/financial-growth">Web Application, software</a>
+                                            <Link href="/service/financial-growth">Web Application, software</Link>
                                         </h4>
                                     </div>
                                 </div>
@@ -153,7 +155,7 @@ function AboutSix() {
                                     </div>
                                     <div className="content">
                                         <h4 className="title">
-                                            <a href="/service/digital-transformation">App based, secured software</a>
+                                            <Link href="/service/digital-transformation">App based, secured software</Link>
                                         </h4>
                                     </div>
                                 </div>

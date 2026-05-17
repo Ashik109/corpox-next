@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import React from 'react'
 
 function ServicesFour() {
@@ -26,7 +27,7 @@ function ServicesFour() {
                     <div className="row g-5 service-wrapper mt--10">
                         <div className="col-lg-12">
                             <div className="inversweb-service-main-wrapper-list">
-                                <a
+                                <Link
                                     href="/service/management-leadership"
                                     className="single-service-wrapper tmponhover"
                                 >
@@ -36,8 +37,8 @@ function ServicesFour() {
                                     <div className="content">
                                         <h5 className="title">Business Strategy Planning</h5>
                                     </div>
-                                </a>
-                                <a
+                                </Link>
+                                <Link
                                     href="/service/financial-growth"
                                     className="single-service-wrapper tmponhover"
                                 >
@@ -47,8 +48,8 @@ function ServicesFour() {
                                     <div className="content">
                                         <h5 className="title">Executive Coaching Programs</h5>
                                     </div>
-                                </a>
-                                <a
+                                </Link>
+                                <Link
                                     href="/service/digital-transformation"
                                     className="single-service-wrapper tmponhover"
                                 >
@@ -58,8 +59,8 @@ function ServicesFour() {
                                     <div className="content">
                                         <h5 className="title">Digital Marketing Solutions</h5>
                                     </div>
-                                </a>
-                                <a
+                                </Link>
+                                <Link
                                     href="/service/management-leadership"
                                     className="single-service-wrapper tmponhover"
                                 >
@@ -69,8 +70,8 @@ function ServicesFour() {
                                     <div className="content">
                                         <h5 className="title">Financial Growth Advisory</h5>
                                     </div>
-                                </a>
-                                <a
+                                </Link>
+                                <Link
                                     href="/service/financial-growth"
                                     className="single-service-wrapper tmponhover"
                                 >
@@ -80,8 +81,8 @@ function ServicesFour() {
                                     <div className="content">
                                         <h5 className="title">Financial Advisory</h5>
                                     </div>
-                                </a>
-                                <a
+                                </Link>
+                                <Link
                                     href="/service/digital-transformation"
                                     className="single-service-wrapper tmponhover"
                                 >
@@ -91,8 +92,8 @@ function ServicesFour() {
                                     <div className="content">
                                         <h5 className="title">Risk Management Consulting</h5>
                                     </div>
-                                </a>
-                                <a
+                                </Link>
+                                <Link
                                     href="/service/management-leadership"
                                     className="single-service-wrapper tmponhover"
                                 >
@@ -102,8 +103,8 @@ function ServicesFour() {
                                     <div className="content">
                                         <h5 className="title">Technology Implementation Support</h5>
                                     </div>
-                                </a>
-                                <a
+                                </Link>
+                                <Link
                                     href="/service/management-leadership"
                                     className="single-service-wrapper tmponhover"
                                 >
@@ -113,7 +114,7 @@ function ServicesFour() {
                                     <div className="content">
                                         <h5 className="title">Retail Operations Consulting</h5>
                                     </div>
-                                </a>
+                                </Link>
                             </div>
                         </div>
                     </div>

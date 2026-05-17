@@ -23,9 +23,9 @@ function HeaderMedical() {
                         <div className="col-lg-4 col-md-12 col-12">
                             <div className="header-left">
                                 <p>
-                                    <a href="#">
+                                    <Link href="#">
                                         Discover the most advanced template <i className="feather-chevron-right" />
-                                    </a>
+                                    </Link>
                                 </p>
                             </div>
                         </div>
@@ -39,7 +39,7 @@ function HeaderMedical() {
                                     <p>
                                         <i className="feather-phone" />
                                         <span>
-                                            <a href="tel:+0698682322">+06 98 68 23 22</a>
+                                            <Link href="tel:+0698682322">+06 98 68 23 22</Link>
                                         </span>
                                     </p>
                                 </div>
@@ -47,9 +47,9 @@ function HeaderMedical() {
                                     <ul className="social-icon social-default icon-naked">
                                         {["facebook", "twitter", "instagram", "linkedin"].map((icon) => (
                                             <li key={icon}>
-                                                <a href={`https://www.${icon}.com/`}>
+                                                <Link href={`https://www.${icon}.com/`}>
                                                     <i className={`feather-${icon}`} />
-                                                </a>
+                                                </Link>
                                             </li>
                                         ))}
                                     </ul>

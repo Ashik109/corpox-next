@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import BusinessCoachOdometer from "./BusinessCoachOdometer";
 
 const features = [
@@ -26,9 +27,9 @@ function ProfileShare() {
     return (
         <div className="profile-share justify-content-start">
             {["tooltip-01.png", "tooltip-02.png", "tooltip-03.png"].map((image, index) => (
-                <a href="#" className="avatar" data-tooltip={["Mark JOrdan", "Mark", "Jordan"][index]} key={image}>
+                <Link href="#" className="avatar" data-tooltip={["Mark JOrdan", "Mark", "Jordan"][index]} key={image}>
                     <img src={`/assets/images/testimonial/${image}`} alt="education" />
-                </a>
+                </Link>
             ))}
         </div>
     );
@@ -47,11 +48,11 @@ function AboutBusinessCoach() {
                             <div className="single-thumbnail invers-anime mt--80">
                                 <img src="/assets/images/about/02.webp" alt="about" />
                                 <div className="video-icon">
-                                    <a className="tmp-btn rounded-player popup-video" href="/assets/images/video/01.mp4">
+                                    <Link className="tmp-btn rounded-player popup-video" href="/assets/images/video/01.mp4">
                                         <span>
                                             <i className="feather-play" />
                                         </span>
-                                    </a>
+                                    </Link>
                                 </div>
                             </div>
                             <div className="absolute-rating-area images-left-right-float image">
@@ -89,9 +90,9 @@ function AboutBusinessCoach() {
                                     ))}
                                 </ul>
                                 <div className="about-btn mt--30">
-                                    <a className="tmp-btn round text-center" href="#">
+                                    <Link className="tmp-btn round text-center" href="#">
                                         About Our Corpox
-                                    </a>
+                                    </Link>
                                 </div>
                             </div>
                         </div>

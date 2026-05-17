@@ -1,4 +1,6 @@
 "use client";
+import Link from 'next/link'
+
 
 import { useMemo, useState } from "react";
 
@@ -153,33 +155,33 @@ function PortfolioCreativeAgency() {
                                         <div className="inner">
                                             <div className="thumbnail">
                                                 <figure className="card-image">
-                                                    <a href="/portfolio/brand-refresh-venture">
+                                                    <Link href="/portfolio/brand-refresh-venture">
                                                         <img src={project.image} alt="Portfolio-01" />
-                                                    </a>
+                                                    </Link>
                                                     {project.video && (
                                                         <div className="video-icon">
-                                                            <a
+                                                            <Link
                                                                 className="tmp-btn btn-small rounded-player popup-video"
                                                                 href="https://www.youtube.com/watch?v=4jnzf1yj48M"
                                                             >
                                                                 <span>
                                                                     <i className="feather-play" />
                                                                 </span>
-                                                            </a>
+                                                            </Link>
                                                         </div>
                                                     )}
                                                 </figure>
-                                                <a className="tmp-overlay" href="/portfolio/analytics-platform" />
+                                                <Link className="tmp-overlay" href="/portfolio/analytics-platform" />
                                             </div>
                                             <div className="content">
                                                 <h5 className="title mb--20">
-                                                    <a href="/portfolio/field-service-modernization">{project.title}</a>
+                                                    <Link href="/portfolio/field-service-modernization">{project.title}</Link>
                                                 </h5>
                                                 <div className="tmp-badge-group">
                                                     {project.badges.map((badge) => (
-                                                        <a href="#" className="tmp-badge-2" key={badge}>
+                                                        <Link href="#" className="tmp-badge-2" key={badge}>
                                                             {badge}
-                                                        </a>
+                                                        </Link>
                                                     ))}
                                                 </div>
                                             </div>

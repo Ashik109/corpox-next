@@ -1,3 +1,4 @@
+import Link from 'next/link'
 function SectionErrorAreaArea() {
   return (
     <>
@@ -14,13 +15,13 @@ function SectionErrorAreaArea() {
       <i className="feather-search"></i>
       </button></form>
       <div className="view-more-button d-flex justify-content-center">
-      <a className="tmp-btn btn-gradient hover-icon-reverse" href="/index">
+      <Link className="tmp-btn btn-gradient hover-icon-reverse" href="/index">
       <span className="icon-reverse-wrapper">
       <span className="btn-text">Go Back Home</span>
       <span className="btn-icon"><i className="feather-arrow-right"></i></span>
       <span className="btn-icon"><i className="feather-arrow-right"></i></span>
       </span>
-      </a>
+      </Link>
       </div>
       </div>
       </div>

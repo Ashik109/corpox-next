@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import BusinessCoachOdometer from "./BusinessCoachOdometer";
 
 function Stars() {
@@ -28,7 +29,7 @@ function BannerBusinessCoach() {
                             <p>A business coach is a professional who helps business owners, entrepreneurs, and executives achieve their goals and improve their performance.</p>
                             <div className="button-group justify-content-start">
                                 {["Get A Free Quote", "Get started"].map((label, index) => (
-                                    <a className={`tmp-btn btn-large round hover-icon-reverse ${index === 1 ? "btn-border" : ""}`} href="#" key={label}>
+                                    <Link className={`tmp-btn btn-large round hover-icon-reverse ${index === 1 ? "btn-border" : ""}`} href="#" key={label}>
                                         <span className="icon-reverse-wrapper">
                                             <span className="btn-text">{label}</span>
                                             <span className="btn-icon">
@@ -38,7 +39,7 @@ function BannerBusinessCoach() {
                                                 <i className="feather-arrow-right" />
                                             </span>
                                         </span>
-                                    </a>
+                                    </Link>
                                 ))}
                             </div>
                         </div>

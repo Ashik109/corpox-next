@@ -1,3 +1,4 @@
+import Link from 'next/link'
 function SectionSliderArea() {
   return (
     <>
@@ -26,9 +27,9 @@ function SectionSliderArea() {
       <div className="overlay-content">
       <div className="thumbnail"><img className="radius-small" src="/assets/images/story/08.webp" alt="Corporate Image" /></div>
       <div className="video-icon">
-      <a className="tmp-btn rounded-player popup-video" href="https://www.youtube.com/watch?v=4jnzf1yj48M">
+      <Link className="tmp-btn rounded-player popup-video" href="https://www.youtube.com/watch?v=4jnzf1yj48M">
       <span><i className="feather-play"></i></span>
-      </a>
+      </Link>
       </div>
       </div>
       </div>

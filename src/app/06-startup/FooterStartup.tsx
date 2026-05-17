@@ -51,7 +51,7 @@ function FooterStartup() {
                                             <Link href="#">Tab Styles</Link>
                                         </li>
                                         <li>
-                                            <Link href="#">Service</Link>
+                                            <Link href="/service">Service</Link>
                                         </li>
                                         <li>
                                             <Link href="#">Social</Link>
@@ -66,13 +66,13 @@ function FooterStartup() {
                                 <div className="inner">
                                     <ul className="footer-link link-hover">
                                         <li>
-                                            <Link href="#">Team</Link>
+                                            <Link href="/team">Team</Link>
                                         </li>
                                         <li>
                                             <Link href="#">Testimonial</Link>
                                         </li>
                                         <li>
-                                            <Link href="#">Service</Link>
+                                            <Link href="/service">Service</Link>
                                         </li>
                                         <li>
                                             <Link href="#">Timeline</Link>
@@ -90,24 +90,24 @@ function FooterStartup() {
                                     </h6>
                                     <ul className="social-icon social-default justify-content-start">
                                         <li>
-                                            <a href="https://www.facebook.com/">
+                                            <Link href="https://www.facebook.com/">
                                                 <i className="feather-facebook" />
-                                            </a>
+                                            </Link>
                                         </li>
                                         <li>
-                                            <a href="https://www.twitter.com">
+                                            <Link href="https://www.twitter.com">
                                                 <i className="feather-twitter" />
-                                            </a>
+                                            </Link>
                                         </li>
                                         <li>
-                                            <a href="https://www.instagram.com/">
+                                            <Link href="https://www.instagram.com/">
                                                 <i className="feather-instagram" />
-                                            </a>
+                                            </Link>
                                         </li>
                                         <li>
-                                            <a href="https://www.linkdin.com/">
+                                            <Link href="https://www.linkdin.com/">
                                                 <i className="feather-linkedin" />
-                                            </a>
+                                            </Link>
                                         </li>
                                     </ul>
                                 </div>

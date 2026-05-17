@@ -1775,7 +1775,7 @@ function HeaderThree() {
                                                         <Link href="/about">About Company</Link>
                                                     </li>
                                                     <li>
-                                                        <Link href="/our-service">Our Service</Link>
+                                                        <Link href="/service">Our Service</Link>
                                                     </li>
                                                     <li>
                                                         <Link href="/our-service-two">Our Service Two</Link>
@@ -1790,27 +1790,27 @@ function HeaderThree() {
                                                         <Link href="/our-service-five">Our Service Five</Link>
                                                     </li>
                                                     <li>
-                                                        <Link href="/service-details-two/management-leadership">
+                                                        <Link href="/service/management-leadership">
                                                             Service Details Two
                                                         </Link>
                                                     </li>
                                                     <li>
                                                         {" "}
-                                                        <Link href="/service-details-three/management-leadership">
+                                                        <Link href="/service/management-leadership">
                                                             Service Details Three
                                                         </Link>
                                                     </li>
                                                     <li>
                                                         {" "}
-                                                        <Link href="/service-details-four/management-leadership">
+                                                        <Link href="/service/management-leadership">
                                                             Service Details Four
                                                         </Link>
                                                     </li>
                                                     <li>
-                                                        <Link href="/service-details/management-leadership">Service Details</Link>
+                                                        <Link href="/service/management-leadership">Service Details</Link>
                                                     </li>
                                                     <li>
-                                                        <Link href="/team/james-johnson">Our Team</Link>
+                                                        <Link href="/team">Our Team</Link>
                                                     </li>
                                                     <li>
                                                         <Link href="/team-two">Our Team Two</Link>
@@ -1852,7 +1852,7 @@ function HeaderThree() {
                                                         <Link href="/pricing-three">Pricing Plan Three</Link>
                                                     </li>
                                                     <li>
-                                                        <Link href="/portfolio/brand-refresh-venture">Portfolio Default</Link>
+                                                        <Link href="/portfolio">Portfolio Default</Link>
                                                     </li>
                                                     <li>
                                                         <Link href="/portfolio-three-column">
@@ -2017,7 +2017,7 @@ function HeaderThree() {
                                 </div>
                             </li>
                             <li className="with-megamenu has-menu-child-item position-relative">
-                                <Link href="/#">Service</Link>
+                                <Link href="/service">Service</Link>
                                 <div className="tmp-megamenu width-small-mega">
                                     <div className="wrapper">
                                         <div className="row">
@@ -2038,7 +2038,7 @@ function HeaderThree() {
                                                 <h3 className="tmp-short-title">Service Layout</h3>
                                                 <ul className="mega-menu-item">
                                                     <li>
-                                                        <Link href="/our-service">Our Service</Link>
+                                                        <Link href="/service">Our Service</Link>
                                                     </li>
                                                     <li>
                                                         <Link href="/our-service-two">Our Service Two</Link>
@@ -2068,30 +2068,30 @@ function HeaderThree() {
                                                 <h3 className="tmp-short-title">Service Details</h3>
                                                 <ul className="mega-menu-item">
                                                     <li>
-                                                        <Link href="/service-details/management-leadership">
+                                                        <Link href="/service/management-leadership">
                                                             Service Details{" "}
                                                             <span className="tmp-badge-card">Popular</span>
                                                         </Link>
                                                     </li>
                                                     <li>
-                                                        <Link href="/service-details-center/management-leadership">
+                                                        <Link href="/service/management-leadership">
                                                             Service Details center
                                                         </Link>
                                                     </li>
                                                     <li>
-                                                        <Link href="/service-details-two/management-leadership">
+                                                        <Link href="/service/management-leadership">
                                                             Service Details Two
                                                         </Link>
                                                     </li>
                                                     <li>
                                                         {" "}
-                                                        <Link href="/service-details-three/management-leadership">
+                                                        <Link href="/service/management-leadership">
                                                             Service Details Three
                                                         </Link>
                                                     </li>
                                                     <li>
                                                         {" "}
-                                                        <Link href="/service-details-four/management-leadership">
+                                                        <Link href="/service/management-leadership">
                                                             Service Details Four
                                                         </Link>
                                                     </li>
@@ -2146,7 +2146,7 @@ function HeaderThree() {
                                 <Link href="/#">Project</Link>
                                 <ul className="submenu">
                                     <li>
-                                        <Link href="/portfolio/analytics-platform">Portfolio Default</Link>
+                                        <Link href="/portfolio">Portfolio Default</Link>
                                     </li>
                                     <li>
                                         <Link href="/portfolio-three-column">Portfolio Three Column</Link>
@@ -2278,10 +2278,10 @@ function HeaderThree() {
                                                         <Link href="/button">Button Page</Link>
                                                     </li>
                                                     <li>
-                                                        <Link href="/service/financial-growth">Our Service</Link>
+                                                        <Link href="/service">Our Service</Link>
                                                     </li>
                                                     <li>
-                                                        <Link href="/service-details/management-leadership">Service Details</Link>
+                                                        <Link href="/service/management-leadership">Service Details</Link>
                                                     </li>
                                                     <li>
                                                         <Link href="/accordion">Accordion Style</Link>
@@ -2293,7 +2293,7 @@ function HeaderThree() {
                                                         <Link href="/blog-grid">Blog Grid</Link>
                                                     </li>
                                                     <li>
-                                                        <Link href="/team/david-miller">Our Team</Link>
+                                                        <Link href="/team">Our Team</Link>
                                                     </li>
                                                     <li>
                                                         <Link href="/modern-tab">Modern Tabs</Link>

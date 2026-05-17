@@ -1,3 +1,4 @@
+import Link from 'next/link'
 function BannerFinancial() {
     return (
         <div className="tmp-banner-area banner-financial-bg jarallax bg_image">
@@ -11,9 +12,9 @@ function BannerFinancial() {
                                 <p className="disc">
                                     Financial consulting involves providing expert advice and solutions to individuals, businesses, or organizations to help them manage their finances effectively.
                                 </p>
-                                <a className="tmp-btn btn-large" href="#">
+                                <Link className="tmp-btn btn-large" href="#">
                                     Get A Free Quote
-                                </a>
+                                </Link>
                             </div>
                         </div>
                     </div>

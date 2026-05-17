@@ -1,3 +1,4 @@
+import Link from 'next/link'
 const blogs = [
     {
         image: "/assets/images/blog-grid/blog-01.jpg",
@@ -33,17 +34,17 @@ const blogs = [
 function BlogImage({ blog }: { blog: (typeof blogs)[number] }) {
     return (
         <div className="thumbnail invers-anime">
-            <a className="image" href="/blog/best-corporate-tips">
+            <Link className="image" href="/blog/best-corporate-tips">
                 <img loading="lazy" className="w-100" src={blog.image} alt="Blog Image" />
-            </a>
+            </Link>
             <span className="tag-news">{blog.tag}</span>
             {blog.video && (
                 <div className="video-icon">
-                    <a className="tmp-btn btn-small rounded-player popup-video" href="https://www.youtube.com/watch?v=4jnzf1yj48M">
+                    <Link className="tmp-btn btn-small rounded-player popup-video" href="https://www.youtube.com/watch?v=4jnzf1yj48M">
                         <span>
                             <i className="feather-play" />
                         </span>
-                    </a>
+                    </Link>
                 </div>
             )}
         </div>
@@ -58,7 +59,7 @@ function BlogContent({ blog }: { blog: (typeof blogs)[number] }) {
                     <span>
                         <i className="feather-user" />
                     </span>
-                    <a href="#">{blog.author}</a>
+                    <Link href="#">{blog.author}</Link>
                 </li>
                 <li className="separator">-</li>
                 <li>{blog.date}</li>
@@ -68,13 +69,13 @@ function BlogContent({ blog }: { blog: (typeof blogs)[number] }) {
                 </li>
             </ul>
             <h4 className="title">
-                <a href="/blog/corporate-success-strategy">{blog.title}</a>
+                <Link href="/blog/corporate-success-strategy">{blog.title}</Link>
             </h4>
             <p className="descriptiion">{blog.text}</p>
             <div className="read-more-btn">
-                <a className="tmp-btn btn-border" href="/blog/leadership-confidence">
+                <Link className="tmp-btn btn-border" href="/blog/leadership-confidence">
                     <span>Read More</span>
-                </a>
+                </Link>
             </div>
         </div>
     );

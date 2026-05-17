@@ -1,4 +1,6 @@
 "use client";
+import Link from 'next/link'
+
 
 import { useEffect, useRef, useState } from "react";
 import AOS from "aos";
@@ -147,18 +149,18 @@ function BannerFive() {
                                     data-aos-delay={700}
                                 >
                                     <div className="video-btn">
-                                        <a
+                                        <Link
                                             className="tmp-btn rounded-player popup-video"
                                             href="https://www.youtube.com/watch?v=4jnzf1yj48M"
                                         >
                                             <span>
                                                 <i className="feather-play" />
                                             </span>
-                                        </a>
+                                        </Link>
                                     </div>
-                                    <a className="btn-read-more" href="/about">
+                                    <Link className="btn-read-more" href="/about">
                                         <span>Get in touch with us</span>
-                                    </a>
+                                    </Link>
                                 </div>
                             </div>
                         </div>

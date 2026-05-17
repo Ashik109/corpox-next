@@ -1,3 +1,4 @@
+import Link from 'next/link'
 function SectionBreadcarumbArea() {
   return (
     <>
@@ -8,7 +9,7 @@ function SectionBreadcarumbArea() {
       <div className="breadcrumb-inner text-start">
       <div className="breadcrumb-page-title">
       <ul className="page-list">
-      <li className="tmp-breadcrumb-item"><a href="/">Home</a></li>
+      <li className="tmp-breadcrumb-item"><Link href="/">Home</Link></li>
       <li className="tmp-breadcrumb-item active">Terms of service</li>
       </ul>
       <div className="line-separator"></div>

@@ -15,14 +15,14 @@ function FooterMedical() {
                             <div className="footer-message-and-form">
                                 <p className="colophon">
                                     Corpox is powered by{" "}
-                                    <a target="_blank" href="https://themeforest.net/user/inversweb">
+                                    <Link target="_blank" href="https://themeforest.net/user/inversweb">
                                         InversWeb
-                                    </a>
+                                    </Link>
                                     .
                                 </p>
                                 <div className="footer-form-wrap">
                                     <h4>
-                                        Keep up to date on <a href="#">InversWeb</a>
+                                        Keep up to date on <Link href="#">InversWeb</Link>
                                     </h4>
                                     <p>with our hand-crafted newsletter</p>
                                     <form action="#">
@@ -59,7 +59,7 @@ function FooterMedical() {
                                         <ul className="footer-link link-hover">
                                             {column.links.map((link) => (
                                                 <li key={link}>
-                                                    <a href="#">{link}</a>
+                                                    <Link href="#">{link}</Link>
                                                 </li>
                                             ))}
                                         </ul>
@@ -75,9 +75,9 @@ function FooterMedical() {
                                     <ul className="social-icon social-default justify-content-start">
                                         {["facebook", "twitter", "instagram", "linkedin"].map((icon) => (
                                             <li key={icon}>
-                                                <a href={`https://www.${icon}.com/`}>
+                                                <Link href={`https://www.${icon}.com/`}>
                                                     <i className={`feather-${icon}`} />
-                                                </a>
+                                                </Link>
                                             </li>
                                         ))}
                                     </ul>
@@ -98,7 +98,7 @@ function FooterMedical() {
                                         <Link href="/privacy-policy">Privacy Policy</Link>
                                     </li>
                                     <li>
-                                        <a href="#">Terms And Condition</a>
+                                        <Link href="#">Terms And Condition</Link>
                                     </li>
                                     <li>
                                         <Link href="/contact">Contact Us</Link>

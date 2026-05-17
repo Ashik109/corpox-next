@@ -53,7 +53,7 @@ function FooterHRWebsite() {
                                         <ul className="footer-link link-hover">
                                             {column.links.map(([label, href]) => (
                                                 <li key={label}>
-                                                    <a href={href}>{label}</a>
+                                                    <Link href={href}>{label}</Link>
                                                 </li>
                                             ))}
                                         </ul>
@@ -69,9 +69,9 @@ function FooterHRWebsite() {
                                     <ul className="social-icon social-default justify-content-start">
                                         {socials.map(([href, icon]) => (
                                             <li key={icon}>
-                                                <a href={href}>
+                                                <Link href={href}>
                                                     <i className={icon} />
-                                                </a>
+                                                </Link>
                                             </li>
                                         ))}
                                     </ul>
@@ -88,13 +88,13 @@ function FooterHRWebsite() {
                             <div className="copyright-left">
                                 <ul className="ft-menu link-hover">
                                     <li>
-                                        <a href="/privacy-policy">Privacy Policy</a>
+                                        <Link href="/privacy-policy">Privacy Policy</Link>
                                     </li>
                                     <li>
-                                        <a href="#">Terms And Condition</a>
+                                        <Link href="#">Terms And Condition</Link>
                                     </li>
                                     <li>
-                                        <a href="/contact">Contact Us</a>
+                                        <Link href="/contact">Contact Us</Link>
                                     </li>
                                 </ul>
                             </div>

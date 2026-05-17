@@ -1,4 +1,6 @@
 "use client";
+import Link from 'next/link'
+
 
 import { useEffect, useRef, useState } from "react";
 
@@ -111,30 +113,30 @@ function PortfolioDigitalAgency() {
                                         <div className="inner">
                                             <div className="thumbnail">
                                                 <figure className="card-image">
-                                                    <a href="/portfolio/brand-refresh-venture">
+                                                    <Link href="/portfolio/brand-refresh-venture">
                                                         <img src={item.image} alt="Portfolio" />
-                                                    </a>
+                                                    </Link>
                                                     {item.video && (
                                                         <div className="video-icon">
-                                                            <a className="tmp-btn btn-small rounded-player popup-video" href={item.video}>
+                                                            <Link className="tmp-btn btn-small rounded-player popup-video" href={item.video}>
                                                                 <span>
                                                                     <i className="feather-play" />
                                                                 </span>
-                                                            </a>
+                                                            </Link>
                                                         </div>
                                                     )}
                                                 </figure>
-                                                <a className="tmp-overlay" href="/portfolio/analytics-platform" />
+                                                <Link className="tmp-overlay" href="/portfolio/analytics-platform" />
                                             </div>
                                             <div className="content">
                                                 <h5 className="title mb--20">
-                                                    <a href="/portfolio/field-service-modernization">{item.title}</a>
+                                                    <Link href="/portfolio/field-service-modernization">{item.title}</Link>
                                                 </h5>
                                                 <div className="tmp-badge-group">
                                                     {item.badges.map((badge) => (
-                                                        <a href="#" className="tmp-badge-2" key={badge}>
+                                                        <Link href="#" className="tmp-badge-2" key={badge}>
                                                             {badge}
-                                                        </a>
+                                                        </Link>
                                                     ))}
                                                 </div>
                                             </div>
@@ -148,7 +150,7 @@ function PortfolioDigitalAgency() {
                 <div className="row">
                     <div className="col-lg-12">
                         <div className="tmp-load-more d-flex justify-content-center mt--60">
-                            <a className="tmp-btn btn-large hover-icon-reverse" href="#">
+                            <Link className="tmp-btn btn-large hover-icon-reverse" href="#">
                                 <span className="icon-reverse-wrapper">
                                     <span className="btn-text">Load More</span>
                                     <span className="btn-icon">
@@ -158,7 +160,7 @@ function PortfolioDigitalAgency() {
                                         <i className="feather-loader" />
                                     </span>
                                 </span>
-                            </a>
+                            </Link>
                         </div>
                     </div>
                 </div>

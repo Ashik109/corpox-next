@@ -1,3 +1,4 @@
+import Link from 'next/link'
 const featureServices = [
     {
         icon: "/assets/images/services/icons/01.png",
@@ -47,7 +48,7 @@ function LatestServiceDigitalAgency() {
                                             </div>
                                             <div className="content">
                                                 <h4 className="title w-600">
-                                                    <a href="#">{service.title}</a>
+                                                    <Link href="#">{service.title}</Link>
                                                 </h4>
                                                 <p className="description mb--0">{service.front}</p>
                                             </div>
@@ -60,12 +61,12 @@ function LatestServiceDigitalAgency() {
                                         <div className="service-small-default service service__style--1 bg-color-card radius text-center tmponhover">
                                             <div className="content">
                                                 <h4 className="title w-600">
-                                                    <a href="#">{service.title}</a>
+                                                    <Link href="#">{service.title}</Link>
                                                 </h4>
                                                 <p className="description mb--0">{service.back}</p>
-                                                <a className="btn-read-more mt--10 d-block" href="/service/management-leadership">
+                                                <Link className="btn-read-more mt--10 d-block" href="/service/management-leadership">
                                                     <span>Read More</span>
-                                                </a>
+                                                </Link>
                                             </div>
                                         </div>
                                     </div>

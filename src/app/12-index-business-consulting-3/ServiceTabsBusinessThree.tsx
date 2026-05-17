@@ -1,4 +1,6 @@
 "use client";
+import Link from 'next/link'
+
 
 import { useState } from "react";
 
@@ -68,9 +70,9 @@ function ServiceTabsBusinessThree() {
                                             <div className={`tab-pane fade advance-tab-content-1 ${active === index ? "active show" : ""}`} role="tabpanel" key={tab.image}>
                                                 <div className="thumbnail over-gradient-primary invers-anime">
                                                     <img loading="lazy" src={`/assets/images/about/${tab.image}`} alt="advance-tab" />
-                                                    <a href="/service/management-leadership" className="tmp-btn btn-primary">
+                                                    <Link href="/service/management-leadership" className="tmp-btn btn-primary">
                                                         View Details
-                                                    </a>
+                                                    </Link>
                                                 </div>
                                             </div>
                                         ))}

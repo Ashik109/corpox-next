@@ -1,3 +1,4 @@
+import Link from 'next/link'
 const galleryImages = [
   'portfolio-01.jpg',
   'portfolio-02.jpg',
@@ -30,7 +31,7 @@ function AboutGallery() {
         </div>
         <div className="row mt_dec--30 row--15" id="animated-lightbox2">
           {galleryImages.map((image, index) => (
-            <a
+            <Link
               key={`${image}-${index}`}
               className="col-lg-3 col-md-6 col-sm-6 col-12 mt--30"
               data-aos="slide-up"
@@ -47,7 +48,7 @@ function AboutGallery() {
                   </div>
                 </div>
               </div>
-            </a>
+            </Link>
           ))}
         </div>
       </div>

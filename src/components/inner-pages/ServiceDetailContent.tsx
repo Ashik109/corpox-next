@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import BodyClass from '../../app/white-01-index-consulting/BodyClass'
 import type { ServiceDetail } from '../../data/services'
 import { RELATED_SERVICES, services } from '../../data/services'
 
@@ -31,7 +32,7 @@ function Sidebar({ detailRoute, phone }: { detailRoute: string; phone: string })
         <div className="addd-contact">
           <div className="contact-icon"><i className="feather-phone" /></div>
           <h2 className="title">Have any Questions? <br /> Call us Today!</h2>
-          <div className="contact"><a href={`tel:${phone.replace(/\s/g, '')}`}>{phone}</a></div>
+          <div className="contact"><Link href={`tel:${phone.replace(/\s/g, '')}`}>{phone}</Link></div>
         </div>
       </div>
     </div>
@@ -97,9 +98,9 @@ function ServiceVideoBanner() {
                 <div className="present-banner-inner text-center">
                   <div className="button-group justify-content-center mt--20">
                     <div className="video-btn">
-                      <a className="tmp-btn rounded-player popup-video" href={VIDEO_MP4}><span><i className="feather-play" /></span></a>
+                      <Link className="tmp-btn rounded-player popup-video" href={VIDEO_MP4}><span><i className="feather-play" /></span></Link>
                     </div>
-                    <a className="btn-read-more popup-video" href={VIDEO_MP4}><span>Get in touch with us</span></a>
+                    <Link className="btn-read-more popup-video" href={VIDEO_MP4}><span>Get in touch with us</span></Link>
                   </div>
                   <h3 className="mt--30">Find Out Everything You Need To Know About Creating A Consulting Business</h3>
                 </div>
@@ -137,7 +138,7 @@ function ServicePricing() {
                     <div className="pricing"><div className="price-wrapper"><span className="currency">$</span><span className="price">{plan.price}</span></div><span className="subtitle">USD Per Month</span></div>
                   </div>
                   <div className="pricing-body"><ul className="list-style--1">{plan.features.map((f) => <li key={f}><i className="feather-check" /> {f}</li>)}</ul></div>
-                  <div className="pricing-footer"><a className={`tmp-btn icon-hover text-center ${plan.border ? 'btn-border' : ''}`} href="#"><span className="btn-text">Try This free</span></a></div>
+                  <div className="pricing-footer"><Link className={`tmp-btn icon-hover text-center ${plan.border ? 'btn-border' : ''}`} href="#"><span className="btn-text">Try This free</span></Link></div>
                 </div>
                 {plan.active ? <div className="popular-tag">Popular</div> : null}
               </div>
@@ -200,13 +201,21 @@ export default function ServiceDetailContent({ service, detailRoute, layout = 'd
 
   return (
     <>
+      <BodyClass className="overflow-x-visible" />
       <div className="tmp-service-details-area tmp-section-gap">
         <div className="container">
           <div className="row">
             <div className="col-lg-12">
               <div className="tmp-service-details">
                 <div className="tmp-section-title-border text-center">
-                  <span className="subtitle"><span className="number">01</span><span className="subtitle-text">Service Details</span></span>
+                  <div className="pres-line-separator-wrapper text-center mb--10">
+                    <div className="line-separator line-left" />
+                    <span className="subtitle">
+                      <span className="number">01</span>
+                      <span className="subtitle-text">Service Details</span>
+                    </span>
+                    <div className="line-separator line-right" />
+                  </div>
                   <h1 className="title w-700 mb--30 tmp-title-split">{service.title}</h1>
                 </div>
                 {heroFirst ? <ServiceHero service={service} layout={layout} /> : null}

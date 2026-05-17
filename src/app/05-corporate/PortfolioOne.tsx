@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import React from 'react'
 
 function PortfolioOne() {
@@ -17,12 +18,12 @@ function PortfolioOne() {
                     <div className="row g-5 mt--10">
                         <div className="col-lg-8 col-md-12 col-sm-12">
                             <div className="single-modern-case-studies">
-                                <a href="/portfolio/brand-refresh-venture" className="thumbnail invers-anime">
+                                <Link href="/portfolio/brand-refresh-venture" className="thumbnail invers-anime">
                                     <img src="/assets/images/portfolio/05.webp" alt="case-studies" />
-                                </a>
+                                </Link>
                                 <div className="inner-content-area">
                                     <span className="tags">2025, Business</span>
-                                    <a href="#" className="tmponhover">
+                                    <Link href="#" className="tmponhover">
                                         <h3 className="title">Business Solution</h3>
                                         <div className="tmp-icon">
                                             <span className="default">
@@ -53,18 +54,18 @@ function PortfolioOne() {
                                                 </svg>
                                             </span>
                                         </div>
-                                    </a>
+                                    </Link>
                                 </div>
                             </div>
                         </div>
                         <div className="col-lg-4 col-md-6 col-sm-12">
                             <div className="single-modern-case-studies">
-                                <a href="/portfolio/analytics-platform" className="thumbnail invers-anime">
+                                <Link href="/portfolio/analytics-platform" className="thumbnail invers-anime">
                                     <img src="/assets/images/portfolio/06.webp" alt="case-studies" />
-                                </a>
+                                </Link>
                                 <div className="inner-content-area">
                                     <span className="tags">2025, Business</span>
-                                    <a href="#" className="tmponhover">
+                                    <Link href="#" className="tmponhover">
                                         <h3 className="title">Business Solution</h3>
                                         <div className="tmp-icon">
                                             <span className="default">
@@ -95,18 +96,18 @@ function PortfolioOne() {
                                                 </svg>
                                             </span>
                                         </div>
-                                    </a>
+                                    </Link>
                                 </div>
                             </div>
                         </div>
                         <div className="col-lg-4 col-md-6 col-sm-12">
                             <div className="single-modern-case-studies">
-                                <a href="/portfolio/field-service-modernization" className="thumbnail invers-anime">
+                                <Link href="/portfolio/field-service-modernization" className="thumbnail invers-anime">
                                     <img src="/assets/images/portfolio/07.webp" alt="case-studies" />
-                                </a>
+                                </Link>
                                 <div className="inner-content-area">
                                     <span className="tags">2025, Business</span>
-                                    <a href="#" className="tmponhover">
+                                    <Link href="#" className="tmponhover">
                                         <h3 className="title">Business Solution</h3>
                                         <div className="tmp-icon">
                                             <span className="default">
@@ -137,18 +138,18 @@ function PortfolioOne() {
                                                 </svg>
                                             </span>
                                         </div>
-                                    </a>
+                                    </Link>
                                 </div>
                             </div>
                         </div>
                         <div className="col-lg-4 col-md-6 col-sm-12">
                             <div className="single-modern-case-studies">
-                                <a href="/portfolio/brand-refresh-venture" className="thumbnail invers-anime">
+                                <Link href="/portfolio/brand-refresh-venture" className="thumbnail invers-anime">
                                     <img src="/assets/images/portfolio/08.webp" alt="case-studies" />
-                                </a>
+                                </Link>
                                 <div className="inner-content-area">
                                     <span className="tags">2025, Business</span>
-                                    <a href="#" className="tmponhover">
+                                    <Link href="#" className="tmponhover">
                                         <h3 className="title">Business Solution</h3>
                                         <div className="tmp-icon">
                                             <span className="default">
@@ -179,18 +180,18 @@ function PortfolioOne() {
                                                 </svg>
                                             </span>
                                         </div>
-                                    </a>
+                                    </Link>
                                 </div>
                             </div>
                         </div>
                         <div className="col-lg-4 col-md-6 col-sm-12">
                             <div className="single-modern-case-studies">
-                                <a href="/portfolio/analytics-platform" className="thumbnail invers-anime">
+                                <Link href="/portfolio/analytics-platform" className="thumbnail invers-anime">
                                     <img src="/assets/images/portfolio/09.webp" alt="case-studies" />
-                                </a>
+                                </Link>
                                 <div className="inner-content-area">
                                     <span className="tags">2025, Business</span>
-                                    <a href="#" className="tmponhover">
+                                    <Link href="#" className="tmponhover">
                                         <h3 className="title">Business Solution</h3>
                                         <div className="tmp-icon">
                                             <span className="default">
@@ -221,7 +222,7 @@ function PortfolioOne() {
                                                 </svg>
                                             </span>
                                         </div>
-                                    </a>
+                                    </Link>
                                 </div>
                             </div>
                         </div>

@@ -1,4 +1,6 @@
 "use client";
+import Link from 'next/link'
+
 
 import React from "react";
 import Slider from "react-slick";
@@ -60,14 +62,14 @@ function BannerSix() {
                                             </p>
 
                                             <ul className="social-icon social-default transparent-with-border">
-                                                <li><a href="#"><i className="feather-facebook"></i></a></li>
-                                                <li><a href="#"><i className="feather-twitter"></i></a></li>
-                                                <li><a href="#"><i className="feather-instagram"></i></a></li>
-                                                <li><a href="#"><i className="feather-linkedin"></i></a></li>
+                                                <li><Link href="#"><i className="feather-facebook"></i></Link></li>
+                                                <li><Link href="#"><i className="feather-twitter"></i></Link></li>
+                                                <li><Link href="#"><i className="feather-instagram"></i></Link></li>
+                                                <li><Link href="#"><i className="feather-linkedin"></i></Link></li>
                                             </ul>
 
                                             <div className="button-group mt--30">
-                                                <a className="tmp-btn btn-large round hover-icon-reverse" href="#">
+                                                <Link className="tmp-btn btn-large round hover-icon-reverse" href="#">
                                                     <span className="icon-reverse-wrapper">
                                                         <span className="btn-text">Get started now</span>
                                                         <span className="btn-icon">
@@ -77,7 +79,7 @@ function BannerSix() {
                                                             <i className="feather-arrow-right"></i>
                                                         </span>
                                                     </span>
-                                                </a>
+                                                </Link>
                                             </div>
 
                                         </div>
@@ -116,14 +118,14 @@ function BannerSix() {
                                             </p>
 
                                             <ul className="social-icon social-default transparent-with-border">
-                                                <li><a href="#"><i className="feather-facebook"></i></a></li>
-                                                <li><a href="#"><i className="feather-twitter"></i></a></li>
-                                                <li><a href="#"><i className="feather-instagram"></i></a></li>
-                                                <li><a href="#"><i className="feather-linkedin"></i></a></li>
+                                                <li><Link href="#"><i className="feather-facebook"></i></Link></li>
+                                                <li><Link href="#"><i className="feather-twitter"></i></Link></li>
+                                                <li><Link href="#"><i className="feather-instagram"></i></Link></li>
+                                                <li><Link href="#"><i className="feather-linkedin"></i></Link></li>
                                             </ul>
 
                                             <div className="button-group mt--30">
-                                                <a className="tmp-btn btn-large round hover-icon-reverse" href="#">
+                                                <Link className="tmp-btn btn-large round hover-icon-reverse" href="#">
                                                     <span className="icon-reverse-wrapper">
                                                         <span className="btn-text">Get started now</span>
                                                         <span className="btn-icon">
@@ -133,7 +135,7 @@ function BannerSix() {
                                                             <i className="feather-arrow-right"></i>
                                                         </span>
                                                     </span>
-                                                </a>
+                                                </Link>
                                             </div>
 
                                         </div>

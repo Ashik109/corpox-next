@@ -1,4 +1,6 @@
 "use client";
+import Link from 'next/link'
+
 
 import { useEffect, useRef } from "react";
 import Slider from "react-slick";
@@ -78,7 +80,7 @@ function BannerArchitecture() {
                                                     We provide you with user management functionality that results in faster development and revenue.
                                                 </p>
                                                 <div className="read-more-btn">
-                                                    <a className="tmp-btn btn-large round hover-icon-reverse" href="#services">
+                                                    <Link className="tmp-btn btn-large round hover-icon-reverse" href="#services">
                                                         <span className="icon-reverse-wrapper">
                                                             <span className="btn-text">Check our services</span>
                                                             <span className="btn-icon">
@@ -88,7 +90,7 @@ function BannerArchitecture() {
                                                                 <i className="feather-arrow-right" />
                                                             </span>
                                                         </span>
-                                                    </a>
+                                                    </Link>
                                                 </div>
                                             </div>
                                         </div>

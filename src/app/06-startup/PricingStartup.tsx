@@ -1,4 +1,6 @@
 "use client";
+import Link from 'next/link'
+
 
 import { useAosOnce } from "../components/useAosOnce";
 import { useHoverAnimation } from "../components/useHoverAnimation";
@@ -94,12 +96,12 @@ function PricingCard({ plan }: { plan: PricingPlan }) {
                         </ul>
                     </div>
                     <div className="pricing-footer">
-                        <a className={btnClass} href="#">
+                        <Link className={btnClass} href="#">
                             <span className="btn-text">{plan.cta}</span>
                             <span className="btn-icon">
                                 <i className="feather-arrow-right" />
                             </span>
-                        </a>
+                        </Link>
                     </div>
                 </div>
                 {plan.highlight ? <div className="popular-tag">Popular</div> : null}

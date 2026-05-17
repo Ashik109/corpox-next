@@ -1,3 +1,4 @@
+import Link from 'next/link'
 const splitList = [
     "Track your teams progress with mobile app.",
     "Lorem ipsum dolor sit amet consectetur adipisicing.",
@@ -39,13 +40,13 @@ function SplitMarketingAgency() {
                                         ))}
                                     </ul>
                                     <div className="read-more-btn">
-                                        <a
+                                        <Link
                                             className="btn-collaborate-play popup-video"
                                             href="https://www.youtube.com/watch?v=4jnzf1yj48M"
                                         >
                                             <i className="feather-play" />
                                             <span>See how it works</span>
-                                        </a>
+                                        </Link>
                                     </div>
                                 </div>
                             </div>

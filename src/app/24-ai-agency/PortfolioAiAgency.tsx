@@ -1,3 +1,4 @@
+import Link from 'next/link'
 const projects = [
     ["05.webp", "AI Business Intelligence", "col-lg-8 col-md-12 col-sm-12"],
     ["01.webp", "Predictive Analytics", "col-lg-4 col-md-6 col-sm-12"],
@@ -22,19 +23,19 @@ function PortfolioAiAgency() {
                     {projects.map(([image, title, column]) => (
                         <div className={column} key={title}>
                             <div className="single-modern-case-studies">
-                                <a href="/portfolio/brand-refresh-venture" className="thumbnail invers-anime">
+                                <Link href="/portfolio/brand-refresh-venture" className="thumbnail invers-anime">
                                     <img src={`/assets/images/ai-agency/project/${image}`} alt={title} />
-                                </a>
+                                </Link>
                                 <div className="inner-content-area">
                                     <span className="tags">2025, AI Project</span>
-                                    <a href="#" className="tmponhover">
+                                    <Link href="#" className="tmponhover">
                                         <h3 className="title">{title}</h3>
                                         <div className="tmp-icon">
                                             <span className="default">
                                                 <i className="feather-arrow-up-right" />
                                             </span>
                                         </div>
-                                    </a>
+                                    </Link>
                                 </div>
                             </div>
                         </div>

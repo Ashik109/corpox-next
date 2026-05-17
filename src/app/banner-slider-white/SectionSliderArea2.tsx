@@ -1,3 +1,4 @@
+import Link from 'next/link'
 function SectionSliderArea2() {
   return (
     <>
@@ -12,13 +13,13 @@ function SectionSliderArea2() {
       <p className="mb--40 b1">We provide you with user management functionality that results in faster
                                               development and revenue.</p>
       <div className="read-more-btn">
-      <a className="tmp-btn btn-large round hover-icon-reverse" href="#">
+      <Link className="tmp-btn btn-large round hover-icon-reverse" href="#">
       <span className="icon-reverse-wrapper">
       <span className="btn-text">Check our services</span>
       <span className="btn-icon"><i className="feather-arrow-right"></i></span>
       <span className="btn-icon"><i className="feather-arrow-right"></i></span>
       </span>
-      </a>
+      </Link>
       </div>
       </div>
       </div>
@@ -57,13 +58,13 @@ function SectionSliderArea2() {
       <p className="mb--40 b1">We provide you with user management functionality that results in faster
                                               development and revenue.</p>
       <div className="read-more-btn">
-      <a className="tmp-btn btn-large round hover-icon-reverse" href="#">
+      <Link className="tmp-btn btn-large round hover-icon-reverse" href="#">
       <span className="icon-reverse-wrapper">
       <span className="btn-text">Check our services</span>
       <span className="btn-icon"><i className="feather-arrow-right"></i></span>
       <span className="btn-icon"><i className="feather-arrow-right"></i></span>
       </span>
-      </a>
+      </Link>
       </div>
       </div>
       </div>
@@ -102,13 +103,13 @@ function SectionSliderArea2() {
       <p className="mb--40 b1">We provide you with user management functionality that results in faster
                                               development and revenue.</p>
       <div className="read-more-btn">
-      <a className="tmp-btn btn-large round hover-icon-reverse" href="#">
+      <Link className="tmp-btn btn-large round hover-icon-reverse" href="#">
       <span className="icon-reverse-wrapper">
       <span className="btn-text">Check our services</span>
       <span className="btn-icon"><i className="feather-arrow-right"></i></span>
       <span className="btn-icon"><i className="feather-arrow-right"></i></span>
       </span>
-      </a>
+      </Link>
       </div>
       </div>
       </div>

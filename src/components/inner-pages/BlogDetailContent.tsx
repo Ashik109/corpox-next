@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import BodyClass from '../../app/white-01-index-consulting/BodyClass'
 import type { BlogPost } from '../../data/blogPosts'
 import { BLOG_LIST_ITEMS, blogPosts } from '../../data/blogPosts'
 
@@ -25,10 +26,10 @@ type Props = {
 function SocialOnImage() {
   return (
     <ul className="social-icon social-default justify-content-start">
-      <li><a target="_blank" rel="noreferrer" href="https://www.facebook.com/"><i className="feather-facebook" /></a></li>
-      <li><a target="_blank" rel="noreferrer" href="https://www.twitter.com"><i className="feather-twitter" /></a></li>
-      <li><a target="_blank" rel="noreferrer" href="https://www.instagram.com/"><i className="feather-instagram" /></a></li>
-      <li><a target="_blank" rel="noreferrer" href="https://www.linkedin.com/"><i className="feather-linkedin" /></a></li>
+      <li><Link target="_blank" rel="noreferrer" href="https://www.facebook.com/"><i className="feather-facebook" /></Link></li>
+      <li><Link target="_blank" rel="noreferrer" href="https://www.twitter.com"><i className="feather-twitter" /></Link></li>
+      <li><Link target="_blank" rel="noreferrer" href="https://www.instagram.com/"><i className="feather-instagram" /></Link></li>
+      <li><Link target="_blank" rel="noreferrer" href="https://www.linkedin.com/"><i className="feather-linkedin" /></Link></li>
     </ul>
   )
 }
@@ -63,7 +64,7 @@ function TitleBlock({ post }: { post: BlogPost }) {
         </h2>
       </div>
       <ul className="tmp-meta-list">
-        <li><i className="feather-user" /><a href="#">{post.author}</a></li>
+        <li><i className="feather-user" /><Link href="#">{post.author}</Link></li>
         <li><i className="feather-calendar" />{post.date}</li>
         {post.comments ? <li><i className="feather-message-circle" />{post.comments}</li> : null}
       </ul>
@@ -106,9 +107,9 @@ function DetailBanner({ post, layout }: { post: BlogPost; layout: BlogDetailLayo
                 <div className="thumbnail position-relative blog-details-thumbnail-large mt--60">
                   <img className="w-100 radius" src={post.heroImage} alt={post.title} />
                   <SocialOnImage />
-                  <a className="tmp-btn rounded-player popup-video" href={post.videoPopupUrl || DEFAULT_VIDEO_POPUP}>
+                  <Link className="tmp-btn rounded-player popup-video" href={post.videoPopupUrl || DEFAULT_VIDEO_POPUP}>
                     <span><i className="feather-play" /></span>
-                  </a>
+                  </Link>
                 </div>
               ) : null}
               {!isVideo && !isVideoTwo && !isVideoPopup ? (
@@ -144,7 +145,7 @@ function BlogBodyContent({ post }: { post: BlogPost }) {
       <p>Contrary to popular belief, Lorem Ipsum is not simply random text.</p>
       <div className="category-meta">
         <span className="text">Tags:</span>
-        <div className="tagcloud">{post.tags.map((tag) => <a href="#" key={tag}>{tag}</a>)}</div>
+        <div className="tagcloud">{post.tags.map((tag) => <Link href="#" key={tag}>{tag}</Link>)}</div>
         <span className="text mt--30 d-block">Share This Post:</span>
         <SocialOnImage />
       </div>
@@ -191,6 +192,7 @@ export default function BlogDetailContent({ post, detailRoute, layout = 'default
 
   return (
     <>
+      <BodyClass className="overflow-x-visible" />
       <div className="tmp-blog-details-area">
         <DetailBanner post={post} layout={L} />
         <div className={`blog-details-content ${contentPadding} tmp-section-gapBottom`}>

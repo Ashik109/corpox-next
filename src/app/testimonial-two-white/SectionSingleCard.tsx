@@ -1,3 +1,4 @@
+import Link from 'next/link'
 function SectionSingleCard() {
   return (
     <>
@@ -5,11 +6,11 @@ function SectionSingleCard() {
       <div className="inner">
       <div className="content">
       <div className="rating mb--15">
-      <a href="#"><img src="/assets/images/icons/stars.svg" alt="" /></a>
-      <a href="#"><img src="/assets/images/icons/stars.svg" alt="" /></a>
-      <a href="#"><img src="/assets/images/icons/stars.svg" alt="" /></a>
-      <a href="#"><img src="/assets/images/icons/stars.svg" alt="" /></a>
-      <a href="#"><img src="/assets/images/icons/stars.svg" alt="" /></a>
+      <Link href="#"><img src="/assets/images/icons/stars.svg" alt="" /></Link>
+      <Link href="#"><img src="/assets/images/icons/stars.svg" alt="" /></Link>
+      <Link href="#"><img src="/assets/images/icons/stars.svg" alt="" /></Link>
+      <Link href="#"><img src="/assets/images/icons/stars.svg" alt="" /></Link>
+      <Link href="#"><img src="/assets/images/icons/stars.svg" alt="" /></Link>
       </div>
       <p className="description">Lorem ipsum, dolor sit amet consectetur adipi sicing elit. Asperiores accusamus eum consequuntur pari atur lauda ntium odit there.</p>
       <div className="content-bottom">

@@ -1,3 +1,4 @@
+import Link from 'next/link'
 function SectionSliderArea() {
   return (
     <>
@@ -12,13 +13,13 @@ function SectionSliderArea() {
       <p className="mb--40 b1">We help you achieve peak performance through expert training, modern equipment,
                                               and personalized workout programs.</p>
       <div className="read-more-btn">
-      <a className="tmp-btn btn-large round hover-icon-reverse" href="#">
+      <Link className="tmp-btn btn-large round hover-icon-reverse" href="#">
       <span className="icon-reverse-wrapper">
       <span className="btn-text">Explore our programs</span>
       <span className="btn-icon"><i className="feather-arrow-right"></i></span>
       <span className="btn-icon"><i className="feather-arrow-right"></i></span>
       </span>
-      </a>
+      </Link>
       </div>
       </div>
       </div>
@@ -36,13 +37,13 @@ function SectionSliderArea() {
       <p className="mb--40 b1">Our certified trainers guide you with structured plans that improve strength,
                                               endurance, and overall fitness results.</p>
       <div className="read-more-btn">
-      <a className="tmp-btn btn-large round hover-icon-reverse" href="#">
+      <Link className="tmp-btn btn-large round hover-icon-reverse" href="#">
       <span className="icon-reverse-wrapper">
       <span className="btn-text">View training plans</span>
       <span className="btn-icon"><i className="feather-arrow-right"></i></span>
       <span className="btn-icon"><i className="feather-arrow-right"></i></span>
       </span>
-      </a>
+      </Link>
       </div>
       </div>
       </div>
@@ -60,13 +61,13 @@ function SectionSliderArea() {
       <p className="mb--40 b1">Join our gym community and experience motivating workouts designed to burn fat,
                                               build muscle, and boost confidence.</p>
       <div className="read-more-btn">
-      <a className="tmp-btn btn-large round hover-icon-reverse" href="#">
+      <Link className="tmp-btn btn-large round hover-icon-reverse" href="#">
       <span className="icon-reverse-wrapper">
       <span className="btn-text">Join the gym today</span>
       <span className="btn-icon"><i className="feather-arrow-right"></i></span>
       <span className="btn-icon"><i className="feather-arrow-right"></i></span>
       </span>
-      </a>
+      </Link>
       </div>
       </div>
       </div>

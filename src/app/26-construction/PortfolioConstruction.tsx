@@ -1,3 +1,4 @@
+import Link from 'next/link'
 const projects = [
     ["29.webp", "Residential Building", "Home Construction"],
     ["28.webp", "Commercial Complex", "Commercial Construction"],
@@ -33,13 +34,13 @@ function PortfolioConstruction() {
                     {projects.map(([image, title, category], index) => (
                         <div className="col-lg-6 col-md-6 col-sm-12 tmp-jump__item" data-aos="fade-up" data-aos-duration="700" data-aos-delay={index * 100} key={title}>
                             <div className="single-project-style-three invers-anime">
-                                <a className="thumbnail" href="/project-details">
+                                <Link className="thumbnail" href="/project-details">
                                     <img loading="lazy" src={`/assets/images/portfolio/${image}`} alt={title} />
-                                </a>
+                                </Link>
                                 <div className="inner-content tmponhover">
-                                    <a href="/project-details">
+                                    <Link href="/project-details">
                                         <h4 className="title">{title}</h4>
-                                    </a>
+                                    </Link>
                                     <span>{category}</span>
                                 </div>
                             </div>

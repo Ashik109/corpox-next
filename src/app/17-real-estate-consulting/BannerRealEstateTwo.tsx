@@ -1,4 +1,6 @@
 "use client";
+import Link from 'next/link'
+
 
 import { useCallback, useEffect, useRef, useState } from "react";
 
@@ -86,9 +88,9 @@ function BannerRealEstateTwo() {
                             <p>
                                 In the world of real estate, where transactions involve substantial investments and detailed negotiations, the guidance of a knowledgeable professional difference.
                             </p>
-                            <a className="tmp-btn btn-small mt--40" href="/contact">
+                            <Link className="tmp-btn btn-small mt--40" href="/contact">
                                 Contact With Us
-                            </a>
+                            </Link>
                         </div>
                     </div>
                     <div className="col-lg-5">

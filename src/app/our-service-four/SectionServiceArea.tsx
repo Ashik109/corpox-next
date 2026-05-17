@@ -1,3 +1,4 @@
+import Link from 'next/link'
 function SectionServiceArea() {
   return (
     <>
@@ -25,20 +26,20 @@ function SectionServiceArea() {
       <div className="inner">
       <div className="content">
       <h4 className="title mb--20">
-      <a href="/service-details">Awarded Design</a>
+      <Link href="/service/management-leadership">Awarded Design</Link>
       </h4>
       </div>
       <div className="image invers-anime">
       <img src="/assets/images/services/galery-image-01.png" alt="card Images" />
       </div>
       <div className="discover-btn">
-      <a className="tmp-btn mt--20 round btn-small btn-border hover-icon-reverse" href="/service-details">
+      <Link className="tmp-btn mt--20 round btn-small btn-border hover-icon-reverse" href="/service/management-leadership">
       <span className="icon-reverse-wrapper">
       <span className="btn-text">Discover services</span>
       <span className="btn-icon"><i className="feather-arrow-right"></i></span>
       <span className="btn-icon"><i className="feather-arrow-right"></i></span>
       </span>
-      </a>
+      </Link>
       </div>
       </div>
       </div>
@@ -48,20 +49,20 @@ function SectionServiceArea() {
       <div className="inner">
       <div className="content">
       <h4 className="title mb--20">
-      <a href="/service-details">Design & Creative</a>
+      <Link href="/service/management-leadership">Design & Creative</Link>
       </h4>
       </div>
       <div className="image invers-anime">
       <img src="/assets/images/services/galery-image-02.png" alt="card Images" />
       </div>
       <div className="discover-btn">
-      <a className="tmp-btn mt--20 round btn-small btn-border hover-icon-reverse" href="/service-details">
+      <Link className="tmp-btn mt--20 round btn-small btn-border hover-icon-reverse" href="/service/management-leadership">
       <span className="icon-reverse-wrapper">
       <span className="btn-text">Discover services</span>
       <span className="btn-icon"><i className="feather-arrow-right"></i></span>
       <span className="btn-icon"><i className="feather-arrow-right"></i></span>
       </span>
-      </a>
+      </Link>
       </div>
       </div>
       </div>
@@ -71,20 +72,20 @@ function SectionServiceArea() {
       <div className="inner">
       <div className="content">
       <h4 className="title mb--20">
-      <a href="/service-details">App Development</a>
+      <Link href="/service/management-leadership">App Development</Link>
       </h4>
       </div>
       <div className="image invers-anime">
       <img src="/assets/images/services/galery-image-03.png" alt="card Images" />
       </div>
       <div className="discover-btn">
-      <a className="tmp-btn mt--20 round btn-small btn-border hover-icon-reverse" href="/service-details">
+      <Link className="tmp-btn mt--20 round btn-small btn-border hover-icon-reverse" href="/service/management-leadership">
       <span className="icon-reverse-wrapper">
       <span className="btn-text">Discover services</span>
       <span className="btn-icon"><i className="feather-arrow-right"></i></span>
       <span className="btn-icon"><i className="feather-arrow-right"></i></span>
       </span>
-      </a>
+      </Link>
       </div>
       </div>
       </div>

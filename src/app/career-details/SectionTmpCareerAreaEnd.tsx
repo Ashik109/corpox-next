@@ -1,3 +1,4 @@
+import Link from 'next/link'
 function SectionTmpCareerAreaEnd() {
   return (
     <>
@@ -34,7 +35,7 @@ function SectionTmpCareerAreaEnd() {
       <li>401k with company match</li>
       <li>Great Benefits package starting on Day 1!</li>
       </ul>
-      <a href="/apply" className="tmp-btn btn-primary mt--40">Apply Now</a>
+      <Link href="/apply" className="tmp-btn btn-primary mt--40">Apply Now</Link>
       </div>
       </div>
       </div>
@@ -56,7 +57,7 @@ function SectionTmpCareerAreaEnd() {
       <li>Bonuses&nbsp;– Yearly</li>
       </ul>
       </div>
-      <a href="/apply" className="tmp-btn btn-primary mt--40">Apply Now</a>
+      <Link href="/apply" className="tmp-btn btn-primary mt--40">Apply Now</Link>
       </div>
       <div className="col-lg-6">
       <div className="image-area-career invers-anime">

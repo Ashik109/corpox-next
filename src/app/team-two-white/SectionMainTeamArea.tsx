@@ -1,3 +1,4 @@
+import Link from 'next/link'
 function SectionMainTeamArea() {
   return (
     <>
@@ -28,17 +29,17 @@ function SectionMainTeamArea() {
       <h2 className="title">Sr Janen Sara</h2>
       <h6 className="subtitle color-body">Sr Product Designer</h6>
       <ul className="social-icon social-default icon-naked justify-content-start">
-      <li data-aos="slide-up" data-aos-duration="400" data-aos-delay="200"><a href="https://www.facebook.com/">
+      <li data-aos="slide-up" data-aos-duration="400" data-aos-delay="200"><Link href="https://www.facebook.com/">
       <i className="feather-facebook"></i>
-      </a>
+      </Link>
       </li>
-      <li data-aos="slide-up" data-aos-duration="400" data-aos-delay="300"><a href="https://www.twitter.com">
+      <li data-aos="slide-up" data-aos-duration="400" data-aos-delay="300"><Link href="https://www.twitter.com">
       <i className="feather-twitter"></i>
-      </a>
+      </Link>
       </li>
-      <li data-aos="slide-up" data-aos-duration="400" data-aos-delay="400"><a href="https://www.instagram.com/">
+      <li data-aos="slide-up" data-aos-duration="400" data-aos-delay="400"><Link href="https://www.instagram.com/">
       <i className="feather-instagram"></i>
-      </a>
+      </Link>
       </li>
       </ul>
       </div>
@@ -53,17 +54,17 @@ function SectionMainTeamArea() {
       <h2 className="title">Afsana Nila</h2>
       <h6 className="subtitle color-body">App Developer</h6>
       <ul className="social-icon social-default icon-naked justify-content-start">
-      <li data-aos="slide-up" data-aos-duration="400" data-aos-delay="200"><a href="https://www.facebook.com/">
+      <li data-aos="slide-up" data-aos-duration="400" data-aos-delay="200"><Link href="https://www.facebook.com/">
       <i className="feather-facebook"></i>
-      </a>
+      </Link>
       </li>
-      <li data-aos="slide-up" data-aos-duration="400" data-aos-delay="300"><a href="https://www.twitter.com">
+      <li data-aos="slide-up" data-aos-duration="400" data-aos-delay="300"><Link href="https://www.twitter.com">
       <i className="feather-twitter"></i>
-      </a>
+      </Link>
       </li>
-      <li data-aos="slide-up" data-aos-duration="400" data-aos-delay="400"><a href="https://www.instagram.com/">
+      <li data-aos="slide-up" data-aos-duration="400" data-aos-delay="400"><Link href="https://www.instagram.com/">
       <i className="feather-instagram"></i>
-      </a>
+      </Link>
       </li>
       </ul>
       </div>
@@ -78,17 +79,17 @@ function SectionMainTeamArea() {
       <h2 className="title">Afanan Sifa</h2>
       <h6 className="subtitle color-body">Accounts Manager</h6>
       <ul className="social-icon social-default icon-naked justify-content-start">
-      <li data-aos="slide-up" data-aos-duration="400" data-aos-delay="200"><a href="https://www.facebook.com/">
+      <li data-aos="slide-up" data-aos-duration="400" data-aos-delay="200"><Link href="https://www.facebook.com/">
       <i className="feather-facebook"></i>
-      </a>
+      </Link>
       </li>
-      <li data-aos="slide-up" data-aos-duration="400" data-aos-delay="300"><a href="https://www.twitter.com">
+      <li data-aos="slide-up" data-aos-duration="400" data-aos-delay="300"><Link href="https://www.twitter.com">
       <i className="feather-twitter"></i>
-      </a>
+      </Link>
       </li>
-      <li data-aos="slide-up" data-aos-duration="400" data-aos-delay="400"><a href="https://www.instagram.com/">
+      <li data-aos="slide-up" data-aos-duration="400" data-aos-delay="400"><Link href="https://www.instagram.com/">
       <i className="feather-instagram"></i>
-      </a>
+      </Link>
       </li>
       </ul>
       </div>
@@ -103,17 +104,17 @@ function SectionMainTeamArea() {
       <h2 className="title">Afanan Sifa</h2>
       <h6 className="subtitle color-body">Accounts Manager</h6>
       <ul className="social-icon social-default icon-naked justify-content-start">
-      <li data-aos="slide-up" data-aos-duration="400" data-aos-delay="200"><a href="https://www.facebook.com/">
+      <li data-aos="slide-up" data-aos-duration="400" data-aos-delay="200"><Link href="https://www.facebook.com/">
       <i className="feather-facebook"></i>
-      </a>
+      </Link>
       </li>
-      <li data-aos="slide-up" data-aos-duration="400" data-aos-delay="300"><a href="https://www.twitter.com">
+      <li data-aos="slide-up" data-aos-duration="400" data-aos-delay="300"><Link href="https://www.twitter.com">
       <i className="feather-twitter"></i>
-      </a>
+      </Link>
       </li>
-      <li data-aos="slide-up" data-aos-duration="400" data-aos-delay="400"><a href="https://www.instagram.com/">
+      <li data-aos="slide-up" data-aos-duration="400" data-aos-delay="400"><Link href="https://www.instagram.com/">
       <i className="feather-instagram"></i>
-      </a>
+      </Link>
       </li>
       </ul>
       </div>
@@ -128,17 +129,17 @@ function SectionMainTeamArea() {
       <h2 className="title">Afanan Sifa</h2>
       <h6 className="subtitle color-body">Accounts Manager</h6>
       <ul className="social-icon social-default icon-naked justify-content-start">
-      <li data-aos="slide-up" data-aos-duration="400" data-aos-delay="200"><a href="https://www.facebook.com/">
+      <li data-aos="slide-up" data-aos-duration="400" data-aos-delay="200"><Link href="https://www.facebook.com/">
       <i className="feather-facebook"></i>
-      </a>
+      </Link>
       </li>
-      <li data-aos="slide-up" data-aos-duration="400" data-aos-delay="300"><a href="https://www.twitter.com">
+      <li data-aos="slide-up" data-aos-duration="400" data-aos-delay="300"><Link href="https://www.twitter.com">
       <i className="feather-twitter"></i>
-      </a>
+      </Link>
       </li>
-      <li data-aos="slide-up" data-aos-duration="400" data-aos-delay="400"><a href="https://www.instagram.com/">
+      <li data-aos="slide-up" data-aos-duration="400" data-aos-delay="400"><Link href="https://www.instagram.com/">
       <i className="feather-instagram"></i>
-      </a>
+      </Link>
       </li>
       </ul>
       </div>
@@ -153,17 +154,17 @@ function SectionMainTeamArea() {
       <h2 className="title">Afanan Sifa</h2>
       <h6 className="subtitle color-body">Accounts Manager</h6>
       <ul className="social-icon social-default icon-naked justify-content-start">
-      <li data-aos="slide-up" data-aos-duration="400" data-aos-delay="200"><a href="https://www.facebook.com/">
+      <li data-aos="slide-up" data-aos-duration="400" data-aos-delay="200"><Link href="https://www.facebook.com/">
       <i className="feather-facebook"></i>
-      </a>
+      </Link>
       </li>
-      <li data-aos="slide-up" data-aos-duration="400" data-aos-delay="300"><a href="https://www.twitter.com">
+      <li data-aos="slide-up" data-aos-duration="400" data-aos-delay="300"><Link href="https://www.twitter.com">
       <i className="feather-twitter"></i>
-      </a>
+      </Link>
       </li>
-      <li data-aos="slide-up" data-aos-duration="400" data-aos-delay="400"><a href="https://www.instagram.com/">
+      <li data-aos="slide-up" data-aos-duration="400" data-aos-delay="400"><Link href="https://www.instagram.com/">
       <i className="feather-instagram"></i>
-      </a>
+      </Link>
       </li>
       </ul>
       </div>
@@ -178,17 +179,17 @@ function SectionMainTeamArea() {
       <h2 className="title">Sr Janen Sara</h2>
       <h6 className="subtitle color-body">Sr Product Designer</h6>
       <ul className="social-icon social-default icon-naked justify-content-start">
-      <li data-aos="slide-up" data-aos-duration="400" data-aos-delay="200"><a href="https://www.facebook.com/">
+      <li data-aos="slide-up" data-aos-duration="400" data-aos-delay="200"><Link href="https://www.facebook.com/">
       <i className="feather-facebook"></i>
-      </a>
+      </Link>
       </li>
-      <li data-aos="slide-up" data-aos-duration="400" data-aos-delay="300"><a href="https://www.twitter.com">
+      <li data-aos="slide-up" data-aos-duration="400" data-aos-delay="300"><Link href="https://www.twitter.com">
       <i className="feather-twitter"></i>
-      </a>
+      </Link>
       </li>
-      <li data-aos="slide-up" data-aos-duration="400" data-aos-delay="400"><a href="https://www.instagram.com/">
+      <li data-aos="slide-up" data-aos-duration="400" data-aos-delay="400"><Link href="https://www.instagram.com/">
       <i className="feather-instagram"></i>
-      </a>
+      </Link>
       </li>
       </ul>
       </div>
@@ -203,17 +204,17 @@ function SectionMainTeamArea() {
       <h2 className="title">Afsana Nila</h2>
       <h6 className="subtitle color-body">App Developer</h6>
       <ul className="social-icon social-default icon-naked justify-content-start">
-      <li data-aos="slide-up" data-aos-duration="400" data-aos-delay="200"><a href="https://www.facebook.com/">
+      <li data-aos="slide-up" data-aos-duration="400" data-aos-delay="200"><Link href="https://www.facebook.com/">
       <i className="feather-facebook"></i>
-      </a>
+      </Link>
       </li>
-      <li data-aos="slide-up" data-aos-duration="400" data-aos-delay="300"><a href="https://www.twitter.com">
+      <li data-aos="slide-up" data-aos-duration="400" data-aos-delay="300"><Link href="https://www.twitter.com">
       <i className="feather-twitter"></i>
-      </a>
+      </Link>
       </li>
-      <li data-aos="slide-up" data-aos-duration="400" data-aos-delay="400"><a href="https://www.instagram.com/">
+      <li data-aos="slide-up" data-aos-duration="400" data-aos-delay="400"><Link href="https://www.instagram.com/">
       <i className="feather-instagram"></i>
-      </a>
+      </Link>
       </li>
       </ul>
       </div>

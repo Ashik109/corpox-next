@@ -1,3 +1,4 @@
+import Link from 'next/link'
 function SectionRnBlogArea() {
   return (
     <>
@@ -11,16 +12,16 @@ function SectionRnBlogArea() {
       <div className="tmp-card box-card-style-default tmponhover">
       <div className="inner">
       <div className="thumbnail invers-anime">
-      <a className="image" href="/blog-details">
+      <Link className="image" href="/blog-details">
       <img loading="lazy" className="w-100" src="/assets/images/blog-grid/blog-01.jpg" alt="Blog Image" />
-      </a>
+      </Link>
       <span className="tag-news">Business</span>
       </div>
       <div className="content">
       <ul className="inversweb-meta-list">
       <li>
       <span><i className="feather-user"></i></span>
-      <a href="#">John Deon</a>
+      <Link href="#">John Deon</Link>
       </li>
       <li className="separator">-</li>
       <li>15 Dec 2025</li>
@@ -29,11 +30,11 @@ function SectionRnBlogArea() {
       <span>05</span>
       </li>
       </ul>
-      <h4 className="title"><a href="/blog-details">How to Analyze Your Best Pages for SEO
-                                                              Performance</a></h4>
+      <h4 className="title"><Link href="/blog-details">How to Analyze Your Best Pages for SEO
+                                                              Performance</Link></h4>
       <p className="descriptiion">It is an established fact that corporate success is not achieved overnight.</p>
       <div className="read-more-btn">
-      <a className="btn-read-more" href="/blog-details"><span>Read More</span></a>
+      <Link className="btn-read-more" href="/blog-details"><span>Read More</span></Link>
       </div>
       </div>
       </div>
@@ -46,7 +47,7 @@ function SectionRnBlogArea() {
       <ul className="inversweb-meta-list">
       <li>
       <span><i className="feather-user"></i></span>
-      <a href="#">Kalvin Klin</a>
+      <Link href="#">Kalvin Klin</Link>
       </li>
       <li className="separator">-</li>
       <li>28 Dec 2025</li>
@@ -55,15 +56,15 @@ function SectionRnBlogArea() {
       <span>03</span>
       </li>
       </ul>
-      <h4 className="title"><a href="/blog-details">Corporate Success How to Achieve Your
-                                                              Goals</a></h4>
+      <h4 className="title"><Link href="/blog-details">Corporate Success How to Achieve Your
+                                                              Goals</Link></h4>
       <p className="descriptiion">Corporate success is an established fact that comes from strategic.</p>
       <div className="read-more-btn">
-      <a className="btn-read-more" href="/blog-details"><span>Read More</span></a>
+      <Link className="btn-read-more" href="/blog-details"><span>Read More</span></Link>
       </div>
       </div>
       <div className="thumbnail invers-anime">
-      <a className="image" href="/blog-details"><img loading="lazy" className="w-100" src="/assets/images/blog-grid/blog-02.jpg" alt="Blog Image" /></a>
+      <Link className="image" href="/blog-details"><img loading="lazy" className="w-100" src="/assets/images/blog-grid/blog-02.jpg" alt="Blog Image" /></Link>
       <span className="tag-news">Development</span>
       </div>
       </div>
@@ -73,21 +74,21 @@ function SectionRnBlogArea() {
       <div className="tmp-card box-card-style-default tmponhover">
       <div className="inner">
       <div className="thumbnail invers-anime">
-      <a className="image" href="/blog-details">
+      <Link className="image" href="/blog-details">
       <img loading="lazy" className="w-100" src="/assets/images/blog-grid/blog-03.jpg" alt="Blog Image" />
-      </a>
+      </Link>
       <span className="tag-news">Technology</span>
       <div className="video-icon">
-      <a className="tmp-btn btn-small rounded-player popup-video" href="https://www.youtube.com/watch?v=4jnzf1yj48M">
+      <Link className="tmp-btn btn-small rounded-player popup-video" href="https://www.youtube.com/watch?v=4jnzf1yj48M">
       <span><i className="feather-play"></i></span>
-      </a>
+      </Link>
       </div>
       </div>
       <div className="content">
       <ul className="inversweb-meta-list">
       <li>
       <span><i className="feather-user"></i></span>
-      <a href="#">Kalvin Klin</a>
+      <Link href="#">Kalvin Klin</Link>
       </li>
       <li className="separator">-</li>
       <li>12 Dec 2025</li>
@@ -96,11 +97,11 @@ function SectionRnBlogArea() {
       <span>01</span>
       </li>
       </ul>
-      <h4 className="title"><a href="/blog-details">Corporate Leadership How to Lead with
-                                                              Confidence</a></h4>
+      <h4 className="title"><Link href="/blog-details">Corporate Leadership How to Lead with
+                                                              Confidence</Link></h4>
       <p className="descriptiion">Corporate success is widely recognized as the outcome of innovation.</p>
       <div className="read-more-btn">
-      <a className="btn-read-more" href="/blog-details"><span>Read More</span></a>
+      <Link className="btn-read-more" href="/blog-details"><span>Read More</span></Link>
       </div>
       </div>
       </div>
@@ -110,21 +111,21 @@ function SectionRnBlogArea() {
       <div className="tmp-card box-card-style-default tmponhover">
       <div className="inner">
       <div className="thumbnail invers-anime">
-      <a className="image" href="/blog-details">
+      <Link className="image" href="/blog-details">
       <img loading="lazy" className="w-100" src="/assets/images/blog-grid/blog-06.jpg" alt="Blog Image" />
-      </a>
+      </Link>
       <span className="tag-news">Technology</span>
       <div className="video-icon">
-      <a className="tmp-btn btn-small rounded-player popup-video" href="https://www.youtube.com/watch?v=4jnzf1yj48M">
+      <Link className="tmp-btn btn-small rounded-player popup-video" href="https://www.youtube.com/watch?v=4jnzf1yj48M">
       <span><i className="feather-play"></i></span>
-      </a>
+      </Link>
       </div>
       </div>
       <div className="content">
       <ul className="inversweb-meta-list">
       <li>
       <span><i className="feather-user"></i></span>
-      <a href="#">Kalvin Klin</a>
+      <Link href="#">Kalvin Klin</Link>
       </li>
       <li className="separator">-</li>
       <li>12 Dec 2025</li>
@@ -133,11 +134,11 @@ function SectionRnBlogArea() {
       <span>01</span>
       </li>
       </ul>
-      <h4 className="title"><a href="/blog-details">Corporate Leadership How to Lead with
-                                                              Confidence</a></h4>
+      <h4 className="title"><Link href="/blog-details">Corporate Leadership How to Lead with
+                                                              Confidence</Link></h4>
       <p className="descriptiion">Corporate success is widely recognized as the outcome of innovation.</p>
       <div className="read-more-btn">
-      <a className="btn-read-more" href="/blog-details"><span>Read More</span></a>
+      <Link className="btn-read-more" href="/blog-details"><span>Read More</span></Link>
       </div>
       </div>
       </div>
@@ -150,7 +151,7 @@ function SectionRnBlogArea() {
       <ul className="inversweb-meta-list">
       <li>
       <span><i className="feather-user"></i></span>
-      <a href="#">Kalvin Klin</a>
+      <Link href="#">Kalvin Klin</Link>
       </li>
       <li className="separator">-</li>
       <li>28 Dec 2025</li>
@@ -159,15 +160,15 @@ function SectionRnBlogArea() {
       <span>03</span>
       </li>
       </ul>
-      <h4 className="title"><a href="/blog-details">Corporate Success How to Achieve Your
-                                                              Goals</a></h4>
+      <h4 className="title"><Link href="/blog-details">Corporate Success How to Achieve Your
+                                                              Goals</Link></h4>
       <p className="descriptiion">Corporate success is an established fact that comes from strategic.</p>
       <div className="read-more-btn">
-      <a className="btn-read-more" href="/blog-details"><span>Read More</span></a>
+      <Link className="btn-read-more" href="/blog-details"><span>Read More</span></Link>
       </div>
       </div>
       <div className="thumbnail invers-anime">
-      <a className="image" href="/blog-details"><img loading="lazy" className="w-100" src="/assets/images/blog-grid/blog-05.jpg" alt="Blog Image" /></a>
+      <Link className="image" href="/blog-details"><img loading="lazy" className="w-100" src="/assets/images/blog-grid/blog-05.jpg" alt="Blog Image" /></Link>
       <span className="tag-news">Development</span>
       </div>
       </div>
@@ -177,16 +178,16 @@ function SectionRnBlogArea() {
       <div className="tmp-card box-card-style-default tmponhover">
       <div className="inner">
       <div className="thumbnail invers-anime">
-      <a className="image" href="/blog-details">
+      <Link className="image" href="/blog-details">
       <img loading="lazy" className="w-100" src="/assets/images/blog-grid/blog-04.jpg" alt="Blog Image" />
-      </a>
+      </Link>
       <span className="tag-news">Business</span>
       </div>
       <div className="content">
       <ul className="inversweb-meta-list">
       <li>
       <span><i className="feather-user"></i></span>
-      <a href="#">John Deon</a>
+      <Link href="#">John Deon</Link>
       </li>
       <li className="separator">-</li>
       <li>15 Dec 2025</li>
@@ -195,11 +196,11 @@ function SectionRnBlogArea() {
       <span>05</span>
       </li>
       </ul>
-      <h4 className="title"><a href="/blog-details">How to Analyze Your Best Pages for SEO
-                                                              Performance</a></h4>
+      <h4 className="title"><Link href="/blog-details">How to Analyze Your Best Pages for SEO
+                                                              Performance</Link></h4>
       <p className="descriptiion">It is an established fact that corporate success is not achieved overnight.</p>
       <div className="read-more-btn">
-      <a className="btn-read-more" href="/blog-details"><span>Read More</span></a>
+      <Link className="btn-read-more" href="/blog-details"><span>Read More</span></Link>
       </div>
       </div>
       </div>
@@ -210,11 +211,11 @@ function SectionRnBlogArea() {
       <div className="col-lg-12 mt--50">
       <nav>
       <ul className="tmp-pagination justify-content-center">
-      <li><a href="#" aria-label="Previous"><i className="feather-chevron-left"></i></a></li>
-      <li><a href="#">1</a></li>
-      <li className="active"><a href="#">2</a></li>
-      <li><a href="#">3</a></li>
-      <li><a href="#" aria-label="Next"><i className="feather-chevron-right"></i></a></li>
+      <li><Link href="#" aria-label="Previous"><i className="feather-chevron-left"></i></Link></li>
+      <li><Link href="#">1</Link></li>
+      <li className="active"><Link href="#">2</Link></li>
+      <li><Link href="#">3</Link></li>
+      <li><Link href="#" aria-label="Next"><i className="feather-chevron-right"></i></Link></li>
       </ul>
       </nav>
       </div>

@@ -1,3 +1,4 @@
+import Link from 'next/link'
 const posts = [
     {
         image: "/assets/images/blog/blog-01.jpg",
@@ -41,19 +42,19 @@ function BlogCreativeAgency() {
                             <div className="tmp-card box-card-style-default card-list-view tmponhover">
                                 <div className="inner">
                                     <div className="thumbnail invers-anime">
-                                        <a className="image" href="/blog/best-corporate-tips">
+                                        <Link className="image" href="/blog/best-corporate-tips">
                                             <img loading="lazy" src={post.image} alt="Blog Image" />
-                                        </a>
+                                        </Link>
                                     </div>
                                     <div className="content">
                                         <h4 className="title">
-                                            <a href="/blog/corporate-success-strategy">{post.title}</a>
+                                            <Link href="/blog/corporate-success-strategy">{post.title}</Link>
                                         </h4>
                                         <p className="descriptiion">{post.description}</p>
                                         <div className="read-more-btn">
-                                            <a className="btn-read-more" href="/blog/leadership-confidence">
+                                            <Link className="btn-read-more" href="/blog/leadership-confidence">
                                                 <span>Read More</span>
-                                            </a>
+                                            </Link>
                                         </div>
                                     </div>
                                 </div>

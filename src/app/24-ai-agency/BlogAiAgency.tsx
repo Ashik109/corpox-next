@@ -1,3 +1,4 @@
+import Link from 'next/link'
 const posts = [
     "The Complete Guide to Choosing Solar System",
     "How AI Automation Improves Team Productivity",
@@ -33,20 +34,20 @@ function BlogAiAgency() {
                                             </li>
                                         </ul>
                                         <h6 className="blog-title">
-                                            <a href="/blog/best-corporate-tips">{post}</a>
+                                            <Link href="/blog/best-corporate-tips">{post}</Link>
                                         </h6>
                                     </div>
                                     <div className="button-area">
                                         <div className="tmp-button-overlay-with-text btn-sm p-0">
-                                            <a href="/blog/corporate-success-strategy" className="tmp-icon-overlay-link-btn with-text-btn primary-btn">
+                                            <Link href="/blog/corporate-success-strategy" className="tmp-icon-overlay-link-btn with-text-btn primary-btn">
                                                 <span className="tmp-btn-overlay">
                                                     <i className="tmp-icon feather-arrow-right" />
                                                     <i className="tmp-icon-bottom feather-arrow-right" />
                                                 </span>
-                                            </a>
-                                            <a className="text-btn" href="/blog/leadership-confidence">
+                                            </Link>
+                                            <Link className="text-btn" href="/blog/leadership-confidence">
                                                 Read More
-                                            </a>
+                                            </Link>
                                         </div>
                                     </div>
                                 </div>

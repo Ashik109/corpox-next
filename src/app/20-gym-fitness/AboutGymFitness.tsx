@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import RealEstateOdometer from "../16-real-estate-consulting/RealEstateOdometer";
 
 const avatars = ["tooltip-01.png", "tooltip-02.png", "tooltip-03.png"];
@@ -32,26 +33,26 @@ function AboutGymFitness() {
                                 <div className="tmp-profile-box">
                                     <div className="profile-share justify-content-start">
                                         {avatars.map((avatar, index) => (
-                                            <a href="#" className="avatar" data-tooltip={index === 0 ? "Mark JOrdan" : index === 1 ? "Mark" : "Jordan"} key={avatar}>
+                                            <Link href="#" className="avatar" data-tooltip={index === 0 ? "Mark JOrdan" : index === 1 ? "Mark" : "Jordan"} key={avatar}>
                                                 <img src={`/assets/images/testimonial/${avatar}`} alt="" />
-                                            </a>
+                                            </Link>
                                         ))}
                                         <div className="more-author-text">
                                             <p className="subtitle">
-                                                <a className="btn-read-more" href="#">
+                                                <Link className="btn-read-more" href="#">
                                                     <span>Check all History</span>
-                                                </a>
+                                                </Link>
                                             </p>
                                         </div>
                                     </div>
                                 </div>
                                 <div className="read-more-btn btn-group gap-4 mt--40">
-                                    <a className="tmp-btn btn-primary round btn-large" href="/about">
+                                    <Link className="tmp-btn btn-primary round btn-large" href="/about">
                                         More About Us
-                                    </a>
-                                    <a className="tmp-btn btn-border round btn-large" href="/contact">
+                                    </Link>
+                                    <Link className="tmp-btn btn-border round btn-large" href="/contact">
                                         Contact With Us
-                                    </a>
+                                    </Link>
                                 </div>
                             </div>
                         </div>
@@ -64,19 +65,19 @@ function AboutGymFitness() {
                                         <img className="radius-small" src="/assets/images/about/15.webp" alt="Gym training" />
                                     </div>
                                     <div className="video-icon">
-                                        <a className="tmp-btn rounded-player popup-video" href="https://www.youtube.com/watch?v=4jnzf1yj48M">
+                                        <Link className="tmp-btn rounded-player popup-video" href="https://www.youtube.com/watch?v=4jnzf1yj48M">
                                             <span>
                                                 <i className="feather-play" />
                                             </span>
-                                        </a>
+                                        </Link>
                                     </div>
                                 </div>
                                 <div className="absolute-rating-area images-left-right-float image">
                                     <div className="profile-share justify-content-start">
                                         {avatars.map((avatar) => (
-                                            <a href="#" className="avatar" data-tooltip="Mark" key={`rating-${avatar}`}>
+                                            <Link href="#" className="avatar" data-tooltip="Mark" key={`rating-${avatar}`}>
                                                 <img src={`/assets/images/testimonial/${avatar}`} alt="" />
-                                            </a>
+                                            </Link>
                                         ))}
                                     </div>
                                     <div className="stars-area">

@@ -1,3 +1,4 @@
+import Link from 'next/link'
 function SectionSingleServiceBox2() {
   return (
     <>
@@ -9,11 +10,11 @@ function SectionSingleServiceBox2() {
       </svg>
       </div>
       <div className="content">
-      <h4 className="title w-600"><a href="#">Dedicated Support</a></h4>
+      <h4 className="title w-600"><Link href="#">Dedicated Support</Link></h4>
       <p className="description b1 color-gray mb--20">Need support ? Submit a ticket. We will be
                                           happy to assist you.</p>
       <div className="doc-btn">
-      <a className="tmp-btn btn-small btn-border radius-round" target="_blank" href="https://themeforest.net/item/corpox-business-consulting-bootstrap-5-html-template/59767866/support">Get Support</a>
+      <Link className="tmp-btn btn-small btn-border radius-round" target="_blank" href="https://themeforest.net/item/corpox-business-consulting-bootstrap-5-html-template/59767866/support">Get Support</Link>
       </div>
       <ul className="liststyle">
       <li><span>Support Time:</span> Monday – Friday</li>

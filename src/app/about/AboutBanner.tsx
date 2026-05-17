@@ -1,3 +1,4 @@
+import Link from 'next/link'
 const VIDEO_URL = 'https://www.youtube.com/watch?v=4jnzf1yj48M'
 
 function AboutBanner() {
@@ -32,9 +33,9 @@ function AboutBanner() {
                     <img className="radius-small" src="/assets/images/about/14.webp" alt="Corporate Image" />
                   </div>
                   <div className="video-icon">
-                    <a className="tmp-btn rounded-player popup-video" href={VIDEO_URL}>
+                    <Link className="tmp-btn rounded-player popup-video" href={VIDEO_URL}>
                       <span><i className="feather-play" /></span>
-                    </a>
+                    </Link>
                   </div>
                 </div>
               </div>

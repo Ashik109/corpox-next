@@ -1,3 +1,4 @@
+import Link from 'next/link'
 function SectionTimelineStyleOne() {
   return (
     <>
@@ -78,10 +79,10 @@ function SectionTimelineStyleOne() {
       </div>
       </div>
       <div className="read-morebtn" data-aos="slide-up" data-aos-duration="700" data-aos-delay="300">
-      <a className="tmp-btn round icon-hover" href="#">
+      <Link className="tmp-btn round icon-hover" href="#">
       <span className="btn-text">Get Started Now</span>
       <span className="btn-icon"><i className="feather-arrow-right"></i></span>
-      </a>
+      </Link>
       </div>
       </div>
       </div>
@@ -149,10 +150,10 @@ function SectionTimelineStyleOne() {
       </div>
       </div>
       <div className="read-morebtn" data-aos="slide-up" data-aos-duration="700" data-aos-delay="300">
-      <a className="tmp-btn round icon-hover" href="#">
+      <Link className="tmp-btn round icon-hover" href="#">
       <span className="btn-text">Get Started Now</span>
       <span className="btn-icon"><i className="feather-arrow-right"></i></span>
-      </a>
+      </Link>
       </div>
       </div>
       </div>

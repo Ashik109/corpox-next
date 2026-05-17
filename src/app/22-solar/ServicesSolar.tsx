@@ -1,3 +1,4 @@
+import Link from 'next/link'
 const services = [
     ["10.webp", "Solar Strategy Planning"],
     ["11.webp", "Energy Efficiency Programs"],
@@ -33,14 +34,14 @@ function ServicesSolar() {
                         <div className="col-lg-12">
                             <div className="inversweb-service-main-wrapper-list">
                                 {services.map(([image, title], index) => (
-                                    <a href="/service/management-leadership" className="single-service-wrapper tmponhover" key={`${title}-${index}`}>
+                                    <Link href="/service/management-leadership" className="single-service-wrapper tmponhover" key={`${title}-${index}`}>
                                         <div className="thumbnail invers-anime">
                                             <img src={`/assets/images/services/${image}`} alt="" />
                                         </div>
                                         <div className="content">
                                             <h5 className="title">{title}</h5>
                                         </div>
-                                    </a>
+                                    </Link>
                                 ))}
                             </div>
                         </div>

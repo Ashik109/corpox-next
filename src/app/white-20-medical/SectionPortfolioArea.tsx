@@ -1,3 +1,4 @@
+import Link from 'next/link'
 function SectionPortfolioArea() {
   return (
     <>
@@ -21,12 +22,12 @@ function SectionPortfolioArea() {
       <div className="row g-5 mt--10">
       <div className="col-lg-8 col-md-12 col-sm-12">
       <div className="single-modern-case-studies">
-      <a href="/portfolio-details" className="thumbnail invers-anime">
+      <Link href="/portfolio-details" className="thumbnail invers-anime">
       <img src="/assets/images/portfolio/19.webp" alt="case-studies" />
-      </a>
+      </Link>
       <div className="inner-content-area">
       <span className="tags">2025, Dental</span>
-      <a href="#" className="tmponhover">
+      <Link href="#" className="tmponhover">
       <h3 className="title">Dental Care System</h3>
       <div className="tmp-icon">
       <span className="default">
@@ -41,18 +42,18 @@ function SectionPortfolioArea() {
       </svg>
       </span>
       </div>
-      </a>
+      </Link>
       </div>
       </div>
       </div>
       <div className="col-lg-4 col-md-6 col-sm-12">
       <div className="single-modern-case-studies">
-      <a href="/portfolio-details" className="thumbnail invers-anime">
+      <Link href="/portfolio-details" className="thumbnail invers-anime">
       <img src="/assets/images/portfolio/20.webp" alt="case-studies" />
-      </a>
+      </Link>
       <div className="inner-content-area">
       <span className="tags">2024, Cardio</span>
-      <a href="#" className="tmponhover">
+      <Link href="#" className="tmponhover">
       <h3 className="title">Cardiology Interface</h3>
       <div className="tmp-icon">
       <span className="default">
@@ -67,18 +68,18 @@ function SectionPortfolioArea() {
       </svg>
       </span>
       </div>
-      </a>
+      </Link>
       </div>
       </div>
       </div>
       <div className="col-lg-4 col-md-6 col-sm-12">
       <div className="single-modern-case-studies">
-      <a href="/portfolio-details" className="thumbnail invers-anime">
+      <Link href="/portfolio-details" className="thumbnail invers-anime">
       <img src="/assets/images/portfolio/21.webp" alt="case-studies" />
-      </a>
+      </Link>
       <div className="inner-content-area">
       <span className="tags">2025, Brain</span>
-      <a href="#" className="tmponhover">
+      <Link href="#" className="tmponhover">
       <h3 className="title">Neurology Platform</h3>
       <div className="tmp-icon">
       <span className="default">
@@ -93,18 +94,18 @@ function SectionPortfolioArea() {
       </svg>
       </span>
       </div>
-      </a>
+      </Link>
       </div>
       </div>
       </div>
       <div className="col-lg-4 col-md-6 col-sm-12">
       <div className="single-modern-case-studies">
-      <a href="/portfolio-details" className="thumbnail invers-anime">
+      <Link href="/portfolio-details" className="thumbnail invers-anime">
       <img src="/assets/images/portfolio/22.webp" alt="case-studies" />
-      </a>
+      </Link>
       <div className="inner-content-area">
       <span className="tags">2025, Gastro</span>
-      <a href="#" className="tmponhover">
+      <Link href="#" className="tmponhover">
       <h3 className="title">Gastro Care Plan</h3>
       <div className="tmp-icon">
       <span className="default">
@@ -119,18 +120,18 @@ function SectionPortfolioArea() {
       </svg>
       </span>
       </div>
-      </a>
+      </Link>
       </div>
       </div>
       </div>
       <div className="col-lg-4 col-md-6 col-sm-12">
       <div className="single-modern-case-studies">
-      <a href="/portfolio-details" className="thumbnail invers-anime">
+      <Link href="/portfolio-details" className="thumbnail invers-anime">
       <img src="/assets/images/portfolio/23.webp" alt="case-studies" />
-      </a>
+      </Link>
       <div className="inner-content-area">
       <span className="tags">2025, Healthcare</span>
-      <a href="#" className="tmponhover">
+      <Link href="#" className="tmponhover">
       <h3 className="title">Healthcare Solution</h3>
       <div className="tmp-icon">
       <span className="default">
@@ -145,7 +146,7 @@ function SectionPortfolioArea() {
       </svg>
       </span>
       </div>
-      </a>
+      </Link>
       </div>
       </div>
       </div>

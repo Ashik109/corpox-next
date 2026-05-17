@@ -1,17 +1,18 @@
+import Link from 'next/link'
 function ProfileShare() {
     return (
         <div className="profile-share justify-content-center">
             {["tooltip-01.png", "tooltip-02.png", "tooltip-03.png"].map((image, index) => (
-                <a href="#" className="avatar" data-tooltip={["Mark JOrdan", "Mark", "Jordan"][index]} key={image}>
+                <Link href="#" className="avatar" data-tooltip={["Mark JOrdan", "Mark", "Jordan"][index]} key={image}>
                     <img src={`/assets/images/testimonial/${image}`} alt="education" />
-                </a>
+                </Link>
             ))}
             <div className="more-author-text">
                 <h5 className="total-join-students">Join Over 3000+ Students</h5>
                 <p className="subtitle">
-                    <a className="btn-read-more" href="https://themeforest.net/item/corpox-business-consulting-bootstrap-5-html-template/59767866" target="_blank">
+                    <Link className="btn-read-more" href="https://themeforest.net/item/corpox-business-consulting-bootstrap-5-html-template/59767866" target="_blank">
                         <span>Purchase Corpox</span>
-                    </a>
+                    </Link>
                 </p>
             </div>
         </div>
@@ -35,7 +36,7 @@ function CtaBusinessCoach() {
                                                 </h2>
                                                 <h6 className="subtitle tmp-title-split">Finest choice for your home &amp; office</h6>
                                                 <div className="call-to-btn d-flex justify-content-center">
-                                                    <a className="tmp-btn btn-extra-large hover-icon-reverse" target="_blank" href="https://themeforest.net/item/corpox-business-consulting-bootstrap-5-html-template/59767866">
+                                                    <Link className="tmp-btn btn-extra-large hover-icon-reverse" target="_blank" href="https://themeforest.net/item/corpox-business-consulting-bootstrap-5-html-template/59767866">
                                                         <span className="icon-reverse-wrapper">
                                                             <span className="btn-text">Purchase Corpox</span>
                                                             <span className="btn-icon">
@@ -45,7 +46,7 @@ function CtaBusinessCoach() {
                                                                 <i className="feather-arrow-right" />
                                                             </span>
                                                         </span>
-                                                    </a>
+                                                    </Link>
                                                 </div>
                                             </div>
                                             <div className="tmp-profile-box mt--50">

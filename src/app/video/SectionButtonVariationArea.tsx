@@ -1,3 +1,4 @@
+import Link from 'next/link'
 function SectionButtonVariationArea() {
   return (
     <>
@@ -21,12 +22,12 @@ function SectionButtonVariationArea() {
       <div className="row mt--10">
       <div className="col-lg-12">
       <div className="button-group">
-      <a className="tmp-btn rounded-player popup-video" href="https://www.youtube.com/watch?v=4jnzf1yj48M">
+      <Link className="tmp-btn rounded-player popup-video" href="https://www.youtube.com/watch?v=4jnzf1yj48M">
       <span><i className="feather-play"></i></span>
-      </a>
-      <a className="tmp-btn btn-border rounded-player popup-video" href="https://www.youtube.com/watch?v=4jnzf1yj48M">
+      </Link>
+      <Link className="tmp-btn btn-border rounded-player popup-video" href="https://www.youtube.com/watch?v=4jnzf1yj48M">
       <span><i className="feather-play"></i></span>
-      </a>
+      </Link>
       </div>
       </div>
       </div>

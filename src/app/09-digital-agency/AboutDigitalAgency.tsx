@@ -1,3 +1,4 @@
+import Link from 'next/link'
 const aboutFeatures = [1, 2];
 
 function AboutDigitalAgency() {
@@ -17,14 +18,14 @@ function AboutDigitalAgency() {
                                         />
                                     </div>
                                     <div className="video-icon">
-                                        <a
+                                        <Link
                                             className="tmp-btn rounded-player popup-video"
                                             href="https://www.youtube.com/watch?v=4jnzf1yj48M"
                                         >
                                             <span>
                                                 <i className="feather-play" />
                                             </span>
-                                        </a>
+                                        </Link>
                                     </div>
                                 </div>
                             </div>
@@ -64,9 +65,9 @@ function AboutDigitalAgency() {
                                     ))}
                                 </ul>
                                 <div className="about-btn mt--30">
-                                    <a className="tmp-btn round text-center" href="/about">
+                                    <Link className="tmp-btn round text-center" href="/about">
                                         About Our Corpox
-                                    </a>
+                                    </Link>
                                 </div>
                             </div>
                         </div>

@@ -1,3 +1,4 @@
+import Link from 'next/link'
 const projects = [
     { image: "05.webp", title: "App Development", tags: "2025, Business", wide: true },
     { image: "06.webp", title: "UI/UX Design", tags: "2024, design" },
@@ -29,19 +30,19 @@ function PortfolioITSolution() {
                     {projects.map((project) => (
                         <div className={`${project.wide ? "col-lg-8 col-md-12" : "col-lg-4 col-md-6"} col-sm-12`} key={project.image}>
                             <div className="single-modern-case-studies">
-                                <a href="/portfolio/brand-refresh-venture" className="thumbnail invers-anime">
+                                <Link href="/portfolio/brand-refresh-venture" className="thumbnail invers-anime">
                                     <img src={`/assets/images/portfolio/${project.image}`} alt="case-studies" />
-                                </a>
+                                </Link>
                                 <div className="inner-content-area">
                                     <span className="tags">{project.tags}</span>
-                                    <a href="/portfolio/analytics-platform" className="tmponhover">
+                                    <Link href="/portfolio/analytics-platform" className="tmponhover">
                                         <h3 className="title">{project.title}</h3>
                                         <div className="tmp-icon">
                                             <span className="default">
                                                 <i className="feather-arrow-up-right" />
                                             </span>
                                         </div>
-                                    </a>
+                                    </Link>
                                 </div>
                             </div>
                         </div>

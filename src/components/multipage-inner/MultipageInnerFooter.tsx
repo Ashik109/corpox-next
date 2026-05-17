@@ -42,7 +42,7 @@ export default function MultipageInnerFooter() {
                       <Link href="/tab">Tab Styles</Link>
                     </li>
                     <li>
-                      <Link href="/service/management-leadership">Service</Link>
+                      <Link href="/service">Service</Link>
                     </li>
                     <li>
                       <Link href="/social-share">Social</Link>
@@ -57,13 +57,13 @@ export default function MultipageInnerFooter() {
                 <div className="inner">
                   <ul className="footer-link link-hover">
                     <li>
-                      <Link href="/team/benjamin-taylor">Team</Link>
+                      <Link href="/team">Team</Link>
                     </li>
                     <li>
                       <Link href="/testimonial">Testimonial</Link>
                     </li>
                     <li>
-                      <Link href="/service/financial-growth">Service</Link>
+                      <Link href="/service">Service</Link>
                     </li>
                     <li>
                       <Link href="/timeline">Timeline</Link>
@@ -79,24 +79,24 @@ export default function MultipageInnerFooter() {
                   <h6 className="subtitle">1200+ trusted clients are subscribe Us around the world</h6>
                   <ul className="social-icon social-default justify-content-start">
                     <li>
-                      <a href="https://www.facebook.com/" target="_blank" rel="noreferrer">
+                      <Link href="https://www.facebook.com/" target="_blank" rel="noreferrer">
                         <i className="feather-facebook" />
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a href="https://www.twitter.com" target="_blank" rel="noreferrer">
+                      <Link href="https://www.twitter.com" target="_blank" rel="noreferrer">
                         <i className="feather-twitter" />
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a href="https://www.instagram.com/" target="_blank" rel="noreferrer">
+                      <Link href="https://www.instagram.com/" target="_blank" rel="noreferrer">
                         <i className="feather-instagram" />
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a href="https://www.linkdin.com/" target="_blank" rel="noreferrer">
+                      <Link href="https://www.linkdin.com/" target="_blank" rel="noreferrer">
                         <i className="feather-linkedin" />
-                      </a>
+                      </Link>
                     </li>
                   </ul>
                 </div>

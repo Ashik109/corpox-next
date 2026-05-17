@@ -1,4 +1,6 @@
 "use client";
+import Link from 'next/link'
+
 
 import { useState } from "react";
 
@@ -34,9 +36,9 @@ function FaqAiAgency() {
                             <h2 className="title w-700 tmp-title-split">
                                 Frequently Ask & <br /> Questions
                             </h2>
-                            <a href="#" className="tmp-btn btn-primary mt--25">
+                            <Link href="#" className="tmp-btn btn-primary mt--25">
                                 View All Faq&apos;s
-                            </a>
+                            </Link>
                         </div>
                     </div>
                     <div className="col-lg-6">

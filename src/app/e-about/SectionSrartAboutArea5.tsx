@@ -1,3 +1,4 @@
+import Link from 'next/link'
 function SectionSrartAboutArea5() {
   return (
     <>
@@ -8,9 +9,9 @@ function SectionSrartAboutArea5() {
       <div className="content ">
       <div className="tmp-profile-box">
       <div className="profile-share justify-content-start">
-      <a href="#" className="avatar" data-tooltip="Mark JOrdan" tabIndex={0}><img src="/assets/images/testimonial/tooltip-01.png" alt="education" /></a>
-      <a href="#" className="avatar" data-tooltip="Mark" tabIndex={0}><img src="/assets/images/testimonial/tooltip-02.png" alt="education" /></a>
-      <a href="#" className="avatar" data-tooltip="Jordan" tabIndex={0}><img src="/assets/images/testimonial/tooltip-03.png" alt="education" /></a>
+      <Link href="#" className="avatar" data-tooltip="Mark JOrdan" tabIndex={0}><img src="/assets/images/testimonial/tooltip-01.png" alt="education" /></Link>
+      <Link href="#" className="avatar" data-tooltip="Mark" tabIndex={0}><img src="/assets/images/testimonial/tooltip-02.png" alt="education" /></Link>
+      <Link href="#" className="avatar" data-tooltip="Jordan" tabIndex={0}><img src="/assets/images/testimonial/tooltip-03.png" alt="education" /></Link>
       </div>
       </div>
       <h3 className="title w-700 mt--20 tmp-title-split">Trully corporate company <br /> based in United kingdom</h3>
@@ -21,7 +22,7 @@ function SectionSrartAboutArea5() {
                                   accusantium dignissimos repellendus nemo fugiat numquam, nisi odio adipisci. Veniam neque
                                   itaque expedita officiis rem ipsa! Ratione, rem reiciendis?</p>
       <div className="about-more-btn ">
-      <a className="btn-read-more" href="#"><span>ABOUT COMPANY</span></a>
+      <Link className="btn-read-more" href="#"><span>ABOUT COMPANY</span></Link>
       </div>
       </div>
       </div>

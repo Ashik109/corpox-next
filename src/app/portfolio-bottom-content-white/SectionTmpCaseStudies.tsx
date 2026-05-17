@@ -1,3 +1,4 @@
+import Link from 'next/link'
 function SectionTmpCaseStudies() {
   return (
     <>
@@ -21,13 +22,13 @@ function SectionTmpCaseStudies() {
       <div className="row g-75">
       <div className="col-lg-6 col-md-6 col-sm-12" data-animation="fadeInUp" data-delay="0.0" data-duration="1.2" style={{ transform: 'translate(0px, 0px)', opacity: '1' }}>
       <div className="single-project-area-bottom-content">
-      <a href="/portfolio-details-white" className="thumbnail invers-anime">
+      <Link href="/portfolio-details-white" className="thumbnail invers-anime">
       <img src="/assets/images/portfolio/01.webp" alt="project" />
-      </a>
+      </Link>
       <div className="inner">
-      <a href="/portfolio-details-white">
+      <Link href="/portfolio-details-white">
       <h4 className="title">Business Growth</h4>
-      </a>
+      </Link>
       <p className="disc">
                                           Growth isn’t just about getting bigger—it’s about getting better. At we specialize
                                           in empowering businesses to and strategically.
@@ -37,13 +38,13 @@ function SectionTmpCaseStudies() {
       </div>
       <div className="col-lg-6 col-md-6 col-sm-12" data-animation="fadeInUp" data-delay="0.2" data-duration="1.2" style={{ transform: 'translate(0px, 0px)', opacity: '1' }}>
       <div className="single-project-area-bottom-content">
-      <a href="/portfolio-details-white" className="thumbnail invers-anime">
+      <Link href="/portfolio-details-white" className="thumbnail invers-anime">
       <img src="/assets/images/portfolio/02.webp" alt="project" />
-      </a>
+      </Link>
       <div className="inner">
-      <a href="/portfolio-details-white">
+      <Link href="/portfolio-details-white">
       <h4 className="title">Startup Solution</h4>
-      </a>
+      </Link>
       <p className="disc">
                                           Growth isn’t just about getting bigger—it’s about getting better. At we specialize
                                           in empowering businesses to and strategically.
@@ -53,13 +54,13 @@ function SectionTmpCaseStudies() {
       </div>
       <div className="col-lg-6 col-md-6 col-sm-12" data-animation="fadeInUp" data-delay="0.4" data-duration="1.2" style={{ transform: 'translate(0px, 0px)', opacity: '1' }}>
       <div className="single-project-area-bottom-content">
-      <a href="/portfolio-details-white" className="thumbnail invers-anime">
+      <Link href="/portfolio-details-white" className="thumbnail invers-anime">
       <img src="/assets/images/portfolio/03.webp" alt="project" />
-      </a>
+      </Link>
       <div className="inner">
-      <a href="/portfolio-details-white">
+      <Link href="/portfolio-details-white">
       <h4 className="title">Growth Manage</h4>
-      </a>
+      </Link>
       <p className="disc">
                                           Growth isn’t just about getting bigger—it’s about getting better. At we specialize
                                           in empowering businesses to and strategically.
@@ -69,13 +70,13 @@ function SectionTmpCaseStudies() {
       </div>
       <div className="col-lg-6 col-md-6 col-sm-12" data-animation="fadeInUp" data-delay="0.6" data-duration="1.2" style={{ transform: 'translate(0px, 0px)', opacity: '1' }}>
       <div className="single-project-area-bottom-content">
-      <a href="/portfolio-details-white" className="thumbnail invers-anime">
+      <Link href="/portfolio-details-white" className="thumbnail invers-anime">
       <img src="/assets/images/portfolio/04.webp" alt="project" />
-      </a>
+      </Link>
       <div className="inner">
-      <a href="/portfolio-details-white">
+      <Link href="/portfolio-details-white">
       <h4 className="title">Company Skills</h4>
-      </a>
+      </Link>
       <p className="disc">
                                           Growth isn’t just about getting bigger—it’s about getting better. At we specialize
                                           in empowering businesses to and strategically.

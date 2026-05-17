@@ -1,4 +1,6 @@
 "use client";
+import Link from 'next/link'
+
 
 import { useState } from "react";
 
@@ -81,9 +83,9 @@ function PricingITSolution() {
                                                     ))}
                                                 </ul>
                                                 {popular ? <div className="popular-tag">Popular</div> : null}
-                                                <a href="/contact" className={`tmp-btn btn-primary ${popular ? "" : "btn-border"} w-100`}>
+                                                <Link href="/contact" className={`tmp-btn btn-primary ${popular ? "" : "btn-border"} w-100`}>
                                                     Pick This Package
-                                                </a>
+                                                </Link>
                                             </div>
                                         </div>
                                     ))}

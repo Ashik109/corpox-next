@@ -1,3 +1,4 @@
+import Link from 'next/link'
 function SectionBreadcarumbArea() {
   return (
     <>
@@ -10,7 +11,7 @@ function SectionBreadcarumbArea() {
       <div className="pres-line-separator-wrapper text-center mb--10">
       <div className="line-separator line-left"></div>
       <span className="subtitle">
-      <span className="number"><a href="/index">01</a></span>
+      <span className="number"><Link href="/index">01</Link></span>
       <span className="subtitle-text">Banner Slider</span>
       </span>
       <div className="line-separator line-right"></div>

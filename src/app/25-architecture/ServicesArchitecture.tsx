@@ -1,3 +1,4 @@
+import Link from 'next/link'
 const services = [
     {
         image: "05.webp",
@@ -47,7 +48,7 @@ function ServiceContent({ service }: { service: (typeof services)[number] }) {
                 <h6 className="title">{service.title}</h6>
             </div>
             <p className="disc">{service.text}</p>
-            <a className="tmp-btn hover-icon-reverse" href="/service/management-leadership">
+            <Link className="tmp-btn hover-icon-reverse" href="/service/management-leadership">
                 <span className="icon-reverse-wrapper">
                     <span className="btn-text">See Details</span>
                     <span className="btn-icon">
@@ -57,16 +58,16 @@ function ServiceContent({ service }: { service: (typeof services)[number] }) {
                         <i className="feather-arrow-right" />
                     </span>
                 </span>
-            </a>
+            </Link>
         </div>
     );
 }
 
 function ServiceImage({ service }: { service: (typeof services)[number] }) {
     return (
-        <a className="thumbnail-service-list invers-anime" href="/service/financial-growth">
+        <Link className="thumbnail-service-list invers-anime" href="/service/financial-growth">
             <img src={`/assets/images/services/list/${service.image}`} alt={service.alt} />
-        </a>
+        </Link>
     );
 }
 
@@ -90,7 +91,7 @@ function ServicesArchitecture() {
                                 </h2>
                             </div>
                             <div className="tmp-load-more d-flex justify-content-center" data-aos="fade-up" data-aos-duration="700" data-aos-delay="150">
-                                <a className="tmp-btn btn-large hover-icon-reverse" href="/service/management-leadership">
+                                <Link className="tmp-btn btn-large hover-icon-reverse" href="/service/management-leadership">
                                     <span className="icon-reverse-wrapper">
                                         <span className="btn-text">View More Services</span>
                                         <span className="btn-icon">
@@ -100,7 +101,7 @@ function ServicesArchitecture() {
                                             <i className="feather-loader" />
                                         </span>
                                     </span>
-                                </a>
+                                </Link>
                             </div>
                         </div>
                     </div>

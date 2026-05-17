@@ -1,3 +1,4 @@
+import Link from 'next/link'
 function TopbarPersonalAdvisory() {
     return (
         <div className="header-top-bar with-border-bottom">
@@ -6,10 +7,10 @@ function TopbarPersonalAdvisory() {
                     <div className="col-lg-4 col-md-12 col-12">
                         <div className="header-left">
                             <p>
-                                <a href="#">
+                                <Link href="#">
                                     Get the most advanced template
                                     <i className="feather-chevron-right" />
-                                </a>
+                                </Link>
                             </p>
                         </div>
                     </div>
@@ -23,7 +24,7 @@ function TopbarPersonalAdvisory() {
                                 <p>
                                     <i className="feather-phone" />
                                     <span>
-                                        <a href="#">+06 58 49 99 56</a>
+                                        <Link href="#">+06 58 49 99 56</Link>
                                     </span>
                                 </p>
                             </div>
@@ -31,9 +32,9 @@ function TopbarPersonalAdvisory() {
                                 <ul className="social-icon social-default icon-naked">
                                     {["facebook", "twitter", "instagram", "linkedin"].map((icon) => (
                                         <li key={icon}>
-                                            <a href={`https://www.${icon}.com/`}>
+                                            <Link href={`https://www.${icon}.com/`}>
                                                 <i className={`feather-${icon}`} />
-                                            </a>
+                                            </Link>
                                         </li>
                                     ))}
                                 </ul>

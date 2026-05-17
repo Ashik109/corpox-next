@@ -44,13 +44,13 @@ function AboutTeam() {
                     </h6>
                     <p className="designation">{member.role}</p>
                   </div>
-                  <a href="#" className="share"><i className="feather-share-2" /></a>
+                  <Link href="#" className="share"><i className="feather-share-2" /></Link>
                 </div>
                 <div className="social-wrapper">
                   <ul>
                     {socialLinks.map((icon) => (
                       <li key={icon}>
-                        <a href="#"><i className={icon} /></a>
+                        <Link href="#"><i className={icon} /></Link>
                       </li>
                     ))}
                   </ul>

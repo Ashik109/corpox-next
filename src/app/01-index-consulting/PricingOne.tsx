@@ -1,4 +1,6 @@
 'use client';
+import Link from 'next/link'
+
 import React from 'react';
 
 function PricingOne() {
@@ -92,9 +94,9 @@ function PricingOne() {
                           <li>Work in business days, no weekend.</li>
                           <li>Support 6 months</li>
                         </ul>
-                        <a href="#" className="tmp-btn btn-primary btn-border w-100">
+                        <Link href="#" className="tmp-btn btn-primary btn-border w-100">
                           Pick This Package
-                        </a>
+                        </Link>
                       </div>
                     </div>
 
@@ -118,9 +120,9 @@ function PricingOne() {
                           <li>Support 6 months</li>
                         </ul>
                         <div className="popular-tag">Popular</div>
-                        <a href="#" className="tmp-btn btn-primary w-100">
+                        <Link href="#" className="tmp-btn btn-primary w-100">
                           Pick This Package
-                        </a>
+                        </Link>
                       </div>
                     </div>
 
@@ -143,9 +145,9 @@ function PricingOne() {
                           <li>Work in business days, no weekend.</li>
                           <li>Support 6 months</li>
                         </ul>
-                        <a href="#" className="tmp-btn btn-border btn-primary w-100">
+                        <Link href="#" className="tmp-btn btn-border btn-primary w-100">
                           Pick This Package
-                        </a>
+                        </Link>
                       </div>
                     </div>
                   </div>
@@ -178,9 +180,9 @@ function PricingOne() {
                           <li>Work in business days, no weekend.</li>
                           <li>Support 6 months</li>
                         </ul>
-                        <a href="#" className="tmp-btn btn-border btn-primary w-100">
+                        <Link href="#" className="tmp-btn btn-border btn-primary w-100">
                           Pick This Package
-                        </a>
+                        </Link>
                       </div>
                     </div>
 
@@ -204,9 +206,9 @@ function PricingOne() {
                           <li>Support 6 months</li>
                         </ul>
                         <div className="popular-tag">Popular</div>
-                        <a href="#" className="tmp-btn btn-primary w-100">
+                        <Link href="#" className="tmp-btn btn-primary w-100">
                           Pick This Package
-                        </a>
+                        </Link>
                       </div>
                     </div>
 
@@ -229,9 +231,9 @@ function PricingOne() {
                           <li>Work in business days, no weekend.</li>
                           <li>Support 6 months</li>
                         </ul>
-                        <a href="#" className="tmp-btn btn-border btn-primary w-100">
+                        <Link href="#" className="tmp-btn btn-border btn-primary w-100">
                           Pick This Package
-                        </a>
+                        </Link>
                       </div>
                     </div>
                   </div>

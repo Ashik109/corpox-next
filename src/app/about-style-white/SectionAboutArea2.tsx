@@ -1,3 +1,4 @@
+import Link from 'next/link'
 function SectionAboutArea2() {
   return (
     <>
@@ -24,19 +25,19 @@ function SectionAboutArea2() {
       </div>
       <div className="tmp-profile-box">
       <div className="profile-share justify-content-start">
-      <a href="#" className="avatar" data-tooltip="Mark JOrdan" tabIndex={0}><img src="/assets/images/testimonial/tooltip-01.png" alt="education" /></a>
-      <a href="#" className="avatar" data-tooltip="Mark" tabIndex={0}><img src="/assets/images/testimonial/tooltip-02.png" alt="education" /></a>
-      <a href="#" className="avatar" data-tooltip="Jordan" tabIndex={0}><img src="/assets/images/testimonial/tooltip-03.png" alt="education" /></a>
+      <Link href="#" className="avatar" data-tooltip="Mark JOrdan" tabIndex={0}><img src="/assets/images/testimonial/tooltip-01.png" alt="education" /></Link>
+      <Link href="#" className="avatar" data-tooltip="Mark" tabIndex={0}><img src="/assets/images/testimonial/tooltip-02.png" alt="education" /></Link>
+      <Link href="#" className="avatar" data-tooltip="Jordan" tabIndex={0}><img src="/assets/images/testimonial/tooltip-03.png" alt="education" /></Link>
       <div className="more-author-text">
       <p className="subtitle">
-      <a className="btn-read-more" href="#"><span>Check all History</span></a>
+      <Link className="btn-read-more" href="#"><span>Check all History</span></Link>
       </p>
       </div>
       </div>
       </div>
       <div className="read-more-btn btn-group gap-4 mt--40">
-      <a className="tmp-btn btn-primary round btn-large" href="/about-white">More About Us</a>
-      <a className="tmp-btn btn-border round btn-large" href="/contact-white">Contact With Us</a>
+      <Link className="tmp-btn btn-primary round btn-large" href="/about-white">More About Us</Link>
+      <Link className="tmp-btn btn-border round btn-large" href="/contact-white">Contact With Us</Link>
       </div>
       </div>
       </div>
@@ -48,16 +49,16 @@ function SectionAboutArea2() {
       <div className="thumbnail invers-anime"><img className="radius-small" src="/assets/images/about/03.webp" alt="Corporate Image" />
       </div>
       <div className="video-icon">
-      <a className="tmp-btn rounded-player popup-video" href="https://www.youtube.com/watch?v=4jnzf1yj48M">
+      <Link className="tmp-btn rounded-player popup-video" href="https://www.youtube.com/watch?v=4jnzf1yj48M">
       <span><i className="feather-play"></i></span>
-      </a>
+      </Link>
       </div>
       </div>
       <div className="absolute-rating-area images-left-right-float image">
       <div className="profile-share justify-content-start">
-      <a href="#" className="avatar" data-tooltip="Mark JOrdan" tabIndex={0}><img src="/assets/images/testimonial/tooltip-01.png" alt="education" /></a>
-      <a href="#" className="avatar" data-tooltip="Mark" tabIndex={0}><img src="/assets/images/testimonial/tooltip-02.png" alt="education" /></a>
-      <a href="#" className="avatar" data-tooltip="Jordan" tabIndex={0}><img src="/assets/images/testimonial/tooltip-03.png" alt="education" /></a>
+      <Link href="#" className="avatar" data-tooltip="Mark JOrdan" tabIndex={0}><img src="/assets/images/testimonial/tooltip-01.png" alt="education" /></Link>
+      <Link href="#" className="avatar" data-tooltip="Mark" tabIndex={0}><img src="/assets/images/testimonial/tooltip-02.png" alt="education" /></Link>
+      <Link href="#" className="avatar" data-tooltip="Jordan" tabIndex={0}><img src="/assets/images/testimonial/tooltip-03.png" alt="education" /></Link>
       </div>
       <div className="stars-area">
       <img src="/assets/images/icons/stars.svg" alt="small-image" />

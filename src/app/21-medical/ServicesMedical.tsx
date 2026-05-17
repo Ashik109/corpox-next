@@ -1,3 +1,4 @@
+import Link from 'next/link'
 const services = [
     ["medical-1.webp", "Angioplasty"],
     ["medical-2.webp", "Cardiology"],
@@ -30,14 +31,14 @@ function ServicesMedical() {
                                 <div className="inner">
                                     <div className="content">
                                         <h4 className="title mb--20">
-                                            <a href="/service/management-leadership">{title}</a>
+                                            <Link href="/service/management-leadership">{title}</Link>
                                         </h4>
                                     </div>
                                     <div className="image invers-anime">
                                         <img src={`/assets/images/services/${image}`} alt="" />
                                     </div>
                                     <div className="discover-btn">
-                                        <a className="tmp-btn mt--20 round btn-small btn-border hover-icon-reverse" href="/service/financial-growth">
+                                        <Link className="tmp-btn mt--20 round btn-small btn-border hover-icon-reverse" href="/service/financial-growth">
                                             <span className="icon-reverse-wrapper">
                                                 <span className="btn-text">Discover services</span>
                                                 <span className="btn-icon">
@@ -47,7 +48,7 @@ function ServicesMedical() {
                                                     <i className="feather-arrow-right" />
                                                 </span>
                                             </span>
-                                        </a>
+                                        </Link>
                                     </div>
                                 </div>
                             </div>

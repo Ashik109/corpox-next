@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import React from 'react'
 
 function TopbarConstruction() {
@@ -19,7 +20,7 @@ function TopbarConstruction() {
                                 </div>
 
                                 <div className="right-button">
-                                    <a
+                                    <Link
                                         className="btn-read-more"
                                         target="_blank"
                                         rel="noopener noreferrer"
@@ -29,7 +30,7 @@ function TopbarConstruction() {
                                             Purchase Now{" "}
                                             <i className="feather-arrow-right"></i>
                                         </span>
-                                    </a>
+                                    </Link>
                                 </div>
                             </div>
                         </div>

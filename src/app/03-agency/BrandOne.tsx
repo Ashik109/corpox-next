@@ -1,4 +1,6 @@
 "use client";
+import Link from 'next/link'
+
 
 import Slider from "react-slick";
 import NextArrow from "../01-index-consulting/NextArrow";
@@ -95,12 +97,12 @@ export default function BrandOne() {
               {brands.map((brand, index) => (
                 <div key={index}>
 
-                  <a href="#">
+                  <Link href="#">
                     <img
                       src={`/assets/images/brand/${brand}`}
                       alt="Brand Image"
                     />
-                  </a>
+                  </Link>
 
                 </div>
               ))}

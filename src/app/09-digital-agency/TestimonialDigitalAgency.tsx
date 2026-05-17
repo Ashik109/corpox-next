@@ -1,4 +1,6 @@
 "use client";
+import Link from 'next/link'
+
 
 import Slider from "react-slick";
 import NextArrow from "../01-index-consulting/NextArrow";
@@ -77,9 +79,9 @@ function TestimonialDigitalAgency() {
                                     <div className="content">
                                         <div className="rating mb--15">
                                             {[1, 2, 3, 4, 5].map((star) => (
-                                                <a href="#" key={star}>
+                                                <Link href="#" key={star}>
                                                     <img src="/assets/images/icons/stars.svg" alt="" />
-                                                </a>
+                                                </Link>
                                             ))}
                                         </div>
                                         <p className="description">{testimonial.text}</p>

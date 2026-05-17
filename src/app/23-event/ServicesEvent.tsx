@@ -1,3 +1,4 @@
+import Link from 'next/link'
 const services = [
     ["01.png", "Keynote Sessions", "Experience inspiring talks from industry leaders and visionaries who shape the future of business and technology.", "Join thought-provoking sessions led by top experts to gain actionable insights and fresh perspectives."],
     ["02.png", "Networking", "Connect with professionals, innovators, and peers from around the world to expand your network and collaborations.", "Engage in interactive sessions, meet like-minded professionals, and create lasting business relationships."],
@@ -21,7 +22,7 @@ function ServicesEvent() {
                                             </div>
                                             <div className="content">
                                                 <h4 className="title w-600">
-                                                    <a href="#">{title}</a>
+                                                    <Link href="#">{title}</Link>
                                                 </h4>
                                                 <p className="description mb--0">{frontText}</p>
                                             </div>
@@ -34,12 +35,12 @@ function ServicesEvent() {
                                         <div className="service-small-default service service__style--1 bg-color-card radius text-center tmponhover">
                                             <div className="content">
                                                 <h4 className="title w-600">
-                                                    <a href="#">{title}</a>
+                                                    <Link href="#">{title}</Link>
                                                 </h4>
                                                 <p className="description mb--0">{backText}</p>
-                                                <a className="btn-read-more mt--10 d-block" href="/service/management-leadership">
+                                                <Link className="btn-read-more mt--10 d-block" href="/service/management-leadership">
                                                     <span>Read More</span>
-                                                </a>
+                                                </Link>
                                             </div>
                                         </div>
                                     </div>

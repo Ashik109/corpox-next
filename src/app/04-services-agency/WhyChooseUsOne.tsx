@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import React from 'react'
 
 function WhyChooseUsOne() {
@@ -54,7 +55,7 @@ function WhyChooseUsOne() {
                                         </li>
                                     </ul>
                                     <div className="read-more-btn mt--30">
-                                        <a
+                                        <Link
                                             className="tmp-btn icon-hover text-center"
                                             href="/contact"
                                         >
@@ -62,7 +63,7 @@ function WhyChooseUsOne() {
                                             <span className="btn-icon">
                                                 <i className="feather-arrow-right" />
                                             </span>
-                                        </a>
+                                        </Link>
                                     </div>
                                 </div>
                             </div>
@@ -121,7 +122,7 @@ function WhyChooseUsOne() {
                                         </li>
                                     </ul>
                                     <div className="read-more-btn mt--30">
-                                        <a
+                                        <Link
                                             className="tmp-btn icon-hover text-center"
                                             href="/contact"
                                         >
@@ -129,7 +130,7 @@ function WhyChooseUsOne() {
                                             <span className="btn-icon">
                                                 <i className="feather-arrow-right" />
                                             </span>
-                                        </a>
+                                        </Link>
                                     </div>
                                 </div>
                             </div>
@@ -198,7 +199,7 @@ function WhyChooseUsOne() {
                                         </li>
                                     </ul>
                                     <div className="read-more-btn mt--30">
-                                        <a
+                                        <Link
                                             className="tmp-btn icon-hover text-center"
                                             href="/contact"
                                         >
@@ -206,7 +207,7 @@ function WhyChooseUsOne() {
                                             <span className="btn-icon">
                                                 <i className="feather-arrow-right" />
                                             </span>
-                                        </a>
+                                        </Link>
                                     </div>
                                 </div>
                             </div>

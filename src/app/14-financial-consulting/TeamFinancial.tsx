@@ -1,3 +1,4 @@
+import Link from 'next/link'
 const members = [
     { image: "team-04.jpg", name: "Monsur Mia", role: "Sr Product Designer" },
     { image: "team-05.jpg", name: "Mark Jokar", role: "CEO Officer" },
@@ -35,9 +36,9 @@ function TeamFinancial() {
                                         <ul className="social-icon social-default icon-naked mt--5">
                                             {["facebook", "twitter", "instagram", "linkedin"].map((icon) => (
                                                 <li key={`${icon}-${index}`}>
-                                                    <a href={`https://www.${icon}.com/`}>
+                                                    <Link href={`https://www.${icon}.com/`}>
                                                         <i className={`feather-${icon}`} />
-                                                    </a>
+                                                    </Link>
                                                 </li>
                                             ))}
                                         </ul>

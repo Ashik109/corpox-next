@@ -1,3 +1,4 @@
+import Link from 'next/link'
 const pricingPlans = [
     {
         name: "Free",
@@ -68,7 +69,7 @@ function PricingMarketingAgency() {
                                         </ul>
                                     </div>
                                     <div className="pricing-footer">
-                                        <a
+                                        <Link
                                             className={`tmp-btn icon-hover text-center ${plan.active ? "" : "btn-border"}`}
                                             href="#"
                                         >
@@ -76,7 +77,7 @@ function PricingMarketingAgency() {
                                             <span className="btn-icon">
                                                 <i className="feather-arrow-right" />
                                             </span>
-                                        </a>
+                                        </Link>
                                     </div>
                                 </div>
                                 {plan.active && <div className="popular-tag">Popular</div>}

@@ -1,3 +1,4 @@
+import Link from 'next/link'
 function SectionStartSingleTestimonial2() {
   return (
     <>
@@ -11,11 +12,11 @@ function SectionStartSingleTestimonial2() {
       <p className="description">When taking on new projects, I primarily look for a strong visual and aesthetic alignment, as well as a meaningful personal connection.
                                                   </p>
       <div className="rating mb--15">
-      <a href="#" tabIndex={0}><img src="/assets/images/icons/stars.svg" alt="" /></a>
-      <a href="#" tabIndex={0}><img src="/assets/images/icons/stars.svg" alt="" /></a>
-      <a href="#" tabIndex={0}><img src="/assets/images/icons/stars.svg" alt="" /></a>
-      <a href="#" tabIndex={0}><img src="/assets/images/icons/stars.svg" alt="" /></a>
-      <a href="#" tabIndex={0}><img src="/assets/images/icons/stars.svg" alt="" /></a>
+      <Link href="#" tabIndex={0}><img src="/assets/images/icons/stars.svg" alt="" /></Link>
+      <Link href="#" tabIndex={0}><img src="/assets/images/icons/stars.svg" alt="" /></Link>
+      <Link href="#" tabIndex={0}><img src="/assets/images/icons/stars.svg" alt="" /></Link>
+      <Link href="#" tabIndex={0}><img src="/assets/images/icons/stars.svg" alt="" /></Link>
+      <Link href="#" tabIndex={0}><img src="/assets/images/icons/stars.svg" alt="" /></Link>
       </div>
       <div className="client-info">
       <h4 className="title">Mohima Ale</h4>

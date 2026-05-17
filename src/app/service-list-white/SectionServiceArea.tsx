@@ -1,3 +1,4 @@
+import Link from 'next/link'
 function SectionServiceArea() {
   return (
     <>
@@ -18,13 +19,13 @@ function SectionServiceArea() {
                                       Business Solution</h2>
       </div>
       <div className="tmp-load-more d-flex justify-content-center">
-      <a className="tmp-btn btn-large hover-icon-reverse" href="#">
+      <Link className="tmp-btn btn-large hover-icon-reverse" href="#">
       <span className="icon-reverse-wrapper">
       <span className="btn-text">View More Service</span>
       <span className="btn-icon"><i className="feather-loader"></i></span>
       <span className="btn-icon"><i className="feather-loader"></i></span>
       </span>
-      </a>
+      </Link>
       </div>
       </div>
       </div>
@@ -34,9 +35,9 @@ function SectionServiceArea() {
       <div className="single-service-list-area" data-aos="slide-up" data-aos-duration="700" data-aos-delay="100">
       <div className="row g-5 align-items-center">
       <div className="col-lg-6">
-      <a href="/service-details" className="thumbnail-service-list invers-anime">
+      <Link href="/service/management-leadership" className="thumbnail-service-list invers-anime">
       <img src="/assets/images/services/list/01.webp" alt="Business consulting" />
-      </a>
+      </Link>
       </div>
       <div className="col-lg-6">
       <div className="inner-content">
@@ -49,13 +50,13 @@ function SectionServiceArea() {
       <p className="disc">
                                                       Our business growth service helps companies expand faster with strategic planning, marketing solutions, and expert guidance to achieve sustainable success.
                                                   </p>
-      <a className="tmp-btn hover-icon-reverse" href="/service-details">
+      <Link className="tmp-btn hover-icon-reverse" href="/service/management-leadership">
       <span className="icon-reverse-wrapper">
       <span className="btn-text">See Details</span>
       <span className="btn-icon"><i className="feather-arrow-right"></i></span>
       <span className="btn-icon"><i className="feather-arrow-right"></i></span>
       </span>
-      </a>
+      </Link>
       </div>
       </div>
       </div>
@@ -73,28 +74,28 @@ function SectionServiceArea() {
       <p className="disc">
                                                       Our audit consulting service ensures transparency, compliance, and financial accuracy with expert guidance to optimize performance and reduce risks.
                                                   </p>
-      <a className="tmp-btn hover-icon-reverse" href="/service-details">
+      <Link className="tmp-btn hover-icon-reverse" href="/service/management-leadership">
       <span className="icon-reverse-wrapper">
       <span className="btn-text">See Details</span>
       <span className="btn-icon"><i className="feather-arrow-right"></i></span>
       <span className="btn-icon"><i className="feather-arrow-right"></i></span>
       </span>
-      </a>
+      </Link>
       </div>
       </div>
       <div className="col-lg-6 order-1 order-lg-2 order-md-1 order-sm-1">
-      <a href="/service-details" className="thumbnail-service-list invers-anime">
+      <Link href="/service/management-leadership" className="thumbnail-service-list invers-anime">
       <img src="/assets/images/services/list/02.webp" alt="Business consulting" />
-      </a>
+      </Link>
       </div>
       </div>
       </div>
       <div className="single-service-list-area" data-aos="slide-up" data-aos-duration="700" data-aos-delay="100">
       <div className="row g-5 align-items-center">
       <div className="col-lg-6">
-      <a href="/service-details" className="thumbnail-service-list invers-anime">
+      <Link href="/service/management-leadership" className="thumbnail-service-list invers-anime">
       <img src="/assets/images/services/list/03.webp" alt="Business consulting" />
-      </a>
+      </Link>
       </div>
       <div className="col-lg-6">
       <div className="inner-content">
@@ -107,13 +108,13 @@ function SectionServiceArea() {
       <p className="disc">
                                                       Our Financial Idea service helps companies expand faster with strategic planning, marketing solutions, and expert guidance to achieve sustainable success.
                                                   </p>
-      <a className="tmp-btn hover-icon-reverse" href="/service-details">
+      <Link className="tmp-btn hover-icon-reverse" href="/service/management-leadership">
       <span className="icon-reverse-wrapper">
       <span className="btn-text">See Details</span>
       <span className="btn-icon"><i className="feather-arrow-right"></i></span>
       <span className="btn-icon"><i className="feather-arrow-right"></i></span>
       </span>
-      </a>
+      </Link>
       </div>
       </div>
       </div>
@@ -131,19 +132,19 @@ function SectionServiceArea() {
       <p className="disc">
                                                       Our minimal achievement strategy focuses on steady growth, smart resource use, and sustainable progress to reach goals with efficiency.
                                                   </p>
-      <a className="tmp-btn hover-icon-reverse" href="/service-details">
+      <Link className="tmp-btn hover-icon-reverse" href="/service/management-leadership">
       <span className="icon-reverse-wrapper">
       <span className="btn-text">See Details</span>
       <span className="btn-icon"><i className="feather-arrow-right"></i></span>
       <span className="btn-icon"><i className="feather-arrow-right"></i></span>
       </span>
-      </a>
+      </Link>
       </div>
       </div>
       <div className="col-lg-6 order-1 order-lg-2 order-md-1 order-sm-1">
-      <a href="/service-details" className="thumbnail-service-list invers-anime">
+      <Link href="/service/management-leadership" className="thumbnail-service-list invers-anime">
       <img src="/assets/images/services/list/04.webp" alt="Business consulting" />
-      </a>
+      </Link>
       </div>
       </div>
       </div>

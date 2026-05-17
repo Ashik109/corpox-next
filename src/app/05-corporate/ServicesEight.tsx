@@ -1,4 +1,6 @@
 'use client'
+import Link from 'next/link'
+
 import React, { useEffect } from 'react'
 import AOS from "aos"
 import "aos/dist/aos.css"
@@ -38,14 +40,14 @@ function ServicesEight() {
                                 </div>
                                 <div className="content">
                                     <h4 className="title w-600">
-                                        <a href="/service/management-leadership">Business Solution</a>
+                                        <Link href="/service/management-leadership">Business Solution</Link>
                                     </h4>
                                     <p className="description mb--0">
                                         There are many variations variations of passages of Lorem
                                         available.
                                     </p>
                                     <div className="discover-btn mt--20">
-                                        <a
+                                        <Link
                                             className="tmp-btn round btn-small btn-border hover-icon-reverse"
                                             href="/service/financial-growth"
                                         >
@@ -58,7 +60,7 @@ function ServicesEight() {
                                                     <i className="feather-arrow-right" />
                                                 </span>
                                             </span>
-                                        </a>
+                                        </Link>
                                     </div>
                                 </div>
                             </div>
@@ -76,14 +78,14 @@ function ServicesEight() {
                                 </div>
                                 <div className="content">
                                     <h4 className="title w-600">
-                                        <a href="/service/digital-transformation">Creative Ideas</a>
+                                        <Link href="/service/digital-transformation">Creative Ideas</Link>
                                     </h4>
                                     <p className="description mb--0">
                                         Passages there are many variations variations of of Lorem
                                         available.
                                     </p>
                                     <div className="discover-btn mt--20">
-                                        <a
+                                        <Link
                                             className="tmp-btn round btn-small btn-border hover-icon-reverse"
                                             href="/service/management-leadership"
                                         >
@@ -96,7 +98,7 @@ function ServicesEight() {
                                                     <i className="feather-arrow-right" />
                                                 </span>
                                             </span>
-                                        </a>
+                                        </Link>
                                     </div>
                                 </div>
                             </div>
@@ -114,14 +116,14 @@ function ServicesEight() {
                                 </div>
                                 <div className="content">
                                     <h4 className="title w-600">
-                                        <a href="/service/financial-growth">App Development</a>
+                                        <Link href="/service/financial-growth">App Development</Link>
                                     </h4>
                                     <p className="description mb--0">
                                         Variations There are many variations of passages of Lorem
                                         available.
                                     </p>
                                     <div className="discover-btn mt--20">
-                                        <a
+                                        <Link
                                             className="tmp-btn round btn-small btn-border hover-icon-reverse"
                                             href="/service/digital-transformation"
                                         >
@@ -134,7 +136,7 @@ function ServicesEight() {
                                                     <i className="feather-arrow-right" />
                                                 </span>
                                             </span>
-                                        </a>
+                                        </Link>
                                     </div>
                                 </div>
                             </div>
@@ -152,14 +154,14 @@ function ServicesEight() {
                                 </div>
                                 <div className="content">
                                     <h4 className="title w-600">
-                                        <a href="/service/management-leadership">Market Research</a>
+                                        <Link href="/service/management-leadership">Market Research</Link>
                                     </h4>
                                     <p className="description mb--0">
                                         There are many variations of passages of Lorem available pro
                                         content.
                                     </p>
                                     <div className="discover-btn mt--20">
-                                        <a
+                                        <Link
                                             className="tmp-btn round btn-small btn-border hover-icon-reverse"
                                             href="/service/management-leadership"
                                         >
@@ -172,7 +174,7 @@ function ServicesEight() {
                                                     <i className="feather-arrow-right" />
                                                 </span>
                                             </span>
-                                        </a>
+                                        </Link>
                                     </div>
                                 </div>
                             </div>

@@ -1,3 +1,4 @@
+import Link from 'next/link'
 function SectionFeatureService() {
   return (
     <>
@@ -8,7 +9,7 @@ function SectionFeatureService() {
       <i className="feather-smartphone"></i>
       </div>
       <div className="content">
-      <h4 className="title w-600"><a href="#">Perfect Responsive</a></h4>
+      <h4 className="title w-600"><Link href="#">Perfect Responsive</Link></h4>
       <p className="description mb--0">Our Template is full Perfect for all device.
                                           You can
                                           visit our template all device easily.</p>
@@ -24,7 +25,7 @@ function SectionFeatureService() {
       </svg>
       </div>
       <div className="content">
-      <h4 className="title w-600"><a href="#">HTML5 </a></h4>
+      <h4 className="title w-600"><Link href="#">HTML5 </Link></h4>
       <p className="description mb--0">Our Template is full Perfect for all
                                           device.It is made by HTML5 Structure.</p>
       </div>
@@ -39,7 +40,7 @@ function SectionFeatureService() {
       </svg>
       </div>
       <div className="content">
-      <h4 className="title w-600"><a href="#">Well Documented Codes</a></h4>
+      <h4 className="title w-600"><Link href="#">Well Documented Codes</Link></h4>
       <p className="description mb--0">The Corpox code is awesome well documented
                                           code. And Its customization is very easily</p>
       </div>
@@ -53,7 +54,7 @@ function SectionFeatureService() {
       </svg>
       </div>
       <div className="content">
-      <h4 className="title w-600"><a href="#">SASS Available</a></h4>
+      <h4 className="title w-600"><Link href="#">SASS Available</Link></h4>
       <p className="description mb--0">The tamplate has SASS available for css. You
                                           can change css by SASS</p>
       </div>
@@ -69,7 +70,7 @@ function SectionFeatureService() {
       </svg>
       </div>
       <div className="content">
-      <h4 className="title w-600"><a href="#">Fast Loading Speed</a></h4>
+      <h4 className="title w-600"><Link href="#">Fast Loading Speed</Link></h4>
       <p className="description mb--0">Corpox is faster loading speed.Corpox create
                                           your
                                           theme so much faster</p>
@@ -84,7 +85,7 @@ function SectionFeatureService() {
       </svg>
       </div>
       <div className="content">
-      <h4 className="title w-600"><a href="#">Modern Design</a></h4>
+      <h4 className="title w-600"><Link href="#">Modern Design</Link></h4>
       <p className="description mb--0">Corpox is a modern creatuve design for
                                           Creative Agency , Personal Portfolio etc....</p>
       </div>
@@ -99,7 +100,7 @@ function SectionFeatureService() {
       </svg>
       </div>
       <div className="content">
-      <h4 className="title w-600"><a href="#">24 Support System</a></h4>
+      <h4 className="title w-600"><Link href="#">24 Support System</Link></h4>
       <p className="description mb--0">We are provide 24 hours support for all
                                           clients.You can purchase without hesitation.</p>
       </div>
@@ -114,7 +115,7 @@ function SectionFeatureService() {
       </svg>
       </div>
       <div className="content">
-      <h4 className="title w-600"><a href="#">Bootstrap v5 Comfortable</a></h4>
+      <h4 className="title w-600"><Link href="#">Bootstrap v5 Comfortable</Link></h4>
       <p className="description mb--0">Bootstrap v5 comfortable is available in
                                           Corpox. So layout changes is so much easily</p>
       </div>

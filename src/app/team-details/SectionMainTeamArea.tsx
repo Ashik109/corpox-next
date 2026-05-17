@@ -1,3 +1,4 @@
+import Link from 'next/link'
 function SectionMainTeamArea() {
   return (
     <>
@@ -19,31 +20,31 @@ function SectionMainTeamArea() {
       <p className="desc">Benjamin Taylor, the visionary founder of Solarx, embarked on a mission to revolutionize the renewable.</p>
       <ul className="team-content-quick-contact">
       <li>
-      <p className="tag">Phone : </p> <a href="tel:+00343335566">+00343335566</a>
+      <p className="tag">Phone : </p> <Link href="tel:+00343335566">+00343335566</Link>
       </li>
       <li>
-      <p className="tag">Email : </p> <a href="mail-to:corpox@gmail.com">corpox@gmail.com</a>
+      <p className="tag">Email : </p> <Link href="mail-to:corpox@gmail.com">corpox@gmail.com</Link>
       </li>
       <li>
       <p className="tag">Experience : </p> 10 Years
                                                   </li>
       </ul>
       <ul className="social-icon social-default justify-content-start">
-      <li><a href="https://www.facebook.com/">
+      <li><Link href="https://www.facebook.com/">
       <i className="feather-facebook"></i>
-      </a>
+      </Link>
       </li>
-      <li><a href="https://www.twitter.com">
+      <li><Link href="https://www.twitter.com">
       <i className="feather-twitter"></i>
-      </a>
+      </Link>
       </li>
-      <li><a href="https://www.instagram.com/">
+      <li><Link href="https://www.instagram.com/">
       <i className="feather-instagram"></i>
-      </a>
+      </Link>
       </li>
-      <li><a href="https://www.linkdin.com/">
+      <li><Link href="https://www.linkdin.com/">
       <i className="feather-linkedin"></i>
-      </a>
+      </Link>
       </li>
       </ul>
       </div>

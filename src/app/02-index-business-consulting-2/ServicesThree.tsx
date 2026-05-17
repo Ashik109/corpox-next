@@ -1,4 +1,6 @@
 "use client";
+import Link from 'next/link'
+
 import { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -38,7 +40,7 @@ function ServicesThree() {
                                     </h2>
                                 </div>
                                 <div className="tmp-load-more d-flex justify-content-center">
-                                    <a className="tmp-btn btn-large hover-icon-reverse" href="#">
+                                    <Link className="tmp-btn btn-large hover-icon-reverse" href="#">
                                         <span className="icon-reverse-wrapper">
                                             <span className="btn-text">View More Service</span>
                                             <span className="btn-icon">
@@ -48,7 +50,7 @@ function ServicesThree() {
                                                 <i className="feather-loader" />
                                             </span>
                                         </span>
-                                    </a>
+                                    </Link>
                                 </div>
                             </div>
                         </div>
@@ -63,7 +65,7 @@ function ServicesThree() {
                             >
                                 <div className="row g-5 align-items-center">
                                     <div className="col-lg-6">
-                                        <a
+                                        <Link
                                             href="/service/management-leadership"
                                             className="thumbnail-service-list invers-anime"
                                         >
@@ -71,7 +73,7 @@ function ServicesThree() {
                                                 src="/assets/images/services/list/01.webp"
                                                 alt="Business consulting"
                                             />
-                                        </a>
+                                        </Link>
                                     </div>
                                     <div className="col-lg-6">
                                         <div className="inner-content">
@@ -89,7 +91,7 @@ function ServicesThree() {
                                                 with strategic planning, marketing solutions, and expert
                                                 guidance to achieve sustainable success.
                                             </p>
-                                            <a
+                                            <Link
                                                 className="tmp-btn hover-icon-reverse"
                                                 href="/service/financial-growth"
                                             >
@@ -102,7 +104,7 @@ function ServicesThree() {
                                                         <i className="feather-arrow-right" />
                                                     </span>
                                                 </span>
-                                            </a>
+                                            </Link>
                                         </div>
                                     </div>
                                 </div>
@@ -130,7 +132,7 @@ function ServicesThree() {
                                                 compliance, and financial accuracy with expert guidance to
                                                 optimize performance and reduce risks.
                                             </p>
-                                            <a
+                                            <Link
                                                 className="tmp-btn hover-icon-reverse"
                                                 href="/service/digital-transformation"
                                             >
@@ -143,11 +145,11 @@ function ServicesThree() {
                                                         <i className="feather-arrow-right" />
                                                     </span>
                                                 </span>
-                                            </a>
+                                            </Link>
                                         </div>
                                     </div>
                                     <div className="col-lg-6 order-1 order-lg-2 order-md-1 order-sm-1">
-                                        <a
+                                        <Link
                                             href="/service/management-leadership"
                                             className="thumbnail-service-list invers-anime"
                                         >
@@ -155,7 +157,7 @@ function ServicesThree() {
                                                 src="/assets/images/services/list/02.webp"
                                                 alt="Business consulting"
                                             />
-                                        </a>
+                                        </Link>
                                     </div>
                                 </div>
                             </div>
@@ -167,7 +169,7 @@ function ServicesThree() {
                             >
                                 <div className="row g-5 align-items-center">
                                     <div className="col-lg-6">
-                                        <a
+                                        <Link
                                             href="/service/financial-growth"
                                             className="thumbnail-service-list invers-anime"
                                         >
@@ -175,7 +177,7 @@ function ServicesThree() {
                                                 src="/assets/images/services/list/03.webp"
                                                 alt="Business consulting"
                                             />
-                                        </a>
+                                        </Link>
                                     </div>
                                     <div className="col-lg-6">
                                         <div className="inner-content">
@@ -193,7 +195,7 @@ function ServicesThree() {
                                                 with strategic planning, marketing solutions, and expert
                                                 guidance to achieve sustainable success.
                                             </p>
-                                            <a
+                                            <Link
                                                 className="tmp-btn hover-icon-reverse"
                                                 href="/service/digital-transformation"
                                             >
@@ -206,7 +208,7 @@ function ServicesThree() {
                                                         <i className="feather-arrow-right" />
                                                     </span>
                                                 </span>
-                                            </a>
+                                            </Link>
                                         </div>
                                     </div>
                                 </div>
@@ -234,7 +236,7 @@ function ServicesThree() {
                                                 smart resource use, and sustainable progress to reach goals
                                                 with efficiency.
                                             </p>
-                                            <a
+                                            <Link
                                                 className="tmp-btn hover-icon-reverse"
                                                 href="/service/management-leadership"
                                             >
@@ -247,11 +249,11 @@ function ServicesThree() {
                                                         <i className="feather-arrow-right" />
                                                     </span>
                                                 </span>
-                                            </a>
+                                            </Link>
                                         </div>
                                     </div>
                                     <div className="col-lg-6 order-1 order-lg-2 order-md-1 order-sm-1">
-                                        <a
+                                        <Link
                                             href="/service/management-leadership"
                                             className="thumbnail-service-list invers-anime"
                                         >
@@ -259,7 +261,7 @@ function ServicesThree() {
                                                 src="/assets/images/services/list/04.webp"
                                                 alt="Business consulting"
                                             />
-                                        </a>
+                                        </Link>
                                     </div>
                                 </div>
                             </div>

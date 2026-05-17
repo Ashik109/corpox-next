@@ -1,3 +1,4 @@
+import Link from 'next/link'
 const testimonials = [
     {
         image: "testimonial-01.jpg",
@@ -52,9 +53,9 @@ function TestimonialBusinessCoach() {
                                         <h6 className="subtitle">inversweb.com</h6>
                                         <div className="rating mt--10">
                                             {[1, 2, 3, 4, 5].map((star) => (
-                                                <a href="#" key={star}>
+                                                <Link href="#" key={star}>
                                                     <i className="feather-star" />
-                                                </a>
+                                                </Link>
                                             ))}
                                         </div>
                                     </div>

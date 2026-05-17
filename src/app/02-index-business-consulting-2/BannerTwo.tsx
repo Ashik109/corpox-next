@@ -1,4 +1,6 @@
 "use client";
+import Link from 'next/link'
+
 
 import { useEffect, useRef, useState } from "react";
 
@@ -107,7 +109,7 @@ export default function BannerTwo() {
 
               <div className="button-group">
 
-                <a
+                <Link
                   className="tmp-btn round hover-icon-reverse"
                   href="/pricing-three"
                 >
@@ -126,9 +128,9 @@ export default function BannerTwo() {
                     </span>
 
                   </span>
-                </a>
+                </Link>
 
-                <a
+                <Link
                   className="tmp-btn btn-border round hover-icon-reverse"
                   href="/contact"
                 >
@@ -147,7 +149,7 @@ export default function BannerTwo() {
                     </span>
 
                   </span>
-                </a>
+                </Link>
 
               </div>
 

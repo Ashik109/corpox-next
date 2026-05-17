@@ -1,3 +1,4 @@
+import Link from 'next/link'
 function SectionSrartAboutArea6() {
   return (
     <>
@@ -45,8 +46,8 @@ function SectionSrartAboutArea6() {
       </div>
       <div className="content">
       <h4 className="title">
-      <a href="/service-details">Cloud based,
-                                                  secured software</a>
+      <Link href="/service/management-leadership">Cloud based,
+                                                  secured software</Link>
       </h4>
       </div>
       </div>
@@ -60,7 +61,7 @@ function SectionSrartAboutArea6() {
       </div>
       <div className="content">
       <h4 className="title">
-      <a href="/service-details">Web Application, software</a>
+      <Link href="/service/management-leadership">Web Application, software</Link>
       </h4>
       </div>
       </div>
@@ -74,7 +75,7 @@ function SectionSrartAboutArea6() {
       </div>
       <div className="content">
       <h4 className="title">
-      <a href="/service-details">App based, secured software</a>
+      <Link href="/service/management-leadership">App based, secured software</Link>
       </h4>
       </div>
       </div>

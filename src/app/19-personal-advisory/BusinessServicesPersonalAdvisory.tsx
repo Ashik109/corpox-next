@@ -1,3 +1,4 @@
+import Link from 'next/link'
 const businessServices = [
     {
         image: "01.webp",
@@ -39,7 +40,7 @@ function ServiceContent({ icon, title, text }: { icon: string; title: string; te
                 <h6 className="title">{title}</h6>
             </div>
             <p className="disc">{text}</p>
-            <a className="tmp-btn hover-icon-reverse" href="/service/management-leadership">
+            <Link className="tmp-btn hover-icon-reverse" href="/service/management-leadership">
                 <span className="icon-reverse-wrapper">
                     <span className="btn-text">See Details</span>
                     <span className="btn-icon">
@@ -49,16 +50,16 @@ function ServiceContent({ icon, title, text }: { icon: string; title: string; te
                         <i className="feather-arrow-right" />
                     </span>
                 </span>
-            </a>
+            </Link>
         </div>
     );
 }
 
 function ServiceImage({ image }: { image: string }) {
     return (
-        <a href="/service/financial-growth" className="thumbnail-service-list invers-anime">
+        <Link href="/service/financial-growth" className="thumbnail-service-list invers-anime">
             <img src={`/assets/images/services/list/${image}`} alt="Business consulting" />
-        </a>
+        </Link>
     );
 }
 
@@ -81,7 +82,7 @@ function BusinessServicesPersonalAdvisory() {
                                 </h2>
                             </div>
                             <div className="tmp-load-more d-flex justify-content-center">
-                                <a className="tmp-btn btn-large hover-icon-reverse" href="#">
+                                <Link className="tmp-btn btn-large hover-icon-reverse" href="#">
                                     <span className="icon-reverse-wrapper">
                                         <span className="btn-text">View More Service</span>
                                         <span className="btn-icon">
@@ -91,7 +92,7 @@ function BusinessServicesPersonalAdvisory() {
                                             <i className="feather-loader" />
                                         </span>
                                     </span>
-                                </a>
+                                </Link>
                             </div>
                         </div>
                     </div>

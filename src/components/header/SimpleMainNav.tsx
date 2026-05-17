@@ -17,7 +17,7 @@ type Props = {
 
 export default function SimpleMainNav({ activeLabel = 'Home' }: Props) {
   return (
-    <nav className="mainmenu-nav d-none d-lg-block">
+    <nav className="mainmenu-nav d-none d-lg-block" data-lenis-prevent-wheel="">
       <ul className="mainmenu">
         {menuItems.map(([label, href]) => (
           <li key={label} className={label === activeLabel ? 'active' : ''}>

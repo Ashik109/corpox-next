@@ -1,4 +1,6 @@
 "use client";
+import Link from 'next/link'
+
 
 import Slider from "react-slick";
 
@@ -53,9 +55,9 @@ function TestimonialMedical() {
                                             <p className="description">When taking on new projects, I primarily look for a strong visual and aesthetic alignment, as well as a meaningful personal connection.</p>
                                             <div className="rating mb--15">
                                                 {Array.from({ length: 5 }).map((_, index) => (
-                                                    <a href="#" key={index}>
+                                                    <Link href="#" key={index}>
                                                         <img src="/assets/images/icons/stars.svg" alt="" />
-                                                    </a>
+                                                    </Link>
                                                 ))}
                                             </div>
                                             <div className="client-info">

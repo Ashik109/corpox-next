@@ -1,3 +1,4 @@
+import Link from 'next/link'
 const services = [
     ["10.webp", "Home Construction"],
     ["11.webp", "Commercial Build"],
@@ -32,14 +33,14 @@ function ServicesConstruction() {
                     <div className="col-lg-12">
                         <div className="inversweb-service-main-wrapper-list">
                             {services.map(([image, title], index) => (
-                                <a className="single-service-wrapper tmponhover" data-aos="fade-up" data-aos-duration="700" data-aos-delay={index * 50} href="/service/management-leadership" key={`${title}-${index}`}>
+                                <Link className="single-service-wrapper tmponhover" data-aos="fade-up" data-aos-duration="700" data-aos-delay={index * 50} href="/service/management-leadership" key={`${title}-${index}`}>
                                     <div className="thumbnail invers-anime">
                                         <img src={`/assets/images/services/${image}`} alt={title} />
                                     </div>
                                     <div className="content">
                                         <h5 className="title">{title}</h5>
                                     </div>
-                                </a>
+                                </Link>
                             ))}
                         </div>
                     </div>

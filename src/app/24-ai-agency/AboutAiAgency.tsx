@@ -41,15 +41,15 @@ function AboutAiAgency() {
                                 <div className="tmp-profile-box">
                                     <div className="profile-share justify-content-start">
                                         {tooltips.map(([image, tooltip]) => (
-                                            <a href="#" className="avatar" data-tooltip={tooltip} tabIndex={0} key={tooltip}>
+                                            <Link href="#" className="avatar" data-tooltip={tooltip} tabIndex={0} key={tooltip}>
                                                 <img src={`/assets/images/testimonial/${image}`} alt="" />
-                                            </a>
+                                            </Link>
                                         ))}
                                         <div className="more-author-text">
                                             <p className="subtitle">
-                                                <a className="btn-read-more" href="#">
+                                                <Link className="btn-read-more" href="#">
                                                     <span>Explore Our Journey</span>
-                                                </a>
+                                                </Link>
                                             </p>
                                         </div>
                                     </div>
@@ -73,19 +73,19 @@ function AboutAiAgency() {
                                         <img className="radius-small" src="/assets/images/ai-agency/about/01.webp" alt="AI experts collaborating" />
                                     </div>
                                     <div className="video-icon">
-                                        <a className="tmp-btn rounded-player popup-video" href="https://www.youtube.com/watch?v=4jnzf1yj48M">
+                                        <Link className="tmp-btn rounded-player popup-video" href="https://www.youtube.com/watch?v=4jnzf1yj48M">
                                             <span>
                                                 <i className="feather-play" />
                                             </span>
-                                        </a>
+                                        </Link>
                                     </div>
                                 </div>
                                 <div className="absolute-rating-area images-left-right-float image">
                                     <div className="profile-share justify-content-start">
                                         {tooltips.map(([image]) => (
-                                            <a href="#" className="avatar" data-tooltip="Client Review" tabIndex={0} key={image}>
+                                            <Link href="#" className="avatar" data-tooltip="Client Review" tabIndex={0} key={image}>
                                                 <img src={`/assets/images/testimonial/${image}`} alt="" />
-                                            </a>
+                                            </Link>
                                         ))}
                                     </div>
                                     <div className="stars-area">

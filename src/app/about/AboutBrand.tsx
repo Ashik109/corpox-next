@@ -1,3 +1,4 @@
+import Link from 'next/link'
 const brands = Array.from({ length: 8 }, (_, index) => `brand-${String(index + 1).padStart(2, '0')}.png`)
 
 function AboutBrand() {
@@ -24,9 +25,9 @@ function AboutBrand() {
             <ul className="brand-list brand-style-1">
               {brands.map((brand, index) => (
                 <li data-aos="fade-up" data-aos-duration="700" data-aos-delay={index * 50} key={brand}>
-                  <a href="#">
+                  <Link href="#">
                     <img src={`/assets/images/brand/${brand}`} alt="Brand" />
-                  </a>
+                  </Link>
                 </li>
               ))}
             </ul>

@@ -1,3 +1,4 @@
+import Link from 'next/link'
 function SectionTypography() {
   return (
     <>
@@ -14,33 +15,33 @@ function SectionTypography() {
       <div className="col-lg-12">
       <nav>
       <ul className="tmp-pagination justify-content-start">
-      <li><a href="#" aria-label="Previous"><i className="feather-chevron-left"></i></a></li>
-      <li><a href="#">1</a></li>
-      <li className="active"><a href="#">2</a></li>
-      <li><a href="#">3</a></li>
-      <li><a href="#" aria-label="Next"><i className="feather-chevron-right"></i></a></li>
+      <li><Link href="#" aria-label="Previous"><i className="feather-chevron-left"></i></Link></li>
+      <li><Link href="#">1</Link></li>
+      <li className="active"><Link href="#">2</Link></li>
+      <li><Link href="#">3</Link></li>
+      <li><Link href="#" aria-label="Next"><i className="feather-chevron-right"></i></Link></li>
       </ul>
       </nav>
       </div>
       <div className="col-lg-12">
       <nav>
       <ul className="tmp-pagination justify-content-center">
-      <li><a href="#" aria-label="Previous"><i className="feather-chevron-left"></i></a></li>
-      <li><a href="#">1</a></li>
-      <li className="active"><a href="#">2</a></li>
-      <li><a href="#">3</a></li>
-      <li><a href="#" aria-label="Next"><i className="feather-chevron-right"></i></a></li>
+      <li><Link href="#" aria-label="Previous"><i className="feather-chevron-left"></i></Link></li>
+      <li><Link href="#">1</Link></li>
+      <li className="active"><Link href="#">2</Link></li>
+      <li><Link href="#">3</Link></li>
+      <li><Link href="#" aria-label="Next"><i className="feather-chevron-right"></i></Link></li>
       </ul>
       </nav>
       </div>
       <div className="col-lg-12">
       <nav>
       <ul className="tmp-pagination justify-content-end">
-      <li><a href="#" aria-label="Previous"><i className="feather-chevron-left"></i></a></li>
-      <li><a href="#">1</a></li>
-      <li className="active"><a href="#">2</a></li>
-      <li><a href="#">3</a></li>
-      <li><a href="#" aria-label="Next"><i className="feather-chevron-right"></i></a></li>
+      <li><Link href="#" aria-label="Previous"><i className="feather-chevron-left"></i></Link></li>
+      <li><Link href="#">1</Link></li>
+      <li className="active"><Link href="#">2</Link></li>
+      <li><Link href="#">3</Link></li>
+      <li><Link href="#" aria-label="Next"><i className="feather-chevron-right"></i></Link></li>
       </ul>
       </nav>
       </div>

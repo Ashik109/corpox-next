@@ -1,3 +1,4 @@
+import Link from 'next/link'
 function SectionServiceArea() {
   return (
     <>
@@ -56,7 +57,7 @@ function SectionServiceArea() {
       <li><i className="feather-star"></i></li>
       <li><i className="feather-star"></i></li>
       </ul>
-      <a href="#reviews" className="woocommerce-review-link" rel="nofollow">(1.1k Reviews)</a>
+      <Link href="#reviews" className="woocommerce-review-link" rel="nofollow">(1.1k Reviews)</Link>
       </div>
       <h6 className="tmp-single-product_title">Monocrystalline Business Panels</h6>
       <div className="woocommerce-Price-amount amount">
@@ -84,8 +85,8 @@ function SectionServiceArea() {
       </span>
       </div>
       </div>
-      <a href="/cart-white" className="tmp-btn btn-primary btn-two">Add to cart</a>
-      <a href="/cart-white" className="wishlist-btn"><i className="feather-heart"></i></a>
+      <Link href="/cart-white" className="tmp-btn btn-primary btn-two">Add to cart</Link>
+      <Link href="/cart-white" className="wishlist-btn"><i className="feather-heart"></i></Link>
       </div>
       </div>
       </div>

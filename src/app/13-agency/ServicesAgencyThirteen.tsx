@@ -1,3 +1,4 @@
+import Link from 'next/link'
 const services = [
     ["feather-code", "Design", "There are many variations variations of passages of Lorem available."],
     ["feather-cast", "Team", "Passages there are many variations variations of of Lorem available."],
@@ -37,11 +38,11 @@ function ServicesAgencyThirteen() {
                                 </div>
                                 <div className="content">
                                     <h4 className="title w-600">
-                                        <a href="/service/management-leadership">{title}</a>
+                                        <Link href="/service/management-leadership">{title}</Link>
                                     </h4>
                                     <p className="description mb--0">{description}</p>
                                     <div className="discover-btn mt--20">
-                                        <a className="tmp-btn round btn-small btn-border hover-icon-reverse" href="/service/financial-growth">
+                                        <Link className="tmp-btn round btn-small btn-border hover-icon-reverse" href="/service/financial-growth">
                                             <span className="icon-reverse-wrapper">
                                                 <span className="btn-text">Discover services</span>
                                                 <span className="btn-icon">
@@ -51,7 +52,7 @@ function ServicesAgencyThirteen() {
                                                     <i className="feather-arrow-right" />
                                                 </span>
                                             </span>
-                                        </a>
+                                        </Link>
                                     </div>
                                 </div>
                                 <div className="shape-service-1">

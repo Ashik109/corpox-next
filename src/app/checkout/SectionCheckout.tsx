@@ -1,3 +1,4 @@
+import Link from 'next/link'
 function SectionCheckout() {
   return (
     <>
@@ -7,7 +8,7 @@ function SectionCheckout() {
       <div className="col-lg-7">
       <div className="full-grid">
       <div className="login-area">
-      <span>Returning customers? <a href="/login">Click here to login</a></span>
+      <span>Returning customers? <Link href="/login">Click here to login</Link></span>
       </div>
       <div className="coupon-toggle">
       <div id="accordion" className="accordion">
@@ -555,7 +556,7 @@ function SectionCheckout() {
       <span> I have read and agree terms and conditions *</span>
       </label>
       </div>
-      <a href="#" className="tmp-btn btn-primary">Place Order</a>
+      <Link href="#" className="tmp-btn btn-primary">Place Order</Link>
       </div>
       </div>
       </div>

@@ -1,4 +1,6 @@
 "use client";
+import Link from 'next/link'
+
 
 import Slider from "react-slick";
 
@@ -32,7 +34,7 @@ function BannerBusinessThree() {
                                 Our experienced consultants work closely with you to understand your unique business challenges and ultimate goals.
                             </p>
                             <div className="button-group mt--40 mt_sm--20 justify-content-start">
-                                <a className="tmp-btn btn-large hover-icon-reverse round" href="#">
+                                <Link className="tmp-btn btn-large hover-icon-reverse round" href="#">
                                     <span className="icon-reverse-wrapper">
                                         <span className="btn-text">Get Started</span>
                                         <span className="btn-icon">
@@ -42,12 +44,12 @@ function BannerBusinessThree() {
                                             <i className="feather-arrow-right" />
                                         </span>
                                     </span>
-                                </a>
-                                <a className="tmp-btn btn-primary rounded-player popup-video btn-border" href="https://www.youtube.com/watch?v=4jnzf1yj48M">
+                                </Link>
+                                <Link className="tmp-btn btn-primary rounded-player popup-video btn-border" href="https://www.youtube.com/watch?v=4jnzf1yj48M">
                                     <span>
                                         <i className="feather-play" />
                                     </span>
-                                </a>
+                                </Link>
                             </div>
                         </div>
                     </div>
@@ -80,11 +82,11 @@ function BannerBusinessThree() {
                             <div className="small-iamge-area images-left-right-float">
                                 <img src="/assets/images/about/about-12.png" alt="" loading="lazy" />
                                 <div className="video-icon">
-                                    <a className="tmp-btn rounded-player popup-video" href="https://www.youtube.com/watch?v=4jnzf1yj48M">
+                                    <Link className="tmp-btn rounded-player popup-video" href="https://www.youtube.com/watch?v=4jnzf1yj48M">
                                         <span>
                                             <i className="feather-play" />
                                         </span>
-                                    </a>
+                                    </Link>
                                 </div>
                             </div>
                         </div>

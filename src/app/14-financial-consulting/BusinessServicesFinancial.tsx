@@ -1,3 +1,4 @@
+import Link from 'next/link'
 const serviceList = [
     {
         title: "Business Growth",
@@ -32,9 +33,9 @@ const serviceList = [
 function ServiceRow({ item }: { item: (typeof serviceList)[number] }) {
     const image = (
         <div className={`col-lg-6 ${item.reverse ? "order-1 order-lg-2 order-md-1 order-sm-1" : ""}`}>
-            <a href="/service/management-leadership" className="thumbnail-service-list invers-anime">
+            <Link href="/service/management-leadership" className="thumbnail-service-list invers-anime">
                 <img src={`/assets/images/services/list/${item.image}`} alt="Business consulting" />
-            </a>
+            </Link>
         </div>
     );
 
@@ -48,7 +49,7 @@ function ServiceRow({ item }: { item: (typeof serviceList)[number] }) {
                     <h6 className="title">{item.title}</h6>
                 </div>
                 <p className="disc">{item.text}</p>
-                <a className="tmp-btn hover-icon-reverse" href="/service/financial-growth">
+                <Link className="tmp-btn hover-icon-reverse" href="/service/financial-growth">
                     <span className="icon-reverse-wrapper">
                         <span className="btn-text">See Details</span>
                         <span className="btn-icon">
@@ -58,7 +59,7 @@ function ServiceRow({ item }: { item: (typeof serviceList)[number] }) {
                             <i className="feather-arrow-right" />
                         </span>
                     </span>
-                </a>
+                </Link>
             </div>
         </div>
     );
@@ -101,7 +102,7 @@ function BusinessServicesFinancial() {
                                 </h2>
                             </div>
                             <div className="tmp-load-more d-flex justify-content-center">
-                                <a className="tmp-btn btn-large hover-icon-reverse" href="#">
+                                <Link className="tmp-btn btn-large hover-icon-reverse" href="#">
                                     <span className="icon-reverse-wrapper">
                                         <span className="btn-text">View More Service</span>
                                         <span className="btn-icon">
@@ -111,7 +112,7 @@ function BusinessServicesFinancial() {
                                             <i className="feather-loader" />
                                         </span>
                                     </span>
-                                </a>
+                                </Link>
                             </div>
                         </div>
                     </div>

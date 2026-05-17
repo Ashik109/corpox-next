@@ -1,4 +1,6 @@
 'use client'
+import Link from 'next/link'
+
 import React from 'react'
 import { useTitleSplitAnimation } from "../components/useTitleSplitAnimation";
 
@@ -24,7 +26,7 @@ function CtaOne() {
                                                         Finest choice for your home &amp; office
                                                     </h6>
                                                     <div className="call-to-btn d-flex justify-content-center">
-                                                        <a
+                                                        <Link
                                                             className="tmp-btn btn-extra-large hover-icon-reverse"
                                                             target="_blank"
                                                             href="https://themeforest.net/item/corpox-business-consulting-bootstrap-5-html-template/59767866"
@@ -38,12 +40,12 @@ function CtaOne() {
                                                                     <i className="feather-arrow-right" />
                                                                 </span>
                                                             </span>
-                                                        </a>
+                                                        </Link>
                                                     </div>
                                                 </div>
                                                 <div className="tmp-profile-box mt--50">
                                                     <div className="profile-share justify-content-center">
-                                                        <a
+                                                        <Link
                                                             href="#"
                                                             className="avatar"
                                                             data-tooltip="Mark JOrdan"
@@ -53,8 +55,8 @@ function CtaOne() {
                                                                 src="/assets/images/testimonial/tooltip-01.png"
                                                                 alt="education"
                                                             />
-                                                        </a>
-                                                        <a
+                                                        </Link>
+                                                        <Link
                                                             href="#"
                                                             className="avatar"
                                                             data-tooltip="Mark"
@@ -64,8 +66,8 @@ function CtaOne() {
                                                                 src="/assets/images/testimonial/tooltip-02.png"
                                                                 alt="education"
                                                             />
-                                                        </a>
-                                                        <a
+                                                        </Link>
+                                                        <Link
                                                             href="#"
                                                             className="avatar"
                                                             data-tooltip="Jordan"
@@ -75,19 +77,19 @@ function CtaOne() {
                                                                 src="/assets/images/testimonial/tooltip-03.png"
                                                                 alt="education"
                                                             />
-                                                        </a>
+                                                        </Link>
                                                         <div className="more-author-text">
                                                             <h5 className="total-join-students">
                                                                 Join Over 3000+ Students
                                                             </h5>
                                                             <p className="subtitle">
-                                                                <a
+                                                                <Link
                                                                     className="btn-read-more"
                                                                     target="_blank"
                                                                     href="https://themeforest.net/item/corpox-business-consulting-bootstrap-5-html-template/59767866"
                                                                 >
                                                                     <span>Purchase Corpox</span>
-                                                                </a>
+                                                                </Link>
                                                             </p>
                                                         </div>
                                                     </div>

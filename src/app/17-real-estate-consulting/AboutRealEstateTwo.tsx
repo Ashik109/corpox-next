@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import RealEstateOdometer from "../16-real-estate-consulting/RealEstateOdometer";
 
 const points = ["Smart Home Design", "Beautiful Scene Around", "Exceptional Lifestyle", "Complete 24/7 Security"];
@@ -15,11 +16,11 @@ function AboutRealEstateTwo() {
                             <div className="small-iamge-area images-left-right-float">
                                 <img src="/assets/images/about/about-12.png" alt="" loading="lazy" />
                                 <div className="video-icon">
-                                    <a className="tmp-btn rounded-player popup-video" href="https://www.youtube.com/watch?v=4jnzf1yj48M">
+                                    <Link className="tmp-btn rounded-player popup-video" href="https://www.youtube.com/watch?v=4jnzf1yj48M">
                                         <span>
                                             <i className="feather-play" />
                                         </span>
-                                    </a>
+                                    </Link>
                                 </div>
                             </div>
                         </div>
@@ -57,9 +58,9 @@ function AboutRealEstateTwo() {
                                     &quot;Enimad minim veniam quis nostrud exercitation <br /> llamco laboris. Lorem ipsum dolor sit amet&quot;
                                 </p>
                             </div>
-                            <a href="/service/management-leadership" className="tmp-btn btn-primary">
+                            <Link href="/service/management-leadership" className="tmp-btn btn-primary">
                                 Our Service
-                            </a>
+                            </Link>
                         </div>
                     </div>
                 </div>

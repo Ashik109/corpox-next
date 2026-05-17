@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import React from 'react'
 
 function FooterFour() {
@@ -11,7 +12,7 @@ function FooterFour() {
                             <div className="col-lg-4 col-md-6 col-sm-12 col-12">
                                 <div className="tmp-footer-widget">
                                     <div className="logo">
-                                        <a href="/">
+                                        <Link href="/">
                                             <img
                                                 className="logo-light"
                                                 src="/assets/images/logo/logo.png"
@@ -22,7 +23,7 @@ function FooterFour() {
                                                 src="/assets/images/logo/logo-dark.png"
                                                 alt="Corporate Logo"
                                             />
-                                        </a>
+                                        </Link>
                                     </div>
                                     <h3 className="text-big">
                                         Create Website By Corpox So Quick Download And Make Your Site.
@@ -36,16 +37,16 @@ function FooterFour() {
                                         <div className="inner">
                                             <ul className="footer-link link-hover">
                                                 <li>
-                                                    <a href="/testimonial">Testiminial</a>
+                                                    <Link href="/testimonial">Testiminial</Link>
                                                 </li>
                                                 <li>
-                                                    <a href="/05-corporate">Company</a>
+                                                    <Link href="/05-corporate">Company</Link>
                                                 </li>
                                                 <li>
-                                                    <a href="/10-marketing-agency">Marketing</a>
+                                                    <Link href="/10-marketing-agency">Marketing</Link>
                                                 </li>
                                                 <li>
-                                                    <a href="/06-startup">Startup</a>
+                                                    <Link href="/06-startup">Startup</Link>
                                                 </li>
                                             </ul>
                                         </div>
@@ -55,16 +56,16 @@ function FooterFour() {
                                         <div className="inner">
                                             <ul className="footer-link link-hover">
                                                 <li>
-                                                    <a href="/about">About</a>
+                                                    <Link href="/about">About</Link>
                                                 </li>
                                                 <li>
-                                                    <a href="/portfolio/brand-refresh-venture">Portfolio</a>
+                                                    <Link href="/portfolio/brand-refresh-venture">Portfolio</Link>
                                                 </li>
                                                 <li>
-                                                    <a href="/contact">Contact</a>
+                                                    <Link href="/contact">Contact</Link>
                                                 </li>
                                                 <li>
-                                                    <a href="/service/management-leadership">Service</a>
+                                                    <Link href="/service">Service</Link>
                                                 </li>
                                             </ul>
                                         </div>
@@ -78,16 +79,16 @@ function FooterFour() {
                                         <div className="inner">
                                             <ul className="footer-link link-hover">
                                                 <li>
-                                                    <a href="/05-corporate">Corporate</a>
+                                                    <Link href="/05-corporate">Corporate</Link>
                                                 </li>
                                                 <li>
-                                                    <a href="/portfolio/analytics-platform">Portfolio</a>
+                                                    <Link href="/portfolio/analytics-platform">Portfolio</Link>
                                                 </li>
                                                 <li>
-                                                    <a href="/04-services-agency">SEO Agency</a>
+                                                    <Link href="/04-services-agency">SEO Agency</Link>
                                                 </li>
                                                 <li>
-                                                    <a href="/09-digital-agency">Web Agency</a>
+                                                    <Link href="/09-digital-agency">Web Agency</Link>
                                                 </li>
                                             </ul>
                                         </div>
@@ -97,16 +98,16 @@ function FooterFour() {
                                         <div className="inner">
                                             <ul className="footer-link link-hover">
                                                 <li>
-                                                    <a href="/gallery">Gallery</a>
+                                                    <Link href="/gallery">Gallery</Link>
                                                 </li>
                                                 <li>
-                                                    <a href="/testimonial">Testimonial</a>
+                                                    <Link href="/testimonial">Testimonial</Link>
                                                 </li>
                                                 <li>
-                                                    <a href="/contact">Contact</a>
+                                                    <Link href="/contact">Contact</Link>
                                                 </li>
                                                 <li>
-                                                    <a href="/service/financial-growth">Service</a>
+                                                    <Link href="/service">Service</Link>
                                                 </li>
                                             </ul>
                                         </div>
@@ -149,13 +150,13 @@ function FooterFour() {
                             <div className="copyright-left">
                                 <ul className="ft-menu link-hover">
                                     <li>
-                                        <a href="/privacy-policy">Privacy Policy</a>
+                                        <Link href="/privacy-policy">Privacy Policy</Link>
                                     </li>
                                     <li>
-                                        <a href="#">Terms And Condition</a>
+                                        <Link href="#">Terms And Condition</Link>
                                     </li>
                                     <li>
-                                        <a href="/contact">Contact Us</a>
+                                        <Link href="/contact">Contact Us</Link>
                                     </li>
                                 </ul>
                             </div>

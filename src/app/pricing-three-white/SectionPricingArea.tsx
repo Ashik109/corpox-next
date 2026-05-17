@@ -1,3 +1,4 @@
+import Link from 'next/link'
 function SectionPricingArea() {
   return (
     <>
@@ -49,7 +50,7 @@ function SectionPricingArea() {
       <li>Work in business days, no weekend.</li>
       <li>Support 6 months</li>
       </ul>
-      <a href="" className="tmp-btn btn-primary btn-border w-100">Pick This Package</a>
+      <Link href="" className="tmp-btn btn-primary btn-border w-100">Pick This Package</Link>
       </div>
       </div>
       <div className="col-lg-4 col-md-6 col-sm-12">
@@ -69,7 +70,7 @@ function SectionPricingArea() {
       <li>Support 6 months</li>
       </ul>
       <div className="popular-tag">Popular</div>
-      <a href="" className="tmp-btn btn-primary w-100">Pick This Package</a>
+      <Link href="" className="tmp-btn btn-primary w-100">Pick This Package</Link>
       </div>
       </div>
       <div className="col-lg-4 col-md-6 col-sm-12">
@@ -88,7 +89,7 @@ function SectionPricingArea() {
       <li>Work in business days, no weekend.</li>
       <li>Support 6 months</li>
       </ul>
-      <a href="" className="tmp-btn btn-border btn-primary w-100">Pick This Package</a>
+      <Link href="" className="tmp-btn btn-border btn-primary w-100">Pick This Package</Link>
       </div>
       </div>
       </div>
@@ -111,7 +112,7 @@ function SectionPricingArea() {
       <li>Work in business days, no weekend.</li>
       <li>Support 6 months</li>
       </ul>
-      <a href="" className="tmp-btn btn-border btn-primary w-100">Pick This Package</a>
+      <Link href="" className="tmp-btn btn-border btn-primary w-100">Pick This Package</Link>
       </div>
       </div>
       <div className="col-lg-4 col-md-6 col-sm-12">
@@ -131,7 +132,7 @@ function SectionPricingArea() {
       <li>Support 6 months</li>
       </ul>
       <div className="popular-tag">Popular</div>
-      <a href="" className="tmp-btn btn-primary w-100">Pick This Package</a>
+      <Link href="" className="tmp-btn btn-primary w-100">Pick This Package</Link>
       </div>
       </div>
       <div className="col-lg-4 col-md-6 col-sm-12">
@@ -150,7 +151,7 @@ function SectionPricingArea() {
       <li>Work in business days, no weekend.</li>
       <li>Support 6 months</li>
       </ul>
-      <a href="" className="tmp-btn  btn-border btn-primary w-100">Pick This Package</a>
+      <Link href="" className="tmp-btn  btn-border btn-primary w-100">Pick This Package</Link>
       </div>
       </div>
       </div>

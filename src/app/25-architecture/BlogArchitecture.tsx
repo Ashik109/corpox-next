@@ -1,3 +1,4 @@
+import Link from 'next/link'
 const posts = ["16.webp", "17.webp"] as const;
 
 function BlogArchitecture() {
@@ -30,21 +31,21 @@ function BlogArchitecture() {
                             <div className="tmp-card box-card-style-default bentostyle-left-blog tmponhover">
                                 <div className="inner">
                                     <div className="thumbnail invers-anime">
-                                        <a className="image" href="/blog/best-corporate-tips">
+                                        <Link className="image" href="/blog/best-corporate-tips">
                                             <img loading="lazy" className="w-100" src={`/assets/images/blog/${image}`} alt="Architecture blog" />
-                                        </a>
+                                        </Link>
                                     </div>
                                     <div className="content">
                                         <h4 className="title">
-                                            <a href="/blog/corporate-success-strategy">How to Analyze Your Best Pages for SEO Performance Marketing.</a>
+                                            <Link href="/blog/corporate-success-strategy">How to Analyze Your Best Pages for SEO Performance Marketing.</Link>
                                         </h4>
                                         <p className="descriptiion">
                                             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatem cumque unde culpa aut voluptates rem, adipisci nostrum libero dolor
                                         </p>
                                         <div className="read-more-btn">
-                                            <a className="btn-read-more" href="/blog/leadership-confidence">
+                                            <Link className="btn-read-more" href="/blog/leadership-confidence">
                                                 <span>Read More</span>
-                                            </a>
+                                            </Link>
                                         </div>
                                     </div>
                                 </div>

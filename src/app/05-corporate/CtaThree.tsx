@@ -1,4 +1,6 @@
 "use client";
+import Link from 'next/link'
+
 
 import React, { useEffect, useRef, useState } from "react";
 import "jarallax/dist/jarallax.css";
@@ -80,7 +82,7 @@ function CtaThree() {
                             </div>
                             <p>
                                 Looking for Collaboration? <br />{" "}
-                                <a href="#">info@yourdomain.com</a>
+                                <Link href="#">info@yourdomain.com</Link>
                             </p>
                         </div>
                     </div>

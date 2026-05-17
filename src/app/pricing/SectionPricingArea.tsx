@@ -1,3 +1,4 @@
+import Link from 'next/link'
 function SectionPricingArea() {
   return (
     <>
@@ -40,10 +41,10 @@ function SectionPricingArea() {
       </ul>
       </div>
       <div className="pricing-footer">
-      <a className="tmp-btn icon-hover text-center btn-border" href="#">
+      <Link className="tmp-btn icon-hover text-center btn-border" href="#">
       <span className="btn-text">Try This free</span>
       <span className="btn-icon"><i className="feather-arrow-right"></i></span>
-      </a>
+      </Link>
       </div>
       </div>
       </div>
@@ -68,10 +69,10 @@ function SectionPricingArea() {
       </ul>
       </div>
       <div className="pricing-footer">
-      <a className="tmp-btn icon-hover text-center" href="#">
+      <Link className="tmp-btn icon-hover text-center" href="#">
       <span className="btn-text">Try 14-days free</span>
       <span className="btn-icon"><i className="feather-arrow-right"></i></span>
-      </a>
+      </Link>
       </div>
       </div>
       <div className="popular-tag">Popular</div>
@@ -97,10 +98,10 @@ function SectionPricingArea() {
       </ul>
       </div>
       <div className="pricing-footer">
-      <a className="tmp-btn icon-hover text-center btn-border" href="#">
+      <Link className="tmp-btn icon-hover text-center btn-border" href="#">
       <span className="btn-text">Try 14-days free</span>
       <span className="btn-icon"><i className="feather-arrow-right"></i></span>
-      </a>
+      </Link>
       </div>
       </div>
       </div>

@@ -1,3 +1,4 @@
+import Link from 'next/link'
 function SectionCartpage() {
   return (
     <>
@@ -158,7 +159,7 @@ function SectionCartpage() {
                                               </label>
       </div>
       <p>Shipping Option Will Be in Australia</p>
-      <a href="#" className="calc">Calculate Shipping</a>
+      <Link href="#" className="calc">Calculate Shipping</Link>
       </div>
       </div>
       <div className="shipping-area border-0 cart-total">
@@ -168,7 +169,7 @@ function SectionCartpage() {
       </div>
       </div>
       <div className="button-area">
-      <a href="/checkout-white" className="checkout-btn tmp-btn btn-primary">Proceed To Checkout</a>
+      <Link href="/checkout-white" className="checkout-btn tmp-btn btn-primary">Proceed To Checkout</Link>
       </div>
       </div>
       </div>

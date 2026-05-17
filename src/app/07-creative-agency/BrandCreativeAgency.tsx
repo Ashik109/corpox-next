@@ -1,4 +1,6 @@
 "use client";
+import Link from 'next/link'
+
 
 import Slider from "react-slick";
 import NextArrow from "../01-index-consulting/NextArrow";
@@ -54,9 +56,9 @@ function BrandCreativeAgency() {
                         <Slider {...settings} className="brand-carousel-activation tmp-slick-arrow tmp-slick-dot mb--40">
                             {brands.map((brand, index) => (
                                 <div key={`${brand}-${index}`}>
-                                    <a href="#">
+                                    <Link href="#">
                                         <img src={`/assets/images/brand/${brand}`} alt="Brand Image" />
-                                    </a>
+                                    </Link>
                                 </div>
                             ))}
                         </Slider>

@@ -1,3 +1,4 @@
+import Link from 'next/link'
 function SectionAboutArea() {
   return (
     <>
@@ -12,9 +13,9 @@ function SectionAboutArea() {
       <div className="single-thumbnail invers-anime mt--80">
       <img loading="lazy" src="/assets/images/about/02.webp" alt="about" />
       <div className="video-icon">
-      <a className="tmp-btn rounded-player popup-video" href="/assets/images/video/01.mp4">
+      <Link className="tmp-btn rounded-player popup-video" href="/assets/images/video/01.mp4">
       <span><i className="feather-play"></i></span>
-      </a>
+      </Link>
       </div>
       </div>
       <div className="absolute-rating-area images-left-right-float image">
@@ -28,9 +29,9 @@ function SectionAboutArea() {
       </div>
       <p><span className="odometer" data-count="599">00</span> Review form our <br /> Best Clients</p>
       <div className="profile-share justify-content-start">
-      <a href="#" className="avatar" data-tooltip="Mark JOrdan" tabIndex={0}><img src="/assets/images/testimonial/tooltip-01.png" alt="education" /></a>
-      <a href="#" className="avatar" data-tooltip="Mark" tabIndex={0}><img src="/assets/images/testimonial/tooltip-02.png" alt="education" /></a>
-      <a href="#" className="avatar" data-tooltip="Jordan" tabIndex={0}><img src="/assets/images/testimonial/tooltip-03.png" alt="education" /></a>
+      <Link href="#" className="avatar" data-tooltip="Mark JOrdan" tabIndex={0}><img src="/assets/images/testimonial/tooltip-01.png" alt="education" /></Link>
+      <Link href="#" className="avatar" data-tooltip="Mark" tabIndex={0}><img src="/assets/images/testimonial/tooltip-02.png" alt="education" /></Link>
+      <Link href="#" className="avatar" data-tooltip="Jordan" tabIndex={0}><img src="/assets/images/testimonial/tooltip-03.png" alt="education" /></Link>
       </div>
       </div>
       </div>
@@ -69,7 +70,7 @@ function SectionAboutArea() {
       </li>
       </ul>
       <div className="about-btn mt--30">
-      <a className="tmp-btn round text-center" href="/about-white">About Our Corpox</a>
+      <Link className="tmp-btn round text-center" href="/about-white">About Our Corpox</Link>
       </div>
       </div>
       </div>

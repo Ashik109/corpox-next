@@ -1,3 +1,4 @@
+import Link from 'next/link'
 function SectionDone() {
   return (
     <>
@@ -329,33 +330,33 @@ function SectionDone() {
       <div className="col-lg-12">
       <nav>
       <ul className="tmp-pagination justify-content-start">
-      <li><a href="#" aria-label="Previous"><i className="feather-chevron-left"></i></a></li>
-      <li><a href="#">1</a></li>
-      <li className="active"><a href="#">2</a></li>
-      <li><a href="#">3</a></li>
-      <li><a href="#" aria-label="Next"><i className="feather-chevron-right"></i></a></li>
+      <li><Link href="#" aria-label="Previous"><i className="feather-chevron-left"></i></Link></li>
+      <li><Link href="#">1</Link></li>
+      <li className="active"><Link href="#">2</Link></li>
+      <li><Link href="#">3</Link></li>
+      <li><Link href="#" aria-label="Next"><i className="feather-chevron-right"></i></Link></li>
       </ul>
       </nav>
       </div>
       <div className="col-lg-12">
       <nav>
       <ul className="tmp-pagination justify-content-center">
-      <li><a href="#" aria-label="Previous"><i className="feather-chevron-left"></i></a></li>
-      <li><a href="#">1</a></li>
-      <li className="active"><a href="#">2</a></li>
-      <li><a href="#">3</a></li>
-      <li><a href="#" aria-label="Next"><i className="feather-chevron-right"></i></a></li>
+      <li><Link href="#" aria-label="Previous"><i className="feather-chevron-left"></i></Link></li>
+      <li><Link href="#">1</Link></li>
+      <li className="active"><Link href="#">2</Link></li>
+      <li><Link href="#">3</Link></li>
+      <li><Link href="#" aria-label="Next"><i className="feather-chevron-right"></i></Link></li>
       </ul>
       </nav>
       </div>
       <div className="col-lg-12">
       <nav>
       <ul className="tmp-pagination justify-content-end">
-      <li><a href="#" aria-label="Previous"><i className="feather-chevron-left"></i></a></li>
-      <li><a href="#">1</a></li>
-      <li className="active"><a href="#">2</a></li>
-      <li><a href="#">3</a></li>
-      <li><a href="#" aria-label="Next"><i className="feather-chevron-right"></i></a></li>
+      <li><Link href="#" aria-label="Previous"><i className="feather-chevron-left"></i></Link></li>
+      <li><Link href="#">1</Link></li>
+      <li className="active"><Link href="#">2</Link></li>
+      <li><Link href="#">3</Link></li>
+      <li><Link href="#" aria-label="Next"><i className="feather-chevron-right"></i></Link></li>
       </ul>
       </nav>
       </div>
@@ -370,9 +371,9 @@ function SectionDone() {
       <div className="row g-5">
       <div className="col-lg-6">
       <div className="profile-share">
-      <a href="#" className="avatar" data-tooltip="Mark JOrdan" tabIndex={0}><img src="/assets/images/testimonial/tooltip-01.png" alt="education" /></a>
-      <a href="#" className="avatar" data-tooltip="Mark" tabIndex={0}><img src="/assets/images/testimonial/tooltip-02.png" alt="education" /></a>
-      <a href="#" className="avatar" data-tooltip="Jordan" tabIndex={0}><img src="/assets/images/testimonial/tooltip-03.png" alt="education" /></a>
+      <Link href="#" className="avatar" data-tooltip="Mark JOrdan" tabIndex={0}><img src="/assets/images/testimonial/tooltip-01.png" alt="education" /></Link>
+      <Link href="#" className="avatar" data-tooltip="Mark" tabIndex={0}><img src="/assets/images/testimonial/tooltip-02.png" alt="education" /></Link>
+      <Link href="#" className="avatar" data-tooltip="Jordan" tabIndex={0}><img src="/assets/images/testimonial/tooltip-03.png" alt="education" /></Link>
       <div className="more-author-text">
       <h5 className="total-join-students">Join Over 3000+ Clients</h5>
       <p className="subtitle">Have a new ideas every week.</p>

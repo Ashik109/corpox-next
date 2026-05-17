@@ -1,3 +1,4 @@
+import Link from 'next/link'
 const socialLinks = ["facebook", "twitter", "instagram", "linkedin"] as const;
 
 function BannerConstruction() {
@@ -15,20 +16,20 @@ function BannerConstruction() {
                                     We provide strong, reliable, and cost-effective construction services to help residential and commercial projects stand the test of time with confidence.
                                 </p>
                                 <div className="view-more-project">
-                                    <a className="btn-read-more" href="#contactus">
+                                    <Link className="btn-read-more" href="#contactus">
                                         <span>
                                             Get Construction Quote
                                             <i className="feather-arrow-right" />
                                         </span>
-                                    </a>
+                                    </Link>
                                 </div>
                             </div>
                             <ul className="social-icon social-default transparent-with-border justify-content-center mt--25 mt_md--20 mt_sm--20">
                                 {socialLinks.map((icon, index) => (
                                     <li data-aos="fade-up" data-aos-duration="400" data-aos-delay={200 + index * 100} key={icon}>
-                                        <a href={`https://www.${icon}.com/`}>
+                                        <Link href={`https://www.${icon}.com/`}>
                                             <i className={`feather-${icon}`} />
-                                        </a>
+                                        </Link>
                                     </li>
                                 ))}
                             </ul>

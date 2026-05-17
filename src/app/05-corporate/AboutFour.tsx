@@ -1,4 +1,6 @@
 "use client";
+import Link from 'next/link'
+
 
 import { useEffect, useRef } from "react";
 import { useTitleSplitAnimation } from "../components/useTitleSplitAnimation";
@@ -121,7 +123,7 @@ function AboutFour() {
                                     </div>
                                     <div className="tmp-profile-box">
                                         <div className="profile-share justify-content-start">
-                                            <a
+                                            <Link
                                                 href="#"
                                                 className="avatar"
                                                 data-tooltip="Mark JOrdan"
@@ -131,8 +133,8 @@ function AboutFour() {
                                                     src="/assets/images/testimonial/tooltip-01.png"
                                                     alt="education"
                                                 />
-                                            </a>
-                                            <a
+                                            </Link>
+                                            <Link
                                                 href="#"
                                                 className="avatar"
                                                 data-tooltip="Mark"
@@ -142,8 +144,8 @@ function AboutFour() {
                                                     src="/assets/images/testimonial/tooltip-02.png"
                                                     alt="education"
                                                 />
-                                            </a>
-                                            <a
+                                            </Link>
+                                            <Link
                                                 href="#"
                                                 className="avatar"
                                                 data-tooltip="Jordan"
@@ -153,29 +155,29 @@ function AboutFour() {
                                                     src="/assets/images/testimonial/tooltip-03.png"
                                                     alt="education"
                                                 />
-                                            </a>
+                                            </Link>
                                             <div className="more-author-text">
                                                 <p className="subtitle">
-                                                    <a className="btn-read-more" href="#">
+                                                    <Link className="btn-read-more" href="#">
                                                         <span>Check all History</span>
-                                                    </a>
+                                                    </Link>
                                                 </p>
                                             </div>
                                         </div>
                                     </div>
                                     <div className="read-more-btn btn-group gap-4 mt--40">
-                                        <a
+                                        <Link
                                             className="tmp-btn btn-primary round btn-large"
                                             href="/about"
                                         >
                                             More About Us
-                                        </a>
-                                        <a
+                                        </Link>
+                                        <Link
                                             className="tmp-btn btn-border round btn-large"
                                             href="/contact"
                                         >
                                             Contact With Us
-                                        </a>
+                                        </Link>
                                     </div>
                                 </div>
                             </div>
@@ -192,19 +194,19 @@ function AboutFour() {
                                             />
                                         </div>
                                         <div className="video-icon">
-                                            <a
+                                            <Link
                                                 className="tmp-btn rounded-player popup-video"
                                                 href="https://www.youtube.com/watch?v=4jnzf1yj48M"
                                             >
                                                 <span>
                                                     <i className="feather-play" />
                                                 </span>
-                                            </a>
+                                            </Link>
                                         </div>
                                     </div>
                                     <div ref={floatRef} className="absolute-rating-area images-left-right-float image">
                                         <div className="profile-share justify-content-start">
-                                            <a
+                                            <Link
                                                 href="#"
                                                 className="avatar"
                                                 data-tooltip="Mark JOrdan"
@@ -214,8 +216,8 @@ function AboutFour() {
                                                     src="/assets/images/testimonial/tooltip-01.png"
                                                     alt="education"
                                                 />
-                                            </a>
-                                            <a
+                                            </Link>
+                                            <Link
                                                 href="#"
                                                 className="avatar"
                                                 data-tooltip="Mark"
@@ -225,8 +227,8 @@ function AboutFour() {
                                                     src="/assets/images/testimonial/tooltip-02.png"
                                                     alt="education"
                                                 />
-                                            </a>
-                                            <a
+                                            </Link>
+                                            <Link
                                                 href="#"
                                                 className="avatar"
                                                 data-tooltip="Jordan"
@@ -236,7 +238,7 @@ function AboutFour() {
                                                     src="/assets/images/testimonial/tooltip-03.png"
                                                     alt="education"
                                                 />
-                                            </a>
+                                            </Link>
                                         </div>
                                         <div className="stars-area">
                                             <img src="/assets/images/icons/stars.svg" alt="small-image" />

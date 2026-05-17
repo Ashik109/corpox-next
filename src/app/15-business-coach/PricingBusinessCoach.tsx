@@ -1,3 +1,4 @@
+import Link from 'next/link'
 const plans = [
     {
         name: "basic",
@@ -61,9 +62,9 @@ function PricingBusinessCoach() {
                                                 <li key={feature}>{feature}</li>
                                             ))}
                                         </ul>
-                                        <a href="#" className="tmp-btn btn-primary w-100">
+                                        <Link href="#" className="tmp-btn btn-primary w-100">
                                             pick this package
-                                        </a>
+                                        </Link>
                                     </div>
                                 </div>
                             ))}
@@ -71,7 +72,7 @@ function PricingBusinessCoach() {
                         <p className="info text-center">
                             Don&apos;t find any package match with your plan!
                             <br />
-                            Want to setup a new tailor-made package for only you?. <a href="/contact">Contact Us</a>
+                            Want to setup a new tailor-made package for only you?. <Link href="/contact">Contact Us</Link>
                         </p>
                     </div>
                 </div>

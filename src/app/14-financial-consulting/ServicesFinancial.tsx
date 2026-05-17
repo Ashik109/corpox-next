@@ -1,3 +1,4 @@
+import Link from 'next/link'
 const services = [
     { image: "serviice-01.jpg", title: "Awarded Design", delay: 0 },
     { image: "serviice-02.jpg", title: "Design & Creative", delay: 100 },
@@ -23,16 +24,16 @@ function ServicesFinancial() {
                             <div className="card-box card-style-1 text-left tmponhover">
                                 <div className="inner">
                                     <div className="image invers-anime">
-                                        <a href="/service/management-leadership">
+                                        <Link href="/service/management-leadership">
                                             <img loading="lazy" src={`/assets/images/services/${service.image}`} alt="card Images" />
-                                        </a>
+                                        </Link>
                                     </div>
                                     <div className="content">
                                         <h4 className="title mb--20">
-                                            <a href="/service/financial-growth">{service.title}</a>
+                                            <Link href="/service/financial-growth">{service.title}</Link>
                                         </h4>
                                         <div className="discover-btn">
-                                            <a className="tmp-btn mt--0 round btn-small btn-border hover-icon-reverse" href="/service/digital-transformation">
+                                            <Link className="tmp-btn mt--0 round btn-small btn-border hover-icon-reverse" href="/service/digital-transformation">
                                                 <span className="icon-reverse-wrapper">
                                                     <span className="btn-text">Discover services</span>
                                                     <span className="btn-icon">
@@ -42,7 +43,7 @@ function ServicesFinancial() {
                                                         <i className="feather-arrow-right" />
                                                     </span>
                                                 </span>
-                                            </a>
+                                            </Link>
                                         </div>
                                     </div>
                                 </div>

@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import BusinessCoachOdometer from "./BusinessCoachOdometer";
 
 const columns = [
@@ -21,7 +22,7 @@ function FooterBusinessCoach() {
                                         <ul className="footer-link link-hover">
                                             {column.links.map((link) => (
                                                 <li key={link}>
-                                                    <a href="#">{link}</a>
+                                                    <Link href="#">{link}</Link>
                                                 </li>
                                             ))}
                                         </ul>
@@ -39,9 +40,9 @@ function FooterBusinessCoach() {
                                     <ul className="social-icon social-default justify-content-start">
                                         {["facebook", "twitter", "instagram", "linkedin"].map((icon) => (
                                             <li key={icon}>
-                                                <a href={`https://www.${icon}.com/`}>
+                                                <Link href={`https://www.${icon}.com/`}>
                                                     <i className={`feather-${icon}`} />
-                                                </a>
+                                                </Link>
                                             </li>
                                         ))}
                                     </ul>
@@ -82,13 +83,13 @@ function FooterBusinessCoach() {
                             <div className="copyright-left">
                                 <ul className="ft-menu link-hover">
                                     <li>
-                                        <a href="/privacy-policy">Privacy Policy</a>
+                                        <Link href="/privacy-policy">Privacy Policy</Link>
                                     </li>
                                     <li>
-                                        <a href="#">Terms And Condition</a>
+                                        <Link href="#">Terms And Condition</Link>
                                     </li>
                                     <li>
-                                        <a href="/contact">Contact Us</a>
+                                        <Link href="/contact">Contact Us</Link>
                                     </li>
                                 </ul>
                             </div>

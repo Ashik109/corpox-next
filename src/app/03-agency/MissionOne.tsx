@@ -1,4 +1,6 @@
 "use client";
+import Link from 'next/link'
+
 
 import { useEffect, useRef } from "react";
 import { gsap } from "gsap";
@@ -54,19 +56,19 @@ function MissionOne({ className = ""}: MissionOneProps ) {
                                             />
                                         </div>
                                         <div className="video-icon">
-                                            <a
+                                            <Link
                                                 className="tmp-btn rounded-player popup-video"
                                                 href="https://www.youtube.com/watch?v=4jnzf1yj48M"
                                             >
                                                 <span>
                                                     <i className="feather-play" />
                                                 </span>
-                                            </a>
+                                            </Link>
                                         </div>
                                     </div>
                                     <div ref={floatRef} className="absolute-rating-area images-left-right-float image">
                                         <div className="profile-share justify-content-start">
-                                            <a
+                                            <Link
                                                 href="#"
                                                 className="avatar"
                                                 data-tooltip="Mark JOrdan"
@@ -76,8 +78,8 @@ function MissionOne({ className = ""}: MissionOneProps ) {
                                                     src="/assets/images/testimonial/tooltip-01.png"
                                                     alt="education"
                                                 />
-                                            </a>
-                                            <a
+                                            </Link>
+                                            <Link
                                                 href="#"
                                                 className="avatar"
                                                 data-tooltip="Mark"
@@ -87,8 +89,8 @@ function MissionOne({ className = ""}: MissionOneProps ) {
                                                     src="/assets/images/testimonial/tooltip-02.png"
                                                     alt="education"
                                                 />
-                                            </a>
-                                            <a
+                                            </Link>
+                                            <Link
                                                 href="#"
                                                 className="avatar"
                                                 data-tooltip="Jordan"
@@ -98,7 +100,7 @@ function MissionOne({ className = ""}: MissionOneProps ) {
                                                     src="/assets/images/testimonial/tooltip-03.png"
                                                     alt="education"
                                                 />
-                                            </a>
+                                            </Link>
                                         </div>
                                         <div className="stars-area">
                                             <img src="/assets/images/icons/stars.svg" alt="small-image" />
@@ -162,12 +164,12 @@ function MissionOne({ className = ""}: MissionOneProps ) {
                                         </li>
                                     </ul>
                                     <div className="read-more-btn mt--40">
-                                        <a
+                                        <Link
                                             className="tmp-btn round btn-large btn-border"
                                             href="/contact"
                                         >
                                             Lets Contact Us
-                                        </a>
+                                        </Link>
                                     </div>
                                 </div>
                             </div>

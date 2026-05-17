@@ -1,3 +1,4 @@
+import Link from 'next/link'
 const blocks = [
     {
         image: "32.webp",
@@ -48,12 +49,12 @@ function BlockContent({ block }: { block: (typeof blocks)[number] }) {
                     ))}
                 </ul>
                 <div className="read-more-btn mt--30">
-                    <a className="tmp-btn icon-hover text-center" href="#contactus">
+                    <Link className="tmp-btn icon-hover text-center" href="#contactus">
                         <span className="btn-text">Contact Us</span>
                         <span className="btn-icon">
                             <i className="feather-arrow-right" />
                         </span>
-                    </a>
+                    </Link>
                 </div>
             </div>
         </div>

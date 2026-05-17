@@ -1,3 +1,4 @@
+import Link from 'next/link'
 const posts = [
     ["blog-01.jpg", "Business", "John Deon", "15 Dec 2025", "05", "How to Analyze Your Best Pages for SEO Performance", "It is an established fact that corporate success is not achieved overnight."],
     ["blog-02.jpg", "Development", "Kalvin Klin", "28 Dec 2025", "03", "Corporate Success How to Achieve Your Goals", "Corporate success is an established fact that comes from strategic."],
@@ -35,17 +36,17 @@ function BlogITSolution() {
                                 <div className="inner">
                                     {index === 1 ? null : (
                                         <div className="thumbnail invers-anime">
-                                            <a className="image" href="/blog/best-corporate-tips">
+                                            <Link className="image" href="/blog/best-corporate-tips">
                                                 <img loading="lazy" className="w-100" src={`/assets/images/blog-grid/${image}`} alt="Blog Image" />
-                                            </a>
+                                            </Link>
                                             <span className="tag-news">{tag}</span>
                                             {index === 2 ? (
                                                 <div className="video-icon">
-                                                    <a className="tmp-btn btn-small rounded-player popup-video" href="https://www.youtube.com/watch?v=4jnzf1yj48M">
+                                                    <Link className="tmp-btn btn-small rounded-player popup-video" href="https://www.youtube.com/watch?v=4jnzf1yj48M">
                                                         <span>
                                                             <i className="feather-play" />
                                                         </span>
-                                                    </a>
+                                                    </Link>
                                                 </div>
                                             ) : null}
                                         </div>
@@ -56,7 +57,7 @@ function BlogITSolution() {
                                                 <span>
                                                     <i className="feather-user" />
                                                 </span>
-                                                <a href="#">{author}</a>
+                                                <Link href="#">{author}</Link>
                                             </li>
                                             <li className="separator">-</li>
                                             <li>{date}</li>
@@ -66,20 +67,20 @@ function BlogITSolution() {
                                             </li>
                                         </ul>
                                         <h4 className="title">
-                                            <a href="/blog/corporate-success-strategy">{title}</a>
+                                            <Link href="/blog/corporate-success-strategy">{title}</Link>
                                         </h4>
                                         <p className="descriptiion">{text}</p>
                                         <div className="read-more-btn">
-                                            <a className="tmp-btn btn-border" href="/blog/leadership-confidence">
+                                            <Link className="tmp-btn btn-border" href="/blog/leadership-confidence">
                                                 <span>Read More</span>
-                                            </a>
+                                            </Link>
                                         </div>
                                     </div>
                                     {index === 1 ? (
                                         <div className="thumbnail invers-anime">
-                                            <a className="image" href="/blog/best-corporate-tips">
+                                            <Link className="image" href="/blog/best-corporate-tips">
                                                 <img loading="lazy" className="w-100" src={`/assets/images/blog-grid/${image}`} alt="Blog Image" />
-                                            </a>
+                                            </Link>
                                             <span className="tag-news">{tag}</span>
                                         </div>
                                     ) : null}

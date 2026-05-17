@@ -1,3 +1,4 @@
+import Link from 'next/link'
 const brands = ["brand-01.png", "brand-02.png", "brand-03.png", "brand-04.png", "brand-05.png", "brand-06.png", "brand-07.png", "brand-08.png"];
 
 function BrandITSolution() {
@@ -29,9 +30,9 @@ function BrandITSolution() {
                         <ul className="brand-list brand-style-1">
                             {brands.map((brand) => (
                                 <li key={brand}>
-                                    <a href="#">
+                                    <Link href="#">
                                         <img src={`/assets/images/brand/${brand}`} alt="Brand Image" />
-                                    </a>
+                                    </Link>
                                 </li>
                             ))}
                         </ul>

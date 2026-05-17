@@ -1,3 +1,4 @@
+import Link from 'next/link'
 const timelineItems = [
     {
         step: "01",
@@ -98,12 +99,12 @@ function TimelineMarketingAgency() {
                                                             data-aos-duration="700"
                                                             data-aos-delay="300"
                                                         >
-                                                            <a className="tmp-btn round icon-hover" href="#">
+                                                            <Link className="tmp-btn round icon-hover" href="#">
                                                                 <span className="btn-text">Get Started Now</span>
                                                                 <span className="btn-icon">
                                                                     <i className="feather-arrow-right" />
                                                                 </span>
-                                                            </a>
+                                                            </Link>
                                                         </div>
                                                     </div>
                                                 </div>

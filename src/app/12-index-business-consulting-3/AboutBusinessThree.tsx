@@ -1,3 +1,4 @@
+import Link from 'next/link'
 const listItems = [
     "Track your teams progress with mobile app.",
     "Lorem ipsum dolor sit amet consectetur adipisicing.",
@@ -31,9 +32,9 @@ function AboutBusinessThree() {
                                     ))}
                                 </ul>
                                 <div className="read-more-btn mt--40">
-                                    <a className="tmp-btn round btn-large" href="/contact">
+                                    <Link className="tmp-btn round btn-large" href="/contact">
                                         Contact Us
-                                    </a>
+                                    </Link>
                                 </div>
                             </div>
                         </div>

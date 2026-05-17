@@ -1,4 +1,6 @@
 "use client";
+import Link from 'next/link'
+
 
 import { useState } from "react";
 
@@ -52,9 +54,9 @@ function ScheduleEvent() {
                                         {eventItems.map(([image, location, date, title, cta]) => (
                                             <div className="col-lg-6" key={`${activeDay}-${title}`}>
                                                 <div className="single-events-wrapper tmponhover">
-                                                    <a href="/contact" className="thumbnail">
+                                                    <Link href="/contact" className="thumbnail">
                                                         <img src={`/assets/images/event/${image}`} alt={title} />
-                                                    </a>
+                                                    </Link>
                                                     <div className="inner-content">
                                                         <div className="top-area mb--15">
                                                             <div className="single">
@@ -66,15 +68,15 @@ function ScheduleEvent() {
                                                                 <p>{date}</p>
                                                             </div>
                                                         </div>
-                                                        <a href="/contact">
+                                                        <Link href="/contact">
                                                             <h3 className="title">{title}</h3>
-                                                        </a>
-                                                        <a className="tmp-btn icon-hover btn-small text-center" href="/contact">
+                                                        </Link>
+                                                        <Link className="tmp-btn icon-hover btn-small text-center" href="/contact">
                                                             <span className="btn-text">{cta}</span>
                                                             <span className="btn-icon">
                                                                 <i className="feather-arrow-right" />
                                                             </span>
-                                                        </a>
+                                                        </Link>
                                                     </div>
                                                 </div>
                                             </div>

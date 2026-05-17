@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import BusinessOdometer from "./BusinessOdometer";
 import BusinessRotatingWords from "./BusinessRotatingWords";
 
@@ -27,7 +28,7 @@ function BannerBusiness() {
                                 quo at. <br /> Quisquam molestiae maiores ea iste ipsum unde animi aliquid.
                             </p>
                             <div className="button-group">
-                                <a className="tmp-btn btn-gradient btn-xl hover-icon-reverse" href="#">
+                                <Link className="tmp-btn btn-gradient btn-xl hover-icon-reverse" href="#">
                                     <span className="icon-reverse-wrapper">
                                         <span className="btn-text">Looking to hire? Get in touch!</span>
                                         <span className="btn-icon">
@@ -37,7 +38,7 @@ function BannerBusiness() {
                                             <i className="feather-arrow-right" />
                                         </span>
                                     </span>
-                                </a>
+                                </Link>
                             </div>
                         </div>
                     </div>

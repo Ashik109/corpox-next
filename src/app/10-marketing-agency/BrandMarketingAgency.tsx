@@ -1,3 +1,4 @@
+import Link from 'next/link'
 const brands = [
     "brand-01.png",
     "brand-02.png",
@@ -19,9 +20,9 @@ function BrandMarketingAgency() {
                         <ul className="brand-list brand-style-2">
                             {brands.map((brand, index) => (
                                 <li key={`${brand}-${index}`}>
-                                    <a href="#">
+                                    <Link href="#">
                                         <img src={`/assets/images/brand/${brand}`} alt="Brand Image" />
-                                    </a>
+                                    </Link>
                                 </li>
                             ))}
                         </ul>

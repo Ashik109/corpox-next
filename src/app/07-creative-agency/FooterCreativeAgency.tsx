@@ -1,3 +1,4 @@
+import Link from 'next/link'
 const footerColumns = [
     {
         title: "Company",
@@ -28,10 +29,10 @@ function FooterCreativeAgency() {
                         <div className="col-lg-4 col-md-6 col-sm-6 col-12">
                             <div className="tmp-footer-widget">
                                 <div className="logo">
-                                    <a href="/">
+                                    <Link href="/">
                                         <img className="logo-light" src="/assets/images/logo/logo.png" alt="Corporate Logo" />
                                         <img className="logo-dark" src="/assets/images/logo/logo-dark.png" alt="Corporate Logo" />
-                                    </a>
+                                    </Link>
                                 </div>
                                 <p className="subtitle mt--30">
                                     If you want to create a corporate template you can purshace now our Corpex template.
@@ -46,7 +47,7 @@ function FooterCreativeAgency() {
                                         <ul className="footer-link link-hover">
                                             {column.links.map(([label, href]) => (
                                                 <li key={label}>
-                                                    <a href={href}>{label}</a>
+                                                    <Link href={href}>{label}</Link>
                                                 </li>
                                             ))}
                                         </ul>
@@ -62,9 +63,9 @@ function FooterCreativeAgency() {
                                     <ul className="social-icon social-default justify-content-start">
                                         {["facebook", "twitter", "instagram", "linkedin"].map((icon) => (
                                             <li key={icon}>
-                                                <a href={icon === "linkedin" ? "https://www.linkdin.com/" : `https://www.${icon}.com/`}>
+                                                <Link href={icon === "linkedin" ? "https://www.linkdin.com/" : `https://www.${icon}.com/`}>
                                                     <i className={`feather-${icon}`} />
-                                                </a>
+                                                </Link>
                                             </li>
                                         ))}
                                     </ul>
@@ -81,13 +82,13 @@ function FooterCreativeAgency() {
                             <div className="copyright-left">
                                 <ul className="ft-menu link-hover">
                                     <li>
-                                        <a href="/privacy-policy">Privacy Policy</a>
+                                        <Link href="/privacy-policy">Privacy Policy</Link>
                                     </li>
                                     <li>
-                                        <a href="#">Terms And Condition</a>
+                                        <Link href="#">Terms And Condition</Link>
                                     </li>
                                     <li>
-                                        <a href="/contact">Contact Us</a>
+                                        <Link href="/contact">Contact Us</Link>
                                     </li>
                                 </ul>
                             </div>

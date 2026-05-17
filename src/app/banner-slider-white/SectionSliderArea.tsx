@@ -1,3 +1,4 @@
+import Link from 'next/link'
 function SectionSliderArea() {
   return (
     <>
@@ -12,31 +13,31 @@ function SectionSliderArea() {
       <p className="description">We help our clients succeed by creating brand identities, <br />
                                           digital experiences, and print materials.</p>
       <ul className="social-icon social-default transparent-with-border">
-      <li><a href="https://www.facebook.com/">
+      <li><Link href="https://www.facebook.com/">
       <i className="feather-facebook"></i>
-      </a>
+      </Link>
       </li>
-      <li><a href="https://www.twitter.com">
+      <li><Link href="https://www.twitter.com">
       <i className="feather-twitter"></i>
-      </a>
+      </Link>
       </li>
-      <li><a href="https://www.instagram.com/">
+      <li><Link href="https://www.instagram.com/">
       <i className="feather-instagram"></i>
-      </a>
+      </Link>
       </li>
-      <li><a href="https://www.linkdin.com/">
+      <li><Link href="https://www.linkdin.com/">
       <i className="feather-linkedin"></i>
-      </a>
+      </Link>
       </li>
       </ul>
       <div className="button-group mt--30">
-      <a className="tmp-btn btn-large round hover-icon-reverse" href="#">
+      <Link className="tmp-btn btn-large round hover-icon-reverse" href="#">
       <span className="icon-reverse-wrapper">
       <span className="btn-text">Get started now</span>
       <span className="btn-icon"><i className="feather-arrow-right"></i></span>
       <span className="btn-icon"><i className="feather-arrow-right"></i></span>
       </span>
-      </a>
+      </Link>
       </div>
       </div>
       </div>
@@ -75,31 +76,31 @@ function SectionSliderArea() {
       <p className="description">We help our clients succeed by creating brand identities, <br />
                                           digital experiences, and print materials.</p>
       <ul className="social-icon social-default transparent-with-border">
-      <li><a href="https://www.facebook.com/">
+      <li><Link href="https://www.facebook.com/">
       <i className="feather-facebook"></i>
-      </a>
+      </Link>
       </li>
-      <li><a href="https://www.twitter.com">
+      <li><Link href="https://www.twitter.com">
       <i className="feather-twitter"></i>
-      </a>
+      </Link>
       </li>
-      <li><a href="https://www.instagram.com/">
+      <li><Link href="https://www.instagram.com/">
       <i className="feather-instagram"></i>
-      </a>
+      </Link>
       </li>
-      <li><a href="https://www.linkdin.com/">
+      <li><Link href="https://www.linkdin.com/">
       <i className="feather-linkedin"></i>
-      </a>
+      </Link>
       </li>
       </ul>
       <div className="button-group mt--30">
-      <a className="tmp-btn btn-large round hover-icon-reverse" href="#">
+      <Link className="tmp-btn btn-large round hover-icon-reverse" href="#">
       <span className="icon-reverse-wrapper">
       <span className="btn-text">Get started now</span>
       <span className="btn-icon"><i className="feather-arrow-right"></i></span>
       <span className="btn-icon"><i className="feather-arrow-right"></i></span>
       </span>
-      </a>
+      </Link>
       </div>
       </div>
       </div>

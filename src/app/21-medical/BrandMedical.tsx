@@ -1,3 +1,4 @@
+import Link from 'next/link'
 const brands = ["brand-01.png", "brand-02.png", "brand-03.png", "brand-04.png", "brand-05.png", "brand-06.png", "brand-06.png", "brand-06.png"];
 
 function BrandMedical() {
@@ -9,9 +10,9 @@ function BrandMedical() {
                         <ul className="brand-list brand-carousel-activation tmp-slick-arrow tmp-slick-dot mb--40">
                             {brands.map((brand, index) => (
                                 <li key={`${brand}-${index}`}>
-                                    <a href="#">
+                                    <Link href="#">
                                         <img src={`/assets/images/brand/${brand}`} alt="Brand" />
-                                    </a>
+                                    </Link>
                                 </li>
                             ))}
                         </ul>

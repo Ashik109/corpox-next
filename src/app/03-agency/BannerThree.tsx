@@ -1,4 +1,6 @@
 "use client";
+import Link from 'next/link'
+
 
 import { useEffect, useRef, useState } from "react";
 import AOS from "aos";
@@ -83,14 +85,14 @@ export default function BannerThree() {
                   data-aos-duration="700"
                   data-aos-delay={100}
                 >
-                  <a
+                  <Link
                     className="tmp-btn btn-border rounded-player popup-video border-color-white"
                     href="https://www.youtube.com/watch?v=4jnzf1yj48M"
                   >
                     <span>
                       <i className="feather-play" />
                     </span>
-                  </a>
+                  </Link>
                 </div>
 
                 {/* Title */}
@@ -170,7 +172,7 @@ export default function BannerThree() {
                   data-aos-duration="1000"
                   data-aos-delay={700}
                 >
-                  <a
+                  <Link
                     className="tmp-btn hover-icon-reverse btn-border round btn-large border-color-white"
                     href="/contact"
                   >
@@ -189,7 +191,7 @@ export default function BannerThree() {
                       </span>
 
                     </span>
-                  </a>
+                  </Link>
                 </div>
 
               </div>

@@ -39,9 +39,9 @@ function FooterBusinessThree() {
                         </div>
                         <div className="right">
                             <div className="text-center right-text-area">
-                                <a href="/contact" className="tmp-btn btn-primary">
+                                <Link href="/contact" className="tmp-btn btn-primary">
                                     Contact with us
-                                </a>
+                                </Link>
                                 <p className="tmp-text-white">We are here to help your business grow</p>
                             </div>
                         </div>
@@ -58,10 +58,10 @@ function FooterBusinessThree() {
                                         <ul className="tmp-list-footer tmp-list-has-left-icon">
                                             {column.links.map((link) => (
                                                 <li key={link}>
-                                                    <a href="#">
+                                                    <Link href="#">
                                                         {link}
                                                         <ArrowIcon />
-                                                    </a>
+                                                    </Link>
                                                 </li>
                                             ))}
                                         </ul>
@@ -72,13 +72,13 @@ function FooterBusinessThree() {
                                 <div className="tmp-footer-widget">
                                     <h5 className="tmp-text-white mb--30">Need any help?</h5>
                                     <p className="b4-style mb--10">Call us directly</p>
-                                    <a className="tmp-text-white tmp-hover-underline color-white" href="tel:+010098007804">
+                                    <Link className="tmp-text-white tmp-hover-underline color-white" href="tel:+010098007804">
                                         +01 009 800 7804
-                                    </a>
+                                    </Link>
                                     <p className="b4-style mt--20 mb--10">Email us</p>
-                                    <a className="tmp-text-white tmp-hover-underline color-white" href="mailto:corpox@example.com">
+                                    <Link className="tmp-text-white tmp-hover-underline color-white" href="mailto:corpox@example.com">
                                         corpox@example.com
-                                    </a>
+                                    </Link>
                                     <p className="b4-style mt--20 mb--10">We are available</p>
                                     <p className="tmp-text-white color-white">
                                         <span className="tmp-gradient-text">Mon-Sat:</span> 9am to 7pm
@@ -94,9 +94,9 @@ function FooterBusinessThree() {
                             <ul className="tmp-social">
                                 {["feather-facebook", "feather-twitter", "feather-instagram", "feather-linkedin"].map((icon) => (
                                     <li key={icon}>
-                                        <a href="#">
+                                        <Link href="#">
                                             <i className={icon} />
-                                        </a>
+                                        </Link>
                                     </li>
                                 ))}
                             </ul>

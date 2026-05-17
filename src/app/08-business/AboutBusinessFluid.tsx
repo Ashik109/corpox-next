@@ -1,3 +1,4 @@
+import Link from 'next/link'
 const features = [
     {
         title: "Delivering customized consulting",
@@ -46,12 +47,12 @@ function AboutBusinessFluid() {
                                     ))}
                                 </ul>
                                 <div className="read-more-btn mt--40">
-                                    <a className="tmp-btn icon-hover text-center" href="/contact">
+                                    <Link className="tmp-btn icon-hover text-center" href="/contact">
                                         <span className="btn-text">Contact Us</span>
                                         <span className="btn-icon">
                                             <i className="feather-arrow-right" />
                                         </span>
-                                    </a>
+                                    </Link>
                                 </div>
                             </div>
                         </div>

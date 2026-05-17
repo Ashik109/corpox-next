@@ -1,4 +1,6 @@
 "use client";
+import Link from 'next/link'
+
 
 import { useEffect, useRef } from "react";
 
@@ -109,9 +111,9 @@ function AboutCreativeAgency() {
                                     ))}
                                 </ul>
                                 <div className="about-btn mt--30">
-                                    <a className="tmp-btn round text-center" href="/about">
+                                    <Link className="tmp-btn round text-center" href="/about">
                                         About Our Corpox
-                                    </a>
+                                    </Link>
                                 </div>
                             </div>
                         </div>
@@ -124,11 +126,11 @@ function AboutCreativeAgency() {
                             <div className="single-thumbnail invers-anime mt--80">
                                 <img loading="lazy" src="/assets/images/about/02.webp" alt="about" />
                                 <div className="video-icon">
-                                    <a className="tmp-btn rounded-player popup-video" href="/assets/images/video/01.mp4">
+                                    <Link className="tmp-btn rounded-player popup-video" href="/assets/images/video/01.mp4">
                                         <span>
                                             <i className="feather-play" />
                                         </span>
-                                    </a>
+                                    </Link>
                                 </div>
                             </div>
                             <div className="absolute-rating-area images-left-right-float image">
@@ -146,9 +148,9 @@ function AboutCreativeAgency() {
                                 </p>
                                 <div className="profile-share justify-content-start">
                                     {avatars.map((avatar) => (
-                                        <a href="#" className="avatar" data-tooltip={avatar.label} tabIndex={0} key={avatar.label}>
+                                        <Link href="#" className="avatar" data-tooltip={avatar.label} tabIndex={0} key={avatar.label}>
                                             <img loading="lazy" src={avatar.src} alt="education" />
-                                        </a>
+                                        </Link>
                                     ))}
                                 </div>
                             </div>

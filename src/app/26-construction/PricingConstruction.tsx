@@ -1,3 +1,4 @@
+import Link from 'next/link'
 const plans = [
     {
         name: "Starter",
@@ -69,12 +70,12 @@ function PricingConstruction() {
                                         </ul>
                                     </div>
                                     <div className="pricing-footer">
-                                        <a className={`tmp-btn icon-hover text-center ${plan.popular ? "" : "btn-border"}`} href="#contactus">
+                                        <Link className={`tmp-btn icon-hover text-center ${plan.popular ? "" : "btn-border"}`} href="#contactus">
                                             <span className="btn-text">{plan.cta}</span>
                                             <span className="btn-icon">
                                                 <i className="feather-arrow-right" />
                                             </span>
-                                        </a>
+                                        </Link>
                                     </div>
                                 </div>
                                 {plan.popular ? <div className="popular-tag">Popular</div> : null}

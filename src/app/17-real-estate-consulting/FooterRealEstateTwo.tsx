@@ -1,3 +1,4 @@
+import Link from 'next/link'
 function FooterRealEstateTwo() {
     return (
         <div className="footer-style-3">
@@ -12,9 +13,9 @@ function FooterRealEstateTwo() {
                                     </h2>
                                     <h6 className="subtitle">Finest choice for your home &amp; office</h6>
                                     <div className="call-to-btn text-center mt--30 d-flex justify-content-center">
-                                        <a className="tmp-btn btn-icon" href="https://themeforest.net/item/corpox-business-consulting-bootstrap-5-html-template/59767866" target="_blank">
+                                        <Link className="tmp-btn btn-icon" href="https://themeforest.net/item/corpox-business-consulting-bootstrap-5-html-template/59767866" target="_blank">
                                             Purchase Corpox <i className="icon feather-arrow-right" />
-                                        </a>
+                                        </Link>
                                     </div>
                                 </div>
                             </div>
@@ -29,13 +30,13 @@ function FooterRealEstateTwo() {
                             <div className="copyright-left">
                                 <ul className="ft-menu link-hover">
                                     <li>
-                                        <a href="/privacy-policy">Privacy Policy</a>
+                                        <Link href="/privacy-policy">Privacy Policy</Link>
                                     </li>
                                     <li>
-                                        <a href="#">Terms And Condition</a>
+                                        <Link href="#">Terms And Condition</Link>
                                     </li>
                                     <li>
-                                        <a href="/contact">Contact Us</a>
+                                        <Link href="/contact">Contact Us</Link>
                                     </li>
                                 </ul>
                             </div>
@@ -45,9 +46,9 @@ function FooterRealEstateTwo() {
                                 <ul className="social-icon social-default color-lessdark justify-content-center">
                                     {["facebook", "twitter", "instagram", "linkedin"].map((icon, index) => (
                                         <li data-aos="slide-up" data-aos-delay={200 + index * 100} data-aos-duration="400" key={icon}>
-                                            <a href={`https://www.${icon}.com/`}>
+                                            <Link href={`https://www.${icon}.com/`}>
                                                 <i className={`feather-${icon}`} />
-                                            </a>
+                                            </Link>
                                         </li>
                                     ))}
                                 </ul>
@@ -57,9 +58,9 @@ function FooterRealEstateTwo() {
                             <div className="copyright-right text-center text-lg-end">
                                 <p className="copyright-text">
                                     &copy; Copyright All rights reserved{" "}
-                                    <a target="_blank" href="https://themeforest.net/user/inversweb/portfolio">
+                                    <Link target="_blank" href="https://themeforest.net/user/inversweb/portfolio">
                                         InversWeb
-                                    </a>
+                                    </Link>
                                 </p>
                             </div>
                         </div>

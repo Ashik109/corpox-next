@@ -1,3 +1,4 @@
+import Link from 'next/link'
 function SectionService8Area() {
   return (
     <>
@@ -27,8 +28,8 @@ function SectionService8Area() {
       </div>
       <div className="content">
       <h4 className="title">
-      <a href="/service-details-white">Cloud based,
-                                                      secured software</a>
+      <Link href="/service/management-leadership">Cloud based,
+                                                      secured software</Link>
       </h4>
       </div>
       </div>
@@ -42,7 +43,7 @@ function SectionService8Area() {
       </div>
       <div className="content">
       <h4 className="title">
-      <a href="/service-details-white">Web Application, software</a>
+      <Link href="/service/management-leadership">Web Application, software</Link>
       </h4>
       </div>
       </div>
@@ -56,7 +57,7 @@ function SectionService8Area() {
       </div>
       <div className="content">
       <h4 className="title">
-      <a href="/service-details-white">App based, secured software</a>
+      <Link href="/service/management-leadership">App based, secured software</Link>
       </h4>
       </div>
       </div>
@@ -70,8 +71,8 @@ function SectionService8Area() {
       </div>
       <div className="content">
       <h4 className="title">
-      <a href="/service-details-white">Cloud based,
-                                                      secured software</a>
+      <Link href="/service/management-leadership">Cloud based,
+                                                      secured software</Link>
       </h4>
       </div>
       </div>
@@ -85,7 +86,7 @@ function SectionService8Area() {
       </div>
       <div className="content">
       <h4 className="title">
-      <a href="/service-details-white">Web Application, software</a>
+      <Link href="/service/management-leadership">Web Application, software</Link>
       </h4>
       </div>
       </div>
@@ -99,7 +100,7 @@ function SectionService8Area() {
       </div>
       <div className="content">
       <h4 className="title">
-      <a href="/service-details-white">App based, secured software</a>
+      <Link href="/service/management-leadership">App based, secured software</Link>
       </h4>
       </div>
       </div>

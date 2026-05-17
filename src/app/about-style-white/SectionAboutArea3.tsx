@@ -1,3 +1,4 @@
+import Link from 'next/link'
 function SectionAboutArea3() {
   return (
     <>
@@ -11,16 +12,16 @@ function SectionAboutArea3() {
       <div className="thumbnail invers-anime"><img className="radius-small" src="/assets/images/about/04.webp" alt="Corporate Image" />
       </div>
       <div className="video-icon">
-      <a className="tmp-btn rounded-player popup-video" href="https://www.youtube.com/watch?v=4jnzf1yj48M">
+      <Link className="tmp-btn rounded-player popup-video" href="https://www.youtube.com/watch?v=4jnzf1yj48M">
       <span><i className="feather-play"></i></span>
-      </a>
+      </Link>
       </div>
       </div>
       <div className="absolute-rating-area images-left-right-float image">
       <div className="profile-share justify-content-start">
-      <a href="#" className="avatar" data-tooltip="Mark JOrdan" tabIndex={0}><img src="/assets/images/testimonial/tooltip-01.png" alt="education" /></a>
-      <a href="#" className="avatar" data-tooltip="Mark" tabIndex={0}><img src="/assets/images/testimonial/tooltip-02.png" alt="education" /></a>
-      <a href="#" className="avatar" data-tooltip="Jordan" tabIndex={0}><img src="/assets/images/testimonial/tooltip-03.png" alt="education" /></a>
+      <Link href="#" className="avatar" data-tooltip="Mark JOrdan" tabIndex={0}><img src="/assets/images/testimonial/tooltip-01.png" alt="education" /></Link>
+      <Link href="#" className="avatar" data-tooltip="Mark" tabIndex={0}><img src="/assets/images/testimonial/tooltip-02.png" alt="education" /></Link>
+      <Link href="#" className="avatar" data-tooltip="Jordan" tabIndex={0}><img src="/assets/images/testimonial/tooltip-03.png" alt="education" /></Link>
       </div>
       <div className="stars-area">
       <img src="/assets/images/icons/stars.svg" alt="small-image" />
@@ -66,7 +67,7 @@ function SectionAboutArea3() {
       </li>
       </ul>
       <div className="read-more-btn mt--40">
-      <a className="tmp-btn round btn-large btn-border" href="/contact-white">Lets Contact Us</a>
+      <Link className="tmp-btn round btn-large btn-border" href="/contact-white">Lets Contact Us</Link>
       </div>
       </div>
       </div>

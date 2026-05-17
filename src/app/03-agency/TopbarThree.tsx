@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import React from 'react'
 
 function TopbarThree() {
@@ -17,7 +18,7 @@ function TopbarThree() {
                                         </span>
                                     </div>
                                     <div className="right-button">
-                                        <a
+                                        <Link
                                             className="btn-read-more"
                                             target="_blank"
                                             href="https://themeforest.net/item/corpox-business-consulting-bootstrap-5-html-template/59767866"
@@ -25,7 +26,7 @@ function TopbarThree() {
                                             <span>
                                                 Purchase Now <i className="feather-arrow-right" />
                                             </span>
-                                        </a>
+                                        </Link>
                                     </div>
                                 </div>
                             </div>

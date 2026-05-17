@@ -1,3 +1,4 @@
+import Link from 'next/link'
 function SectionContactArea() {
   return (
     <>
@@ -10,7 +11,7 @@ function SectionContactArea() {
       <div className="pres-line-separator-wrapper text-center mb--10">
       <div className="line-separator line-left"></div>
       <span className="subtitle">
-      <span className="number"><a href="/index">01</a></span>
+      <span className="number"><Link href="/index">01</Link></span>
       <span className="subtitle-text">Contact With Us</span>
       </span>
       <div className="line-separator line-right"></div>
@@ -30,7 +31,7 @@ function SectionContactArea() {
       </div>
       <div className="inner">
       <h4 className="title">Call us todays</h4>
-      <p><a href="#">+444 555 666 777</a></p>
+      <p><Link href="#">+444 555 666 777</Link></p>
       </div>
       </div>
       </div>
@@ -41,7 +42,7 @@ function SectionContactArea() {
       </div>
       <div className="inner">
       <h4 className="title">Send an Email</h4>
-      <p><a href="mailto:admin@gmail.com">admin@gmail.com</a></p>
+      <p><Link href="mailto:admin@gmail.com">admin@gmail.com</Link></p>
       </div>
       </div>
       </div>

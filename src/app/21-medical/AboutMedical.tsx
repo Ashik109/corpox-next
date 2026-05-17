@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import RealEstateOdometer from "../16-real-estate-consulting/RealEstateOdometer";
 
 const avatars = ["tooltip-01.png", "tooltip-02.png", "tooltip-03.png"];
@@ -15,11 +16,11 @@ function AboutMedical() {
                             <div className="single-thumbnail invers-anime mt--80">
                                 <img src="/assets/images/about/17.webp" alt="about" />
                                 <div className="video-icon">
-                                    <a className="tmp-btn rounded-player popup-video" href="/assets/images/video/01.mp4">
+                                    <Link className="tmp-btn rounded-player popup-video" href="/assets/images/video/01.mp4">
                                         <span>
                                             <i className="feather-play" />
                                         </span>
-                                    </a>
+                                    </Link>
                                 </div>
                             </div>
                             <div className="absolute-rating-area images-left-right-float image">
@@ -34,9 +35,9 @@ function AboutMedical() {
                                 </p>
                                 <div className="profile-share justify-content-start">
                                     {avatars.map((avatar) => (
-                                        <a href="#" className="avatar" data-tooltip="Mark" key={avatar}>
+                                        <Link href="#" className="avatar" data-tooltip="Mark" key={avatar}>
                                             <img src={`/assets/images/testimonial/${avatar}`} alt="" />
-                                        </a>
+                                        </Link>
                                     ))}
                                 </div>
                             </div>
@@ -75,9 +76,9 @@ function AboutMedical() {
                                     </li>
                                 </ul>
                                 <div className="about-btn mt--30">
-                                    <a className="tmp-btn round text-center" href="/about">
+                                    <Link className="tmp-btn round text-center" href="/about">
                                         Learn More About Our Clinic
-                                    </a>
+                                    </Link>
                                 </div>
                             </div>
                         </div>

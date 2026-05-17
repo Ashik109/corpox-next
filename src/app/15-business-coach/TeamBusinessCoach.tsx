@@ -1,3 +1,4 @@
+import Link from 'next/link'
 const members = [
     { image: "team-04.jpg", name: "Sr Janen Sara", role: "Sr Product Designer", delay: 0 },
     { image: "team-05.jpg", name: "John Deon", role: "App Developer", delay: 100 },
@@ -38,9 +39,9 @@ function TeamBusinessCoach() {
                                         <ul className="social-icon social-default icon-naked justify-content-start">
                                             {["facebook", "twitter", "instagram"].map((icon, index) => (
                                                 <li data-aos="slide-up" data-aos-delay={200 + index * 100} data-aos-duration="400" key={icon}>
-                                                    <a href={`https://www.${icon}.com/`}>
+                                                    <Link href={`https://www.${icon}.com/`}>
                                                         <i className={`feather-${icon}`} />
-                                                    </a>
+                                                    </Link>
                                                 </li>
                                             ))}
                                         </ul>

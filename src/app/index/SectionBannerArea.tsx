@@ -1,3 +1,4 @@
+import Link from 'next/link'
 function SectionBannerArea() {
   return (
     <>
@@ -33,12 +34,12 @@ function SectionBannerArea() {
       </h1>
       <p className="description">Explore 40+ stunning demos crafted with pixel-perfect design and modern CSS styling. Every element is Copy & Pest ready making customization effortless and intuitive. Perfect for any type of business, startup, or agency looking for a sleek, professional layout.</p>
       <div className="button-group">
-      <a className="tmp-btn radius-round btn-primary btn-large" target="_blank" href="https://themeforest.net/item/corpox-business-consulting-bootstrap-5-html-template/59767866">
+      <Link className="tmp-btn radius-round btn-primary btn-large" target="_blank" href="https://themeforest.net/item/corpox-business-consulting-bootstrap-5-html-template/59767866">
                                           Purchase Now
-                                      </a>
+                                      </Link>
       </div>
       <div className="scroll-down-btn mt--60">
-      <a className="mdbutton mdbutton--surtur button-auto-rotate smoth-animation" href="#demo">
+      <Link className="mdbutton mdbutton--surtur button-auto-rotate smoth-animation" href="#demo">
       <svg className="textcircle" viewBox="0 0 500 500">
       <title>Scroll Down For Demo Website</title>
       <defs>
@@ -49,7 +50,7 @@ function SectionBannerArea() {
       </text>
       </svg>
       <i className="icon feather-arrow-down"></i>
-      </a>
+      </Link>
       </div>
       </div>
       </div>

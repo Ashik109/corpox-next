@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import React from 'react'
 
 interface BlogTwoProps {
@@ -27,7 +28,7 @@ function BlogTwo({ className = ""}: BlogTwoProps) {
                                     </h2>
                                 </div>
                                 <div className="tmp-load-more d-flex justify-content-center">
-                                    <a className="tmp-btn btn-large hover-icon-reverse" href="#">
+                                    <Link className="tmp-btn btn-large hover-icon-reverse" href="#">
                                         <span className="icon-reverse-wrapper">
                                             <span className="btn-text">View More News</span>
                                             <span className="btn-icon">
@@ -37,7 +38,7 @@ function BlogTwo({ className = ""}: BlogTwoProps) {
                                                 <i className="feather-loader" />
                                             </span>
                                         </span>
-                                    </a>
+                                    </Link>
                                 </div>
                             </div>
                         </div>
@@ -47,23 +48,23 @@ function BlogTwo({ className = ""}: BlogTwoProps) {
                             <div className="tmp-card box-card-style-default card-list-view tmponhover">
                                 <div className="inner">
                                     <div className="thumbnail invers-anime">
-                                        <a className="image" href="/blog/best-corporate-tips">
+                                        <Link className="image" href="/blog/best-corporate-tips">
                                             <img src="/assets/images/blog/blog-01.jpg" alt="Blog Image" />
-                                        </a>
+                                        </Link>
                                     </div>
                                     <div className="content">
                                         <h4 className="title">
-                                            <a href="/blog/corporate-success-strategy">
+                                            <Link href="/blog/corporate-success-strategy">
                                                 How to Analyze Your Best Pages for SEO Performance
-                                            </a>
+                                            </Link>
                                         </h4>
                                         <p className="descriptiion">
                                             It is a long established fact that a reader.
                                         </p>
                                         <div className="read-more-btn">
-                                            <a className="btn-read-more" href="/blog/leadership-confidence">
+                                            <Link className="btn-read-more" href="/blog/leadership-confidence">
                                                 <span>Read More</span>
-                                            </a>
+                                            </Link>
                                         </div>
                                     </div>
                                 </div>
@@ -73,23 +74,23 @@ function BlogTwo({ className = ""}: BlogTwoProps) {
                             <div className="tmp-card box-card-style-default card-list-view tmponhover">
                                 <div className="inner">
                                     <div className="thumbnail invers-anime">
-                                        <a className="image" href="/blog/best-corporate-tips">
+                                        <Link className="image" href="/blog/best-corporate-tips">
                                             <img src="/assets/images/blog/blog-02.jpg" alt="Blog Image" />
-                                        </a>
+                                        </Link>
                                     </div>
                                     <div className="content">
                                         <h4 className="title">
-                                            <a href="/blog/corporate-success-strategy">
+                                            <Link href="/blog/corporate-success-strategy">
                                                 Corporate Success: How to Achieve Your Goals
-                                            </a>
+                                            </Link>
                                         </h4>
                                         <p className="descriptiion">
                                             Corporate Success established fact that.
                                         </p>
                                         <div className="read-more-btn">
-                                            <a className="btn-read-more" href="/blog/leadership-confidence">
+                                            <Link className="btn-read-more" href="/blog/leadership-confidence">
                                                 <span>Read More</span>
-                                            </a>
+                                            </Link>
                                         </div>
                                     </div>
                                 </div>
@@ -99,23 +100,23 @@ function BlogTwo({ className = ""}: BlogTwoProps) {
                             <div className="tmp-card box-card-style-default card-list-view tmponhover">
                                 <div className="inner">
                                     <div className="thumbnail invers-anime">
-                                        <a className="image" href="/blog/best-corporate-tips">
+                                        <Link className="image" href="/blog/best-corporate-tips">
                                             <img src="/assets/images/blog/blog-03.jpg" alt="Blog Image" />
-                                        </a>
+                                        </Link>
                                     </div>
                                     <div className="content">
                                         <h4 className="title">
-                                            <a href="/blog/corporate-success-strategy">
+                                            <Link href="/blog/corporate-success-strategy">
                                                 Corporate Leadership: How to Lead with Confidence
-                                            </a>
+                                            </Link>
                                         </h4>
                                         <p className="descriptiion">
                                             Leadership established fact that a reader.
                                         </p>
                                         <div className="read-more-btn">
-                                            <a className="btn-read-more" href="/blog/leadership-confidence">
+                                            <Link className="btn-read-more" href="/blog/leadership-confidence">
                                                 <span>Read More</span>
-                                            </a>
+                                            </Link>
                                         </div>
                                     </div>
                                 </div>
@@ -125,23 +126,23 @@ function BlogTwo({ className = ""}: BlogTwoProps) {
                             <div className="tmp-card box-card-style-default card-list-view tmponhover">
                                 <div className="inner">
                                     <div className="thumbnail invers-anime">
-                                        <a className="image" href="/blog/best-corporate-tips">
+                                        <Link className="image" href="/blog/best-corporate-tips">
                                             <img src="/assets/images/blog/blog-04.jpg" alt="Blog Image" />
-                                        </a>
+                                        </Link>
                                     </div>
                                     <div className="content">
                                         <h4 className="title">
-                                            <a href="/blog/corporate-success-strategy">
+                                            <Link href="/blog/corporate-success-strategy">
                                                 Navigating the Corporate Landscape: A Guide
-                                            </a>
+                                            </Link>
                                         </h4>
                                         <p className="descriptiion">
                                             Navigating long established fact that a reader.
                                         </p>
                                         <div className="read-more-btn">
-                                            <a className="btn-read-more" href="/blog/leadership-confidence">
+                                            <Link className="btn-read-more" href="/blog/leadership-confidence">
                                                 <span>Read More</span>
-                                            </a>
+                                            </Link>
                                         </div>
                                     </div>
                                 </div>

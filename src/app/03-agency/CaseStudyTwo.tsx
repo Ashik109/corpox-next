@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import React from 'react'
 
 function CaseStudyTwo() {
@@ -31,13 +32,13 @@ function CaseStudyTwo() {
                             data-duration="1.2"
                         >
                             <div className="single-project-area-bottom-content">
-                                <a href="/portfolio/brand-refresh-venture" className="thumbnail invers-anime">
+                                <Link href="/portfolio/brand-refresh-venture" className="thumbnail invers-anime">
                                     <img src="/assets/images/portfolio/01.webp" alt="project" />
-                                </a>
+                                </Link>
                                 <div className="inner">
-                                    <a href="/portfolio/analytics-platform">
+                                    <Link href="/portfolio/analytics-platform">
                                         <h4 className="title">Business Growth</h4>
-                                    </a>
+                                    </Link>
                                     <p className="disc">
                                         Growth isn’t just about getting bigger—it’s about getting
                                         better. At we specialize in empowering businesses to and
@@ -53,13 +54,13 @@ function CaseStudyTwo() {
                             data-duration="1.2"
                         >
                             <div className="single-project-area-bottom-content">
-                                <a href="/portfolio/field-service-modernization" className="thumbnail invers-anime">
+                                <Link href="/portfolio/field-service-modernization" className="thumbnail invers-anime">
                                     <img src="/assets/images/portfolio/02.webp" alt="project" />
-                                </a>
+                                </Link>
                                 <div className="inner">
-                                    <a href="/portfolio/brand-refresh-venture">
+                                    <Link href="/portfolio/brand-refresh-venture">
                                         <h4 className="title">Startup Solution</h4>
-                                    </a>
+                                    </Link>
                                     <p className="disc">
                                         Growth isn’t just about getting bigger—it’s about getting
                                         better. At we specialize in empowering businesses to and
@@ -75,13 +76,13 @@ function CaseStudyTwo() {
                             data-duration="1.2"
                         >
                             <div className="single-project-area-bottom-content">
-                                <a href="/portfolio/analytics-platform" className="thumbnail invers-anime">
+                                <Link href="/portfolio/analytics-platform" className="thumbnail invers-anime">
                                     <img src="/assets/images/portfolio/03.webp" alt="project" />
-                                </a>
+                                </Link>
                                 <div className="inner">
-                                    <a href="/portfolio/field-service-modernization">
+                                    <Link href="/portfolio/field-service-modernization">
                                         <h4 className="title">Growth Manage</h4>
-                                    </a>
+                                    </Link>
                                     <p className="disc">
                                         Growth isn’t just about getting bigger—it’s about getting
                                         better. At we specialize in empowering businesses to and
@@ -97,13 +98,13 @@ function CaseStudyTwo() {
                             data-duration="1.2"
                         >
                             <div className="single-project-area-bottom-content">
-                                <a href="/portfolio/brand-refresh-venture" className="thumbnail invers-anime">
+                                <Link href="/portfolio/brand-refresh-venture" className="thumbnail invers-anime">
                                     <img src="/assets/images/portfolio/04.webp" alt="project" />
-                                </a>
+                                </Link>
                                 <div className="inner">
-                                    <a href="/portfolio/analytics-platform">
+                                    <Link href="/portfolio/analytics-platform">
                                         <h4 className="title">Company Skills</h4>
-                                    </a>
+                                    </Link>
                                     <p className="disc">
                                         Growth isn’t just about getting bigger—it’s about getting
                                         better. At we specialize in empowering businesses to and

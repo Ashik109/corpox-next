@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import BodyClass from '../../app/white-01-index-consulting/BodyClass'
 import type { PortfolioProject } from '../../data/portfolioProjects'
 import { portfolioProjects } from '../../data/portfolioProjects'
 
@@ -192,14 +193,14 @@ function LayoutTwoBody({ project }: { project: PortfolioProject }) {
                     </div>
                     <div className="profile-share mt--40">
                       {avatars.map((src, i) => (
-                        <a key={src} href="#" className="avatar" data-tooltip={`Team ${i + 1}`} tabIndex={0}>
+                        <Link key={src} href="#" className="avatar" data-tooltip={`Team ${i + 1}`} tabIndex={0}>
                           <img src={src} alt="team" />
-                        </a>
+                        </Link>
                       ))}
                       <div className="more-author-text">
                         <h5 className="total-join-students">Join Over 3000+ Project</h5>
                         <div className="purchase-btn">
-                          <a className="btn-read-more" href="#"><span>Purchase Corpox</span></a>
+                          <Link className="btn-read-more" href="#"><span>Purchase Corpox</span></Link>
                         </div>
                       </div>
                     </div>
@@ -310,6 +311,7 @@ export default function PortfolioDetailContent({ project, detailRoute, layout = 
   if (layout === 'two') {
     return (
       <>
+        <BodyClass className="overflow-x-visible" />
         <LayoutTwoBody project={project} />
         <RelatedCaseStudies detailRoute={detailRoute} currentSlug={project.slug} />
       </>
@@ -320,6 +322,7 @@ export default function PortfolioDetailContent({ project, detailRoute, layout = 
 
   return (
     <>
+      <BodyClass className="overflow-x-visible" />
       <div className={`tmp-portfolio-details ${gapTop} mb--40`}>
         <div className="container">
           <div className="row">

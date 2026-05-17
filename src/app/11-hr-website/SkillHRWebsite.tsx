@@ -1,3 +1,4 @@
+import Link from 'next/link'
 const features = [
     ["24/7 Support", "Lorem ipsum dolor consectetur adipiscing."],
     ["Secure Payments", "Do eiusmod tempor incididunt labore."],
@@ -54,11 +55,11 @@ function SkillHRWebsite() {
                                 ))}
                             </ul>
                             <div className="view-more-project">
-                                <a className="btn-read-more" href="#">
+                                <Link className="btn-read-more" href="#">
                                     <span>
                                         Download My CV <i className="feather-arrow-right" />
                                     </span>
-                                </a>
+                                </Link>
                             </div>
                         </div>
                     </div>

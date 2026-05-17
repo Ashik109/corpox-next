@@ -1,3 +1,4 @@
+import Link from 'next/link'
 function BannerITSolution() {
     return (
         <div className="banner-slider-it-solution tmp-section-gap shape-move">
@@ -12,15 +13,15 @@ function BannerITSolution() {
                             <p className="disc">Proactively coordinate quality quality vectors vis-a-vis supply chains. Quickly engage client-centric web services.</p>
                             <div className="button-group justify-content-start mt--20 mt_sm--20" data-aos="slide-up" data-aos-delay="700" data-aos-duration="800">
                                 <div className="video-btn">
-                                    <a className="tmp-btn rounded-player popup-video" href="https://www.youtube.com/watch?v=gXFATcwrO-U">
+                                    <Link className="tmp-btn rounded-player popup-video" href="https://www.youtube.com/watch?v=gXFATcwrO-U">
                                         <span>
                                             <i className="feather-play" />
                                         </span>
-                                    </a>
+                                    </Link>
                                 </div>
-                                <a className="btn-read-more" href="/about">
+                                <Link className="btn-read-more" href="/about">
                                     <span>Get in touch with us</span>
-                                </a>
+                                </Link>
                             </div>
                         </div>
                     </div>

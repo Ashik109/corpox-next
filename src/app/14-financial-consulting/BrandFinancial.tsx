@@ -1,3 +1,4 @@
+import Link from 'next/link'
 function BrandFinancial() {
     return (
         <div className="tmp-brand-area tmp-section-gapBottom">
@@ -15,9 +16,9 @@ function BrandFinancial() {
                         <ul className="brand-list brand-style-1">
                             {Array.from({ length: 8 }, (_, index) => (
                                 <li key={index + 1}>
-                                    <a href="#">
+                                    <Link href="#">
                                         <img src={`/assets/images/brand/brand-0${index + 1}.png`} alt="Brand Image" />
-                                    </a>
+                                    </Link>
                                 </li>
                             ))}
                         </ul>

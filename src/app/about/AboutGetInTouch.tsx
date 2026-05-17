@@ -1,3 +1,4 @@
+import Link from 'next/link'
 function AboutGetInTouch() {
   return (
     <section className="tmp-get-in-touch-area area-2 tmp-section-gapTop">
@@ -8,11 +9,11 @@ function AboutGetInTouch() {
           </div>
           <div className="content">
             <div className="icon">
-              <a href="tel:+00449922097788"><i className="feather-phone" /></a>
+              <Link href="tel:+00449922097788"><i className="feather-phone" /></Link>
             </div>
             <div className="text">
               <h4 className="title">Have Any Questions? Call Us free</h4>
-              <a href="tel:+00449922097788" className="phone">+00449922097788</a>
+              <Link href="tel:+00449922097788" className="phone">+00449922097788</Link>
               <p className="desc">
                 As the world&apos;s largest producer of business service agency, Corpox stands at the
                 forefront of the Business sector.
