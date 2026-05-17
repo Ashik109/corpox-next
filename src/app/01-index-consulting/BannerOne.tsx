@@ -7,7 +7,11 @@ import Slider from "react-slick";
 import NextArrow from "./NextArrow";
 import PrevArrow from "./PrevArrow";
 
-const BannerOne: React.FC = () => {
+type BannerOneProps = {
+  className?: string;
+};
+
+const BannerOne: React.FC<BannerOneProps> = ({ className = "" }) => {
   // Ref to the outer container
   const containerRef = useRef<HTMLDivElement>(null);
 
@@ -54,7 +58,7 @@ const BannerOne: React.FC = () => {
   }, []);
 
   return (
-    <div className="banner-slider-area-one slider-gird" ref={containerRef}>
+    <div className={`banner-slider-area-one slider-gird${className ? ` ${className}` : ""}`} ref={containerRef}>
       <div className="slider-animation-2 slider-dot tmp-slick-dot tmp-slick-arrow tmp-slick-arrow-white">
         <Slider {...settings}>
 

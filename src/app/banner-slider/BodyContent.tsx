@@ -1,11 +1,15 @@
 import BannerOne from '../01-index-consulting/BannerOne'
-import BannerTwo from '../02-index-business-consulting-2/BannerTwo'
+import BannerSix from '../06-startup/BannerSix'
+import SectionBreadcarumbArea from './SectionBreadcarumbArea'
+import SectionSeperatorArea from './SectionSeperatorArea'
 
 function BodyContent() {
   return (
     <>
-      <BannerTwo />
-      <BannerOne />
+      <SectionBreadcarumbArea />
+      <BannerOne className="mb--120" />
+      <SectionSeperatorArea />
+      <BannerSix />
     </>
   )
 }

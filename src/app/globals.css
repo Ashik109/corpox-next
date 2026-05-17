@@ -216,6 +216,29 @@
   overflow: hidden;
 }
 
+.tmp-header-panel-open {
+  overflow: hidden;
+}
+
+.tmponhover {
+  --x: 50%;
+  --y: 50%;
+}
+
+.header-right.with-search .header-btn .search-area-btn,
+.dot-btn .offcanvas-trigger,
+.mobile-menu-bar .hamberger-button {
+  border: 0;
+}
+
+.header-right.with-search .header-btn button.search-area-btn,
+.dot-btn button.offcanvas-trigger,
+.mobile-menu-bar button.hamberger-button {
+  padding: 0;
+  background: transparent;
+  box-shadow: none;
+}
+
 @media (min-width: 992px) {
   .mainmenu-nav .mainmenu li.with-megamenu .tmp-megamenu .wrapper {
     max-height: calc(100vh - 120px);

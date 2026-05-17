@@ -18,7 +18,9 @@ import "./globals.css";
 import AosProvider from "./components/AosProvider";
 import BootstrapClient from "./components/BootstrapClient";
 import FloatingImagesAnimation from "./components/FloatingImagesAnimation";
+import HeaderPanelManager from "./components/HeaderPanelManager";
 import SmoothScroll from "./components/SmoothScroll";
+import TmpOnHoverAnimation from "./components/TmpOnHoverAnimation";
 import ReactVideoPopup from "../components/ReactVideoPopup";
 import NextLightGallery from "../components/NextLightGallery";
 
@@ -53,6 +55,8 @@ export default function RootLayout({
         <AosProvider />
         <BootstrapClient />
         <SmoothScroll />
+        <TmpOnHoverAnimation />
+        <HeaderPanelManager />
         <ReactVideoPopup />
         <NextLightGallery />
         {children}

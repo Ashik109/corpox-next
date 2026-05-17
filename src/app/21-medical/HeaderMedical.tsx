@@ -88,7 +88,7 @@ function HeaderMedical() {
                                 </div>
                                 <div className="mobile-menu-bar d-block d-lg-none">
                                     <div className="hamberger">
-                                        <button aria-label="Open mobile menu" className="hamberger-button" type="button">
+                                        <button aria-label="Open mobile menu" className="hamberger-button tmponhover" type="button">
                                             <i className="feather-menu" />
                                         </button>
                                     </div>
