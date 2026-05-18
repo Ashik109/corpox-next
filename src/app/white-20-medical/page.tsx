@@ -18,7 +18,7 @@ import TimeTableMedical from '../21-medical/TimeTableMedical';
 export default function Page() {
   return (
     <>
-      <BodyClass className="active-light-mode" />
+      <BodyClass className="active-light-mode demo-medical" />
       <RealEstateAnimations />
       <main className="page-wrapper">
         <TopbarOne />

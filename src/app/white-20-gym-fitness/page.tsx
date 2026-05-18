@@ -16,7 +16,7 @@ import TimeTableGymFitness from '../20-gym-fitness/TimeTableGymFitness';
 export default function Page() {
   return (
     <>
-      <BodyClass className="active-light-mode" />
+      <BodyClass className="active-light-mode gym-demo" />
       <RealEstateAnimations />
       <main className="page-wrapper">
         <HeaderGymFitness />

@@ -16,7 +16,7 @@ import WorkProcessAiAgency from '../24-ai-agency/WorkProcessAiAgency';
 export default function Page() {
   return (
     <>
-      <BodyClass className="active-light-mode" />
+      <BodyClass className="active-light-mode demo-ai-agency" />
       <RealEstateAnimations />
       <main className="page-wrapper">
         <HeaderAiAgency />

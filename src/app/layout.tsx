@@ -22,6 +22,7 @@ import HeaderPanelManager from "./components/HeaderPanelManager";
 import CursorAnimate from "./components/CursorAnimate";
 import SmoothScroll from "./components/SmoothScroll";
 import TmpOnHoverAnimation from "./components/TmpOnHoverAnimation";
+import GlobalFloatingActions from "./components/GlobalFloatingActions";
 import ReactVideoPopup from "../components/ReactVideoPopup";
 import NextLightGallery from "../components/NextLightGallery";
 
@@ -62,6 +63,7 @@ export default function RootLayout({
         <ReactVideoPopup />
         <NextLightGallery />
         {children}
+        <GlobalFloatingActions />
         <FloatingImagesAnimation />
       </body>
     </html>

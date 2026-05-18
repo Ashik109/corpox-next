@@ -17,7 +17,7 @@ import VideoSolar from '../22-solar/VideoSolar';
 export default function Page() {
   return (
     <>
-      <BodyClass className="active-light-mode" />
+      <BodyClass className="active-light-mode demo-solar" />
       <RealEstateAnimations />
       <main className="page-wrapper">
         <HeaderSolar />

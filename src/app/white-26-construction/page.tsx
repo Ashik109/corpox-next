@@ -20,7 +20,7 @@ import TopbarConstruction from '../26-construction/TopbarConstruction';
 export default function Page() {
   return (
     <>
-      <BodyClass className="active-light-mode" />
+      <BodyClass className="active-light-mode demo-construction" />
       <RealEstateAnimations />
       <main className="page-wrapper">
         <TopbarConstruction />

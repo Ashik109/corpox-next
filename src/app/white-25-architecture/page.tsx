@@ -12,7 +12,7 @@ import ServicesArchitecture from '../25-architecture/ServicesArchitecture';
 export default function Page() {
   return (
     <>
-      <BodyClass className="active-light-mode" />
+      <BodyClass className="active-light-mode demo-architecture" />
       <RealEstateAnimations />
       <main className="page-wrapper">
         <HeaderArchitecture />

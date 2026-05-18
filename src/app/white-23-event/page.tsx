@@ -15,7 +15,7 @@ import TeamEvent from '../23-event/TeamEvent';
 export default function Page() {
   return (
     <>
-      <BodyClass className="active-light-mode" />
+      <BodyClass className="active-light-mode demo-event" />
       <RealEstateAnimations />
       <main className="page-wrapper">
         <HeaderEvent />

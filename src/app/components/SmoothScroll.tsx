@@ -19,6 +19,7 @@ export default function SmoothScroll() {
   useEffect(() => {
     const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
     if (reducedMotion.matches) return;
+    let scrollTriggerFrame = 0;
 
     const lenis = new Lenis({
       autoRaf: true,
@@ -34,7 +35,12 @@ export default function SmoothScroll() {
     });
 
     const onScroll = () => {
-      ScrollTrigger.update();
+      if (scrollTriggerFrame) return;
+
+      scrollTriggerFrame = requestAnimationFrame(() => {
+        scrollTriggerFrame = 0;
+        ScrollTrigger.update();
+      });
     };
 
     lenis.on("scroll", onScroll);
@@ -52,6 +58,7 @@ export default function SmoothScroll() {
     }
 
     return () => {
+      cancelAnimationFrame(scrollTriggerFrame);
       lenis.destroy();
     };
   }, [pathname]);

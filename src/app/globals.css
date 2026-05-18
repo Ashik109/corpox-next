@@ -35,6 +35,42 @@
 .creative-portfolio-grid .resizer {
   display: none;
 }
+
+.scrollbar-v {
+  height: 100px !important;
+  background: transparent !important;
+  overflow: hidden;
+  pointer-events: auto;
+  transition: opacity 0.2s linear !important;
+}
+
+.scrollbar-v::after {
+  pointer-events: none;
+}
+
+.scrollbar-v-progress {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 2px;
+  height: 100px;
+  background: var(--color-primary);
+  transform: scaleY(0);
+  transform-origin: top;
+  will-change: transform;
+  pointer-events: none;
+}
+
+#buy-now.show-on-scroll,
+.float-text.show-on-scroll {
+  pointer-events: none;
+}
+
+#buy-now.show-on-scroll.show,
+.float-text.show-on-scroll.show {
+  pointer-events: auto;
+}
+
 .react-video-popup {
   position: fixed;
   inset: 0;
