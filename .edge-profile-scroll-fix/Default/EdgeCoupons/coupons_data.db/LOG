@@ -1,5 +1,0 @@
-2026/05/18-16:15:53.918 2cf4 Creating DB e:\corpox-next\.edge-profile-scroll-fix\Default\EdgeCoupons/coupons_data.db since it was missing.
-2026/05/18-16:15:53.927 2cf4 Reusing MANIFEST e:\corpox-next\.edge-profile-scroll-fix\Default\EdgeCoupons/coupons_data.db/MANIFEST-000001
-2026/05/18-16:17:15.853 601c Level-0 table #5: started
-2026/05/18-16:17:15.861 601c Level-0 table #5: 682468 bytes OK
-2026/05/18-16:17:15.865 601c Delete type=0 #3
