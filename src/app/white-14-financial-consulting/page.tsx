@@ -1,5 +1,6 @@
 import React from 'react'
 import BodyClass from '../white-01-index-consulting/BodyClass'
+import { WHITE_HEADER_OVER_HERO } from '../components/HeaderModeClasses'
 import AboutTabsFinancial from '../14-financial-consulting/AboutTabsFinancial';
 import AppointmentFinancial from '../14-financial-consulting/AppointmentFinancial';
 import BannerFinancial from '../14-financial-consulting/BannerFinancial';
@@ -21,7 +22,7 @@ export default function Page() {
       <BodyClass className="active-light-mode" />
       <FinancialAnimations />
       <main className="page-wrapper">
-        <HeaderThree />
+        <HeaderThree className={WHITE_HEADER_OVER_HERO} />
         <BannerFinancial />
         <AboutTabsFinancial />
         <ServicesFinancial />

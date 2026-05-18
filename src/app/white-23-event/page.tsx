@@ -1,5 +1,6 @@
 import React from 'react'
 import BodyClass from '../white-01-index-consulting/BodyClass'
+import { WHITE_HEADER_ON_LIGHT } from '../components/HeaderModeClasses'
 import RealEstateAnimations from "../16-real-estate-consulting/RealEstateAnimations";
 import AboutEvent from '../23-event/AboutEvent';
 import BannerEvent from '../23-event/BannerEvent';
@@ -18,7 +19,7 @@ export default function Page() {
       <BodyClass className="active-light-mode demo-event" />
       <RealEstateAnimations />
       <main className="page-wrapper">
-        <HeaderEvent />
+        <HeaderEvent className={WHITE_HEADER_ON_LIGHT} />
         <BannerEvent />
         <AboutEvent />
         <ServicesEvent />

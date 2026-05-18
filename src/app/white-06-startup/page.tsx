@@ -1,5 +1,6 @@
 import React from 'react'
 import BodyClass from '../white-01-index-consulting/BodyClass'
+import { WHITE_HEADER_OVER_HERO } from '../components/HeaderModeClasses'
 import HeaderSix from '../06-startup/HeaderSix'
 import BannerSix from '../06-startup/BannerSix'
 import ServicesFive from '../04-services-agency/ServicesFive'
@@ -20,7 +21,7 @@ export default function Page() {
       
       <main className="page-wrapper">
 
-                <HeaderSix />
+                <HeaderSix className={WHITE_HEADER_OVER_HERO} />
                 <BannerSix />
                 <ServicesFive className='tmp-section-gap mt_dec--30'/>
                 <WorkingProcessSix />

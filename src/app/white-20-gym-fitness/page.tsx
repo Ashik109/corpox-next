@@ -1,5 +1,6 @@
 import React from 'react'
 import BodyClass from '../white-01-index-consulting/BodyClass'
+import { WHITE_HEADER_ON_LIGHT } from '../components/HeaderModeClasses'
 import RealEstateAnimations from "../16-real-estate-consulting/RealEstateAnimations";
 import AboutGymFitness from '../20-gym-fitness/AboutGymFitness';
 import AppointmentGymFitness from '../20-gym-fitness/AppointmentGymFitness';
@@ -19,7 +20,7 @@ export default function Page() {
       <BodyClass className="active-light-mode gym-demo" />
       <RealEstateAnimations />
       <main className="page-wrapper">
-        <HeaderGymFitness />
+        <HeaderGymFitness className={WHITE_HEADER_ON_LIGHT} />
         <BannerGymFitness />
         <ServicesGymFitness />
         <AboutGymFitness />

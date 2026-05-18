@@ -1,5 +1,6 @@
 import React from 'react'
 import BodyClass from '../white-01-index-consulting/BodyClass'
+import { WHITE_HEADER_OVER_HERO } from '../components/HeaderModeClasses'
 import AboutDigitalAgency from '../09-digital-agency/AboutDigitalAgency';
 import BannerDigitalAgency from '../09-digital-agency/BannerDigitalAgency';
 import BlogDigitalAgency from '../09-digital-agency/BlogDigitalAgency';
@@ -19,7 +20,7 @@ export default function Page() {
       <BodyClass className="active-light-mode" />
       <DigitalAgencyAnimations />
       <main className="page-wrapper">
-        <HeaderOne />
+        <HeaderOne className={WHITE_HEADER_OVER_HERO} />
         <BannerDigitalAgency />
         <LatestServiceDigitalAgency />
         <AboutDigitalAgency />

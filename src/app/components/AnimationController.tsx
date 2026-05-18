@@ -18,6 +18,16 @@ const SCROLL_LOCK_BODY_CLASSES = [
   "next-light-gallery-open",
 ] as const;
 
+const SCROLL_LOCK_SELECTORS = {
+  "tmp-header-panel-open": [
+    ".tmp-search-input-area.show",
+    ".inverweb-side-bar-close.show",
+    ".popup-mobile-menu.active",
+  ],
+  "react-video-popup-open": [".react-video-popup"],
+  "next-light-gallery-open": [".next-light-gallery"],
+} satisfies Record<(typeof SCROLL_LOCK_BODY_CLASSES)[number], string[]>;
+
 const NATIVE_SCROLL_AREAS = [
   ".mainmenu-nav",
   ".popup-mobile-menu",
@@ -31,6 +41,10 @@ function isHoverTarget(target: EventTarget | null) {
   return target instanceof Element
     ? target.closest("a, button, .cursor-pointer")
     : null;
+}
+
+function hasActiveScrollLockTarget(className: (typeof SCROLL_LOCK_BODY_CLASSES)[number]) {
+  return SCROLL_LOCK_SELECTORS[className].some((selector) => document.querySelector(selector));
 }
 
 function useAosController(pathname: string) {
@@ -86,10 +100,18 @@ function useLenisController(pathname: string) {
 
     lenis.on("scroll", onScroll);
 
-    const syncScrollLock = () => {
-      const shouldLockScroll = SCROLL_LOCK_BODY_CLASSES.some((className) =>
-        document.body.classList.contains(className),
-      );
+    let lockSyncFrame = 0;
+
+    const syncScrollLockNow = () => {
+      const shouldLockScroll = SCROLL_LOCK_BODY_CLASSES.some((className) => {
+        const hasActiveTarget = hasActiveScrollLockTarget(className);
+
+        if (!hasActiveTarget && document.body.classList.contains(className)) {
+          document.body.classList.remove(className);
+        }
+
+        return hasActiveTarget;
+      });
 
       if (shouldLockScroll) {
         lenis.stop();
@@ -98,12 +120,23 @@ function useLenisController(pathname: string) {
       }
     };
 
-    const bodyClassObserver = new MutationObserver(syncScrollLock);
+    const scheduleScrollLockSync = () => {
+      if (lockSyncFrame) return;
+
+      lockSyncFrame = requestAnimationFrame(() => {
+        lockSyncFrame = 0;
+        syncScrollLockNow();
+      });
+    };
+
+    const bodyClassObserver = new MutationObserver(scheduleScrollLockSync);
     bodyClassObserver.observe(document.body, {
       attributeFilter: ["class"],
       attributes: true,
+      childList: true,
+      subtree: true,
     });
-    syncScrollLock();
+    syncScrollLockNow();
 
     requestAnimationFrame(() => {
       lenis.resize();
@@ -118,7 +151,9 @@ function useLenisController(pathname: string) {
 
     return () => {
       cancelAnimationFrame(scrollTriggerFrame);
+      cancelAnimationFrame(lockSyncFrame);
       bodyClassObserver.disconnect();
+      lenis.start();
       lenis.destroy();
     };
   }, [pathname]);

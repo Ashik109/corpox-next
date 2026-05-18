@@ -3,6 +3,7 @@ import MainNav from '../../components/header/MainNav'
 import { useState, useEffect } from 'react';
 import Link from 'next/link'
 import React from 'react'
+import { HeaderDotSidebarTrigger, HeaderMobileMenuTrigger, HeaderSearchTrigger } from '../components/HeaderPanelTriggers';
 
 interface HeaderOneProps {
     className?: string;
@@ -16,6 +17,9 @@ function HeaderConstruction({
     logoAlt = "",
 }: HeaderOneProps) {
     const [isSticky, setIsSticky] = useState(false);
+    const logoLight = logoSrc || "/assets/images/logo/construction-logo.svg";
+    const logoDark = logoSrc || "/assets/images/logo/construction-logo-dark.svg";
+    const logoText = logoAlt || "Construction Logo";
     useEffect(() => {
         const handleScroll = () => {
             if (window.scrollY > 150) {
@@ -41,13 +45,13 @@ function HeaderConstruction({
                             <Link href="/">
                                 <img
                                     className="logo-light"
-                                    src="/assets/images/logo/construction-logo.svg"
-                                    alt="Corporate Logo"
+                                    src={logoLight}
+                                    alt={logoText}
                                 />
                                 <img
                                     className="logo-dark"
-                                    src="/assets/images/logo/construction-logo-dark.svg"
-                                    alt="Corporate Logo"
+                                    src={logoDark}
+                                    alt={logoText}
                                 />
                             </Link>
                         </div>
@@ -57,19 +61,9 @@ function HeaderConstruction({
                             <MainNav />
                             {/* Start Header Btn  */}
                             <div className="header-btn">
-                                <div className="search-area-btn cursor-pointer" id="search">
-                                    <i className="feather-search" />
-                                    {/* <img src="/assets/images/icons/search.svg" alt="Business"> */}
-                                </div>
+                                <HeaderSearchTrigger />
                                 <div className="dot-btn">
-                                    {/* <img src="/assets/images/shop/dot.svg" alt=""> */}
-                                    <span className="offcanvas-trigger">
-                                        <span className="offcanvas-bars">
-                                            <span />
-                                            <span />
-                                            <span />
-                                        </span>
-                                    </span>
+                                    <HeaderDotSidebarTrigger />
                                 </div>
                                 <Link className="tmp-btn round" target="_blank" href="/contact">
                                     Start Free Trial
@@ -79,9 +73,7 @@ function HeaderConstruction({
                             {/* Start Mobile-Menu-Bar */}
                             <div className="mobile-menu-bar ml--5 d-block d-lg-none">
                                 <div className="hamberger">
-                                    <button className="hamberger-button tmponhover" type="button">
-                                        <i className="feather-menu" />
-                                    </button>
+                                    <HeaderMobileMenuTrigger />
                                 </div>
                             </div>
                             {/* Start Mobile-Menu-Bar */}

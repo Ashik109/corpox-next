@@ -1,5 +1,6 @@
 import React from 'react'
 import BodyClass from '../white-01-index-consulting/BodyClass'
+import { WHITE_HEADER_OVER_HERO } from '../components/HeaderModeClasses'
 import AboutRealEstate from '../16-real-estate-consulting/AboutRealEstate';
 import BannerRealEstate from '../16-real-estate-consulting/BannerRealEstate';
 import BlogRealEstate from '../16-real-estate-consulting/BlogRealEstate';
@@ -21,7 +22,7 @@ export default function Page() {
       <BodyClass className="active-light-mode" />
       <RealEstateAnimations />
       <main className="page-wrapper">
-        <HeaderThree />
+        <HeaderThree className={WHITE_HEADER_OVER_HERO} />
         <BannerRealEstate />
         <ServicesRealEstate />
         <AboutRealEstate />

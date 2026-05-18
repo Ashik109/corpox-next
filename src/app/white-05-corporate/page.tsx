@@ -1,5 +1,6 @@
 import React from 'react'
 import BodyClass from '../white-01-index-consulting/BodyClass'
+import { WHITE_HEADER_OVER_HERO } from '../components/HeaderModeClasses'
 import TopbarTwo from '../02-index-business-consulting-2/TopbarTwo'
 import HeaderFive from '../05-corporate/HeaderFive'
 import BannerFive from '../05-corporate/BannerFive'
@@ -29,7 +30,7 @@ export default function Page() {
                 {/* Start Header Top Area  */}
                 <TopbarTwo />
                 {/* End Header Top Area  */}
-                <HeaderFive />
+                <HeaderFive className={WHITE_HEADER_OVER_HERO} />
                 <BannerFive />
                 <BrandTwo />
                 <ServicesSeven />

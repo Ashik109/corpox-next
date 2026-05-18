@@ -1,5 +1,6 @@
 import React from 'react'
 import BodyClass from '../white-01-index-consulting/BodyClass'
+import { WHITE_HEADER_OVER_HERO } from '../components/HeaderModeClasses'
 import CtaModernBusiness from "../08-business/CtaModernBusiness";
 import HeaderThree from "../03-agency/HeaderThree";
 import RealEstateAnimations from "../16-real-estate-consulting/RealEstateAnimations";
@@ -22,7 +23,7 @@ export default function Page() {
       <RealEstateAnimations />
       <main className="page-wrapper">
         <TopbarPersonalAdvisory />
-        <HeaderThree />
+        <HeaderThree className={WHITE_HEADER_OVER_HERO} />
         <BannerPersonalAdvisory />
         <ServicesPersonalAdvisory />
         <BusinessServicesPersonalAdvisory />

@@ -3,8 +3,15 @@ import SimpleMainNav from '../../components/header/SimpleMainNav'
 
 import Link from "next/link";
 import { useEffect, useState } from "react";
+import { HeaderMobileMenuTrigger, HeaderSearchTrigger } from "../components/HeaderPanelTriggers";
 
-function HeaderSolar() {
+interface HeaderSolarProps {
+    className?: string;
+}
+
+function HeaderSolar({
+    className = "",
+}: HeaderSolarProps) {
     const [isSticky, setIsSticky] = useState(false);
     const [showTop, setShowTop] = useState(true);
 
@@ -48,7 +55,7 @@ function HeaderSolar() {
                     </div>
                 </div>
             ) : null}
-            <header className={`tmp-header header-default header-left-align header-sticky-smooth header-sticky ${isSticky ? "sticky" : ""}`}>
+            <header className={`tmp-header header-default header-left-align header-sticky-smooth header-sticky ${isSticky ? "sticky" : ""} ${className}`}>
                 <div className="container position-relative">
                     <div className="row align-items-center">
                         <div className="col-lg-9 col-md-6 col-4 position-static">
@@ -66,16 +73,12 @@ function HeaderSolar() {
                             <div className="header-right">
                                 <div className="actions-area">
                                     <div className="search-trigger-icon">
-                                        <button aria-label="Search" className="search-icon" type="button">
-                                            <i className="feather-search" />
-                                        </button>
+                                        <HeaderSearchTrigger className="search-icon" />
                                     </div>
                                 </div>
                                 <div className="mobile-menu-bar d-block d-lg-none">
                                     <div className="hamberger">
-                                        <button aria-label="Open mobile menu" className="hamberger-button tmponhover" type="button">
-                                            <i className="feather-menu" />
-                                        </button>
+                                        <HeaderMobileMenuTrigger />
                                     </div>
                                 </div>
                             </div>

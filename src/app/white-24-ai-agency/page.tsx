@@ -1,5 +1,6 @@
 import React from 'react'
 import BodyClass from '../white-01-index-consulting/BodyClass'
+import { WHITE_HEADER_ON_LIGHT } from '../components/HeaderModeClasses'
 import RealEstateAnimations from "../16-real-estate-consulting/RealEstateAnimations";
 import AboutAiAgency from '../24-ai-agency/AboutAiAgency';
 import BannerAiAgency from '../24-ai-agency/BannerAiAgency';
@@ -19,7 +20,7 @@ export default function Page() {
       <BodyClass className="active-light-mode demo-ai-agency" />
       <RealEstateAnimations />
       <main className="page-wrapper">
-        <HeaderAiAgency />
+        <HeaderAiAgency className={WHITE_HEADER_ON_LIGHT} />
         <BannerAiAgency />
         <BrandAiAgency />
         <ServicesAiAgency />

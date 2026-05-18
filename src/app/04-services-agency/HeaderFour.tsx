@@ -17,6 +17,15 @@ function HeaderFour({
     logoAlt = "",
 }: HeaderFourProps) {
     const [isSticky, setIsSticky] = useState(false);
+    const logoLight = logoSrc || '/assets/images/logo/logo.png';
+    const logoDark = logoSrc || '/assets/images/logo/logo-dark.png';
+    const logoText = logoAlt || 'Corporate Logo';
+    const headerClassName = [
+        'tmp-header header-default header-not-transparent header-sticky-smooth header-sticky',
+        isSticky ? 'sticky' : '',
+        className,
+    ].filter(Boolean).join(' ');
+
         useEffect(() => {
             const handleScroll = () => {
                 if (window.scrollY > 150) {
@@ -36,7 +45,7 @@ function HeaderFour({
     return (
         <>
             {/* Start Header Area  */}
-            <header className={`tmp-header header-default header-not-transparent header-sticky-smooth header-sticky ${isSticky ? 'sticky' : ''} ${className}`}>
+            <header className={headerClassName}>
                 <div className="container position-relative">
                     <div className="row align-items-center row--0">
                         <div className="col-xl-2 col-lg-2 col-md-6 col-4">
@@ -44,13 +53,13 @@ function HeaderFour({
                                 <Link href="/">
                                     <img
                                         className="logo-light"
-                                        src="/assets/images/logo/logo.png"
-                                        alt="Corporate Logo"
+                                        src={logoLight}
+                                        alt={logoText}
                                     />
                                     <img
                                         className="logo-dark"
-                                        src="/assets/images/logo/logo-dark.png"
-                                        alt="Corporate Logo"
+                                        src={logoDark}
+                                        alt={logoText}
                                     />
                                 </Link>
                             </div>

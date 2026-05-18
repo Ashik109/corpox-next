@@ -1,14 +1,31 @@
+'use client'
 import MainNav from '../../components/header/MainNav'
 import Link from 'next/link'
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 
-function HeaderThree() {
+interface HeaderThreeProps {
+    className?: string;
+}
+
+function HeaderThree({
+    className = "",
+}: HeaderThreeProps) {
+    const [isSticky, setIsSticky] = useState(false);
+
+    useEffect(() => {
+        const handleScroll = () => setIsSticky(window.scrollY > 150);
+
+        handleScroll();
+        window.addEventListener('scroll', handleScroll);
+        return () => window.removeEventListener('scroll', handleScroll);
+    }, []);
+
     return (
         <>
             {/* End Header Top Area  */}
             <div className="header-transparent-with-topbar">
                 {/* Start Header Area  */}
-                <header className="tmp-header header-default header-not-transparent header-sticky">
+                <header className={`tmp-header header-default header-not-transparent header-sticky ${isSticky ? 'sticky' : ''} ${className}`}>
                     <div className="container position-relative">
                         <div className="row align-items-center row--0">
                             <div className="col-xl-2 col-lg-2 col-md-6 col-4">
@@ -1953,7 +1970,7 @@ function HeaderThree() {
                                                     </li>
                                                     <li>
                                                         <Link href="/faq">
-                                                            Faq's <span className="tmp-badge-card">New</span>
+                                                            Faq&apos;s <span className="tmp-badge-card">New</span>
                                                         </Link>
                                                     </li>
                                                     <li>

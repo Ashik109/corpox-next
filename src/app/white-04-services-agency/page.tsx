@@ -17,7 +17,7 @@ import FooterOne from '../01-index-consulting/FooterOne'
 export default function Page() {
   return (
     <>
-      <BodyClass className="active-light-mode" />
+      <BodyClass className="overflow-x-visible active-light-mode" />
       
       <main className="page-wrapper">
 

@@ -1,5 +1,6 @@
 import React from 'react'
 import BodyClass from '../white-01-index-consulting/BodyClass'
+import { WHITE_HEADER_OVER_HERO } from '../components/HeaderModeClasses'
 import AboutBusiness from '../08-business/AboutBusiness';
 import AboutBusinessFluid from '../08-business/AboutBusinessFluid';
 import BannerBusiness from '../08-business/BannerBusiness';
@@ -22,7 +23,7 @@ export default function Page() {
       <BodyClass className="active-light-mode" />
       <BusinessAnimations />
       <main className="page-wrapper">
-        <HeaderOne />
+        <HeaderOne className={WHITE_HEADER_OVER_HERO} />
         <BannerBusiness />
         <TeamBusiness />
         <AboutBusiness />

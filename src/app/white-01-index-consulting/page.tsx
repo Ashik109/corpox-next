@@ -1,5 +1,6 @@
 import React from 'react'
 import BodyClass from '../white-01-index-consulting/BodyClass'
+import { WHITE_HEADER_OVER_HERO } from '../components/HeaderModeClasses'
 import TopbarOne from '../01-index-consulting/TopbarOne'
 import HeaderOne from '../01-index-consulting/HeaderOne'
 import BannerOne from '../01-index-consulting/BannerOne'
@@ -26,7 +27,7 @@ export default function Page() {
       <main className="page-wrapper">
 
         <TopbarOne />
-        <HeaderOne />
+        <HeaderOne className={WHITE_HEADER_OVER_HERO} />
         <BannerOne />
         <ServiceOne />
         <AboutOne />

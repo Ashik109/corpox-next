@@ -1,5 +1,6 @@
 import React from 'react'
 import BodyClass from '../white-01-index-consulting/BodyClass'
+import { WHITE_HEADER_ON_LIGHT } from '../components/HeaderModeClasses'
 import RealEstateAnimations from "../16-real-estate-consulting/RealEstateAnimations";
 import AboutSolar from '../22-solar/AboutSolar';
 import BannerSolar from '../22-solar/BannerSolar';
@@ -20,7 +21,7 @@ export default function Page() {
       <BodyClass className="active-light-mode demo-solar" />
       <RealEstateAnimations />
       <main className="page-wrapper">
-        <HeaderSolar />
+        <HeaderSolar className={WHITE_HEADER_ON_LIGHT} />
         <BannerSolar />
         <ServiceTabsSolar />
         <GetInTouchSolar />

@@ -4,7 +4,13 @@ import SimpleMainNav from '../../components/header/SimpleMainNav'
 import Link from "next/link";
 import { useEffect, useState } from "react";
 
-function HeaderGymFitness() {
+interface HeaderGymFitnessProps {
+    className?: string;
+}
+
+function HeaderGymFitness({
+    className = "",
+}: HeaderGymFitnessProps) {
     const [isSticky, setIsSticky] = useState(false);
 
     useEffect(() => {
@@ -60,7 +66,7 @@ function HeaderGymFitness() {
                 </div>
             </div>
 
-            <header className={`tmp-header header-default header-not-transparent header-sticky-smooth header-sticky ${isSticky ? "sticky" : ""}`}>
+            <header className={`tmp-header header-default header-not-transparent header-sticky-smooth header-sticky ${isSticky ? "sticky" : ""} ${className}`}>
                 <div className="container position-relative">
                     <div className="row align-items-center row--0">
                         <div className="col-xl-2 col-lg-2 col-md-6 col-4">

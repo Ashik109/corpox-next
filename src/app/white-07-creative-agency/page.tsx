@@ -1,5 +1,6 @@
 import React from 'react'
 import BodyClass from '../white-01-index-consulting/BodyClass'
+import { WHITE_HEADER_OVER_HERO } from '../components/HeaderModeClasses'
 import HeaderOne from '../01-index-consulting/HeaderOne'
 import BannerCreativeAgency from '../07-creative-agency/BannerCreativeAgency'
 import AboutCreativeAgency from '../07-creative-agency/AboutCreativeAgency'
@@ -22,7 +23,7 @@ export default function Page() {
             <CreativeAgencyAnimations />
       <main className="page-wrapper">
 
-                <HeaderOne />
+                <HeaderOne className={WHITE_HEADER_OVER_HERO} />
                 <BannerCreativeAgency />
                 <AboutCreativeAgency />
                 <CreativeAgencyTabs />

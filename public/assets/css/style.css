@@ -30981,4 +30981,52 @@ body.tmp-body-star::before {
 .demo-construction.active-light-mode .footer-form-wrap form input {
   border: var(--border-width) solid rgba(255, 94, 20, 0.2117647059);
 }
+
+.active-light-mode header.white-header-over-hero:not(.sticky) .logo-light {
+  display: block !important;
+}
+.active-light-mode header.white-header-over-hero:not(.sticky) .logo-dark {
+  display: none !important;
+}
+.active-light-mode header.white-header-over-hero:not(.sticky) .mainmenu-nav .mainmenu > li > a,
+.active-light-mode header.white-header-over-hero:not(.sticky) .header-right.with-search .header-btn .search-area-btn,
+.active-light-mode header.white-header-over-hero:not(.sticky) .header-right.with-search .header-btn .search-area-btn i,
+.active-light-mode header.white-header-over-hero:not(.sticky) .actions-area .search-area-btn,
+.active-light-mode header.white-header-over-hero:not(.sticky) .actions-area .search-area-btn i,
+.active-light-mode header.white-header-over-hero:not(.sticky) .actions-area .search-icon,
+.active-light-mode header.white-header-over-hero:not(.sticky) .actions-area .search-icon i,
+.active-light-mode header.white-header-over-hero:not(.sticky) .tmp-side-collups-area button,
+.active-light-mode header.white-header-over-hero:not(.sticky) .tmp-side-collups-area button i {
+  color: #fff !important;
+}
+.active-light-mode header.white-header-over-hero:not(.sticky) .dot-btn .offcanvas-trigger .offcanvas-bars span::before,
+.active-light-mode header.white-header-over-hero:not(.sticky) .dot-btn .offcanvas-trigger .offcanvas-bars span::after {
+  background-color: #fff !important;
+}
+.active-light-mode header.white-header-over-hero.sticky .mainmenu-nav .mainmenu > li > a,
+.active-light-mode header.white-header-over-hero.sticky .header-right.with-search .header-btn .search-area-btn,
+.active-light-mode header.white-header-over-hero.sticky .header-right.with-search .header-btn .search-area-btn i,
+.active-light-mode header.white-header-over-hero.sticky .actions-area .search-area-btn,
+.active-light-mode header.white-header-over-hero.sticky .actions-area .search-area-btn i,
+.active-light-mode header.white-header-over-hero.sticky .actions-area .search-icon,
+.active-light-mode header.white-header-over-hero.sticky .actions-area .search-icon i,
+.active-light-mode header.white-header-over-hero.sticky .tmp-side-collups-area button,
+.active-light-mode header.white-header-over-hero.sticky .tmp-side-collups-area button i,
+.active-light-mode header.white-header-on-light .mainmenu-nav .mainmenu > li > a,
+.active-light-mode header.white-header-on-light .header-right.with-search .header-btn .search-area-btn,
+.active-light-mode header.white-header-on-light .header-right.with-search .header-btn .search-area-btn i,
+.active-light-mode header.white-header-on-light .actions-area .search-area-btn,
+.active-light-mode header.white-header-on-light .actions-area .search-area-btn i,
+.active-light-mode header.white-header-on-light .actions-area .search-icon,
+.active-light-mode header.white-header-on-light .actions-area .search-icon i,
+.active-light-mode header.white-header-on-light .tmp-side-collups-area button,
+.active-light-mode header.white-header-on-light .tmp-side-collups-area button i {
+  color: var(--color-body) !important;
+}
+.active-light-mode header.white-header-on-light .logo-light {
+  display: none !important;
+}
+.active-light-mode header.white-header-on-light .logo-dark {
+  display: block !important;
+}
 /*# sourceMappingURL=../maps/style.css.map */

@@ -15,6 +15,15 @@ function HeaderTwo({
     logoAlt = "",
 }: HeaderTwoProps) {
   const [isSticky, setIsSticky] = useState(false);
+  const logoLight = logoSrc || '/assets/images/logo/logo.png';
+  const logoDark = logoSrc || '/assets/images/logo/logo-dark.png';
+  const logoText = logoAlt || 'Corporate Logo';
+  const headerClassName = [
+    'tmp-header header-default header-left-align header-not-transparent header-sticky-smooth header-sticky',
+    isSticky ? 'sticky' : '',
+    className,
+  ].filter(Boolean).join(' ');
+
       useEffect(() => {
           const handleScroll = () => {
               if (window.scrollY > 150) {
@@ -32,7 +41,7 @@ function HeaderTwo({
           };
       }, []);
   return (
-    <header className={`tmp-header header-default header-left-align header-not-transparent header-sticky-smooth header-sticky ${isSticky ? 'sticky' : ''} ${className}`}>
+    <header className={headerClassName}>
       <div className="container position-relative">
         <div className="row align-items-center">
           <div className="col-lg-9 col-md-6 col-4 position-static">
@@ -41,13 +50,13 @@ function HeaderTwo({
                 <Link href="/">
                   <img
                     className="logo-light"
-                    src="/assets/images/logo/logo.png"
-                    alt="Corporate Logo"
+                    src={logoLight}
+                    alt={logoText}
                   />
                   <img
                     className="logo-dark"
-                    src="/assets/images/logo/logo-dark.png"
-                    alt="Corporate Logo"
+                    src={logoDark}
+                    alt={logoText}
                   />
                 </Link>
               </div>
@@ -59,10 +68,8 @@ function HeaderTwo({
               <div className="header-btn">
                 <div className="search-area-btn cursor-pointer" id="search">
                   <i className="feather-search" />
-                  {/* <img src="/assets/images/icons/search.svg" alt="Business"> */}
                 </div>
                 <div className="dot-btn">
-                  {/* <img src="/assets/images/shop/dot.svg" alt=""> */}
                   <span className="offcanvas-trigger">
                     <span className="offcanvas-bars">
                       <span />

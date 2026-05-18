@@ -1,5 +1,6 @@
 import React from 'react'
 import BodyClass from '../white-01-index-consulting/BodyClass'
+import { WHITE_HEADER_OVER_HERO } from '../components/HeaderModeClasses'
 import TopbarThree from '../03-agency/TopbarThree'
 import HeaderThree from '../03-agency/HeaderThree'
 import BannerThree from '../03-agency/BannerThree'
@@ -24,7 +25,7 @@ export default function Page() {
       <main className="page-wrapper">
 
                 <TopbarThree />
-                <HeaderThree />
+                <HeaderThree className={WHITE_HEADER_OVER_HERO} />
                 <BannerThree />
                 <BrandOne />
                 <AboutThree />
