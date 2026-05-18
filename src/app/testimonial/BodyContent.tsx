@@ -1,17 +1,11 @@
 import SectionTestimonialStyleOne from './SectionTestimonialStyleOne'
-import SectionTestimonialFive from './SectionTestimonialFive'
-import SectionStartSingleTestimonial from './SectionStartSingleTestimonial'
-import SectionStartSingleTestimonial2 from './SectionStartSingleTestimonial2'
-import SectionStartSingleTestimonial3 from './SectionStartSingleTestimonial3'
+import TestimonialOne from '../01-index-consulting/TestimonialOne'
 
 function BodyContent() {
   return (
     <>
       <SectionTestimonialStyleOne />
-      <SectionTestimonialFive />
-      <SectionStartSingleTestimonial />
-      <SectionStartSingleTestimonial2 />
-      <SectionStartSingleTestimonial3 />
+      <TestimonialOne />
     </>
   )
 }
