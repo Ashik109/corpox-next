@@ -1,25 +1,10 @@
 "use client";
 import Link from 'next/link'
 
-import { useEffect } from "react";
 import { useTitleSplitAnimation } from "../components/useTitleSplitAnimation";
-import AOS from "aos";
-import "aos/dist/aos.css";
 
 function ServiceTwo() {
     useTitleSplitAnimation();
-    useEffect(() => {
-        AOS.init({
-            duration: 700,
-            once: true,
-        });
-
-        const timer = setTimeout(() => {
-            AOS.refresh();
-        }, 500);
-
-        return () => clearTimeout(timer);
-    }, []);
     
     return (
         <>

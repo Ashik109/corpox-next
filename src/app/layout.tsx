@@ -15,13 +15,9 @@ import "./globals.css";
 // import "swiper/css";
 // import "swiper/css/pagination";
 // import "swiper/css/autoplay";
-import AosProvider from "./components/AosProvider";
+import AnimationController from "./components/AnimationController";
 import BootstrapClient from "./components/BootstrapClient";
-import FloatingImagesAnimation from "./components/FloatingImagesAnimation";
 import HeaderPanelManager from "./components/HeaderPanelManager";
-import CursorAnimate from "./components/CursorAnimate";
-import SmoothScroll from "./components/SmoothScroll";
-import TmpOnHoverAnimation from "./components/TmpOnHoverAnimation";
 import GlobalFloatingActions from "./components/GlobalFloatingActions";
 import ReactVideoPopup from "../components/ReactVideoPopup";
 import NextLightGallery from "../components/NextLightGallery";
@@ -54,17 +50,13 @@ export default function RootLayout({
         />
       </head>
       <body>
-        <AosProvider />
         <BootstrapClient />
-        <SmoothScroll />
-        <TmpOnHoverAnimation />
+        <AnimationController />
         <HeaderPanelManager />
-        <CursorAnimate />
         <ReactVideoPopup />
         <NextLightGallery />
         {children}
         <GlobalFloatingActions />
-        <FloatingImagesAnimation />
       </body>
     </html>
   );

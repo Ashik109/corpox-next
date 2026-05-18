@@ -3,7 +3,7 @@ import MainNav from '../../components/header/MainNav'
 import { useState, useEffect } from 'react';
 import Link from 'next/link'
 import React from 'react'
-import { useRouter } from 'next/navigation'
+import { usePathname, useRouter } from 'next/navigation'
 
 interface HeaderOneProps {
     className?: string;
@@ -89,6 +89,7 @@ function HeaderOne({
     const [openMobileSection, setOpenMobileSection] = useState<string>('Home');
     const [searchValue, setSearchValue] = useState('');
     const router = useRouter();
+    const pathname = usePathname();
     const logoLight = logoSrc || '/assets/images/logo/logo.png';
     const logoDark = logoSrc || '/assets/images/logo/logo-dark.png';
     const logoText = logoAlt || 'Corporate Logo';
@@ -115,6 +116,12 @@ function HeaderOne({
         };
     }, []);
 
+    const closePanels = () => {
+        setIsSearchOpen(false);
+        setIsOffcanvasOpen(false);
+        setIsMobileMenuOpen(false);
+    };
+
     useEffect(() => {
         const handleKeyDown = (event: KeyboardEvent) => {
             if (event.key === 'Escape') {
@@ -131,11 +138,16 @@ function HeaderOne({
         };
     }, [isAnyPanelOpen]);
 
-    const closePanels = () => {
-        setIsSearchOpen(false);
-        setIsOffcanvasOpen(false);
-        setIsMobileMenuOpen(false);
-    };
+    useEffect(() => {
+        const closeTimer = window.setTimeout(() => {
+            setIsSearchOpen(false);
+            setIsOffcanvasOpen(false);
+            setIsMobileMenuOpen(false);
+            setSearchValue('');
+        }, 0);
+
+        return () => window.clearTimeout(closeTimer);
+    }, [pathname]);
 
     const openSearch = () => {
         setIsOffcanvasOpen(false);

@@ -1,11 +1,8 @@
 "use client";
 
 import React, { useEffect } from "react";
-import { useAosOnce } from "../components/useAosOnce";
 
 function WorkingProcessSix() {
-    useAosOnce();
-
     useEffect(() => {
 
         const tabs = document.querySelectorAll<HTMLElement>('#nav-tab .nav-link');

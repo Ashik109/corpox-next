@@ -1,20 +1,7 @@
 'use client'
 import Link from 'next/link'
 
-import { useEffect } from "react";
-import AOS from "aos";
-import "aos/dist/aos.css";
-
 function TeamTwo() {
-
-  useEffect(() => {
-    AOS.init({
-      duration: 700,
-      once: true,
-      easing: "ease-out-cubic"
-    });
-  }, []);
-
   return (
     <>
       {/* Start Team Area */}

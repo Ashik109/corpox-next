@@ -1,0 +1,250 @@
+"use client";
+
+import { useEffect, useRef, type RefObject } from "react";
+import { usePathname } from "next/navigation";
+import AOS from "aos";
+import Lenis from "lenis";
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+import "aos/dist/aos.css";
+import "lenis/dist/lenis.css";
+
+gsap.registerPlugin(ScrollTrigger);
+
+const STICKY_HEADER_OFFSET = 100;
+const SCROLL_LOCK_BODY_CLASSES = [
+  "tmp-header-panel-open",
+  "react-video-popup-open",
+  "next-light-gallery-open",
+] as const;
+
+const NATIVE_SCROLL_AREAS = [
+  ".mainmenu-nav",
+  ".popup-mobile-menu",
+  ".tmp-search-input-area",
+  ".inverweb-side-bar-close",
+  ".react-video-popup",
+  ".next-light-gallery",
+].join(", ");
+
+function isHoverTarget(target: EventTarget | null) {
+  return target instanceof Element
+    ? target.closest("a, button, .cursor-pointer")
+    : null;
+}
+
+function useAosController(pathname: string) {
+  const initialized = useRef(false);
+
+  useEffect(() => {
+    if (!initialized.current) {
+      AOS.init({
+        duration: 800,
+        offset: 80,
+        once: true,
+      });
+      initialized.current = true;
+    }
+
+    const refreshFrame = requestAnimationFrame(() => {
+      AOS.refresh();
+      ScrollTrigger.refresh();
+    });
+
+    return () => cancelAnimationFrame(refreshFrame);
+  }, [pathname]);
+}
+
+function useLenisController(pathname: string) {
+  useEffect(() => {
+    const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
+    if (reducedMotion.matches) return;
+
+    let scrollTriggerFrame = 0;
+
+    const lenis = new Lenis({
+      autoRaf: true,
+      smoothWheel: true,
+      lerp: 0.08,
+      duration: 1.15,
+      wheelMultiplier: 1,
+      touchMultiplier: 1.2,
+      prevent: (node) => node.closest(NATIVE_SCROLL_AREAS) !== null,
+      anchors: {
+        offset: -STICKY_HEADER_OFFSET,
+      },
+    });
+
+    const onScroll = () => {
+      if (scrollTriggerFrame) return;
+
+      scrollTriggerFrame = requestAnimationFrame(() => {
+        scrollTriggerFrame = 0;
+        ScrollTrigger.update();
+      });
+    };
+
+    lenis.on("scroll", onScroll);
+
+    const syncScrollLock = () => {
+      const shouldLockScroll = SCROLL_LOCK_BODY_CLASSES.some((className) =>
+        document.body.classList.contains(className),
+      );
+
+      if (shouldLockScroll) {
+        lenis.stop();
+      } else {
+        lenis.start();
+      }
+    };
+
+    const bodyClassObserver = new MutationObserver(syncScrollLock);
+    bodyClassObserver.observe(document.body, {
+      attributeFilter: ["class"],
+      attributes: true,
+    });
+    syncScrollLock();
+
+    requestAnimationFrame(() => {
+      lenis.resize();
+      ScrollTrigger.refresh();
+    });
+
+    if (window.location.hash) {
+      requestAnimationFrame(() => {
+        lenis.scrollTo(window.location.hash, { offset: -STICKY_HEADER_OFFSET });
+      });
+    }
+
+    return () => {
+      cancelAnimationFrame(scrollTriggerFrame);
+      bodyClassObserver.disconnect();
+      lenis.destroy();
+    };
+  }, [pathname]);
+}
+
+function useTmpHoverController() {
+  useEffect(() => {
+    const handlePointerMove = (event: PointerEvent) => {
+      const target = event.target as Element | null;
+      const element = target?.closest<HTMLElement>(".tmponhover");
+
+      if (!element) return;
+
+      const rect = element.getBoundingClientRect();
+      element.style.setProperty("--x", `${event.clientX - rect.left}px`);
+      element.style.setProperty("--y", `${event.clientY - rect.top}px`);
+    };
+
+    document.addEventListener("pointermove", handlePointerMove);
+
+    return () => {
+      document.removeEventListener("pointermove", handlePointerMove);
+    };
+  }, []);
+}
+
+function useFloatingImagesController(pathname: string) {
+  useEffect(() => {
+    const elements = Array.from(document.querySelectorAll<HTMLElement>(".images-left-right-float"));
+
+    if (!elements.length) {
+      return;
+    }
+
+    const tweens = elements.map((element) =>
+      gsap.fromTo(
+        element,
+        { x: 0 },
+        {
+          x: -150,
+          scrollTrigger: {
+            trigger: element,
+            start: "top bottom",
+            end: "bottom top",
+            scrub: 4,
+          },
+          ease: "none",
+        },
+      ),
+    );
+
+    ScrollTrigger.refresh();
+
+    return () => {
+      tweens.forEach((tween) => {
+        tween.scrollTrigger?.kill();
+        tween.kill();
+      });
+    };
+  }, [pathname]);
+}
+
+function useCursorController(
+  innerRef: RefObject<HTMLDivElement | null>,
+  outerRef: RefObject<HTMLDivElement | null>,
+) {
+  useEffect(() => {
+    const inner = innerRef.current;
+    const outer = outerRef.current;
+
+    if (!inner || !outer) return;
+
+    const moveCursor = (event: MouseEvent) => {
+      const transform = `translate(${event.clientX}px, ${event.clientY}px)`;
+
+      inner.style.transform = transform;
+      outer.style.transform = transform;
+    };
+
+    const addHover = (event: MouseEvent) => {
+      if (!isHoverTarget(event.target)) return;
+
+      inner.classList.add("cursor-hover");
+      outer.classList.add("cursor-hover");
+    };
+
+    const removeHover = (event: MouseEvent) => {
+      const leavingTarget = isHoverTarget(event.target);
+      const enteringTarget = isHoverTarget(event.relatedTarget);
+
+      if (!leavingTarget || enteringTarget) return;
+
+      inner.classList.remove("cursor-hover");
+      outer.classList.remove("cursor-hover");
+    };
+
+    inner.style.visibility = "visible";
+    outer.style.visibility = "visible";
+
+    window.addEventListener("mousemove", moveCursor);
+    document.body.addEventListener("mouseover", addHover);
+    document.body.addEventListener("mouseout", removeHover);
+
+    return () => {
+      window.removeEventListener("mousemove", moveCursor);
+      document.body.removeEventListener("mouseover", addHover);
+      document.body.removeEventListener("mouseout", removeHover);
+    };
+  }, [innerRef, outerRef]);
+}
+
+export default function AnimationController() {
+  const pathname = usePathname();
+  const innerRef = useRef<HTMLDivElement | null>(null);
+  const outerRef = useRef<HTMLDivElement | null>(null);
+
+  useAosController(pathname);
+  useLenisController(pathname);
+  useTmpHoverController();
+  useFloatingImagesController(pathname);
+  useCursorController(innerRef, outerRef);
+
+  return (
+    <>
+      <div ref={innerRef} className="mouse-cursor cursor-inner" />
+      <div ref={outerRef} className="mouse-cursor cursor-outer" />
+    </>
+  );
+}

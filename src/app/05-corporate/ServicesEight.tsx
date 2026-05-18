@@ -1,17 +1,7 @@
 'use client'
 import Link from 'next/link'
 
-import React, { useEffect } from 'react'
-import AOS from "aos"
-import "aos/dist/aos.css"
-
 function ServicesEight() {
-    useEffect(() => {
-            AOS.init({
-                duration: 800,
-                once: true
-            })
-        }, [])
     return (
         <>
             {/* Start Service-2 Area  */}

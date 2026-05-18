@@ -2,7 +2,6 @@
 
 import Link from "next/link";
 import { useHoverAnimation } from "../components/useHoverAnimation";
-import { useAosOnce } from "../components/useAosOnce";
 
 const featuredTitle =
     "How to Analyze Your Best Pages for SEO Performance Marketing.";
@@ -55,7 +54,6 @@ function BlogListCard({ post, delay, className = "" }: { post: (typeof listPosts
 }
 
 function BlogStartup() {
-    useAosOnce();
     const hoverFeatured = useHoverAnimation<HTMLDivElement>();
 
     return (

@@ -1,12 +1,5 @@
 'use client'
-import AOS from 'aos';
-import 'aos/dist/aos.css';
-import { useEffect } from 'react';
 function ContactOne() {
-    useEffect(() => {
-        AOS.init({ once: true });
-    }, []);
-
     return (
         <>
             {/* appoinment area start */}

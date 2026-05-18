@@ -1,16 +1,9 @@
 "use client";
 
 import Link from "next/link";
-import { useEffect, useState } from "react";
-import { useAosOnce } from "../components/useAosOnce";
 
 function FooterStartup() {
-    useAosOnce();
-    const [year, setYear] = useState<number | null>(null);
-
-    useEffect(() => {
-        setYear(new Date().getFullYear());
-    }, []);
+    const year = new Date().getFullYear();
 
     return (
         <footer className="tmp-footer footer-style-default variation-two position-relative">

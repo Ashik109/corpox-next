@@ -2,7 +2,6 @@
 
 import Link from "next/link";
 import React from "react";
-import { useAosOnce } from "../components/useAosOnce";
 
 const services = [
   {
@@ -32,8 +31,6 @@ const services = [
 ];
 
 function ServicesNine() {
-  useAosOnce();
-
   return (
     <section className="tmp-service-area tmp-section-gap bg-color-card" aria-labelledby="services-nine-title">
       <div className="container">

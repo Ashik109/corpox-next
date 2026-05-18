@@ -1,8 +1,6 @@
-/* eslint-disable react-hooks/exhaustive-deps */
 "use client";
 
 import React, { useEffect, useRef, useState } from "react";
-import { useAosOnce } from "../components/useAosOnce";
 
 const progressItems = [
   { title: "Business Solutions", percent: 80 },
@@ -117,8 +115,6 @@ function ProgressCircle({ title, percent }: { title: string; percent: number }) 
 }
 
 function ProgressOne() {
-  useAosOnce();
-
   return (
     <section className="tmp-progressbar-area tmp-section-gap" aria-labelledby="progress-one-title">
       <div className="container">

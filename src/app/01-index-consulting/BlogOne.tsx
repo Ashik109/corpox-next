@@ -1,25 +1,10 @@
 'use client'
 import Link from 'next/link'
 
-import { useEffect } from 'react';
-import AOS from 'aos';
 import { useTitleSplitAnimation } from "../components/useTitleSplitAnimation";
-import 'aos/dist/aos.css';
 
 function BlogOne() {
     useTitleSplitAnimation();
-         useEffect(() => {
-            AOS.init({
-                duration: 700,
-                once: true,
-            });
-    
-            const timer = setTimeout(() => {
-                AOS.refresh();
-            }, 500);
-    
-            return () => clearTimeout(timer);
-        }, []);
     
   return (
     <>

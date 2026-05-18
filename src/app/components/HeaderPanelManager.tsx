@@ -1,7 +1,7 @@
 'use client'
 
 import Link from 'next/link'
-import { useRouter } from 'next/navigation'
+import { usePathname, useRouter } from 'next/navigation'
 import { useEffect, useState } from 'react'
 
 const searchItems = [
@@ -74,11 +74,21 @@ export default function HeaderPanelManager() {
   const [openMobileSection, setOpenMobileSection] = useState<string>('Home')
   const [searchValue, setSearchValue] = useState('')
   const router = useRouter()
+  const pathname = usePathname()
   const isOpen = activePanel !== ''
   const normalizedSearch = searchValue.trim().toLowerCase()
   const filteredSearchItems = normalizedSearch
     ? searchItems.filter((item) => `${item.title} ${item.keywords}`.toLowerCase().includes(normalizedSearch))
     : searchItems
+
+  useEffect(() => {
+    const closeTimer = window.setTimeout(() => {
+      setActivePanel('')
+      setSearchValue('')
+    }, 0)
+
+    return () => window.clearTimeout(closeTimer)
+  }, [pathname])
 
   const closePanels = () => setActivePanel('')
 

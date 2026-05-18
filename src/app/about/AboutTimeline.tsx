@@ -1,8 +1,5 @@
 'use client'
 
-import { useEffect } from 'react'
-import AOS from 'aos'
-import 'aos/dist/aos.css'
 import { useTitleSplitAnimation } from '../components/useTitleSplitAnimation'
 
 const steps = [
@@ -14,12 +11,6 @@ const steps = [
 
 function AboutTimeline() {
   useTitleSplitAnimation()
-
-  useEffect(() => {
-    AOS.init({ duration: 700, once: true })
-    const timer = setTimeout(() => AOS.refresh(), 500)
-    return () => clearTimeout(timer)
-  }, [])
 
   return (
     <div className="tmp-timeline-area tmp-section-gapTop">
@@ -44,7 +35,7 @@ function AboutTimeline() {
           <div className="col-lg-10 offset-lg-1 mt--10">
             <div className="timeline-style-two bg-color-blackest">
               <div className="row row--0">
-                {steps.map((step, index) => (
+                {steps.map((step) => (
                   <div key={step.title} className="col-lg-3 col-md-3 tmp-timeline-single no-gradient">
                     <div className="tmp-timeline">
                       <h6 className="title" data-aos="slide-up" data-aos-duration="700" data-aos-delay="200">

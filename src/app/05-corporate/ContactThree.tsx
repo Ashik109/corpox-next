@@ -1,15 +1,6 @@
 'use client'
-import { useEffect } from 'react'
-import AOS from "aos"
-import "aos/dist/aos.css"
 
 function ContactThree() {
-    useEffect(() => {
-            AOS.init({
-                duration: 800,
-                once: true
-            })
-        }, [])
     return (
         <>
             {/* appoinment area start */}

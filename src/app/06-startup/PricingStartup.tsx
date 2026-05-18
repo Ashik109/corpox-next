@@ -2,7 +2,6 @@
 import Link from 'next/link'
 
 
-import { useAosOnce } from "../components/useAosOnce";
 import { useHoverAnimation } from "../components/useHoverAnimation";
 import { useTitleSplitAnimation } from "../components/useTitleSplitAnimation";
 
@@ -112,7 +111,6 @@ function PricingCard({ plan }: { plan: PricingPlan }) {
 
 function PricingStartup() {
     useTitleSplitAnimation();
-    useAosOnce();
 
     return (
         <section className="tmp-pricing-area tmp-section-gap bg-color-card" aria-labelledby="pricing-startup-title">

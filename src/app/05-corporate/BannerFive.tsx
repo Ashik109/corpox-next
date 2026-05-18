@@ -3,12 +3,11 @@ import Link from 'next/link'
 
 
 import { useEffect, useRef, useState } from "react";
-import AOS from "aos";
-import "aos/dist/aos.css";
+
+const ROTATING_WORDS = ["Websites.", "Features.", "Themes."] as const;
 
 function BannerFive() {
 
-    const words = ["Websites.", "Features.", "Themes."];
     const [activeIndex, setActiveIndex] = useState(0);
 
     const wrapperRef = useRef<HTMLSpanElement | null>(null);
@@ -16,20 +15,6 @@ function BannerFive() {
 
     const intervalRef = useRef<ReturnType<typeof setInterval> | null>(null);
     const timeoutRef = useRef<ReturnType<typeof setTimeout> | null>(null);
-
-    // AOS init
-    useEffect(() => {
-        AOS.init({
-            duration: 700,
-            once: true,
-        });
-
-        const timer = setTimeout(() => {
-            AOS.refresh();
-        }, 500);
-
-        return () => clearTimeout(timer);
-    }, []);
 
     // update wrapper width
     const updateWidth = () => {
@@ -48,7 +33,7 @@ function BannerFive() {
             wrapperRef.current.style.width = "2px";
 
             timeoutRef.current = setTimeout(() => {
-                setActiveIndex((prev) => (prev + 1) % words.length);
+                setActiveIndex((prev) => (prev + 1) % ROTATING_WORDS.length);
             }, 400);
         };
 
@@ -115,7 +100,7 @@ function BannerFive() {
                                                 }}
                                             >
 
-                                                {words.map((word, index) => (
+                                                {ROTATING_WORDS.map((word, index) => (
                                                     <b
                                                         key={index}
                                                         ref={index === activeIndex ? textRef : null}
