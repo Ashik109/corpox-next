@@ -20,7 +20,7 @@ export default function Page() {
       <BodyClass className="active-light-mode demo-ai-agency" />
       <RealEstateAnimations />
       <main className="page-wrapper">
-        <HeaderAiAgency className={WHITE_HEADER_ON_LIGHT} />
+        <HeaderAiAgency className={WHITE_HEADER_ON_LIGHT} variant="light" />
         <BannerAiAgency />
         <BrandAiAgency />
         <ServicesAiAgency />

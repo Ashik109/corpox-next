@@ -3,6 +3,7 @@ import MultipageHeader from '../multipage-inner/MultipageHeader'
 import MultipageInnerFooter from '../multipage-inner/MultipageInnerFooter'
 import BodyClass from '../../app/white-01-index-consulting/BodyClass'
 import InnerPageAnimations from './InnerPageAnimations'
+import { WHITE_HEADER_ON_LIGHT } from '../../app/components/HeaderModeClasses'
 
 type Props = {
   children: React.ReactNode
@@ -18,7 +19,7 @@ export default function InnerPageLayout({ children, lightMode, bodyClass, header
       {cls ? <BodyClass className={cls} /> : null}
       <main className="page-wrapper">
         <InnerPageAnimations />
-        {header ?? <MultipageHeader />}
+        {header ?? <MultipageHeader className={lightMode ? WHITE_HEADER_ON_LIGHT : ''} />}
         {children}
         <MultipageInnerFooter />
       </main>

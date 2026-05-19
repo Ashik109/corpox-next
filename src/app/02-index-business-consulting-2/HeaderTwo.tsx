@@ -7,12 +7,18 @@ interface HeaderTwoProps {
     className?: string;
     logoSrc?: string;
     logoAlt?: string;
+    ctaHref?: string;
+    ctaTarget?: string | null;
+    mobileButtonClassName?: string;
 }
 
 function HeaderTwo({
     className = "",
     logoSrc = "",
     logoAlt = "",
+    ctaHref = "/contact",
+    ctaTarget = "_blank",
+    mobileButtonClassName = "hamberger-button tmponhover",
 }: HeaderTwoProps) {
   const [isSticky, setIsSticky] = useState(false);
   const logoLight = logoSrc || '/assets/images/logo/logo.png';
@@ -80,8 +86,8 @@ function HeaderTwo({
                 </div>
                 <Link
                   className="tmp-btn btn-small round"
-                  target="_blank"
-                  href="/contact"
+                  target={ctaTarget ?? undefined}
+                  href={ctaHref}
                 >
                   REQUEST A QUOTE
                 </Link>
@@ -89,7 +95,7 @@ function HeaderTwo({
               {/* Start Mobile-Menu-Bar */}
               <div className="mobile-menu-bar ml--5 d-block d-lg-none">
                 <div className="hamberger">
-                  <button className="hamberger-button tmponhover" type="button">
+                  <button className={mobileButtonClassName} type="button">
                     <i className="feather-menu" />
                   </button>
                 </div>

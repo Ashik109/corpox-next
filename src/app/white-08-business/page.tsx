@@ -1,6 +1,5 @@
 import React from 'react'
 import BodyClass from '../white-01-index-consulting/BodyClass'
-import { WHITE_HEADER_OVER_HERO } from '../components/HeaderModeClasses'
 import AboutBusiness from '../08-business/AboutBusiness';
 import AboutBusinessFluid from '../08-business/AboutBusinessFluid';
 import BannerBusiness from '../08-business/BannerBusiness';
@@ -11,7 +10,7 @@ import CounterBusiness from '../08-business/CounterBusiness';
 import CtaBusiness from '../08-business/CtaBusiness';
 import CtaModernBusiness from '../08-business/CtaModernBusiness';
 import FooterBusiness from '../08-business/FooterBusiness';
-import HeaderOne from "../01-index-consulting/HeaderOne";
+import HeaderTwo from '../02-index-business-consulting-2/HeaderTwo';
 import PortfolioBusiness from '../08-business/PortfolioBusiness';
 import ServicesBusiness from '../08-business/ServicesBusiness';
 import TeamBusiness from '../08-business/TeamBusiness';
@@ -23,7 +22,7 @@ export default function Page() {
       <BodyClass className="active-light-mode" />
       <BusinessAnimations />
       <main className="page-wrapper">
-        <HeaderOne className={WHITE_HEADER_OVER_HERO} />
+        <HeaderTwo ctaHref="/contact-white" ctaTarget={null} mobileButtonClassName="hamberger-button" />
         <BannerBusiness />
         <TeamBusiness />
         <AboutBusiness />

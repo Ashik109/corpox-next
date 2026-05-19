@@ -1,5 +1,6 @@
 import React from 'react'
 import BodyClass from '../white-01-index-consulting/BodyClass'
+import { WHITE_HEADER_ON_LIGHT } from '../components/HeaderModeClasses'
 import TopbarFour from '../04-services-agency/TopbarFour'
 import HeaderFour from '../04-services-agency/HeaderFour'
 import BannerFour from '../04-services-agency/BannerFour'
@@ -22,7 +23,7 @@ export default function Page() {
       <main className="page-wrapper">
 
                 <TopbarFour />
-                <HeaderFour />
+                <HeaderFour className={WHITE_HEADER_ON_LIGHT} />
                 <BannerFour />
                 <ServicesFive className='tmp-section-gapBottom'/>
                 <MissionOne className='tmp-section-gapBottom'/>

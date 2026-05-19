@@ -1,7 +1,6 @@
 import React from 'react'
 import BodyClass from '../white-01-index-consulting/BodyClass'
-import { WHITE_HEADER_OVER_HERO } from '../components/HeaderModeClasses'
-import HeaderOne from '../01-index-consulting/HeaderOne'
+import HeaderTwo from '../02-index-business-consulting-2/HeaderTwo'
 import BannerCreativeAgency from '../07-creative-agency/BannerCreativeAgency'
 import AboutCreativeAgency from '../07-creative-agency/AboutCreativeAgency'
 import CreativeAgencyTabs from '../07-creative-agency/CreativeAgencyTabs'
@@ -23,7 +22,7 @@ export default function Page() {
             <CreativeAgencyAnimations />
       <main className="page-wrapper">
 
-                <HeaderOne className={WHITE_HEADER_OVER_HERO} />
+                <HeaderTwo ctaHref="/contact-white" ctaTarget={null} mobileButtonClassName="hamberger-button" />
                 <BannerCreativeAgency />
                 <AboutCreativeAgency />
                 <CreativeAgencyTabs />

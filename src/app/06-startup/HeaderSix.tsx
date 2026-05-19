@@ -6,14 +6,22 @@ interface HeaderSixProps {
     className?: string;
     logoSrc?: string;
     logoAlt?: string;
+    ctaHref?: string;
 }
 
 function HeaderSix({
     className = "",
     logoSrc = "",
     logoAlt = "",
+    ctaHref = "/contact",
 }: HeaderSixProps) {
     const [isSticky, setIsSticky] = useState(false);
+    const headerClassName = [
+        'tmp-header header-default header-transparent with-blur header-sticky',
+        isSticky ? 'sticky' : '',
+        className,
+    ].filter(Boolean).join(' ');
+
     useEffect(() => {
         const handleScroll = () => {
             if (window.scrollY > 150) {
@@ -69,7 +77,7 @@ function HeaderSix({
             </div>
             {/* End Header Top Area  */}
             {/* Start Header Area  */}
-            <header className={`tmp-header header-default header-transparent header-sticky ${isSticky ? 'sticky' : ''} ${className}`}>
+            <header className={headerClassName}>
                 <div className="container position-relative">
                     <div className="row align-items-center row--0">
                         <div className="col-xl-2 col-lg-2 col-md-6 col-4">
@@ -108,9 +116,8 @@ function HeaderSix({
                                         </span>
                                     </div>
                                     <Link
-                                        className="tmp-btn btn-small round"
-                                        target="_blank"
-                                        href="/contact"
+                                        className="tmp-btn btn-small"
+                                        href={ctaHref}
                                     >
                                         Start Free Trial
                                     </Link>
@@ -119,7 +126,7 @@ function HeaderSix({
                                 {/* Start Mobile-Menu-Bar */}
                                 <div className="mobile-menu-bar ml--5 d-block d-lg-none">
                                     <div className="hamberger">
-                                        <button className="hamberger-button tmponhover" type="button">
+                                        <button className="hamberger-button" type="button">
                                             <i className="feather-menu" />
                                         </button>
                                     </div>

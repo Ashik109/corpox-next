@@ -1,13 +1,13 @@
 import React from 'react'
 import BodyClass from '../white-01-index-consulting/BodyClass'
-import { WHITE_HEADER_OVER_HERO } from '../components/HeaderModeClasses'
+import { WHITE_HEADER_ON_LIGHT } from '../components/HeaderModeClasses'
 import AboutHRWebsite from '../11-hr-website/AboutHRWebsite';
 import BannerHRWebsite from '../11-hr-website/BannerHRWebsite';
 import BlogHRWebsite from '../11-hr-website/BlogHRWebsite';
 import BrandHRWebsite from '../11-hr-website/BrandHRWebsite';
 import CounterHRWebsite from '../11-hr-website/CounterHRWebsite';
 import FooterHRWebsite from '../11-hr-website/FooterHRWebsite';
-import HeaderOne from "../01-index-consulting/HeaderOne";
+import HeaderTwo from '../02-index-business-consulting-2/HeaderTwo';
 import HRWebsiteAnimations from '../11-hr-website/HRWebsiteAnimations';
 import PortfolioHRWebsite from '../11-hr-website/PortfolioHRWebsite';
 import ServicesHRWebsite from '../11-hr-website/ServicesHRWebsite';
@@ -21,7 +21,7 @@ export default function Page() {
       <BodyClass className="active-light-mode" />
       <HRWebsiteAnimations />
       <main className="page-wrapper">
-        <HeaderOne className={WHITE_HEADER_OVER_HERO} />
+        <HeaderTwo className={WHITE_HEADER_ON_LIGHT} ctaHref="/contact-white" />
         <BannerHRWebsite />
         <ServicesHRWebsite />
         <AboutHRWebsite />

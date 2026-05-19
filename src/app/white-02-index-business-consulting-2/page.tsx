@@ -1,5 +1,6 @@
 import React from 'react'
 import BodyClass from '../white-01-index-consulting/BodyClass'
+import { WHITE_HEADER_ON_LIGHT } from '../components/HeaderModeClasses'
 import TopbarTwo from '../02-index-business-consulting-2/TopbarTwo'
 import HeaderTwo from '../02-index-business-consulting-2/HeaderTwo'
 import BannerTwo from '../02-index-business-consulting-2/BannerTwo'
@@ -26,7 +27,7 @@ export default function Page() {
         {/* Start Header Top Area  */}
         <TopbarTwo />
         {/* End Header Top Area  */}
-        <HeaderTwo />
+        <HeaderTwo className={WHITE_HEADER_ON_LIGHT} />
         <BannerTwo />
         <AboutTwo />
         <ServiceTwo />
