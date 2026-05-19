@@ -12,6 +12,7 @@ function CaseStudyOne() {
     
       useEffect(() => {
         gsap.registerPlugin(ScrollTrigger);
+        let jumpTween: gsap.core.Tween | undefined;
     
         /* =========================
            JUMP ANIMATION
@@ -24,7 +25,7 @@ function CaseStudyOne() {
             gsap.set(jumpItems, { opacity: 0, scale: 1.15, rotation: 0 });
     
             // animate on scroll
-            gsap.to(jumpItems, {
+            jumpTween = gsap.to(jumpItems, {
               scrollTrigger: {
                 trigger: jumpWrapperRef.current,
                 start: "top 95%",
@@ -38,6 +39,11 @@ function CaseStudyOne() {
             });
           }
         }
+
+        return () => {
+          jumpTween?.scrollTrigger?.kill();
+          jumpTween?.kill();
+        };
       }, []);
     return (
         <>

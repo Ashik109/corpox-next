@@ -1,4 +1,27 @@
-/* Full-page smooth scroll is handled by Lenis (SmoothScroll.tsx). */
+/* Lenis drives smooth scrolling while GSAP ScrollTrigger handles animation timing. */
+
+html,
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+html.scroll-locked,
+html.scroll-locked body {
+  overflow: hidden;
+}
+
+@supports (overflow: clip) {
+  html,
+  body,
+  body.overflow-x-visible {
+    overflow-x: clip;
+  }
+}
+
+.images-left-right-float {
+  will-change: transform;
+}
 
 .image-auto {
   width: auto;

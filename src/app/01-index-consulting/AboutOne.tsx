@@ -27,6 +27,7 @@ export default function AboutOne() {
     ========================== */
 
     if (floatRef.current) {
+      gsap.killTweensOf(floatRef.current);
       floatTween = gsap.fromTo(
         floatRef.current,
         { x: 0 },

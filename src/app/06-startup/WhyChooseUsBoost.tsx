@@ -21,9 +21,11 @@ function WhyChooseUsBoost() {
 
     useEffect(() => {
         gsap.registerPlugin(ScrollTrigger);
+        let floatTween: gsap.core.Tween | undefined;
 
         if (floatRef.current) {
-            gsap.fromTo(
+            gsap.killTweensOf(floatRef.current);
+            floatTween = gsap.fromTo(
                 floatRef.current,
                 { x: 0 },
                 {
@@ -38,6 +40,11 @@ function WhyChooseUsBoost() {
                 }
             );
         }
+
+        return () => {
+            floatTween?.scrollTrigger?.kill();
+            floatTween?.kill();
+        };
     }, []);
 
     return (

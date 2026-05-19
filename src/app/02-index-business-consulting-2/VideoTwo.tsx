@@ -8,9 +8,10 @@ function VideoTwo() {
 
   useEffect(() => {
     gsap.registerPlugin(ScrollTrigger);
+    let overlayTween: gsap.core.Tween | undefined;
 
     if (overlayRef.current) {
-      gsap.to(overlayRef.current, {
+      overlayTween = gsap.to(overlayRef.current, {
         duration: 1,
         scaleX: 0,
         transformOrigin: 'center center',
@@ -25,7 +26,8 @@ function VideoTwo() {
     }
 
     return () => {
-      ScrollTrigger.getAll().forEach((trigger) => trigger.kill());
+      overlayTween?.scrollTrigger?.kill();
+      overlayTween?.kill();
     };
   }, []);
 

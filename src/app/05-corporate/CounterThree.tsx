@@ -1,7 +1,5 @@
 'use client'
 import { useEffect, useRef } from "react";
-import { gsap } from "gsap";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useHoverAnimation } from '../components/useHoverAnimation'
 
 interface OdometerElement extends HTMLElement {
@@ -16,8 +14,6 @@ function CounterThree() {
     const odometerRefs = useRef<OdometerElement[]>([]);
 
     useEffect(() => {
-        gsap.registerPlugin(ScrollTrigger);
-
         let observer: IntersectionObserver;
 
         import("odometer").then((module) => {
@@ -58,7 +54,6 @@ function CounterThree() {
         });
 
         return () => {
-            ScrollTrigger.getAll().forEach((trigger) => trigger.kill());
             if (observer) observer.disconnect();
         };
     }, []);

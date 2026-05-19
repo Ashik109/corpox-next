@@ -16,13 +16,15 @@ function MissionOne({ className = ""}: MissionOneProps ) {
 
     useEffect(() => {
         gsap.registerPlugin(ScrollTrigger);
+        let floatTween: gsap.core.Tween | undefined;
 
         /* =========================
             LEFT RIGHT FLOAT ANIMATION
         ========================== */
 
         if (floatRef.current) {
-            gsap.fromTo(
+            gsap.killTweensOf(floatRef.current);
+            floatTween = gsap.fromTo(
                 floatRef.current,
                 { x: 0 },
                 {
@@ -37,6 +39,11 @@ function MissionOne({ className = ""}: MissionOneProps ) {
                 }
             );
         }
+
+        return () => {
+            floatTween?.scrollTrigger?.kill();
+            floatTween?.kill();
+        };
     }, []);
     return (
         <>

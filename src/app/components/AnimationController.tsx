@@ -28,15 +28,6 @@ const SCROLL_LOCK_SELECTORS = {
   "next-light-gallery-open": [".next-light-gallery"],
 } satisfies Record<(typeof SCROLL_LOCK_BODY_CLASSES)[number], string[]>;
 
-const NATIVE_SCROLL_AREAS = [
-  ".mainmenu-nav",
-  ".popup-mobile-menu",
-  ".tmp-search-input-area",
-  ".inverweb-side-bar-close",
-  ".react-video-popup",
-  ".next-light-gallery",
-].join(", ");
-
 function isHoverTarget(target: EventTarget | null) {
   return target instanceof Element
     ? target.closest("a, button, .cursor-pointer")
@@ -46,6 +37,15 @@ function isHoverTarget(target: EventTarget | null) {
 function hasActiveScrollLockTarget(className: (typeof SCROLL_LOCK_BODY_CLASSES)[number]) {
   return SCROLL_LOCK_SELECTORS[className].some((selector) => document.querySelector(selector));
 }
+
+const NATIVE_SCROLL_AREAS = [
+  ".mainmenu-nav",
+  ".popup-mobile-menu",
+  ".tmp-search-input-area",
+  ".inverweb-side-bar-close",
+  ".react-video-popup",
+  ".next-light-gallery",
+].join(", ");
 
 function useAosController(pathname: string) {
   const initialized = useRef(false);
@@ -74,10 +74,8 @@ function useLenisController(pathname: string) {
     const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
     if (reducedMotion.matches) return;
 
-    let scrollTriggerFrame = 0;
-
     const lenis = new Lenis({
-      autoRaf: true,
+      autoRaf: false,
       smoothWheel: true,
       lerp: 0.08,
       duration: 1.15,
@@ -89,18 +87,21 @@ function useLenisController(pathname: string) {
       },
     });
 
-    const onScroll = () => {
-      if (scrollTriggerFrame) return;
+    let lockSyncFrame = 0;
+    let refreshFrame = 0;
 
-      scrollTriggerFrame = requestAnimationFrame(() => {
-        scrollTriggerFrame = 0;
-        ScrollTrigger.update();
-      });
+    const raf = (time: number) => {
+      lenis.raf(time * 1000);
     };
 
-    lenis.on("scroll", onScroll);
+    const syncLenisSize = () => {
+      lenis.resize();
+    };
 
-    let lockSyncFrame = 0;
+    gsap.ticker.add(raf);
+    gsap.ticker.lagSmoothing(0);
+    lenis.on("scroll", ScrollTrigger.update);
+    ScrollTrigger.addEventListener("refreshInit", syncLenisSize);
 
     const syncScrollLockNow = () => {
       const shouldLockScroll = SCROLL_LOCK_BODY_CLASSES.some((className) => {
@@ -112,6 +113,8 @@ function useLenisController(pathname: string) {
 
         return hasActiveTarget;
       });
+
+      document.documentElement.classList.toggle("scroll-locked", shouldLockScroll);
 
       if (shouldLockScroll) {
         lenis.stop();
@@ -138,23 +141,25 @@ function useLenisController(pathname: string) {
     });
     syncScrollLockNow();
 
-    requestAnimationFrame(() => {
+    refreshFrame = requestAnimationFrame(() => {
       lenis.resize();
       ScrollTrigger.refresh();
     });
 
     if (window.location.hash) {
       requestAnimationFrame(() => {
-        lenis.scrollTo(window.location.hash, { offset: -STICKY_HEADER_OFFSET });
+        lenis.scrollTo(window.location.hash, { offset: -STICKY_HEADER_OFFSET, immediate: true });
       });
     }
 
     return () => {
-      cancelAnimationFrame(scrollTriggerFrame);
       cancelAnimationFrame(lockSyncFrame);
+      cancelAnimationFrame(refreshFrame);
       bodyClassObserver.disconnect();
-      lenis.start();
+      ScrollTrigger.removeEventListener("refreshInit", syncLenisSize);
+      gsap.ticker.remove(raf);
       lenis.destroy();
+      document.documentElement.classList.remove("scroll-locked");
     };
   }, [pathname]);
 }
@@ -188,8 +193,10 @@ function useFloatingImagesController(pathname: string) {
       return;
     }
 
-    const tweens = elements.map((element) =>
-      gsap.fromTo(
+    const tweens = elements.map((element) => {
+      gsap.killTweensOf(element);
+
+      return gsap.fromTo(
         element,
         { x: 0 },
         {
@@ -202,8 +209,8 @@ function useFloatingImagesController(pathname: string) {
           },
           ease: "none",
         },
-      ),
-    );
+      );
+    });
 
     ScrollTrigger.refresh();
 
