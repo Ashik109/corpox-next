@@ -7,7 +7,7 @@ import BusinessServicesFinancial from "./BusinessServicesFinancial";
 import CounterFinancial from "./CounterFinancial";
 import FinancialAnimations from "./FinancialAnimations";
 import FooterFinancial from "./FooterFinancial";
-import HeaderThree from "../03-agency/HeaderThree";
+import HeaderFinancial from "./HeaderFinancial";
 import ServicesFinancial from "./ServicesFinancial";
 import TeamFinancial from "./TeamFinancial";
 import TestimonialFinancial from "./TestimonialFinancial";
@@ -18,7 +18,7 @@ function Page() {
         <>
             <FinancialAnimations />
             <main className="page-wrapper financial-page-wrapper">
-                <HeaderThree />
+                <HeaderFinancial />
                 <BannerFinancial />
                 <AboutTabsFinancial />
                 <ServicesFinancial />

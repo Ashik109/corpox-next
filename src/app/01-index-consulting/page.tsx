@@ -22,7 +22,7 @@ function Page() {
     <>
       <main className='page-wrapper'>
         <TopbarOne />
-        <HeaderOne />
+        <HeaderOne ctaClassName="tmp-btn round" />
         <BannerOne />
         <ServiceOne />
         <AboutOne />

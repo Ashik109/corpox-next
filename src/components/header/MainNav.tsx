@@ -5,13 +5,17 @@ import { useState } from 'react'
 
 type DemoTab = 'multipage' | 'onepage'
 
-export default function MainNav() {
+interface MainNavProps {
+  homeActive?: boolean;
+}
+
+export default function MainNav({ homeActive = false }: MainNavProps) {
   const [demoTab, setDemoTab] = useState<DemoTab>('multipage')
 
   return (
     <nav className="mainmenu-nav d-none d-lg-block" data-lenis-prevent-wheel="">
         <ul className="mainmenu">
-            <li className="with-megamenu has-menu-child-item">
+            <li className={`with-megamenu has-menu-child-item${homeActive ? ' active' : ''}`}>
                 <Link href="/#">Home</Link>
                 <div className="tmp-megamenu with-mega-item-2 full-width-mega">
                     <div className="wrapper demos-area-drop-down">

@@ -3,7 +3,7 @@ import BannerMarketingAgency from "./BannerMarketingAgency";
 import BlogMarketingAgency from "./BlogMarketingAgency";
 import BrandMarketingAgency from "./BrandMarketingAgency";
 import FooterMarketingAgency from "./FooterMarketingAgency";
-import HeaderOne from "../01-index-consulting/HeaderOne";
+import HeaderTwo from "../02-index-business-consulting-2/HeaderTwo";
 import MarketingAgencyAnimations from "./MarketingAgencyAnimations";
 import PricingMarketingAgency from "./PricingMarketingAgency";
 import SplitMarketingAgency from "./SplitMarketingAgency";
@@ -15,7 +15,7 @@ function Page() {
         <>
             <MarketingAgencyAnimations />
             <main className="page-wrapper">
-                <HeaderOne />
+                <HeaderTwo ctaClassName="tmp-btn btn-small" showTopNews />
                 <BannerMarketingAgency />
                 <hr />
                 <AboutMarketingAgency />

@@ -6,7 +6,7 @@ import BlogBusinessThree from "./BlogBusinessThree";
 import BusinessThreeAnimations from "./BusinessThreeAnimations";
 import CtaBusinessThree from "./CtaBusinessThree";
 import FooterBusinessThree from "./FooterBusinessThree";
-import HeaderOne from "../01-index-consulting/HeaderOne";
+import HeaderTwo from "../02-index-business-consulting-2/HeaderTwo";
 import MarqueeBusinessThree from "./MarqueeBusinessThree";
 import ServiceTabsBusinessThree from "./ServiceTabsBusinessThree";
 import TestimonialBusinessThree from "./TestimonialBusinessThree";
@@ -16,7 +16,7 @@ function Page() {
         <>
             <BusinessThreeAnimations />
             <main className="page-wrapper">
-                <HeaderOne />
+                <HeaderTwo variant="transparent" />
                 <BannerBusinessThree />
                 <MarqueeBusinessThree />
                 <AboutBusinessThree />

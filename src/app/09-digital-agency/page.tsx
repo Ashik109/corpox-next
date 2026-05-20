@@ -4,7 +4,7 @@ import BlogDigitalAgency from "./BlogDigitalAgency";
 import CounterDigitalAgency from "./CounterDigitalAgency";
 import DigitalAgencyAnimations from "./DigitalAgencyAnimations";
 import FooterDigitalAgency from "./FooterDigitalAgency";
-import HeaderOne from "../01-index-consulting/HeaderOne";
+import HeaderTwo from "../02-index-business-consulting-2/HeaderTwo";
 import LatestServiceDigitalAgency from "./LatestServiceDigitalAgency";
 import PortfolioDigitalAgency from "./PortfolioDigitalAgency";
 import ServicesDigitalAgency from "./ServicesDigitalAgency";
@@ -16,7 +16,7 @@ function Page() {
         <>
             <DigitalAgencyAnimations />
             <main className="page-wrapper">
-                <HeaderOne />
+                <HeaderTwo ctaClassName="tmp-btn btn-small" />
                 <BannerDigitalAgency />
                 <LatestServiceDigitalAgency />
                 <AboutDigitalAgency />
