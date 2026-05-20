@@ -1,6 +1,5 @@
 import React from 'react'
 import BodyClass from '../white-01-index-consulting/BodyClass'
-import { WHITE_HEADER_OVER_HERO } from '../components/HeaderModeClasses'
 import AboutBusinessCoach from '../15-business-coach/AboutBusinessCoach';
 import BannerBusinessCoach from '../15-business-coach/BannerBusinessCoach';
 import BlogBusinessCoach from '../15-business-coach/BlogBusinessCoach';
@@ -10,7 +9,7 @@ import BusinessServicesCoach from '../15-business-coach/BusinessServicesCoach';
 import ContactBusinessCoach from '../15-business-coach/ContactBusinessCoach';
 import CtaBusinessCoach from '../15-business-coach/CtaBusinessCoach';
 import FooterBusinessCoach from '../15-business-coach/FooterBusinessCoach';
-import HeaderThree from "../03-agency/HeaderThree";
+import HeaderBusinessCoachWhite from './HeaderBusinessCoachWhite';
 import PortfolioBusinessCoach from '../15-business-coach/PortfolioBusinessCoach';
 import PricingBusinessCoach from '../15-business-coach/PricingBusinessCoach';
 import ServicesBusinessCoach from '../15-business-coach/ServicesBusinessCoach';
@@ -24,7 +23,7 @@ export default function Page() {
       <BodyClass className="active-light-mode" />
       <BusinessCoachAnimations />
       <main className="page-wrapper">
-        <HeaderThree className={WHITE_HEADER_OVER_HERO} />
+        <HeaderBusinessCoachWhite />
         <BannerBusinessCoach />
         <AboutBusinessCoach />
         <ServicesBusinessCoach />

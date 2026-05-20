@@ -1,5 +1,4 @@
 import CtaModernBusiness from "../08-business/CtaModernBusiness";
-import HeaderThree from "../03-agency/HeaderThree";
 import RealEstateAnimations from "../16-real-estate-consulting/RealEstateAnimations";
 import FooterRealEstate from "../16-real-estate-consulting/FooterRealEstate";
 import CounterITSolution from "../18-it-solution/CounterITSolution";
@@ -12,6 +11,7 @@ import PricingPersonalAdvisory from "./PricingPersonalAdvisory";
 import ServicesPersonalAdvisory from "./ServicesPersonalAdvisory";
 import TopbarPersonalAdvisory from "./TopbarPersonalAdvisory";
 import TestimonialOne from "../01-index-consulting/TestimonialOne";
+import HeaderPersonalAdvisory from "./HeaderPersonalAdvisory";
 
 function Page() {
     return (
@@ -19,7 +19,7 @@ function Page() {
             <RealEstateAnimations />
             <main className="page-wrapper">
                 <TopbarPersonalAdvisory />
-                <HeaderThree />
+                <HeaderPersonalAdvisory />
                 <BannerPersonalAdvisory />
                 <ServicesPersonalAdvisory />
                 <BusinessServicesPersonalAdvisory />

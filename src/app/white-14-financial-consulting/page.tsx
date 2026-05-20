@@ -1,6 +1,5 @@
 import React from 'react'
 import BodyClass from '../white-01-index-consulting/BodyClass'
-import { WHITE_HEADER_OVER_HERO } from '../components/HeaderModeClasses'
 import AboutTabsFinancial from '../14-financial-consulting/AboutTabsFinancial';
 import AppointmentFinancial from '../14-financial-consulting/AppointmentFinancial';
 import BannerFinancial from '../14-financial-consulting/BannerFinancial';
@@ -10,7 +9,7 @@ import BusinessServicesFinancial from '../14-financial-consulting/BusinessServic
 import CounterFinancial from '../14-financial-consulting/CounterFinancial';
 import FinancialAnimations from '../14-financial-consulting/FinancialAnimations';
 import FooterFinancial from '../14-financial-consulting/FooterFinancial';
-import HeaderThree from "../03-agency/HeaderThree";
+import HeaderFinancialWhite from './HeaderFinancialWhite';
 import ServicesFinancial from '../14-financial-consulting/ServicesFinancial';
 import TeamFinancial from '../14-financial-consulting/TeamFinancial';
 import TestimonialFinancial from '../14-financial-consulting/TestimonialFinancial';
@@ -22,7 +21,7 @@ export default function Page() {
       <BodyClass className="active-light-mode" />
       <FinancialAnimations />
       <main className="page-wrapper">
-        <HeaderThree className={WHITE_HEADER_OVER_HERO} />
+        <HeaderFinancialWhite />
         <BannerFinancial />
         <AboutTabsFinancial />
         <ServicesFinancial />

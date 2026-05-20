@@ -8,7 +8,7 @@ function TopbarPersonalAdvisory() {
                         <div className="header-left">
                             <p>
                                 <Link href="#">
-                                    Get the most advanced template
+                                    Discover the most advanced template
                                     <i className="feather-chevron-right" />
                                 </Link>
                             </p>
@@ -19,12 +19,12 @@ function TopbarPersonalAdvisory() {
                             <div className="address-content">
                                 <p>
                                     <i className="feather-map-pin" />
-                                    <span>Alabama, USA</span>
+                                    <span>California, USA</span>
                                 </p>
                                 <p>
                                     <i className="feather-phone" />
                                     <span>
-                                        <Link href="#">+06 58 49 99 56</Link>
+                                        <Link href="#">+06 98 68 23 22</Link>
                                     </span>
                                 </p>
                             </div>

@@ -1,8 +1,7 @@
 import React from 'react'
 import BodyClass from '../white-01-index-consulting/BodyClass'
-import { WHITE_HEADER_OVER_HERO } from '../components/HeaderModeClasses'
 import CtaModernBusiness from "../08-business/CtaModernBusiness";
-import HeaderThree from "../03-agency/HeaderThree";
+import HeaderTwo from "../02-index-business-consulting-2/HeaderTwo";
 import RealEstateAnimations from "../16-real-estate-consulting/RealEstateAnimations";
 import FooterRealEstate from "../16-real-estate-consulting/FooterRealEstate";
 import CounterITSolution from "../18-it-solution/CounterITSolution";
@@ -23,7 +22,12 @@ export default function Page() {
       <RealEstateAnimations />
       <main className="page-wrapper">
         <TopbarPersonalAdvisory />
-        <HeaderThree className={WHITE_HEADER_OVER_HERO} />
+        <HeaderTwo
+          ctaHref="/contact-white"
+          ctaTarget={null}
+          homeActive
+          mobileButtonClassName="hamberger-button"
+        />
         <BannerPersonalAdvisory />
         <ServicesPersonalAdvisory />
         <BusinessServicesPersonalAdvisory />

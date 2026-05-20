@@ -1,7 +1,5 @@
 import React from 'react'
 import BodyClass from '../white-01-index-consulting/BodyClass'
-import { WHITE_HEADER_OVER_HERO } from '../components/HeaderModeClasses'
-import HeaderThree from "../03-agency/HeaderThree";
 import BlogRealEstate from "../16-real-estate-consulting/BlogRealEstate";
 import CtaRealEstate from "../16-real-estate-consulting/CtaRealEstate";
 import RealEstateAnimations from "../16-real-estate-consulting/RealEstateAnimations";
@@ -12,6 +10,7 @@ import CounterRealEstateTwo from '../17-real-estate-consulting/CounterRealEstate
 import FeaturedPropertiesRealEstateTwo from '../17-real-estate-consulting/FeaturedPropertiesRealEstateTwo';
 import FooterRealEstateTwo from '../17-real-estate-consulting/FooterRealEstateTwo';
 import GalleryRealEstateTwo from '../17-real-estate-consulting/GalleryRealEstateTwo';
+import HeaderRealEstateTwoWhite from './HeaderRealEstateTwoWhite';
 import MissionVisionRealEstateTwo from '../17-real-estate-consulting/MissionVisionRealEstateTwo';
 import ServiceTabsRealEstateTwo from '../17-real-estate-consulting/ServiceTabsRealEstateTwo';
 import ContactRealEstate from "../16-real-estate-consulting/ContactRealEstate";
@@ -22,7 +21,7 @@ export default function Page() {
       <BodyClass className="active-light-mode" />
       <RealEstateAnimations />
       <main className="page-wrapper">
-        <HeaderThree className={WHITE_HEADER_OVER_HERO} />
+        <HeaderRealEstateTwoWhite />
         <BannerRealEstateTwo />
         <AboutRealEstateTwo />
         <ServiceTabsRealEstateTwo />

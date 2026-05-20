@@ -1,16 +1,14 @@
 "use client";
-import MainNav from '../../components/header/MainNav'
 
 import Link from "next/link";
 import { useEffect, useState } from "react";
+import MainNav from "../../components/header/MainNav";
 
-interface HeaderGymFitnessProps {
+interface HeaderMedicalProps {
     className?: string;
 }
 
-function HeaderGymFitness({
-    className = "",
-}: HeaderGymFitnessProps) {
+function HeaderMedical({ className = "" }: HeaderMedicalProps) {
     const [isSticky, setIsSticky] = useState(false);
 
     useEffect(() => {
@@ -30,7 +28,8 @@ function HeaderGymFitness({
                             <div className="header-left">
                                 <p>
                                     <Link href="#">
-                                        Discover the most advanced template <i className="feather-chevron-right" />
+                                        Discover the most advanced template
+                                        <i className="feather-chevron-right" />
                                     </Link>
                                 </p>
                             </div>
@@ -51,13 +50,26 @@ function HeaderGymFitness({
                                 </div>
                                 <div className="social-icon-wrapper">
                                     <ul className="social-icon social-default icon-naked">
-                                        {["facebook", "twitter", "instagram", "linkedin"].map((icon) => (
-                                            <li key={icon}>
-                                                <Link href={`https://www.${icon}.com/`}>
-                                                    <i className={`feather-${icon}`} />
-                                                </Link>
-                                            </li>
-                                        ))}
+                                        <li>
+                                            <Link href="https://www.facebook.com/">
+                                                <i className="feather-facebook" />
+                                            </Link>
+                                        </li>
+                                        <li>
+                                            <Link href="https://www.twitter.com">
+                                                <i className="feather-twitter" />
+                                            </Link>
+                                        </li>
+                                        <li>
+                                            <Link href="https://www.instagram.com/">
+                                                <i className="feather-instagram" />
+                                            </Link>
+                                        </li>
+                                        <li>
+                                            <Link href="https://www.linkdin.com/">
+                                                <i className="feather-linkedin" />
+                                            </Link>
+                                        </li>
                                     </ul>
                                 </div>
                             </div>
@@ -72,14 +84,14 @@ function HeaderGymFitness({
                         <div className="col-xl-2 col-lg-2 col-md-6 col-4">
                             <div className="logo">
                                 <Link href="/">
-                                    <img className="logo-light" src="/assets/images/logo/gym-logo.svg" alt="Corporate Logo" />
-                                    <img className="logo-dark" src="/assets/images/logo/gym-logo-dark.svg" alt="Corporate Logo" />
+                                    <img className="logo-light" src="/assets/images/logo/doctor-logo.svg" alt="Corporate Logo" />
+                                    <img className="logo-dark" src="/assets/images/logo/doctor-logo-dark.svg" alt="Corporate Logo" />
                                 </Link>
                             </div>
                         </div>
                         <div className="col-xl-10 col-lg-10 col-md-6 col-8 position-static">
                             <div className="header-right with-search">
-                                <MainNav homeActive />
+                                <MainNav />
 
                                 <div className="header-btn">
                                     <div className="search-area-btn cursor-pointer" id="search">
@@ -115,4 +127,4 @@ function HeaderGymFitness({
     );
 }
 
-export default HeaderGymFitness;
+export default HeaderMedical;

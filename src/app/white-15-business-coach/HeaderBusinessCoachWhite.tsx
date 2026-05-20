@@ -1,42 +1,36 @@
-"use client";
+'use client'
 
-import Link from "next/link";
-import { useEffect, useState } from "react";
-import MainNav from "../../components/header/MainNav";
+import Link from 'next/link'
+import { useEffect, useState } from 'react'
+import MainNav from '../../components/header/MainNav'
 
-interface HeaderEventProps {
-    className?: string;
-}
-
-function HeaderEvent({
-    className = "",
-}: HeaderEventProps) {
-    const [isSticky, setIsSticky] = useState(false);
+function HeaderBusinessCoachWhite() {
+    const [isSticky, setIsSticky] = useState(false)
 
     useEffect(() => {
-        const handleScroll = () => setIsSticky(window.scrollY > 150);
+        const handleScroll = () => setIsSticky(window.scrollY > 150)
 
-        handleScroll();
-        window.addEventListener("scroll", handleScroll);
-        return () => window.removeEventListener("scroll", handleScroll);
-    }, []);
+        handleScroll()
+        window.addEventListener('scroll', handleScroll)
+        return () => window.removeEventListener('scroll', handleScroll)
+    }, [])
 
     return (
         <div className="header-transparent-with-topbar">
-            <header className={`tmp-header header-default header-not-transparent header-sticky${isSticky ? " sticky" : ""}${className ? ` ${className}` : ""}`}>
+            <header className={`tmp-header header-default header-not-transparent header-sticky${isSticky ? ' sticky' : ''}`}>
                 <div className="container position-relative">
                     <div className="row align-items-center row--0">
                         <div className="col-xl-2 col-lg-2 col-md-6 col-4">
                             <div className="logo">
                                 <Link href="/">
-                                    <img className="logo-light" src="/assets/images/logo/event-logo.svg" alt="Corporate Logo" />
-                                    <img className="logo-dark" src="/assets/images/logo/event-logo-dark.svg" alt="Corporate Logo" />
+                                    <img className="logo-light" src="/assets/images/logo/logo.png" alt="Corporate Logo" />
+                                    <img className="logo-dark" src="/assets/images/logo/logo-dark.png" alt="Corporate Logo" />
                                 </Link>
                             </div>
                         </div>
                         <div className="col-xl-10 col-lg-10 col-md-6 col-8 position-static">
                             <div className="header-right with-search">
-                                <MainNav />
+                                <MainNav homeActive />
 
                                 <div className="header-btn">
                                     <div className="search-area-btn cursor-pointer" id="search">
@@ -51,7 +45,7 @@ function HeaderEvent({
                                             </span>
                                         </span>
                                     </div>
-                                    <Link className="tmp-btn btn-small round" target="_blank" href="/contact">
+                                    <Link className="tmp-btn btn-small" href="/contact-white">
                                         Start Free Trial
                                     </Link>
                                 </div>
@@ -69,7 +63,7 @@ function HeaderEvent({
                 </div>
             </header>
         </div>
-    );
+    )
 }
 
-export default HeaderEvent;
+export default HeaderBusinessCoachWhite
