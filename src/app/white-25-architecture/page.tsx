@@ -1,6 +1,6 @@
 import React from 'react'
 import BodyClass from '../white-01-index-consulting/BodyClass'
-import { WHITE_HEADER_ON_LIGHT } from '../components/HeaderModeClasses'
+import { WHITE_HEADER_OVER_HERO } from '../components/HeaderModeClasses'
 import RealEstateAnimations from "../16-real-estate-consulting/RealEstateAnimations";
 import AboutArchitecture from '../25-architecture/AboutArchitecture';
 import BannerArchitecture from '../25-architecture/BannerArchitecture';
@@ -16,7 +16,7 @@ export default function Page() {
       <BodyClass className="active-light-mode demo-architecture" />
       <RealEstateAnimations />
       <main className="page-wrapper">
-        <HeaderArchitecture className={WHITE_HEADER_ON_LIGHT} />
+        <HeaderArchitecture className={WHITE_HEADER_OVER_HERO} ctaHref="/contact-white" />
         <BannerArchitecture />
         <AboutArchitecture />
         <PortfolioArchitecture />
