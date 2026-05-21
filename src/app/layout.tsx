@@ -11,6 +11,8 @@ import "../../public/assets/css/slick.css";
 import "../../public/assets/css/style.css";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import "aos/dist/aos.css";
+import "lenis/dist/lenis.css";
 import "./globals.css";
 // import "swiper/css";
 // import "swiper/css/pagination";

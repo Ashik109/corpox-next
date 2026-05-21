@@ -6,8 +6,6 @@ import AOS from "aos";
 import Lenis from "lenis";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import "aos/dist/aos.css";
-import "lenis/dist/lenis.css";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -51,6 +49,11 @@ function useAosController(pathname: string) {
   const initialized = useRef(false);
 
   useEffect(() => {
+    const refreshAos = () => {
+      AOS.refreshHard();
+      ScrollTrigger.refresh();
+    };
+
     if (!initialized.current) {
       AOS.init({
         duration: 800,
@@ -61,11 +64,30 @@ function useAosController(pathname: string) {
     }
 
     const refreshFrame = requestAnimationFrame(() => {
-      AOS.refresh();
-      ScrollTrigger.refresh();
+      refreshAos();
+    });
+    const delayedRefreshes = [120, 450, 900].map((delay) => window.setTimeout(refreshAos, delay));
+    const pendingImages = Array.from(document.images).filter((image) => !image.complete);
+    const handleAssetReady = () => refreshAos();
+
+    pendingImages.forEach((image) => {
+      image.addEventListener("load", handleAssetReady, { once: true });
+      image.addEventListener("error", handleAssetReady, { once: true });
     });
 
-    return () => cancelAnimationFrame(refreshFrame);
+    if (document.readyState !== "complete") {
+      window.addEventListener("load", handleAssetReady, { once: true });
+    }
+
+    return () => {
+      cancelAnimationFrame(refreshFrame);
+      delayedRefreshes.forEach((timeoutId) => window.clearTimeout(timeoutId));
+      pendingImages.forEach((image) => {
+        image.removeEventListener("load", handleAssetReady);
+        image.removeEventListener("error", handleAssetReady);
+      });
+      window.removeEventListener("load", handleAssetReady);
+    };
   }, [pathname]);
 }
 
