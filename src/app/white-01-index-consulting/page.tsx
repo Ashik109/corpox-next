@@ -1,5 +1,4 @@
 import React from 'react'
-import BodyClass from '../white-01-index-consulting/BodyClass'
 import { WHITE_HEADER_OVER_HERO } from '../components/HeaderModeClasses'
 import TopbarOne from '../01-index-consulting/TopbarOne'
 import HeaderOne from '../01-index-consulting/HeaderOne'
@@ -18,6 +17,7 @@ import ContactOne from '../01-index-consulting/ContactOne'
 import BlogOne from '../01-index-consulting/BlogOne'
 import CtaTwo from '../01-index-consulting/CtaTwo'
 import FooterOne from '../01-index-consulting/FooterOne'
+import BodyClass from './BodyClass'
 
 export default function Page() {
   return (

@@ -1,4 +1,5 @@
 import React from 'react'
+import BodyClass from '../white-01-index-consulting/BodyClass'
 import TopbarOne from './TopbarOne'
 import HeaderOne from './HeaderOne'
 import BannerOne from './BannerOne'
@@ -20,6 +21,8 @@ import FooterOne from './FooterOne'
 function Page() {
   return (
     <>
+      <BodyClass className="home-one-dark" />
+
       <main className='page-wrapper'>
         <TopbarOne />
         <HeaderOne ctaClassName="tmp-btn round" />

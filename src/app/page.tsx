@@ -1,4 +1,5 @@
 import React from 'react'
+import BodyClass from './white-01-index-consulting/BodyClass'
 import TopbarOne from './01-index-consulting/TopbarOne'
 import HeaderOne from './01-index-consulting/HeaderOne'
 import BannerOne from './01-index-consulting/BannerOne'
@@ -20,6 +21,8 @@ import FooterOne from './01-index-consulting/FooterOne'
 function page() {
   return (
     <>
+      <BodyClass className="home-one-dark" />
+
       <main className='page-wrapper'>
         <TopbarOne />
         <HeaderOne />
