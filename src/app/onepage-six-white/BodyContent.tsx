@@ -12,15 +12,23 @@ import CtaThree from '../05-corporate/CtaThree'
 function BodyContent() {
   return (
     <>
-      <BannerSix />
-      <ServicesFive />
+      <div id="hero">
+        <BannerSix />
+      </div>
+      <div id="service">
+        <ServicesFive />
+      </div>
       <WorkingProcessSix />
-      <AboutSeven />
+      <div id="about">
+        <AboutSeven />
+      </div>
       <ServicesNine />
       <ProgressOne />
       <WhyChooseUsBoost />
       <PricingStartup />
-      <BlogStartup />
+      <div id="blog">
+        <BlogStartup />
+      </div>
       <CtaThree />
     </>
   )

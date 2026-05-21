@@ -19,20 +19,34 @@ function BodyContent() {
   return (
     <>
       <RealEstateAnimations />
-      <BannerITSolution />
-      <AboutITSolution />
-      <ServicesITSolution />
+      <div id="hero">
+        <BannerITSolution />
+      </div>
+      <div id="about">
+        <AboutITSolution />
+      </div>
+      <div id="service">
+        <ServicesITSolution />
+      </div>
       <CounterITSolution />
-      <PortfolioITSolution />
+      <div id="project">
+        <PortfolioITSolution />
+      </div>
       <TestimonialOne />
       <TimelineITSolution />
       <VideoOne />
       <PricingITSolution />
-      <TeamITSolution />
+      <div id="team">
+        <TeamITSolution />
+      </div>
       <CtaRealEstate />
-      <AppointmentITSolution />
+      <div id="contactus">
+        <AppointmentITSolution />
+      </div>
       <BrandITSolution />
-      <BlogITSolution />
+      <div id="blog">
+        <BlogITSolution />
+      </div>
       <CtaModernBusiness />
     </>
   )

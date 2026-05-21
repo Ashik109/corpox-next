@@ -14,18 +14,30 @@ import BlogOne from '../01-index-consulting/BlogOne'
 function BodyContent() {
   return (
     <>
-      <BannerTwo />
-      <AboutTwo />
-      <ServiceTwo />
-      <CaseStudyOne />
+      <div id="hero">
+        <BannerTwo />
+      </div>
+      <div id="about">
+        <AboutTwo />
+      </div>
+      <div id="service">
+        <ServiceTwo />
+      </div>
+      <div id="project">
+        <CaseStudyOne />
+      </div>
       <ServicesThree />
       <CtaOne />
       <VideoTwo />
       <FaqOne />
       <TestimonialOne />
       <PricingOne />
-      <ContactOne />
-      <BlogOne />
+      <div id="contactus">
+        <ContactOne />
+      </div>
+      <div id="blog">
+        <BlogOne />
+      </div>
     </>
   )
 }

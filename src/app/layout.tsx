@@ -19,6 +19,7 @@ import AnimationController from "./components/AnimationController";
 import BootstrapClient from "./components/BootstrapClient";
 import HeaderPanelManager from "./components/HeaderPanelManager";
 import GlobalFloatingActions from "./components/GlobalFloatingActions";
+import OnepageBodyClass from "./components/OnepageBodyClass";
 import ReactVideoPopup from "../components/ReactVideoPopup";
 import NextLightGallery from "../components/NextLightGallery";
 
@@ -53,6 +54,7 @@ export default function RootLayout({
         <BootstrapClient />
         <AnimationController />
         <HeaderPanelManager />
+        <OnepageBodyClass />
         <ReactVideoPopup />
         <NextLightGallery />
         {children}

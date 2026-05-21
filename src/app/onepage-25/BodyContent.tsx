@@ -11,11 +11,21 @@ function BodyContent() {
     <>
       <BodyClassArchitecture />
       <RealEstateAnimations />
-      <BannerArchitecture />
-      <AboutArchitecture />
-      <PortfolioArchitecture />
-      <ServicesArchitecture />
-      <BlogArchitecture />
+      <div id="hero">
+        <BannerArchitecture />
+      </div>
+      <div id="about">
+        <AboutArchitecture />
+      </div>
+      <div id="project">
+        <PortfolioArchitecture />
+      </div>
+      <div id="service">
+        <ServicesArchitecture />
+      </div>
+      <div id="blog">
+        <BlogArchitecture />
+      </div>
     </>
   )
 }

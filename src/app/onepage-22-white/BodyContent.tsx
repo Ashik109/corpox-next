@@ -16,15 +16,25 @@ function BodyContent() {
     <>
       <BodyClassSolar />
       <RealEstateAnimations />
-      <BannerSolar />
-      <ServiceTabsSolar />
-      <GetInTouchSolar />
+      <div id="hero">
+        <BannerSolar />
+      </div>
+      <div id="service">
+        <ServiceTabsSolar />
+      </div>
+      <div id="contactus">
+        <GetInTouchSolar />
+      </div>
       <ServicesSolar />
-      <AboutSolar />
+      <div id="about">
+        <AboutSolar />
+      </div>
       <PricingSolar />
       <ContactSolar />
       <VideoSolar />
-      <BlogSolar />
+      <div id="blog">
+        <BlogSolar />
+      </div>
       <BrandSolar />
     </>
   )

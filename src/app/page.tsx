@@ -21,7 +21,7 @@ import FooterOne from './01-index-consulting/FooterOne'
 function page() {
   return (
     <>
-      <BodyClass className="home-one-dark" />
+      <BodyClass className="dark-home" />
 
       <main className='page-wrapper'>
         <TopbarOne />

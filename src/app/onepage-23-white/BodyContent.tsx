@@ -14,14 +14,24 @@ function BodyContent() {
     <>
       <BodyClassEvent />
       <RealEstateAnimations />
-      <BannerEvent />
-      <AboutEvent />
-      <ServicesEvent />
+      <div id="hero">
+        <BannerEvent />
+      </div>
+      <div id="about">
+        <AboutEvent />
+      </div>
+      <div id="service">
+        <ServicesEvent />
+      </div>
       <ScheduleEvent />
-      <TeamEvent />
+      <div id="team">
+        <TeamEvent />
+      </div>
       <HighlightsEvent />
       <PricingEvent />
-      <BlogEvent />
+      <div id="blog">
+        <BlogEvent />
+      </div>
     </>
   )
 }

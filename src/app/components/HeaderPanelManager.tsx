@@ -3,6 +3,7 @@
 import Link from 'next/link'
 import { usePathname, useRouter } from 'next/navigation'
 import { useEffect, useState } from 'react'
+import { DemoGrid, multipageDemos, onepageDemos } from '../../components/header/OnepageNav'
 
 const searchItems = [
   { title: 'Awarded Design', href: '/service/management-leadership', image: '/assets/images/services/serviice-01.jpg', keywords: 'service business consultancy awarded design' },
@@ -13,69 +14,196 @@ const searchItems = [
 
 const popularTags = ['Service', 'Business', 'Consultancy'] as const
 
-const mobileMenu = [
-  {
-    label: 'Home',
-    links: [
-      ['Business Consulting', '/01-index-consulting'],
-      ['Startup Business', '/06-startup'],
-      ['AI Agency', '/24-ai-agency'],
-      ['Construction', '/26-construction'],
-    ],
-  },
-  {
-    label: 'Pages',
-    links: [
-      ['About', '/about'],
-      ['Team', '/team'],
-      ['Pricing', '/pricing'],
-      ['FAQ', '/faq'],
-    ],
-  },
-  {
-    label: 'Service',
-    links: [
-      ['Our Service', '/service'],
-      ['Service List', '/service-list'],
-      ['Service Details', '/service/management-leadership'],
-    ],
-  },
-  {
-    label: 'Project',
-    links: [
-      ['Portfolio', '/portfolio'],
-      ['Portfolio Three Column', '/portfolio-three-column'],
-      ['Portfolio Details', '/portfolio-details/brand-refresh-venture'],
-    ],
-  },
-  {
-    label: 'Blog',
-    links: [
-      ['Blog Grid', '/blog-grid'],
-      ['Blog List View', '/blog-list-view'],
-      ['Blog Details', '/blog/corporate-success-strategy'],
-    ],
-  },
-  {
-    label: 'Elements',
-    links: [
-      ['Banner Slider', '/banner-slider'],
-      ['Accordion', '/accordion'],
-      ['Progressbar', '/progressbar'],
-      ['Tab Style', '/tab'],
-    ],
-  },
+type MenuLink = readonly [label: string, href: string, badge?: string]
+
+const pagesColumns: readonly MenuLink[][] = [
+  [
+    ['About Company', '/about'],
+    ['Our Service', '/our-service'],
+    ['Our Service Two', '/our-service-two'],
+    ['Our Service Three', '/our-service-three'],
+    ['Our Service Four', '/our-service-four'],
+    ['Our Service Five', '/our-service-five'],
+    ['Service Details Two', '/service-details-two'],
+    ['Service Details Three', '/service-details-three'],
+    ['Service Details Four', '/service-details-four'],
+    ['Service Details', '/service-details'],
+    ['Our Team', '/team'],
+    ['Our Team Two', '/team-two'],
+    ['Our History', '/our-history', 'New'],
+    ['Clients', '/clients', 'New'],
+  ],
+  [
+    ['Office Branch', '/office-branch', 'New'],
+    ['Our Team Three', '/team-three'],
+    ['Team Details', '/team-details'],
+    ['Pricing Plan', '/pricing'],
+    ['Pricing Plan Two', '/pricing-two'],
+    ['Pricing Plan Three', '/pricing-three'],
+    ['Portfolio Default', '/portfolio'],
+    ['Portfolio 3 Column', '/portfolio-three-column'],
+    ['Portfolio Full Width', '/portfolio-full-width'],
+    ['Portfolio Grid Layout', '/portfolio-grid-layout'],
+    ['Portfolio Box Layout', '/portfolio-box-layout'],
+    ['Portfolio Card Hover', '/portfolio-card-hover'],
+    ['Portfolio with Content', '/portfolio-bottom-content'],
+    ['Portfolio Details', '/portfolio-details'],
+  ],
+  [
+    ['Portfolio Details Two', '/portfolio-details-two'],
+    ['Portfolio Details Video', '/portfolio-details-three'],
+    ['Portfolio Details Video', '/portfolio-details-five'],
+    ['Portfolio Details Slider', '/portfolio-details-four'],
+    ['Working Process', '/timeline'],
+    ['Our Gallery', '/our-gallery'],
+    ['Gallery col 3', '/our-gallery-col-3'],
+    ['Career Oppertunity', '/career'],
+    ['Career Details', '/career-details'],
+    ['Apply Job', '/apply'],
+    ['Blog Grid', '/blog-grid'],
+    ['Blog List View', '/blog-list-view'],
+    ['Blog Bento View', '/blog-bento'],
+    ['Blog Details', '/blog/corporate-success-strategy'],
+  ],
+  [
+    ['Blog Standard', '/blog-details-standard/best-corporate-tips', 'New'],
+    ["Faq's", '/faq', 'New'],
+    ['Testimonial', '/testimonial'],
+    ['Testimonial Two', '/testimonial-two'],
+    ['Testimonial Three', '/testimonial-three'],
+    ['Testimonial Modern', '/testimonial-modern'],
+    ['Contact Page', '/contact'],
+    ['Shop', '/shop', 'New'],
+    ['Shop Details', '/shop-details', 'New'],
+    ['Cart', '/cart', 'New'],
+    ['Checkout', '/checkout', 'New'],
+    ['404 Page', '/error'],
+    ['Privacy Policy', '/privacy-policy'],
+    ['Terms & Condition', '/terms-condition'],
+  ],
 ] as const
+
+const serviceLayoutLinks: readonly MenuLink[] = [
+  ['Our Service', '/our-service'],
+  ['Our Service Two', '/our-service-two'],
+  ['Our Service Three', '/our-service-three'],
+  ['Our Service Four', '/our-service-four'],
+  ['Our Service Five', '/our-service-five'],
+  ['Our Service Six', '/our-service-six'],
+  ['Service List Style', '/service-list', 'New'],
+] as const
+
+const serviceDetailLinks: readonly MenuLink[] = [
+  ['Service Details', '/service-details', 'Popular'],
+  ['Service Details center', '/service-details-center'],
+  ['Service Details Two', '/service-details-two'],
+  ['Service Details Three', '/service-details-three'],
+  ['Service Details Four', '/service-details-four'],
+  ['Service List Style', '/#', 'Coming'],
+  ['Service Details Six', '/#', 'Coming'],
+] as const
+
+const projectLinks: readonly MenuLink[] = [
+  ['Portfolio Default', '/portfolio'],
+  ['Portfolio Three Column', '/portfolio-three-column'],
+  ['Portfolio Full Width', '/portfolio-full-width'],
+  ['Portfolio Grid Layout', '/portfolio-grid-layout'],
+  ['Portfolio Box Layout', '/portfolio-box-layout'],
+  ['Portfolio Card Hover', '/portfolio-card-hover'],
+  ['Portfolio Bottom Content', '/portfolio-bottom-content'],
+] as const
+
+const projectDetailLinks: readonly MenuLink[] = [
+  ['Portfolio Details', '/portfolio-details'],
+  ['Portfolio Details Two', '/portfolio-details-two'],
+  ['Portfolio Details Video', '/portfolio-details-three'],
+  ['Portfolio Details Video 2', '/portfolio-details-five'],
+  ['Portfolio Details Slider', '/portfolio-details-four'],
+] as const
+
+const blogLinks: readonly MenuLink[] = [
+  ['Blog Grid', '/blog-grid'],
+  ['Blog List View', '/blog-list-view'],
+  ['Blog Bento', '/blog-bento'],
+] as const
+
+const blogDetailLinks: readonly MenuLink[] = [
+  ['Blog Details', '/blog/corporate-success-strategy'],
+  ['Details Standard', '/blog-details-standard/best-corporate-tips', 'New'],
+  ['Blog Details Right Sidebar', '/blog-details-right-sidebar/best-corporate-tips'],
+  ['Blog Details Left Sidebar', '/blog-details-left-sidebar/best-corporate-tips'],
+  ['Blog Details Video', '/blog-details-video/best-corporate-tips'],
+  ['Blog Details Video Two', '/blog-details-video-two/best-corporate-tips'],
+  ['Blog Details Video Popup', '/blog-details-video-popup/best-corporate-tips'],
+] as const
+
+const elementsColumns: readonly MenuLink[][] = [
+  [
+    ['Style Guide', '/style-guide', 'Hot'],
+    ['Button Page', '/button'],
+    ['Our Service', '/service'],
+    ['Service Details', '/service-details'],
+    ['Accordion Style', '/accordion'],
+    ['Progressbar', '/progressbar'],
+    ['Blog Grid', '/blog-grid'],
+    ['Our Team', '/team'],
+    ['Modern Tabs', '/modern-tab'],
+    ['Social Share', '/social-share'],
+    ['Brand Style', '/brand'],
+    ['Contact Page', '/contact'],
+  ],
+  [
+    ['Counter Up', '/counter'],
+    ['Gallery', '/gallery'],
+    ['404 Page', '/error'],
+    ['Video Style', '/video'],
+    ['Our Portfolio', '/portfolio'],
+    ['Testimonial', '/testimonial'],
+    ['Pricing Plan', '/pricing'],
+    ['Privacy Policy', '/privacy-policy'],
+    ['Tool Tip', '/tooltip'],
+    ['Section Title', '/section-title'],
+    ['Team Style', '/team-style'],
+    ['Typography', '/typography'],
+  ],
+  [
+    ['Form Style', '/form-style'],
+    ['Pagination', '/pagination'],
+    ['Avatars', '/avatars'],
+    ['Heading Split', '/animated-heading'],
+    ['Light Box', '/lightbox'],
+    ['Call To Action', '/call-to-action'],
+    ['Banner Slider', '/banner-slider'],
+    ['About Style', '/about-style'],
+    ['Timeline', '/timeline'],
+    ['Tab Style', '/tab'],
+  ],
+] as const
+
+function MenuLinkItem({ item, onNavigate }: { item: MenuLink; onNavigate: () => void }) {
+  const [label, href, badge] = item
+
+  return (
+    <li>
+      <Link href={href} onClick={onNavigate}>
+        {label}
+        {badge ? <> <span className="tmp-badge-card">{badge}</span></> : null}
+      </Link>
+    </li>
+  )
+}
 
 type PanelName = 'search' | 'offcanvas' | 'mobile' | ''
 
 export default function HeaderPanelManager() {
   const [activePanel, setActivePanel] = useState<PanelName>('')
   const [openMobileSection, setOpenMobileSection] = useState<string>('Home')
+  const [mobileDemoTab, setMobileDemoTab] = useState<'multipage' | 'onepage'>('multipage')
   const [searchValue, setSearchValue] = useState('')
   const router = useRouter()
   const pathname = usePathname()
   const isOpen = activePanel !== ''
+  const isOnepageRoute = pathname === '/onepage' || pathname?.startsWith('/onepage-')
   const normalizedSearch = searchValue.trim().toLowerCase()
   const filteredSearchItems = normalizedSearch
     ? searchItems.filter((item) => `${item.title} ${item.keywords}`.toLowerCase().includes(normalizedSearch))
@@ -89,6 +217,10 @@ export default function HeaderPanelManager() {
 
     return () => window.clearTimeout(closeTimer)
   }, [pathname])
+
+  useEffect(() => {
+    setOpenMobileSection('Home')
+  }, [isOnepageRoute])
 
   const closePanels = () => setActivePanel('')
 
@@ -301,60 +433,333 @@ export default function HeaderPanelManager() {
               </Link>
             </div>
             <div className="close-menu">
-              <button className="close-button tmponhover" type="button" aria-label="Close mobile menu" onClick={closePanels}>
+              <button className="close-button" type="button" aria-label="Close mobile menu" onClick={closePanels}>
                 <i className="feather-x" />
               </button>
             </div>
           </div>
-          <ul className="mainmenu">
-            {mobileMenu.map((section) => {
-              const sectionOpen = openMobileSection === section.label
-              const usesMegaMenu = section.label === 'Home' || section.label === 'Service' || section.label === 'Elements'
-
-              return (
-                <li className={`${usesMegaMenu ? 'with-megamenu' : 'has-droupdown'} has-menu-child-item`} key={section.label}>
-                  <Link
-                    className={sectionOpen ? 'open' : ''}
-                    href="/#"
-                    aria-expanded={sectionOpen}
+          <ul className={`mainmenu${isOnepageRoute ? ' onepagenav' : ''}`}>
+            {isOnepageRoute ? (
+              <>
+                <li className="with-megamenu has-menu-child-item">
+                  <a
+                    className={openMobileSection === 'Home' ? 'open' : ''}
+                    href="#hero"
+                    aria-expanded={openMobileSection === 'Home'}
                     onClick={(event) => {
                       event.preventDefault()
-                      setOpenMobileSection(sectionOpen ? '' : section.label)
+                      setOpenMobileSection(openMobileSection === 'Home' ? '' : 'Home')
                     }}
                   >
-                    {section.label}
-                  </Link>
-                  {usesMegaMenu ? (
-                    <div className="tmp-megamenu with-mega-item-2 full-width-mega" style={{ display: sectionOpen ? 'block' : 'none' }}>
-                      <div className="wrapper">
-                        <div className="row row--0">
-                          <div className="col-lg-12 single-mega-item">
-                            <ul className="mega-menu-item">
-                              {section.links.map(([label, href]) => (
-                                <li key={href}>
-                                  <Link href={href} onClick={closePanels}>{label}</Link>
-                                </li>
-                              ))}
-                            </ul>
+                    Home
+                  </a>
+                  <div className="tmp-megamenu with-mega-item-2 full-width-mega" style={{ display: openMobileSection === 'Home' ? 'block' : 'none' }}>
+                    <div className="wrapper demos-area-drop-down">
+                      <div className="row row--0">
+                        <div className="col-lg-12">
+                          <div className="tab_wrapper onapge-multipage-tab-wrapper">
+                            <div className="nav nav-pills me-3 tabs-nav" role="tablist">
+                              <button
+                                className={`nav-links tmp-btn${mobileDemoTab === 'multipage' ? ' active' : ''}`}
+                                data-target=".multipage_content"
+                                type="button"
+                                onClick={() => setMobileDemoTab('multipage')}
+                              >
+                                Multipage
+                              </button>
+                              <button
+                                className={`nav-links tmp-btn${mobileDemoTab === 'onepage' ? ' active' : ''}`}
+                                data-target=".onepage_content"
+                                type="button"
+                                onClick={() => setMobileDemoTab('onepage')}
+                              >
+                                Onepage
+                              </button>
+                            </div>
+                            <div className="tab-content">
+                              <div className={`tab-pane multipage_content${mobileDemoTab === 'multipage' ? ' active show' : ''}`}>
+                                <DemoGrid demos={multipageDemos} onNavigate={closePanels} />
+                              </div>
+                              <div className={`tab-pane onepage_content${mobileDemoTab === 'onepage' ? ' active show' : ''}`}>
+                                <DemoGrid demos={onepageDemos} onNavigate={closePanels} />
+                              </div>
+                            </div>
+                          </div>
+
+                          <div className="load-demo-btn-wrap mt--15">
+                            <div className="load-demo-btn text-center">
+                              <span className="color-white b3">
+                                Scroll to view more{' '}
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-arrow-down-up" viewBox="0 0 16 16">
+                                  <path fillRule="evenodd" d="M11.5 15a.5.5 0 0 0 .5-.5V2.707l3.146 3.147a.5.5 0 0 0 .708-.708l-4-4a.5.5 0 0 0-.708 0l-4 4a.5.5 0 1 0 .708.708L11 2.707V14.5a.5.5 0 0 0 .5.5zm-7-14a.5.5 0 0 1 .5.5v11.793l3.146-3.147a.5.5 0 0 1 .708.708l-4 4a.5.5 0 0 1-.708 0l-4-4a.5.5 0 0 1 .708-.708L4 13.293V1.5a.5.5 0 0 1 .5-.5z" />
+                                </svg>
+                              </span>
+                            </div>
                           </div>
                         </div>
                       </div>
                     </div>
-                  ) : (
-                    <ul className="submenu" style={{ display: sectionOpen ? 'block' : 'none' }}>
-                      {section.links.map(([label, href]) => (
-                        <li key={href}>
-                          <Link href={href} onClick={closePanels}>{label}</Link>
-                        </li>
-                      ))}
-                    </ul>
-                  )}
+                  </div>
                 </li>
-              )
-            })}
-            <li>
-              <Link href="/contact" onClick={closePanels}>Contact</Link>
-            </li>
+                {[
+                  ['with-megamenu', '#about', 'About'],
+                  ['with-megamenu position-relative', '#service', 'Service'],
+                  ['has-droupdown', '#project', 'Project'],
+                  ['has-droupdown', '#team', 'Team'],
+                  ['has-droupdown', '#blog', 'Blog'],
+                  ['', '#contactus', 'Contact'],
+                ].map(([className, href, label]) => (
+                  <li className={className} key={href}>
+                    <a href={href} onClick={closePanels}>{label}</a>
+                  </li>
+                ))}
+              </>
+            ) : (
+              <>
+                <li className="with-megamenu has-menu-child-item">
+                  <Link
+                    className={openMobileSection === 'Home' ? 'open' : ''}
+                    href="/#"
+                    aria-expanded={openMobileSection === 'Home'}
+                    onClick={(event) => {
+                      event.preventDefault()
+                      setOpenMobileSection(openMobileSection === 'Home' ? '' : 'Home')
+                    }}
+                  >
+                    Home
+                  </Link>
+                  <div className="tmp-megamenu with-mega-item-2 full-width-mega" style={{ display: openMobileSection === 'Home' ? 'block' : 'none' }}>
+                    <div className="wrapper demos-area-drop-down">
+                      <div className="row row--0">
+                        <div className="col-lg-12">
+                          <div className="tab_wrapper onapge-multipage-tab-wrapper">
+                            <div className="nav nav-pills me-3 tabs-nav" role="tablist">
+                              <button
+                                className={`nav-links tmp-btn${mobileDemoTab === 'multipage' ? ' active' : ''}`}
+                                data-target=".multipage_content"
+                                type="button"
+                                onClick={() => setMobileDemoTab('multipage')}
+                              >
+                                Multipage
+                              </button>
+                              <button
+                                className={`nav-links tmp-btn${mobileDemoTab === 'onepage' ? ' active' : ''}`}
+                                data-target=".onepage_content"
+                                type="button"
+                                onClick={() => setMobileDemoTab('onepage')}
+                              >
+                                Onepage
+                              </button>
+                            </div>
+                            <div className="tab-content">
+                              <div className={`tab-pane multipage_content${mobileDemoTab === 'multipage' ? ' active show' : ''}`}>
+                                <DemoGrid demos={multipageDemos} onNavigate={closePanels} />
+                              </div>
+                              <div className={`tab-pane onepage_content${mobileDemoTab === 'onepage' ? ' active show' : ''}`}>
+                                <DemoGrid demos={onepageDemos} onNavigate={closePanels} />
+                              </div>
+                            </div>
+                          </div>
+                          <div className="load-demo-btn-wrap mt--15">
+                            <div className="load-demo-btn text-center">
+                              <span className="color-white b3">
+                                Scroll to view more{' '}
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-arrow-down-up" viewBox="0 0 16 16">
+                                  <path fillRule="evenodd" d="M11.5 15a.5.5 0 0 0 .5-.5V2.707l3.146 3.147a.5.5 0 0 0 .708-.708l-4-4a.5.5 0 0 0-.708 0l-4 4a.5.5 0 1 0 .708.708L11 2.707V14.5a.5.5 0 0 0 .5.5zm-7-14a.5.5 0 0 1 .5.5v11.793l3.146-3.147a.5.5 0 0 1 .708.708l-4 4a.5.5 0 0 1-.708 0l-4-4a.5.5 0 0 1 .708-.708L4 13.293V1.5a.5.5 0 0 1 .5-.5z" />
+                                </svg>
+                              </span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+
+                <li className="with-megamenu has-menu-child-item">
+                  <Link
+                    className={openMobileSection === 'Pages' ? 'open' : ''}
+                    href="/#"
+                    aria-expanded={openMobileSection === 'Pages'}
+                    onClick={(event) => {
+                      event.preventDefault()
+                      setOpenMobileSection(openMobileSection === 'Pages' ? '' : 'Pages')
+                    }}
+                  >
+                    Pages
+                  </Link>
+                  <div className="tmp-megamenu with-mega-item-2 full-width-mega" style={{ display: openMobileSection === 'Pages' ? 'block' : 'none' }}>
+                    <div className="wrapper">
+                      <div className="row row--0">
+                        {pagesColumns.map((column, index) => (
+                          <div className="col-xl-2 col-lg-3 single-mega-item" key={index}>
+                            <ul className="mega-menu-item">
+                              {column.map((item) => (
+                                <MenuLinkItem item={item} key={item[1]} onNavigate={closePanels} />
+                              ))}
+                            </ul>
+                          </div>
+                        ))}
+                        <div className="col-xl-4 d-lg-none d-xl-block">
+                          <Link href="/contact" className="feature-image-add-header" onClick={closePanels}>
+                            <img loading="lazy" src="/assets/images/banner/header-contact-dark.webp" alt="corporate-business" />
+                          </Link>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+
+                <li className="with-megamenu has-menu-child-item position-relative">
+                  <Link
+                    className={openMobileSection === 'Service' ? 'open' : ''}
+                    href="/#"
+                    aria-expanded={openMobileSection === 'Service'}
+                    onClick={(event) => {
+                      event.preventDefault()
+                      setOpenMobileSection(openMobileSection === 'Service' ? '' : 'Service')
+                    }}
+                  >
+                    Service
+                  </Link>
+                  <div className="tmp-megamenu width-small-mega" style={{ display: openMobileSection === 'Service' ? 'block' : 'none' }}>
+                    <div className="wrapper">
+                      <div className="row">
+                        <div className="col-lg-12">
+                          <div className="mega-top-banner">
+                            <div className="content">
+                              <h4 className="title">Service hub</h4>
+                              <p className="description">Complete Business Consultation for You, All Services in One Place.</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div className="row row--15">
+                        <div className="col-lg-12 col-xl-6 col-xxl-6 single-mega-item">
+                          <h3 className="tmp-short-title">Service Layout</h3>
+                          <ul className="mega-menu-item">
+                            {serviceLayoutLinks.map((item) => (
+                              <MenuLinkItem item={item} key={item[1]} onNavigate={closePanels} />
+                            ))}
+                          </ul>
+                        </div>
+                        <div className="col-lg-12 col-xl-6 col-xxl-6 single-mega-item">
+                          <h3 className="tmp-short-title">Service Details</h3>
+                          <ul className="mega-menu-item">
+                            {serviceDetailLinks.map((item) => (
+                              <MenuLinkItem item={item} key={item[1] + item[0]} onNavigate={closePanels} />
+                            ))}
+                          </ul>
+                        </div>
+                      </div>
+                      <div className="row">
+                        <div className="col-lg-12">
+                          <ul className="nav-quick-access">
+                            {['Quick Start Guide', 'For Open Source', 'API Status', 'Support'].map((label) => (
+                              <li key={label}>
+                                <Link href="/contact" onClick={closePanels}><i className="feather-folder-minus" /> {label}</Link>
+                              </li>
+                            ))}
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+
+                <li className="has-droupdown has-menu-child-item">
+                  <Link
+                    className={openMobileSection === 'Project' ? 'open' : ''}
+                    href="/#"
+                    aria-expanded={openMobileSection === 'Project'}
+                    onClick={(event) => {
+                      event.preventDefault()
+                      setOpenMobileSection(openMobileSection === 'Project' ? '' : 'Project')
+                    }}
+                  >
+                    Project
+                  </Link>
+                  <ul className="submenu" style={{ display: openMobileSection === 'Project' ? 'block' : 'none' }}>
+                    {projectLinks.map((item) => (
+                      <MenuLinkItem item={item} key={item[1]} onNavigate={closePanels} />
+                    ))}
+                    <li className="has-third-lev">
+                      <Link href="/#" onClick={(event) => event.preventDefault()}>Portfolio Details</Link>
+                      <ul className="submenu">
+                        {projectDetailLinks.map((item) => (
+                          <MenuLinkItem item={item} key={item[1]} onNavigate={closePanels} />
+                        ))}
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+
+                <li className="has-droupdown has-menu-child-item">
+                  <Link
+                    className={openMobileSection === 'Blog' ? 'open' : ''}
+                    href="/#"
+                    aria-expanded={openMobileSection === 'Blog'}
+                    onClick={(event) => {
+                      event.preventDefault()
+                      setOpenMobileSection(openMobileSection === 'Blog' ? '' : 'Blog')
+                    }}
+                  >
+                    Blog
+                  </Link>
+                  <ul className="submenu" style={{ display: openMobileSection === 'Blog' ? 'block' : 'none' }}>
+                    {blogLinks.map((item) => (
+                      <MenuLinkItem item={item} key={item[1]} onNavigate={closePanels} />
+                    ))}
+                    <li className="has-third-lev">
+                      <Link href="/#" onClick={(event) => event.preventDefault()}>Blog Details</Link>
+                      <ul className="submenu">
+                        {blogDetailLinks.map((item) => (
+                          <MenuLinkItem item={item} key={item[1]} onNavigate={closePanels} />
+                        ))}
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+
+                <li>
+                  <Link href="/contact" onClick={closePanels}>Contact</Link>
+                </li>
+
+                <li className="with-megamenu has-menu-child-item">
+                  <Link
+                    className={openMobileSection === 'Elements' ? 'open' : ''}
+                    href="/#"
+                    aria-expanded={openMobileSection === 'Elements'}
+                    onClick={(event) => {
+                      event.preventDefault()
+                      setOpenMobileSection(openMobileSection === 'Elements' ? '' : 'Elements')
+                    }}
+                  >
+                    Elements
+                  </Link>
+                  <div className="tmp-megamenu with-mega-item-2 full-width-mega" style={{ display: openMobileSection === 'Elements' ? 'block' : 'none' }}>
+                    <div className="wrapper">
+                      <div className="row row--0">
+                        <div className="col-lg-3">
+                          <div className="feature-image-add-header">
+                            <img loading="lazy" src="/assets/images/banner/04.webp" alt="corporate-business" />
+                          </div>
+                        </div>
+                        {elementsColumns.map((column, index) => (
+                          <div className={index === 2 ? 'col-lg-3' : 'col-lg-3 single-mega-item'} key={index}>
+                            <ul className="mega-menu-item">
+                              {column.map((item) => (
+                                <MenuLinkItem item={item} key={item[1]} onNavigate={closePanels} />
+                              ))}
+                            </ul>
+                          </div>
+                        ))}
+                      </div>
+                    </div>
+                  </div>
+                </li>
+              </>
+            )}
           </ul>
         </div>
       </div>

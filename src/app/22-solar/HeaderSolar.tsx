@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { useEffect, useState } from "react";
-import MainNav from "../../components/header/MainNav";
+import HeaderNav from "../../components/header/HeaderNav";
 
 interface HeaderSolarProps {
     className?: string;
@@ -65,7 +65,7 @@ function HeaderSolar({
                                         <img className="logo-dark" src="/assets/images/logo/solar-logo-dark.svg" alt="Corporate Logo" />
                                     </Link>
                                 </div>
-                                <MainNav />
+                                <HeaderNav />
                             </div>
                         </div>
                         <div className="col-lg-3 col-md-6 col-8">

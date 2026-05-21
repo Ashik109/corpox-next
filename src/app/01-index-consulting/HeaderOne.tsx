@@ -2,7 +2,7 @@
 
 import Link from 'next/link'
 import { useEffect, useState } from 'react'
-import MainNav from '../../components/header/MainNav'
+import HeaderNav, { type HeaderNavVariant } from '../../components/header/HeaderNav'
 import {
     HeaderDotSidebarTrigger,
     HeaderMobileMenuTrigger,
@@ -16,6 +16,7 @@ interface HeaderOneProps {
     ctaClassName?: string;
     /** Multipage inner pages (non-home): opaque header + smooth sticky */
     variant?: 'transparent' | 'inner';
+    navVariant?: HeaderNavVariant;
 }
 
 function HeaderOne({
@@ -24,6 +25,7 @@ function HeaderOne({
     logoAlt = '',
     ctaClassName = 'tmp-btn round tmponhover',
     variant = 'transparent',
+    navVariant,
 }: HeaderOneProps) {
     const [isSticky, setIsSticky] = useState(false)
     const logoLight = logoSrc || '/assets/images/logo/logo.png'
@@ -57,7 +59,7 @@ function HeaderOne({
                     </div>
                     <div className="col-xl-10 col-lg-10 col-md-6 col-8 position-static">
                         <div className="header-right with-search">
-                            <MainNav />
+                            <HeaderNav variant={navVariant} />
                             <div className="header-btn">
                                 <HeaderSearchTrigger />
                                 <div className="dot-btn">

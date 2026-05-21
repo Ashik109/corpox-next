@@ -13,7 +13,7 @@ type Props = {
 }
 
 export default function InnerPageLayout({ children, lightMode, bodyClass, header }: Props) {
-  const cls = [lightMode ? 'active-light-mode' : '', bodyClass].filter(Boolean).join(' ')
+  const cls = ['dark-home', lightMode ? 'active-light-mode' : '', bodyClass].filter(Boolean).join(' ')
   return (
     <>
       {cls ? <BodyClass className={cls} /> : null}

@@ -13,15 +13,25 @@ function BodyContent() {
   return (
     <>
       <BusinessThreeAnimations />
-      <BannerBusinessThree />
+      <div id="hero">
+        <BannerBusinessThree />
+      </div>
       <MarqueeBusinessThree />
-      <AboutBusinessThree />
-      <ServiceTabsBusinessThree />
+      <div id="about">
+        <AboutBusinessThree />
+      </div>
+      <div id="service">
+        <ServiceTabsBusinessThree />
+      </div>
       <CtaBusinessThree />
       <AccordionBusinessThree />
       <TestimonialBusinessThree />
-      <AppointmentBusinessThree />
-      <BlogBusinessThree />
+      <div id="contactus">
+        <AppointmentBusinessThree />
+      </div>
+      <div id="blog">
+        <BlogBusinessThree />
+      </div>
     </>
   )
 }

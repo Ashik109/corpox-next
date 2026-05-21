@@ -15,15 +15,25 @@ function BodyContent() {
     <>
       <BodyClassAiAgency />
       <RealEstateAnimations />
-      <BannerAiAgency />
+      <div id="hero">
+        <BannerAiAgency />
+      </div>
       <BrandAiAgency />
-      <ServicesAiAgency />
-      <AboutAiAgency />
+      <div id="service">
+        <ServicesAiAgency />
+      </div>
+      <div id="about">
+        <AboutAiAgency />
+      </div>
       <WorkProcessAiAgency />
       <CounterAiAgency />
-      <PortfolioAiAgency />
+      <div id="project">
+        <PortfolioAiAgency />
+      </div>
       <FaqAiAgency />
-      <BlogAiAgency />
+      <div id="blog">
+        <BlogAiAgency />
+      </div>
     </>
   )
 }

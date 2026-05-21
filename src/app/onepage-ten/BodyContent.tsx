@@ -12,13 +12,19 @@ function BodyContent() {
   return (
     <>
       <MarketingAgencyAnimations />
-      <BannerMarketingAgency />
-      <AboutMarketingAgency />
+      <div id="hero">
+        <BannerMarketingAgency />
+      </div>
+      <div id="about">
+        <AboutMarketingAgency />
+      </div>
       <TimelineMarketingAgency />
       <SplitMarketingAgency />
       <TestimonialMarketingAgency />
       <PricingMarketingAgency />
-      <BlogMarketingAgency />
+      <div id="blog">
+        <BlogMarketingAgency />
+      </div>
       <BrandMarketingAgency />
     </>
   )

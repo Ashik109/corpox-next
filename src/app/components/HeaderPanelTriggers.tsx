@@ -15,7 +15,7 @@ export function HeaderSearchTrigger({ className = '' }: { className?: string }) 
 
 export function HeaderMobileMenuTrigger() {
   return (
-    <button aria-label="Open mobile menu" className="hamberger-button tmponhover" type="button">
+    <button aria-label="Open mobile menu" className="hamberger-button" type="button">
       <i className="feather-menu" />
     </button>
   )

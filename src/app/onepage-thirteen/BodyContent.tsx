@@ -16,18 +16,32 @@ function BodyContent() {
   return (
     <>
       <AgencyThirteenAnimations />
-      <BannerAgencyThirteen />
-      <AboutAgencyThirteen />
-      <ServicesAgencyThirteen />
+      <div id="hero">
+        <BannerAgencyThirteen />
+      </div>
+      <div id="about">
+        <AboutAgencyThirteen />
+      </div>
+      <div id="service">
+        <ServicesAgencyThirteen />
+      </div>
       <BrandAgencyThirteen />
       <MissionAgencyThirteen />
-      <PortfolioAgencyThirteen />
+      <div id="project">
+        <PortfolioAgencyThirteen />
+      </div>
       <CounterAgencyThirteen />
-      <TeamAgencyThirteen />
+      <div id="team">
+        <TeamAgencyThirteen />
+      </div>
       <CtaAgencyThirteen />
-      <AppointmentAgencyThirteen />
+      <div id="contactus">
+        <AppointmentAgencyThirteen />
+      </div>
       <TestimonialAgencyThirteen />
-      <BlogAgencyThirteen />
+      <div id="blog">
+        <BlogAgencyThirteen />
+      </div>
     </>
   )
 }

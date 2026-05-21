@@ -14,18 +14,32 @@ import BlogTwo from '../03-agency/BlogTwo'
 function BodyContent() {
   return (
     <>
-      <BannerThree />
+      <div id="hero">
+        <BannerThree />
+      </div>
       <BrandOne />
-      <AboutThree />
-      <ServicesFour />
-      <CaseStudyTwo />
-      <GetInTouch />
+      <div id="about">
+        <AboutThree />
+      </div>
+      <div id="service">
+        <ServicesFour />
+      </div>
+      <div id="project">
+        <CaseStudyTwo />
+      </div>
+      <div id="contactus">
+        <GetInTouch />
+      </div>
       <MissionOne />
       <CounterTwo />
-      <TeamTwo />
+      <div id="team">
+        <TeamTwo />
+      </div>
       <ContactOne />
       <CtaOne />
-      <BlogTwo />
+      <div id="blog">
+        <BlogTwo />
+      </div>
     </>
   )
 }

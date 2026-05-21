@@ -5,7 +5,7 @@ import AboutGetInTouch from './AboutGetInTouch'
 import AboutTimeline from './AboutTimeline'
 import AboutVideo from './AboutVideo'
 import AboutTeam from './AboutTeam'
-import AboutTestimonial from './AboutTestimonial'
+import TestimonialMapHRWebsite from '../11-hr-website/TestimonialMapHRWebsite'
 import AboutBrand from './AboutBrand'
 import AboutGallery from './AboutGallery'
 
@@ -19,7 +19,7 @@ function BodyContent() {
       <AboutTimeline />
       <AboutVideo />
       <AboutTeam />
-      <AboutTestimonial />
+      <TestimonialMapHRWebsite sectionClassName="tmp-section-gapBottom" />
       <AboutBrand />
       <AboutGallery />
     </>

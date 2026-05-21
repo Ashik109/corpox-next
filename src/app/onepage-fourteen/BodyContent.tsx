@@ -15,15 +15,27 @@ function BodyContent() {
   return (
     <>
       <FinancialAnimations />
-      <BannerFinancial />
-      <AboutTabsFinancial />
-      <ServicesFinancial />
+      <div id="hero">
+        <BannerFinancial />
+      </div>
+      <div id="about">
+        <AboutTabsFinancial />
+      </div>
+      <div id="service">
+        <ServicesFinancial />
+      </div>
       <BusinessServicesFinancial />
       <CounterFinancial />
       <VideoFinancial />
-      <TeamFinancial />
-      <BlogFinancial />
-      <AppointmentFinancial />
+      <div id="team">
+        <TeamFinancial />
+      </div>
+      <div id="blog">
+        <BlogFinancial />
+      </div>
+      <div id="contactus">
+        <AppointmentFinancial />
+      </div>
       <BrandFinancial />
       <TestimonialFinancial />
     </>

@@ -14,15 +14,25 @@ function BodyContent() {
   return (
     <>
       <RealEstateAnimations />
-      <BannerPersonalAdvisory />
-      <ServicesPersonalAdvisory />
+      <div id="hero">
+        <BannerPersonalAdvisory />
+      </div>
+      <div id="service">
+        <ServicesPersonalAdvisory />
+      </div>
       <BusinessServicesPersonalAdvisory />
       <CounterITSolution />
-      <PortfolioPersonalAdvisory />
+      <div id="project">
+        <PortfolioPersonalAdvisory />
+      </div>
       <TestimonialOne />
-      <GetInTouchPersonalAdvisory />
+      <div id="contactus">
+        <GetInTouchPersonalAdvisory />
+      </div>
       <PricingPersonalAdvisory />
-      <BlogPersonalAdvisory />
+      <div id="blog">
+        <BlogPersonalAdvisory />
+      </div>
       <CtaModernBusiness />
     </>
   )

@@ -16,19 +16,33 @@ import CtaTwo from '../01-index-consulting/CtaTwo'
 function BodyContent() {
   return (
     <>
-      <BannerOne />
-      <ServiceOne />
-      <AboutOne />
+      <div id="hero">
+        <BannerOne />
+      </div>
+      <div id="service">
+        <ServiceOne />
+      </div>
+      <div id="about">
+        <AboutOne />
+      </div>
       <CounterOne />
-      <PortfolioOne />
+      <div id="project">
+        <PortfolioOne />
+      </div>
       <TestimonialOne />
       <TimelineOne />
       <VideoOne />
-      <TeamOne />
+      <div id="team">
+        <TeamOne />
+      </div>
       <CtaOne />
       <PricingOne />
-      <ContactOne />
-      <BlogOne />
+      <div id="contactus">
+        <ContactOne />
+      </div>
+      <div id="blog">
+        <BlogOne />
+      </div>
       <CtaTwo />
     </>
   )

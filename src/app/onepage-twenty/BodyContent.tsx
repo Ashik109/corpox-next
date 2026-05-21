@@ -15,14 +15,26 @@ function BodyContent() {
     <>
       <BodyClassGymFitness />
       <RealEstateAnimations />
-      <BannerGymFitness />
-      <ServicesGymFitness />
-      <AboutGymFitness />
-      <TeamGymFitness />
+      <div id="hero">
+        <BannerGymFitness />
+      </div>
+      <div id="service">
+        <ServicesGymFitness />
+      </div>
+      <div id="about">
+        <AboutGymFitness />
+      </div>
+      <div id="team">
+        <TeamGymFitness />
+      </div>
       <TimeTableGymFitness />
       <PricingGymFitness />
-      <AppointmentGymFitness />
-      <BlogGymFitness />
+      <div id="contactus">
+        <AppointmentGymFitness />
+      </div>
+      <div id="blog">
+        <BlogGymFitness />
+      </div>
       <BrandGymFitness />
     </>
   )

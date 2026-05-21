@@ -2,7 +2,7 @@
 
 import Link from 'next/link'
 import React, { useEffect, useState } from 'react'
-import MainNav from '../../components/header/MainNav'
+import HeaderNav from '../../components/header/HeaderNav'
 
 interface HeaderAvatarsProps {
   className?: string
@@ -55,7 +55,7 @@ function HeaderAvatars({
           </div>
           <div className="col-xl-10 col-lg-10 col-md-6 col-8 position-static">
             <div className="header-right with-search">
-              <MainNav />
+              <HeaderNav />
               <div className="header-btn">
                 <div className="search-area-btn cursor-pointer" id="search">
                   <i className="feather-search" />
@@ -75,7 +75,7 @@ function HeaderAvatars({
               </div>
               <div className="mobile-menu-bar ml--5 d-block d-lg-none">
                 <div className="hamberger">
-                  <button className="hamberger-button tmponhover" type="button">
+                  <button className="hamberger-button" type="button">
                     <i className="feather-menu" />
                   </button>
                 </div>

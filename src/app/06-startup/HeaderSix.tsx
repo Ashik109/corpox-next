@@ -1,5 +1,5 @@
 'use client'
-import MainNav from '../../components/header/MainNav'
+import HeaderNav from '../../components/header/HeaderNav'
 import { useState, useEffect } from 'react';
 import Link from 'next/link'
 interface HeaderSixProps {
@@ -98,7 +98,7 @@ function HeaderSix({
                         </div>
                         <div className="col-xl-10 col-lg-10 col-md-6 col-8 position-static">
                             <div className="header-right with-search">
-                                <MainNav />
+                                <HeaderNav />
                                 {/* Start Header Btn  */}
                                 <div className="header-btn">
                                     <div className="search-area-btn cursor-pointer" id="search">

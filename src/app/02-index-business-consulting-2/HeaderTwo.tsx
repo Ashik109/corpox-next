@@ -1,5 +1,5 @@
 'use client'
-import MainNav from '../../components/header/MainNav'
+import HeaderNav from '../../components/header/HeaderNav'
 import { useState, useEffect } from 'react';
 import Link from 'next/link'
 
@@ -23,7 +23,7 @@ function HeaderTwo({
     ctaHref = "/contact",
     ctaTarget = "_blank",
     ctaClassName = "tmp-btn btn-small round",
-    mobileButtonClassName = "hamberger-button tmponhover",
+    mobileButtonClassName = "hamberger-button",
     showTopNews = false,
     variant = 'not-transparent',
     homeActive = false,
@@ -121,7 +121,7 @@ function HeaderTwo({
                     />
                   </Link>
                 </div>
-                <MainNav homeActive={homeActive} />
+                <HeaderNav homeActive={homeActive} />
               </div>
             </div>
             <div className="col-lg-3 col-md-6 col-8">

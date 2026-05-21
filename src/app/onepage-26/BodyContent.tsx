@@ -18,17 +18,29 @@ function BodyContent() {
     <>
       <BodyClassConstruction />
       <RealEstateAnimations />
-      <BannerConstruction />
+      <div id="hero">
+        <BannerConstruction />
+      </div>
       <ConstructionTabs />
-      <ServicesConstruction />
-      <PortfolioConstruction />
-      <GetInTouchConstruction />
-      <AboutFluidConstruction />
+      <div id="service">
+        <ServicesConstruction />
+      </div>
+      <div id="project">
+        <PortfolioConstruction />
+      </div>
+      <div id="contactus">
+        <GetInTouchConstruction />
+      </div>
+      <div id="about">
+        <AboutFluidConstruction />
+      </div>
       <PricingConstruction />
       <CounterConstruction />
       <ContactConstruction />
       <VideoConstruction />
-      <BlogConstruction />
+      <div id="blog">
+        <BlogConstruction />
+      </div>
       <BrandConstruction />
     </>
   )

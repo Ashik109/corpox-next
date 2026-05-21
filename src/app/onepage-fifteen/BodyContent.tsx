@@ -17,19 +17,33 @@ function BodyContent() {
   return (
     <>
       <BusinessCoachAnimations />
-      <BannerBusinessCoach />
-      <AboutBusinessCoach />
-      <ServicesBusinessCoach />
+      <div id="hero">
+        <BannerBusinessCoach />
+      </div>
+      <div id="about">
+        <AboutBusinessCoach />
+      </div>
+      <div id="service">
+        <ServicesBusinessCoach />
+      </div>
       <BusinessServicesCoach />
       <TimelineBusinessCoach />
-      <PortfolioBusinessCoach />
+      <div id="project">
+        <PortfolioBusinessCoach />
+      </div>
       <TestimonialBusinessCoach />
       <PricingBusinessCoach />
-      <TeamBusinessCoach />
+      <div id="team">
+        <TeamBusinessCoach />
+      </div>
       <BrandBusinessCoach />
-      <ContactBusinessCoach />
+      <div id="contactus">
+        <ContactBusinessCoach />
+      </div>
       <CtaBusinessCoach />
-      <BlogBusinessCoach />
+      <div id="blog">
+        <BlogBusinessCoach />
+      </div>
     </>
   )
 }

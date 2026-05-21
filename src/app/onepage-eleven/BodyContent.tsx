@@ -14,16 +14,26 @@ function BodyContent() {
   return (
     <>
       <HRWebsiteAnimations />
-      <BannerHRWebsite />
-      <ServicesHRWebsite />
-      <AboutHRWebsite />
-      <PortfolioHRWebsite />
+      <div id="hero">
+        <BannerHRWebsite />
+      </div>
+      <div id="service">
+        <ServicesHRWebsite />
+      </div>
+      <div id="about">
+        <AboutHRWebsite />
+      </div>
+      <div id="project">
+        <PortfolioHRWebsite />
+      </div>
       <CounterHRWebsite />
       <SkillHRWebsite />
       <TestimonialMapHRWebsite />
       <VideoHRWebsite />
       <BrandHRWebsite />
-      <BlogHRWebsite />
+      <div id="blog">
+        <BlogHRWebsite />
+      </div>
     </>
   )
 }

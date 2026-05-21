@@ -16,14 +16,24 @@ function BodyContent() {
     <>
       <BodyClassMedical />
       <RealEstateAnimations />
-      <BannerMedical />
+      <div id="hero">
+        <BannerMedical />
+      </div>
       <TimeTableMedical />
-      <AboutMedical />
-      <ServicesMedical />
+      <div id="about">
+        <AboutMedical />
+      </div>
+      <div id="service">
+        <ServicesMedical />
+      </div>
       <CounterMedical />
-      <PortfolioMedical />
+      <div id="project">
+        <PortfolioMedical />
+      </div>
       <TestimonialMedical />
-      <BlogMedical />
+      <div id="blog">
+        <BlogMedical />
+      </div>
       <BrandMedical />
       <CtaModernBusiness />
     </>

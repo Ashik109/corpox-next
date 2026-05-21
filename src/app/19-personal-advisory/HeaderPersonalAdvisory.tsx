@@ -2,7 +2,7 @@
 
 import Link from 'next/link'
 import { useEffect, useState } from 'react'
-import MainNav from '../../components/header/MainNav'
+import HeaderNav from '../../components/header/HeaderNav'
 
 function HeaderPersonalAdvisory() {
     const [isSticky, setIsSticky] = useState(false)
@@ -29,7 +29,7 @@ function HeaderPersonalAdvisory() {
                     </div>
                     <div className="col-xl-10 col-lg-10 col-md-6 col-8 position-static">
                         <div className="header-right with-search">
-                            <MainNav />
+                            <HeaderNav />
 
                             <div className="header-btn">
                                 <div className="search-area-btn cursor-pointer" id="search">

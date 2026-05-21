@@ -14,15 +14,27 @@ function BodyContent() {
   return (
     <>
       <CreativeAgencyAnimations />
-      <BannerCreativeAgency />
-      <AboutCreativeAgency />
+      <div id="hero">
+        <BannerCreativeAgency />
+      </div>
+      <div id="about">
+        <AboutCreativeAgency />
+      </div>
       <CreativeAgencyTabs />
       <BrandCreativeAgency />
-      <PortfolioCreativeAgency />
-      <ServicesCreativeAgency />
+      <div id="project">
+        <PortfolioCreativeAgency />
+      </div>
+      <div id="service">
+        <ServicesCreativeAgency />
+      </div>
       <CtaPurchaseCreativeAgency />
-      <AppointmentCreativeAgency />
-      <BlogCreativeAgency />
+      <div id="contactus">
+        <AppointmentCreativeAgency />
+      </div>
+      <div id="blog">
+        <BlogCreativeAgency />
+      </div>
       <CtaThree />
     </>
   )

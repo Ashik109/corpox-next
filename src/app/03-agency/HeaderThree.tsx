@@ -1,5 +1,5 @@
 'use client'
-import MainNav from '../../components/header/MainNav'
+import HeaderNav from '../../components/header/HeaderNav'
 import Link from 'next/link'
 import React, { useEffect, useState } from 'react'
 
@@ -46,7 +46,7 @@ function HeaderThree({
                             </div>
                             <div className="col-xl-10 col-lg-10 col-md-6 col-8 position-static">
                                 <div className="header-right with-search">
-                                    <MainNav />
+                                    <HeaderNav />
                                     {/* Start Header Btn  */}
                                     <div className="header-btn">
                                         <div className="search-area-btn cursor-pointer" id="search">
@@ -75,7 +75,7 @@ function HeaderThree({
                                     {/* Start Mobile-Menu-Bar */}
                                     <div className="mobile-menu-bar ml--5 d-block d-lg-none">
                                         <div className="hamberger">
-                                            <button className="hamberger-button tmponhover" type="button">
+                                            <button className="hamberger-button" type="button">
                                                 <i className="feather-menu" />
                                             </button>
                                         </div>

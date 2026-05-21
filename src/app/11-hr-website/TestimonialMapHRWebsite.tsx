@@ -73,9 +73,13 @@ function Rating() {
     );
 }
 
-function TestimonialMapHRWebsite() {
+function TestimonialMapHRWebsite({
+    sectionClassName = "tmp-section-gapTop bg-card position-relative overflow-hidden",
+}: {
+    sectionClassName?: string;
+}) {
     return (
-        <section className="tmp-section-gapTop bg-card position-relative overflow-hidden">
+        <section className={sectionClassName}>
             <div className="container">
                 <div className="row">
                     <div className="col-12">

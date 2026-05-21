@@ -12,16 +12,24 @@ import BlogTwo from '../03-agency/BlogTwo'
 function BodyContent() {
   return (
     <>
-      <BannerFour />
-      <ServicesFive />
+      <div id="hero">
+        <BannerFour />
+      </div>
+      <div id="service">
+        <ServicesFive />
+      </div>
       <MissionOne />
       <ServicesSix />
       <WhyChooseUsOne />
       <PricingTwo />
-      <GetInTouch />
+      <div id="contactus">
+        <GetInTouch />
+      </div>
       <ContactTwo />
       <CtaOne />
-      <BlogTwo />
+      <div id="blog">
+        <BlogTwo />
+      </div>
     </>
   )
 }

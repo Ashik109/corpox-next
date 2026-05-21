@@ -4,20 +4,22 @@ import BlogHRWebsite from "./BlogHRWebsite";
 import BrandHRWebsite from "./BrandHRWebsite";
 import CounterHRWebsite from "./CounterHRWebsite";
 import FooterHRWebsite from "./FooterHRWebsite";
-import HeaderOne from "../01-index-consulting/HeaderOne";
+import HeaderHRWebsite from "./HeaderHRWebsite";
 import HRWebsiteAnimations from "./HRWebsiteAnimations";
 import PortfolioHRWebsite from "./PortfolioHRWebsite";
 import ServicesHRWebsite from "./ServicesHRWebsite";
 import SkillHRWebsite from "./SkillHRWebsite";
 import TestimonialMapHRWebsite from "./TestimonialMapHRWebsite";
 import VideoHRWebsite from "./VideoHRWebsite";
+import BodyClass from "../white-01-index-consulting/BodyClass";
 
 function Page() {
     return (
         <>
+            <BodyClass className="dark-home" />
             <HRWebsiteAnimations />
             <main className="page-wrapper">
-                <HeaderOne />
+                <HeaderHRWebsite />
                 <BannerHRWebsite />
                 <ServicesHRWebsite />
                 <AboutHRWebsite />
