@@ -34,7 +34,7 @@ function SectionBannerArea() {
       </h1>
       <p className="description">Explore 40+ stunning demos crafted with pixel-perfect design and modern CSS styling. Every element is Copy & Pest ready making customization effortless and intuitive. Perfect for any type of business, startup, or agency looking for a sleek, professional layout.</p>
       <div className="button-group">
-      <Link className="tmp-btn radius-round btn-primary btn-large" target="_blank" href="https://themeforest.net/item/corpox-business-consulting-bootstrap-5-html-template/59767866">
+      <Link className="tmp-btn radius-round btn-primary btn-large" target="_blank" href="#">
                                           Purchase Now
                                       </Link>
       </div>

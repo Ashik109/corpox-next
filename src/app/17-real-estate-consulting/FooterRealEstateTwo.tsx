@@ -13,7 +13,7 @@ function FooterRealEstateTwo() {
                                     </h2>
                                     <h6 className="subtitle">Finest choice for your home &amp; office</h6>
                                     <div className="call-to-btn text-center mt--30 d-flex justify-content-center">
-                                        <Link className="tmp-btn btn-icon" href="https://themeforest.net/item/corpox-business-consulting-bootstrap-5-html-template/59767866" target="_blank">
+                                        <Link className="tmp-btn btn-icon" href="#" target="_blank">
                                             Purchase Corpox <i className="icon feather-arrow-right" />
                                         </Link>
                                     </div>

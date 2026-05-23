@@ -12,11 +12,13 @@ import BlogCreativeAgency from './BlogCreativeAgency'
 import CtaThree from '../05-corporate/CtaThree'
 import FooterCreativeAgency from './FooterCreativeAgency'
 import CreativeAgencyAnimations from './CreativeAgencyAnimations'
+import BodyClass from '../white-01-index-consulting/BodyClass'
 
 function page() {
     return (
         <>
             <CreativeAgencyAnimations />
+            <BodyClass className='dark-home'/>
             <main className='page-wrapper'>
                 <HeaderOne />
                 <BannerCreativeAgency />

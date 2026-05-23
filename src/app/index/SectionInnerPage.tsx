@@ -22,7 +22,7 @@ function SectionInnerPage() {
                                       Styled with <span className="odometer" data-count="500">000</span>+ reusable elements for endless flexibility.
                                       From services to blogs, portfolios to contacts – everything is ready to launch.
                                   </p>
-      <Link className="btn-quick-action radius-round tmp-btn hover-icon-reverse" target="_blank" href="https://themeforest.net/item/corpox-business-consulting-bootstrap-5-html-template/59767866">
+      <Link className="btn-quick-action radius-round tmp-btn hover-icon-reverse" target="_blank" href="#">
       <span className="icon-reverse-wrapper">
       <span className="btn-text">Purchase Now</span>
       <span className="btn-icon"><i className="feather-arrow-right"></i></span>

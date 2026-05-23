@@ -29,7 +29,7 @@ function CtaOne() {
                                                         <Link
                                                             className="tmp-btn btn-extra-large hover-icon-reverse"
                                                             target="_blank"
-                                                            href="https://themeforest.net/item/corpox-business-consulting-bootstrap-5-html-template/59767866"
+                                                            href="#"
                                                         >
                                                             <span className="icon-reverse-wrapper">
                                                                 <span className="btn-text">Purchase Corpox</span>
@@ -86,7 +86,7 @@ function CtaOne() {
                                                                 <Link
                                                                     className="btn-read-more"
                                                                     target="_blank"
-                                                                    href="https://themeforest.net/item/corpox-business-consulting-bootstrap-5-html-template/59767866"
+                                                                    href="#"
                                                                 >
                                                                     <span>Purchase Corpox</span>
                                                                 </Link>

@@ -20,7 +20,7 @@ function TopbarTwo() {
                     <Link
                       className="btn-read-more"
                       target="_blank"
-                      href="https://themeforest.net/item/corpox-business-consulting-bootstrap-5-html-template/59767866"
+                      href="#"
                     >
                       <span>
                         Purchase Now <i className="feather-arrow-right" />

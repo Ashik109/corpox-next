@@ -36,7 +36,7 @@ function HeaderSolar({
                                             <span className="news-text">Intro price. Get Corpox for Big Sale -95% off.</span>
                                         </div>
                                         <div className="right-button">
-                                            <Link className="btn-read-more" target="_blank" href="https://themeforest.net/item/corpox-business-consulting-bootstrap-5-html-template/59767866">
+                                            <Link className="btn-read-more" target="_blank" href="#">
                                                 <span>
                                                     Purchase Now <i className="feather-arrow-right" />
                                                 </span>
