@@ -195,6 +195,64 @@ function MenuLinkItem({ item, onNavigate }: { item: MenuLink; onNavigate: () => 
 
 type PanelName = 'search' | 'offcanvas' | 'mobile' | ''
 
+type SidebarLogoConfig = {
+  alt: string
+  dark: string
+  light: string
+  routes: readonly string[]
+}
+
+const defaultSidebarLogo = {
+  alt: 'Corporate Logo',
+  dark: '/assets/images/logo/logo-dark.png',
+  light: '/assets/images/logo/logo.png',
+} as const
+
+const pageSidebarLogos: readonly SidebarLogoConfig[] = [
+  {
+    alt: 'Gym Fitness',
+    light: '/assets/images/logo/gym-logo.svg',
+    dark: '/assets/images/logo/gym-logo-dark.svg',
+    routes: ['/20-gym-fitness', '/white-20-gym-fitness', '/onepage-twenty', '/onepage-twenty-white'],
+  },
+  {
+    alt: 'Medical Healthcare',
+    light: '/assets/images/logo/doctor-logo.svg',
+    dark: '/assets/images/logo/doctor-logo-dark.svg',
+    routes: ['/21-medical', '/white-21-medical', '/onepage-21', '/onepage-21-white'],
+  },
+  {
+    alt: 'Solar Renewable Energy',
+    light: '/assets/images/logo/solar-logo.svg',
+    dark: '/assets/images/logo/solar-logo-dark.svg',
+    routes: ['/22-solar', '/white-22-solar', '/onepage-22', '/onepage-22-white'],
+  },
+  {
+    alt: 'AI Agency',
+    light: '/assets/images/logo/ai-logo.svg',
+    dark: '/assets/images/logo/ai-logo-dark.svg',
+    routes: ['/24-ai-agency', '/white-24-ai-agency', '/onepage-24', '/onepage-24-white'],
+  },
+  {
+    alt: 'Architecture',
+    light: '/assets/images/logo/archi-logo.svg',
+    dark: '/assets/images/logo/archi-logo-dark.svg',
+    routes: ['/25-architecture', '/white-25-architecture', '/onepage-25', '/onepage-25-white'],
+  },
+  {
+    alt: 'Construction',
+    light: '/assets/images/logo/construction-logo.svg',
+    dark: '/assets/images/logo/construction-logo-dark.svg',
+    routes: ['/26-construction', '/white-26-construction', '/onepage-26', '/onepage-26-white'],
+  },
+] as const
+
+function getSidebarLogo(pathname: string | null) {
+  if (!pathname) return defaultSidebarLogo
+
+  return pageSidebarLogos.find((logo) => logo.routes.some((route) => pathname === route || pathname.startsWith(`${route}/`))) || defaultSidebarLogo
+}
+
 export default function HeaderPanelManager() {
   const [activePanel, setActivePanel] = useState<PanelName>('')
   const [openMobileSection, setOpenMobileSection] = useState<string>('Home')
@@ -204,6 +262,7 @@ export default function HeaderPanelManager() {
   const pathname = usePathname()
   const isOpen = activePanel !== ''
   const isOnepageRoute = pathname === '/onepage' || pathname?.startsWith('/onepage-')
+  const sidebarLogo = getSidebarLogo(pathname)
   const normalizedSearch = searchValue.trim().toLowerCase()
   const filteredSearchItems = normalizedSearch
     ? searchItems.filter((item) => `${item.title} ${item.keywords}`.toLowerCase().includes(normalizedSearch))
@@ -373,8 +432,8 @@ export default function HeaderPanelManager() {
         </button>
         <div className="logo-side">
           <Link href="/" onClick={closePanels}>
-            <img className="logo-light" src="/assets/images/logo/logo.png" alt="Corporate Logo" />
-            <img className="logo-dark" src="/assets/images/logo/logo-dark.png" alt="Corporate Logo" />
+            <img className="logo-light" src={sidebarLogo.light} alt={sidebarLogo.alt} />
+            <img className="logo-dark" src={sidebarLogo.dark} alt={sidebarLogo.alt} />
           </Link>
         </div>
         <div className="side-info">
