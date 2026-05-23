@@ -5,9 +5,17 @@ const columns = [
     { title: "Resources", links: ["Team", "Testimonial", "Service", "Timeline"] },
 ];
 
-function FooterRealEstate() {
+type FooterRealEstateProps = {
+    spacingClassName?: string;
+};
+
+function FooterRealEstate({ spacingClassName = "mt--80" }: FooterRealEstateProps) {
+    const footerClassName = ["tmp-footer footer-style-default variation-two position-relative", spacingClassName]
+        .filter(Boolean)
+        .join(" ");
+
     return (
-        <footer className="tmp-footer footer-style-default variation-two position-relative mt--80">
+        <footer className={footerClassName}>
             <div className="footer-top pt--0">
                 <div className="container pb--80 pb_sm--30 pb_md--40">
                     <div className="row">

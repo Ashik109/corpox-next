@@ -38,7 +38,7 @@ function Page() {
                 <BrandITSolution />
                 <BlogITSolution />
                 <CtaModernBusiness />
-                <FooterRealEstate />
+                <FooterRealEstate spacingClassName="" />
             </main>
         </>
     );

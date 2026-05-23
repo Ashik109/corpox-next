@@ -31,7 +31,7 @@ function TestimonialAgencyThirteen() {
             <div className="container">
                 <div className="row">
                     <div className="col-12">
-                        <div className="tmp-section-title-border text-center">
+                        <div className="section-title text-center">
                             <h4 className="subtitle tmp-title-split">Testimonials</h4>
                             <h2 className="title w-600 mb--20 tmp-title-split">Our customers success stories</h2>
                         </div>

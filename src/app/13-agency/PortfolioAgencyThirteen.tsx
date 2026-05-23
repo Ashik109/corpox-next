@@ -39,7 +39,15 @@ function PortfolioAgencyThirteen() {
                                         <h3 className="title">Business Solution</h3>
                                         <div className="tmp-icon">
                                             <span className="default">
-                                                <i className="feather-arrow-up-right" />
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                                    <path d="M5.33333 0V2.13333H12.3627L0 14.496L1.504 16L13.8667 3.63733V10.6667H16V0H5.33333Z" fill="url(#tmp-svg-gradient-67)"></path>
+                                                    <defs>
+                                                    <linearGradient id="tmp-svg-gradient-56" x1="8" y1="0" x2="8" y2="16" gradientUnits="userSpaceOnUse">
+                                                        <stop offset="0" stopColor="#000"></stop>
+                                                        <stop offset="1" stopColor="#000"></stop>
+                                                    </linearGradient>
+                                                    </defs>
+                                                </svg>
                                             </span>
                                         </div>
                                     </Link>

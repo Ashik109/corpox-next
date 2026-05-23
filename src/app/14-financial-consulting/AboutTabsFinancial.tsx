@@ -13,12 +13,12 @@ const tabs = [
     {
         id: "mission",
         label: "Our Mission",
-        text: "From our humble beginnings, we started with a simple vision - to empower individuals and businesses to achieve financial stability and long-term growth. With years of experience in financial consulting, investment planning, and business advisory.",
+        text: "We started with a simple vision - to empower individuals and businesses to achieve financial stability and long-term growth. With years of experience in financial consulting, investment planning, and business advisory.",
     },
     {
         id: "vision",
         label: "Our Vission",
-        text: "From our humble beginnings, we started with a simple vision - to empower individuals and businesses to achieve financial stability and long-term growth. With years of experience in financial consulting, investment planning, and business advisory.",
+        text: "Our humble beginnings, we started with a simple vision - to empower individuals and businesses to achieve financial stability and long-term growth. With years of experience in financial consulting, investment planning, and business advisory.",
     },
 ];
 
