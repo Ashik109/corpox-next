@@ -2,11 +2,16 @@
 
 import { Fragment, useState } from "react";
 
-const tabs = ["CARDIOLOGY", "ORTHOPEDICS", "NEUROLOGY", "PEDIATRICS"] as const;
+const tabs = [
+    { id: "prod-cardio", label: "CARDIOLOGY" },
+    { id: "prod-crossfit", label: "ORTHOPEDICS" },
+    { id: "prod-gym", label: "NEUROLOGY" },
+    { id: "prod-powerlifting", label: "PEDIATRICS" },
+] as const;
 const days = ["MONDAY", "TUESDAY", "WEDNESDAY", "THURSDAY", "FRIDAY"] as const;
 
 const schedules = {
-    CARDIOLOGY: [
+    "prod-cardio": [
         ["Dr. Ahmed Khan", "Consultation\n9:00 - 12:00"],
         ["Dr. Fatima Begum", "ECG Checkup\n10:00 - 1:00"],
         ["Dr. Rahman Ali", "Echo Test\n2:00 - 5:00"],
@@ -27,8 +32,23 @@ const schedules = {
         ["Dr. Fatima Begum", "ECG Test\n10:00 - 1:00"],
         ["Dr. Rahman Ali", "OPD\n2:00 - 5:00"],
         ["Dr. Nusrat Jahan", "Consultation\n3:00 - 6:00"],
+        ["Dr. Ahmed Khan", "OPD\n11:00 - 2:00"],
+        ["Dr. Fatima Begum", "Consultation\n12:00 - 3:00"],
+        ["Dr. Rahman Ali", "Echo Test\n1:00 - 4:00"],
+        ["Dr. Nusrat Jahan", "OPD\n2:00 - 5:00"],
+        ["Dr. Ahmed Khan", "Consultation\n9:00 - 12:00"],
+        ["Dr. Fatima Begum", "OPD\n10:00 - 1:00"],
+        ["Dr. Rahman Ali", "Cardiac Checkup\n11:00 - 2:00"],
+        ["Dr. Nusrat Jahan", "Consultation\n12:00 - 3:00"],
+        ["Dr. Ahmed Khan", "ECG Test\n1:00 - 4:00"],
+        ["Dr. Fatima Begum", "OPD\n2:00 - 5:00"],
+        ["Dr. Rahman Ali", "Consultation\n3:00 - 6:00"],
+        ["Dr. Nusrat Jahan", "Echo\n4:00 - 7:00"],
+        ["Dr. Ahmed Khan", "OPD\n5:00 - 8:00"],
+        ["Dr. Fatima Begum", "Consultation\n6:00 - 9:00"],
+        ["Dr. Rahman Ali", "OPD\n7:00 - 10:00"],
     ],
-    ORTHOPEDICS: [
+    "prod-crossfit": [
         ["Dr. Arif Mahmud", "Joint Pain\n3:00 - 6:00"],
         ["Dr. Sonia Rahman", "Physiotherapy\n4:00 - 7:00"],
         ["Dr. Kamal Hossain", "OPD\n8:00 - 11:00"],
@@ -49,55 +69,100 @@ const schedules = {
         ["Dr. Kamal Hossain", "Consultation\n11:00 - 2:00"],
         ["Dr. Sonia Rahman", "OPD\n12:00 - 3:00"],
         ["Dr. Arif Mahmud", "Joint Pain Clinic\n1:00 - 4:00"],
+        ["Dr. Kamal Hossain", "Surgery OPD\n2:00 - 5:00"],
+        ["Dr. Sonia Rahman", "Consultation\n3:00 - 6:00"],
+        ["Dr. Arif Mahmud", "Physio Therapy\n4:00 - 7:00"],
+        ["Dr. Kamal Hossain", "OPD\n5:00 - 8:00"],
+        ["Dr. Sonia Rahman", "Fracture Follow-up\n6:00 - 9:00"],
+        ["Dr. Arif Mahmud", "Consultation\n7:00 - 10:00"],
+        ["Dr. Kamal Hossain", "Joint Clinic\n8:00 - 11:00"],
+        ["Dr. Sonia Rahman", "OPD\n9:00 - 12:00"],
+        ["Dr. Arif Mahmud", "Physio Checkup\n10:00 - 1:00"],
+        ["Dr. Kamal Hossain", "Consultation\n11:00 - 2:00"],
+        ["Dr. Sonia Rahman", "Fracture OPD\n12:00 - 3:00"],
+        ["Dr. Arif Mahmud", "Joint Consultation\n1:00 - 4:00"],
+        ["Dr. Kamal Hossain", "OPD\n2:00 - 5:00"],
+        ["Dr. Sonia Rahman", "Physio Therapy\n3:00 - 6:00"],
+        ["Dr. Arif Mahmud", "Consultation\n4:00 - 7:00"],
     ],
-    NEUROLOGY: [
-        ["Dr. Rahman Ali", "Neuro OPD\n9:00 - 12:00"],
-        ["Dr. Nusrat Jahan", "Brain Scan\n10:00 - 1:00"],
-        ["Dr. Ahmed Khan", "Consultation\n1:00 - 4:00"],
-        ["Dr. Rahman Ali", "Follow Up\n2:00 - 5:00"],
-        ["Dr. Nusrat Jahan", "Neuro Test\n3:00 - 6:00"],
-        ["Dr. Ahmed Khan", "OPD\n4:00 - 7:00"],
-        ["Dr. Rahman Ali", "Consultation\n5:00 - 8:00"],
-        ["Dr. Nusrat Jahan", "EEG\n6:00 - 9:00"],
-        ["Dr. Rahman Ali", "OPD\n8:00 - 11:00"],
-        ["Dr. Nusrat Jahan", "Consultation\n9:00 - 12:00"],
-        ["Dr. Ahmed Khan", "Neuro Care\n10:00 - 1:00"],
-        ["Dr. Rahman Ali", "OPD\n11:00 - 2:00"],
-        ["Dr. Nusrat Jahan", "Brain Clinic\n12:00 - 3:00"],
-        ["Dr. Ahmed Khan", "Follow Up\n1:00 - 4:00"],
-        ["Dr. Rahman Ali", "Consultation\n2:00 - 5:00"],
-        ["Dr. Nusrat Jahan", "OPD\n3:00 - 6:00"],
-        ["Dr. Ahmed Khan", "EEG Test\n4:00 - 7:00"],
-        ["Dr. Rahman Ali", "Consultation\n5:00 - 8:00"],
-        ["Dr. Nusrat Jahan", "Follow Up\n6:00 - 9:00"],
-        ["Dr. Ahmed Khan", "OPD\n7:00 - 10:00"],
+    "prod-gym": [
+        ["Dr. Tasnim Ahmed", "Neurology OPD\n8:00 - 11:00"],
+        ["Dr. Imran Chowdhury", "Migraine Clinic\n9:00 - 12:00"],
+        ["Dr. Tasnim Ahmed", "EEG Test\n10:00 - 1:00"],
+        ["Dr. Sakib Hasan", "Consultation\n11:00 - 2:00"],
+        ["Dr. Imran Chowdhury", "Follow-up\n12:00 - 3:00"],
+        ["Dr. Tasnim Ahmed", "OPD\n1:00 - 4:00"],
+        ["Dr. Imran Chowdhury", "Neurology Check\n2:00 - 5:00"],
+        ["Dr. Sakib Hasan", "Consultation\n3:00 - 6:00"],
+        ["Dr. Tasnim Ahmed", "EEG Test\n4:00 - 7:00"],
+        ["Dr. Imran Chowdhury", "OPD\n5:00 - 8:00"],
+        ["Dr. Sakib Hasan", "Neurology Clinic\n6:00 - 9:00"],
+        ["Dr. Tasnim Ahmed", "Consultation\n7:00 - 10:00"],
+        ["Dr. Imran Chowdhury", "Migraine OPD\n8:00 - 11:00"],
+        ["Dr. Sakib Hasan", "Neurology Test\n9:00 - 12:00"],
+        ["Dr. Tasnim Ahmed", "OPD\n10:00 - 1:00"],
+        ["Dr. Imran Chowdhury", "Consultation\n11:00 - 2:00"],
+        ["Dr. Sakib Hasan", "EEG Test\n12:00 - 3:00"],
+        ["Dr. Tasnim Ahmed", "Neurology OPD\n1:00 - 4:00"],
+        ["Dr. Imran Chowdhury", "Migraine Clinic\n2:00 - 5:00"],
+        ["Dr. Sakib Hasan", "Consultation\n3:00 - 6:00"],
+        ["Dr. Tasnim Ahmed", "OPD\n4:00 - 7:00"],
+        ["Dr. Imran Chowdhury", "Neurology Check\n5:00 - 8:00"],
+        ["Dr. Sakib Hasan", "EEG Test\n6:00 - 9:00"],
+        ["Dr. Tasnim Ahmed", "Consultation\n7:00 - 10:00"],
+        ["Dr. Imran Chowdhury", "OPD\n8:00 - 11:00"],
+        ["Dr. Sakib Hasan", "Neurology Clinic\n9:00 - 12:00"],
+        ["Dr. Tasnim Ahmed", "Migraine OPD\n10:00 - 1:00"],
+        ["Dr. Imran Chowdhury", "Consultation\n11:00 - 2:00"],
+        ["Dr. Sakib Hasan", "Neurology Test\n12:00 - 3:00"],
+        ["Dr. Tasnim Ahmed", "OPD\n1:00 - 4:00"],
+        ["Dr. Imran Chowdhury", "EEG Test\n2:00 - 5:00"],
+        ["Dr. Sakib Hasan", "Consultation\n3:00 - 6:00"],
+        ["Dr. Tasnim Ahmed", "Neurology OPD\n4:00 - 7:00"],
+        ["Dr. Imran Chowdhury", "Migraine Clinic\n5:00 - 8:00"],
+        ["Dr. Sakib Hasan", "Consultation\n6:00 - 9:00"],
     ],
-    PEDIATRICS: [
-        ["Dr. Fatima Begum", "Child OPD\n9:00 - 12:00"],
-        ["Dr. Sonia Rahman", "Vaccination\n10:00 - 1:00"],
-        ["Dr. Nusrat Jahan", "Consultation\n11:00 - 2:00"],
-        ["Dr. Fatima Begum", "Pediatric Care\n12:00 - 3:00"],
-        ["Dr. Sonia Rahman", "OPD\n1:00 - 4:00"],
-        ["Dr. Nusrat Jahan", "Follow Up\n2:00 - 5:00"],
-        ["Dr. Fatima Begum", "Child Checkup\n3:00 - 6:00"],
-        ["Dr. Sonia Rahman", "Consultation\n4:00 - 7:00"],
-        ["Dr. Nusrat Jahan", "OPD\n5:00 - 8:00"],
-        ["Dr. Fatima Begum", "Vaccination\n6:00 - 9:00"],
-        ["Dr. Sonia Rahman", "Child OPD\n8:00 - 11:00"],
-        ["Dr. Nusrat Jahan", "Consultation\n9:00 - 12:00"],
-        ["Dr. Fatima Begum", "Follow Up\n10:00 - 1:00"],
-        ["Dr. Sonia Rahman", "Pediatric Care\n11:00 - 2:00"],
-        ["Dr. Nusrat Jahan", "OPD\n12:00 - 3:00"],
-        ["Dr. Fatima Begum", "Consultation\n1:00 - 4:00"],
-        ["Dr. Sonia Rahman", "Vaccination\n2:00 - 5:00"],
-        ["Dr. Nusrat Jahan", "Child Clinic\n3:00 - 6:00"],
-        ["Dr. Fatima Begum", "OPD\n4:00 - 7:00"],
-        ["Dr. Sonia Rahman", "Follow Up\n5:00 - 8:00"],
+    "prod-powerlifting": [
+        ["Dr. Rina Akter", "Child Checkup\n9:00 - 12:00"],
+        ["Dr. Anisur Rahman", "Vaccination\n10:00 - 1:00"],
+        ["Dr. Rina Akter", "Newborn Care\n11:00 - 2:00"],
+        ["Dr. Farhana Islam", "Growth Monitoring\n12:00 - 3:00"],
+        ["Dr. Anisur Rahman", "Emergency\n1:00 - 4:00"],
+        ["Dr. Rina Akter", "OPD\n2:00 - 5:00"],
+        ["Dr. Anisur Rahman", "Child Consultation\n3:00 - 6:00"],
+        ["Dr. Farhana Islam", "Vaccination\n4:00 - 7:00"],
+        ["Dr. Rina Akter", "Newborn Clinic\n5:00 - 8:00"],
+        ["Dr. Anisur Rahman", "OPD\n6:00 - 9:00"],
+        ["Dr. Farhana Islam", "Growth Check\n7:00 - 10:00"],
+        ["Dr. Rina Akter", "Consultation\n8:00 - 11:00"],
+        ["Dr. Anisur Rahman", "Vaccination OPD\n9:00 - 12:00"],
+        ["Dr. Farhana Islam", "Child Checkup\n10:00 - 1:00"],
+        ["Dr. Rina Akter", "OPD\n11:00 - 2:00"],
+        ["Dr. Anisur Rahman", "Consultation\n12:00 - 3:00"],
+        ["Dr. Farhana Islam", "Newborn Care\n1:00 - 4:00"],
+        ["Dr. Rina Akter", "Growth Monitoring\n2:00 - 5:00"],
+        ["Dr. Anisur Rahman", "OPD\n3:00 - 6:00"],
+        ["Dr. Farhana Islam", "Vaccination\n4:00 - 7:00"],
+        ["Dr. Rina Akter", "Child Consultation\n5:00 - 8:00"],
+        ["Dr. Anisur Rahman", "Newborn Clinic\n6:00 - 9:00"],
+        ["Dr. Farhana Islam", "OPD\n7:00 - 10:00"],
+        ["Dr. Rina Akter", "Growth Check\n8:00 - 11:00"],
+        ["Dr. Anisur Rahman", "Consultation\n9:00 - 12:00"],
+        ["Dr. Farhana Islam", "Vaccination OPD\n10:00 - 1:00"],
+        ["Dr. Rina Akter", "Child Checkup\n11:00 - 2:00"],
+        ["Dr. Anisur Rahman", "OPD\n12:00 - 3:00"],
+        ["Dr. Farhana Islam", "Consultation\n1:00 - 4:00"],
+        ["Dr. Rina Akter", "Newborn Care\n2:00 - 5:00"],
+        ["Dr. Anisur Rahman", "Growth Monitoring\n3:00 - 6:00"],
+        ["Dr. Farhana Islam", "OPD\n4:00 - 7:00"],
+        ["Dr. Rina Akter", "Vaccination\n5:00 - 8:00"],
+        ["Dr. Anisur Rahman", "Child Consultation\n6:00 - 9:00"],
+        ["Dr. Farhana Islam", "Newborn Clinic\n7:00 - 10:00"],
     ],
 } as const;
 
 function TimeTableMedical() {
-    const [activeTab, setActiveTab] = useState<(typeof tabs)[number]>("CARDIOLOGY");
+    const [activeTab, setActiveTab] = useState<(typeof tabs)[number]["id"]>("prod-cardio");
 
     return (
         <div className="tmp-time-table-area tmp-section-gapTop">
@@ -134,39 +199,41 @@ function TimeTableMedical() {
                                         <div className="timetable-tabs tabs-box">
                                             <ul className="tab-btns tab-buttons clearfix">
                                                 {tabs.map((tab) => (
-                                                    <li className={`tab-btn ${activeTab === tab ? "active-btn" : ""}`} key={tab} onClick={() => setActiveTab(tab)}>
-                                                        {tab}
+                                                    <li className={`tab-btn ${activeTab === tab.id ? "active-btn" : ""}`} key={tab.id} onClick={() => setActiveTab(tab.id)}>
+                                                        {tab.label}
                                                     </li>
                                                 ))}
                                             </ul>
                                             <div className="tabs-content">
-                                                <div className="tab active-tab">
-                                                    <div className="content">
-                                                        <div className="clearfix">
-                                                            {schedules[activeTab].map(([name, detail], index) => (
-                                                                <div className="time-box tmponhover" key={`${activeTab}-${name}-${index}`}>
-                                                                    <div className="box-inner">
-                                                                        <div className="time">
-                                                                            {name}{" "}
-                                                                            <span>
-                                                                                {detail.split("\n").map((line, lineIndex) =>
-                                                                                    lineIndex === 0 ? (
-                                                                                        <Fragment key={`${name}-${lineIndex}`}>{line}</Fragment>
-                                                                                    ) : (
-                                                                                        <Fragment key={`${name}-${lineIndex}`}>
-                                                                                            <br />
-                                                                                            {line}
-                                                                                        </Fragment>
-                                                                                    ),
-                                                                                )}
-                                                                            </span>
+                                                {tabs.map((tab) => (
+                                                    <div className={`tab ${activeTab === tab.id ? "active-tab" : ""}`} id={tab.id} key={tab.id}>
+                                                        <div className="content">
+                                                            <div className="clearfix">
+                                                                {schedules[tab.id].map(([name, detail], index) => (
+                                                                    <div className="time-box tmponhover" key={`${tab.id}-${name}-${index}`}>
+                                                                        <div className="box-inner">
+                                                                            <div className="time">
+                                                                                {name}{" "}
+                                                                                <span>
+                                                                                    {detail.split("\n").map((line, lineIndex) =>
+                                                                                        lineIndex === 0 ? (
+                                                                                            <Fragment key={`${tab.id}-${index}-${lineIndex}`}>{line}</Fragment>
+                                                                                        ) : (
+                                                                                            <Fragment key={`${tab.id}-${index}-${lineIndex}`}>
+                                                                                                <br />
+                                                                                                {line}
+                                                                                            </Fragment>
+                                                                                        ),
+                                                                                    )}
+                                                                                </span>
+                                                                            </div>
                                                                         </div>
                                                                     </div>
-                                                                </div>
-                                                            ))}
+                                                                ))}
+                                                            </div>
                                                         </div>
                                                     </div>
-                                                </div>
+                                                ))}
                                             </div>
                                         </div>
                                     </div>

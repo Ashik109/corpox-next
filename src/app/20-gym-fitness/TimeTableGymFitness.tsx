@@ -2,8 +2,14 @@
 
 import { Fragment, useState } from "react";
 
-const tabs = ["CARDIO", "CROSSFIT", "GYM", "POWERLIFTING"] as const;
+const tabs = [
+    { id: "prod-cardio", label: "CARDIO" },
+    { id: "prod-crossfit", label: "CROSSFIT" },
+    { id: "prod-gym", label: "GYM" },
+    { id: "prod-powerlifting", label: "POWERLIFTING" },
+] as const;
 const days = ["MONDAY", "TUESDAY", "WEDNESDAY", "THURSDAY", "FRIDAY"] as const;
+
 const schedule = [
     ["GYM OPEN", "11:00  -  12:00"],
     ["Crossfit Class", "Madison fren\n11:00  -  12:00"],
@@ -25,10 +31,25 @@ const schedule = [
     ["Power Lifting", "Steve Cross\n11:00  -  12:00"],
     null,
     ["Power Lifting", "Steve Cross\n11:00  -  12:00"],
+    ["Cardio Burn", "MAdona FRON\n11:00  -  12:00"],
+    ["GYM OPEN", "11:00  -  12:00"],
+    ["Crossfit Class", "Madison fren\n11:00  -  12:00"],
+    null,
+    ["GYM OPEN", "11:00  -  12:00"],
+    ["GYM OPEN", "11:00  -  12:00"],
+    null,
+    ["Power Lifting", "Steve Cross\n11:00  -  12:00"],
+    null,
+    ["GYM OPEN", "11:00  -  12:00"],
+    ["Power Lifting", "Steve Cross\n11:00  -  12:00"],
+    null,
+    ["Power Lifting", "Steve Cross\n11:00  -  12:00"],
+    ["GYM OPEN", "11:00  -  12:00"],
+    null,
 ] as const;
 
 function TimeTableGymFitness() {
-    const [activeTab, setActiveTab] = useState<(typeof tabs)[number]>("CARDIO");
+    const [activeTab, setActiveTab] = useState<(typeof tabs)[number]["id"]>("prod-cardio");
 
     return (
         <div className="tmp-time-table-area tmp-section-gapBottom">
@@ -65,41 +86,43 @@ function TimeTableGymFitness() {
                                         <div className="timetable-tabs tabs-box">
                                             <ul className="tab-btns tab-buttons clearfix">
                                                 {tabs.map((tab) => (
-                                                    <li className={`tab-btn ${activeTab === tab ? "active-btn" : ""}`} key={tab} onClick={() => setActiveTab(tab)}>
-                                                        {tab}
+                                                    <li className={`tab-btn ${activeTab === tab.id ? "active-btn" : ""}`} key={tab.id} onClick={() => setActiveTab(tab.id)}>
+                                                        {tab.label}
                                                     </li>
                                                 ))}
                                             </ul>
                                             <div className="tabs-content">
-                                                <div className="tab active-tab">
-                                                    <div className="content">
-                                                        <div className="clearfix">
-                                                            {schedule.map((item, index) => (
-                                                                <div className="time-box tmponhover" key={`${activeTab}-${index}`}>
-                                                                    <div className="box-inner">
-                                                                        {item ? (
-                                                                            <div className="time">
-                                                                                {item[0]}{" "}
-                                                                                <span>
-                                                                                    {item[1].split("\n").map((line, lineIndex) =>
-                                                                                        lineIndex === 0 ? (
-                                                                                            <Fragment key={`${item[0]}-${lineIndex}`}>{line}</Fragment>
-                                                                                        ) : (
-                                                                                            <Fragment key={`${item[0]}-${lineIndex}`}>
-                                                                                                <br />
-                                                                                                {line}
-                                                                                            </Fragment>
-                                                                                        ),
-                                                                                    )}
-                                                                                </span>
-                                                                            </div>
-                                                                        ) : null}
+                                                {tabs.map((tab) => (
+                                                    <div className={`tab ${activeTab === tab.id ? "active-tab" : ""}`} id={tab.id} key={tab.id}>
+                                                        <div className="content">
+                                                            <div className="clearfix">
+                                                                {schedule.map((item, index) => (
+                                                                    <div className="time-box tmponhover" key={`${tab.id}-${index}`}>
+                                                                        <div className="box-inner">
+                                                                            {item ? (
+                                                                                <div className="time">
+                                                                                    {item[0]}{" "}
+                                                                                    <span>
+                                                                                        {item[1].split("\n").map((line, lineIndex) =>
+                                                                                            lineIndex === 0 ? (
+                                                                                                <Fragment key={`${tab.id}-${index}-${lineIndex}`}>{line}</Fragment>
+                                                                                            ) : (
+                                                                                                <Fragment key={`${tab.id}-${index}-${lineIndex}`}>
+                                                                                                    <br />
+                                                                                                    {line}
+                                                                                                </Fragment>
+                                                                                            ),
+                                                                                        )}
+                                                                                    </span>
+                                                                                </div>
+                                                                            ) : null}
+                                                                        </div>
                                                                     </div>
-                                                                </div>
-                                                            ))}
+                                                                ))}
+                                                            </div>
                                                         </div>
                                                     </div>
-                                                </div>
+                                                ))}
                                             </div>
                                         </div>
                                     </div>

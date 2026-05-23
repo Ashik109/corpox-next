@@ -3,6 +3,8 @@ import Link from 'next/link'
 
 
 import Slider from "react-slick";
+import NextArrow from "../01-index-consulting/NextArrow";
+import PrevArrow from "../01-index-consulting/PrevArrow";
 
 const testimonials = [
     ["01.webp", "USA", "Darun Due", "Business Developer"],
@@ -19,6 +21,8 @@ function TestimonialMedical() {
         arrows: true,
         autoplay: true,
         autoplaySpeed: 5000,
+        nextArrow: <NextArrow />,
+        prevArrow: <PrevArrow />,
     };
 
     return (
