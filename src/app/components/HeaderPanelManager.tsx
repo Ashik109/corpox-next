@@ -24,10 +24,10 @@ const pagesColumns: readonly MenuLink[][] = [
     ['Our Service Three', '/our-service-three'],
     ['Our Service Four', '/our-service-four'],
     ['Our Service Five', '/our-service-five'],
-    ['Service Details Two', '/service-details-two'],
-    ['Service Details Three', '/service-details-three'],
-    ['Service Details Four', '/service-details-four'],
-    ['Service Details', '/service-details'],
+    ['Service Details Two', '/service/management-leadership'],
+    ['Service Details Three', '/service/management-leadership'],
+    ['Service Details Four', '/service/management-leadership'],
+    ['Service Details', '/service/management-leadership'],
     ['Our Team', '/team'],
     ['Our Team Two', '/team-two'],
     ['Our History', '/our-history', 'New'],
@@ -94,11 +94,11 @@ const serviceLayoutLinks: readonly MenuLink[] = [
 ] as const
 
 const serviceDetailLinks: readonly MenuLink[] = [
-  ['Service Details', '/service-details', 'Popular'],
-  ['Service Details center', '/service-details-center'],
-  ['Service Details Two', '/service-details-two'],
-  ['Service Details Three', '/service-details-three'],
-  ['Service Details Four', '/service-details-four'],
+  ['Service Details', '/service/management-leadership', 'Popular'],
+  ['Service Details center', '/service/management-leadership'],
+  ['Service Details Two', '/service/management-leadership'],
+  ['Service Details Three', '/service/management-leadership'],
+  ['Service Details Four', '/service/management-leadership'],
   ['Service List Style', '/#', 'Coming'],
   ['Service Details Six', '/#', 'Coming'],
 ] as const
@@ -142,7 +142,7 @@ const elementsColumns: readonly MenuLink[][] = [
     ['Style Guide', '/style-guide', 'Hot'],
     ['Button Page', '/button'],
     ['Our Service', '/service'],
-    ['Service Details', '/service-details'],
+    ['Service Details', '/service/management-leadership'],
     ['Accordion Style', '/accordion'],
     ['Progressbar', '/progressbar'],
     ['Blog Grid', '/blog-grid'],
@@ -194,6 +194,183 @@ function MenuLinkItem({ item, onNavigate }: { item: MenuLink; onNavigate: () => 
 }
 
 type PanelName = 'search' | 'offcanvas' | 'mobile' | ''
+
+const whitePrefixRoutes = new Set([
+  '01-index-consulting',
+  '02-index-business-consulting-2',
+  '03-agency',
+  '04-services-agency',
+  '05-corporate',
+  '06-startup',
+  '07-creative-agency',
+  '08-business',
+  '09-digital-agency',
+  '10-marketing-agency',
+  '11-hr-website',
+  '12-index-business-consulting-3',
+  '13-agency',
+  '14-financial-consulting',
+  '15-business-coach',
+  '16-real-estate-consulting',
+  '17-real-estate-consulting',
+  '18-it-solution',
+  '19-personal-advisory',
+  '20-gym-fitness',
+  '21-medical',
+  '22-solar',
+  '23-event',
+  '24-ai-agency',
+  '25-architecture',
+  '26-construction',
+])
+
+const whiteSuffixRoutes = new Set([
+  'about',
+  'about-style',
+  'accordion',
+  'animated-heading',
+  'apply',
+  'avatars',
+  'banner-slider',
+  'blog-bento',
+  'blog-deails-sidebar',
+  'blog-deails-sidebar-left',
+  'blog-deails-video',
+  'blog-deails-video-popup',
+  'blog-deails-video-two',
+  'blog-details',
+  'blog-details-left-sidebar',
+  'blog-details-right-sidebar',
+  'blog-details-sidebar',
+  'blog-details-standard',
+  'blog-details-video',
+  'blog-details-video-popup',
+  'blog-details-video-two',
+  'blog-grid',
+  'blog-list-view',
+  'brand',
+  'button',
+  'call-to-action',
+  'career',
+  'career-details',
+  'cart',
+  'checkout',
+  'clients',
+  'contact',
+  'counter',
+  'error',
+  'faq',
+  'form-style',
+  'gallery',
+  'lightbox',
+  'modern-tab',
+  'office-branch',
+  'our-gallery',
+  'our-gallery-col-3',
+  'our-history',
+  'our-service',
+  'our-service-five',
+  'our-service-four',
+  'our-service-six',
+  'our-service-three',
+  'our-service-two',
+  'pagination',
+  'portfolio',
+  'portfolio-bottom-content',
+  'portfolio-box-layout',
+  'portfolio-card-hover',
+  'portfolio-details',
+  'portfolio-details-five',
+  'portfolio-details-four',
+  'portfolio-details-three',
+  'portfolio-details-two',
+  'portfolio-full-width',
+  'portfolio-grid-layout',
+  'portfolio-three-column',
+  'pricing',
+  'pricing-three',
+  'pricing-two',
+  'privacy-policy',
+  'progressbar',
+  'section-title',
+  'service',
+  'service-details',
+  'service-details-center',
+  'service-details-four',
+  'service-details-three',
+  'service-details-two',
+  'service-list',
+  'shop',
+  'shop-details',
+  'social-share',
+  'style-guide',
+  'tab',
+  'team',
+  'team-details',
+  'team-style',
+  'team-three',
+  'team-two',
+  'terms-condition',
+  'testimonial',
+  'testimonial-modern',
+  'testimonial-three',
+  'testimonial-two',
+  'timeline',
+  'tooltip',
+  'typography',
+  'video',
+])
+
+function isWhiteContext(pathname: string | null) {
+  if (!pathname) return false
+
+  const firstSegment = pathname.split('/').filter(Boolean)[0] || ''
+  return firstSegment.startsWith('white-') || firstSegment.endsWith('-white')
+}
+
+function getWhiteAwareHref(href: string, currentPathname: string | null) {
+  if (!isWhiteContext(currentPathname)) return href
+  if (!href || href.startsWith('#') || href.startsWith('mailto:') || href.startsWith('tel:')) return href
+
+  let url: URL
+
+  try {
+    url = new URL(href, window.location.origin)
+  } catch {
+    return href
+  }
+
+  if (url.origin !== window.location.origin) return href
+
+  const segments = url.pathname.split('/').filter(Boolean)
+  const firstSegment = segments[0] || ''
+
+  if (!firstSegment) {
+    url.pathname = '/white-01-index-consulting'
+    return `${url.pathname}${url.search}${url.hash}`
+  }
+
+  if (firstSegment.startsWith('white-') || firstSegment.endsWith('-white') || firstSegment === '_next') return href
+
+  if (segments.length > 1 && firstSegment === 'blog') {
+    segments[0] = 'blog-details-white'
+  } else if (segments.length > 1 && firstSegment === 'portfolio') {
+    segments[0] = 'portfolio-details-white'
+  } else if (segments.length > 1 && firstSegment === 'service') {
+    return href
+  } else if (segments.length > 1 && firstSegment === 'team') {
+    segments[0] = 'team-details-white'
+  } else if (whitePrefixRoutes.has(firstSegment)) {
+    segments[0] = `white-${firstSegment}`
+  } else if (whiteSuffixRoutes.has(firstSegment)) {
+    segments[0] = `${firstSegment}-white`
+  } else {
+    return href
+  }
+
+  url.pathname = `/${segments.join('/')}`
+  return `${url.pathname}${url.search}${url.hash}`
+}
 
 type SidebarLogoConfig = {
   alt: string
@@ -318,9 +495,41 @@ export default function HeaderPanelManager() {
     }
   }, [isOpen])
 
+  useEffect(() => {
+    const handleWhiteRouteClick = (event: MouseEvent) => {
+      if (
+        event.defaultPrevented ||
+        event.button !== 0 ||
+        event.altKey ||
+        event.ctrlKey ||
+        event.metaKey ||
+        event.shiftKey
+      ) {
+        return
+      }
+
+      const link = (event.target as Element | null)?.closest('a[href]') as HTMLAnchorElement | null
+
+      if (!link || link.target && link.target !== '_self' || link.hasAttribute('download')) return
+      if (link.closest('.demos-area-drop-down')) return
+
+      const originalHref = link.getAttribute('href') || ''
+      const nextHref = getWhiteAwareHref(originalHref, pathname)
+
+      if (nextHref === originalHref) return
+
+      event.preventDefault()
+      closePanels()
+      router.push(nextHref)
+    }
+
+    document.addEventListener('click', handleWhiteRouteClick, true)
+    return () => document.removeEventListener('click', handleWhiteRouteClick, true)
+  }, [pathname, router])
+
   const handleSearchSubmit = (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault()
-    const target = filteredSearchItems[0]?.href || '/service'
+    const target = getWhiteAwareHref(filteredSearchItems[0]?.href || '/service', pathname)
     closePanels()
     router.push(target)
   }
@@ -653,8 +862,8 @@ export default function HeaderPanelManager() {
                         {pagesColumns.map((column, index) => (
                           <div className="col-xl-2 col-lg-3 single-mega-item" key={index}>
                             <ul className="mega-menu-item">
-                              {column.map((item) => (
-                                <MenuLinkItem item={item} key={item[1]} onNavigate={closePanels} />
+                              {column.map((item, itemIndex) => (
+                                <MenuLinkItem item={item} key={`${item[0]}-${item[1]}-${itemIndex}`} onNavigate={closePanels} />
                               ))}
                             </ul>
                           </div>
@@ -697,16 +906,16 @@ export default function HeaderPanelManager() {
                         <div className="col-lg-12 col-xl-6 col-xxl-6 single-mega-item">
                           <h3 className="tmp-short-title">Service Layout</h3>
                           <ul className="mega-menu-item">
-                            {serviceLayoutLinks.map((item) => (
-                              <MenuLinkItem item={item} key={item[1]} onNavigate={closePanels} />
+                            {serviceLayoutLinks.map((item, itemIndex) => (
+                              <MenuLinkItem item={item} key={`${item[0]}-${item[1]}-${itemIndex}`} onNavigate={closePanels} />
                             ))}
                           </ul>
                         </div>
                         <div className="col-lg-12 col-xl-6 col-xxl-6 single-mega-item">
                           <h3 className="tmp-short-title">Service Details</h3>
                           <ul className="mega-menu-item">
-                            {serviceDetailLinks.map((item) => (
-                              <MenuLinkItem item={item} key={item[1] + item[0]} onNavigate={closePanels} />
+                            {serviceDetailLinks.map((item, itemIndex) => (
+                              <MenuLinkItem item={item} key={`${item[0]}-${item[1]}-${itemIndex}`} onNavigate={closePanels} />
                             ))}
                           </ul>
                         </div>
@@ -739,14 +948,14 @@ export default function HeaderPanelManager() {
                     Project
                   </Link>
                   <ul className="submenu" style={{ display: openMobileSection === 'Project' ? 'block' : 'none' }}>
-                    {projectLinks.map((item) => (
-                      <MenuLinkItem item={item} key={item[1]} onNavigate={closePanels} />
+                    {projectLinks.map((item, itemIndex) => (
+                      <MenuLinkItem item={item} key={`${item[0]}-${item[1]}-${itemIndex}`} onNavigate={closePanels} />
                     ))}
                     <li className="has-third-lev">
                       <Link href="/#" onClick={(event) => event.preventDefault()}>Portfolio Details</Link>
                       <ul className="submenu">
-                        {projectDetailLinks.map((item) => (
-                          <MenuLinkItem item={item} key={item[1]} onNavigate={closePanels} />
+                        {projectDetailLinks.map((item, itemIndex) => (
+                          <MenuLinkItem item={item} key={`${item[0]}-${item[1]}-${itemIndex}`} onNavigate={closePanels} />
                         ))}
                       </ul>
                     </li>
@@ -766,14 +975,14 @@ export default function HeaderPanelManager() {
                     Blog
                   </Link>
                   <ul className="submenu" style={{ display: openMobileSection === 'Blog' ? 'block' : 'none' }}>
-                    {blogLinks.map((item) => (
-                      <MenuLinkItem item={item} key={item[1]} onNavigate={closePanels} />
+                    {blogLinks.map((item, itemIndex) => (
+                      <MenuLinkItem item={item} key={`${item[0]}-${item[1]}-${itemIndex}`} onNavigate={closePanels} />
                     ))}
                     <li className="has-third-lev">
                       <Link href="/#" onClick={(event) => event.preventDefault()}>Blog Details</Link>
                       <ul className="submenu">
-                        {blogDetailLinks.map((item) => (
-                          <MenuLinkItem item={item} key={item[1]} onNavigate={closePanels} />
+                        {blogDetailLinks.map((item, itemIndex) => (
+                          <MenuLinkItem item={item} key={`${item[0]}-${item[1]}-${itemIndex}`} onNavigate={closePanels} />
                         ))}
                       </ul>
                     </li>
@@ -807,8 +1016,8 @@ export default function HeaderPanelManager() {
                         {elementsColumns.map((column, index) => (
                           <div className={index === 2 ? 'col-lg-3' : 'col-lg-3 single-mega-item'} key={index}>
                             <ul className="mega-menu-item">
-                              {column.map((item) => (
-                                <MenuLinkItem item={item} key={item[1]} onNavigate={closePanels} />
+                              {column.map((item, itemIndex) => (
+                                <MenuLinkItem item={item} key={`${item[0]}-${item[1]}-${itemIndex}`} onNavigate={closePanels} />
                               ))}
                             </ul>
                           </div>
