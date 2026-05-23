@@ -1,8 +1,8 @@
 import RealEstateAnimations from "../16-real-estate-consulting/RealEstateAnimations";
+import BodyClass from "../white-01-index-consulting/BodyClass";
 import AboutAiAgency from "./AboutAiAgency";
 import BannerAiAgency from "./BannerAiAgency";
 import BlogAiAgency from "./BlogAiAgency";
-import BodyClassAiAgency from "./BodyClassAiAgency";
 import BrandAiAgency from "./BrandAiAgency";
 import CounterAiAgency from "./CounterAiAgency";
 import FaqAiAgency from "./FaqAiAgency";
@@ -15,7 +15,7 @@ import WorkProcessAiAgency from "./WorkProcessAiAgency";
 function Page() {
     return (
         <>
-            <BodyClassAiAgency />
+            <BodyClass className="dark-home demo-ai-agency"/>
             <RealEstateAnimations />
             <main className="page-wrapper">
                 <HeaderAiAgency />

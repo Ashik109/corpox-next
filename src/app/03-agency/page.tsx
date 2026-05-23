@@ -32,7 +32,7 @@ function page() {
                 <TeamTwo />
                 <ContactOne />
                 <CtaOne />
-                <BlogTwo className='tmp-section-gapTop'/>
+                <BlogTwo />
                 <FooterThree />
             </main>
         </>
