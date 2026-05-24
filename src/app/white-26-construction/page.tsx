@@ -1,6 +1,5 @@
 import React from 'react'
 import BodyClass from '../white-01-index-consulting/BodyClass'
-import { WHITE_HEADER_OVER_HERO } from '../components/HeaderModeClasses'
 import RealEstateAnimations from "../16-real-estate-consulting/RealEstateAnimations";
 import AboutFluidConstruction from '../26-construction/AboutFluidConstruction';
 import BannerConstruction from '../26-construction/BannerConstruction';
@@ -25,7 +24,7 @@ export default function Page() {
       <RealEstateAnimations />
       <main className="page-wrapper">
         <TopbarConstruction />
-        <HeaderConstruction className={WHITE_HEADER_OVER_HERO} />
+        <HeaderConstruction />
         <BannerConstruction />
         <ConstructionTabs />
         <ServicesConstruction />

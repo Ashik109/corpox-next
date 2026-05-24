@@ -1,4 +1,7 @@
 import Link from 'next/link'
+import ShopDetailsImageSlider from '../../components/shop/ShopDetailsImageSlider'
+import ShopQuantityActions from '../../components/shop/ShopQuantityActions'
+import ShopDetailsTabs from '../../components/shop/ShopDetailsTabs'
 function SectionServiceArea() {
   return (
     <>
@@ -28,23 +31,7 @@ function SectionServiceArea() {
       <div className="row g-5">
       <div className="col-lg-5 mb_sm--50">
       <div className="thumbnail-product-swip-area">
-      <div className="row tmp-slick-dot tmp-slick-arrow testimonial-activation">
-      <div className="shop-details-thumbnail-main">
-      <div className="thumbnail">
-      <img className="w-100" src="/assets/images/shop/slide-1.webp" alt="Corporate Template" />
-      </div>
-      </div>
-      <div className="shop-details-thumbnail-main">
-      <div className="thumbnail">
-      <img className="w-100" src="/assets/images/shop/slide-2.webp" alt="Corporate Template" />
-      </div>
-      </div>
-      <div className="shop-details-thumbnail-main">
-      <div className="thumbnail">
-      <img className="w-100" src="/assets/images/shop/slide-3.webp" alt="Corporate Template" />
-      </div>
-      </div>
-      </div>
+      <ShopDetailsImageSlider />
       </div>
       </div>
       <div className="col-lg-7">
@@ -75,24 +62,13 @@ function SectionServiceArea() {
       <li className="sku_wrapper">Services:<span> Free Shipping , Cash On Delivery</span></li>
       </ul>
       </div>
-      <div className="quantity-area">
-      <div className="cart-edit">
-      <div className="quantity-edit">
-      <input type="text" className="input" value="3" />
-      <span className="button-area">
-      <button className="button minus"><i className="feather-minus"></i></button>
-      <button className="button plus"><i className="feather-plus"></i></button>
-      </span>
-      </div>
-      </div>
-      <Link href="/cart" className="tmp-btn btn-primary btn-two">Add to cart</Link>
-      <Link href="/cart" className="wishlist-btn"><i className="feather-heart"></i></Link>
+      <ShopQuantityActions cartHref="/cart" />
       </div>
       </div>
       </div>
+      <ShopDetailsTabs />
       </div>
       </div>
-      <div className="col-md-12 mt--40"></div></div>
     </>
   )
 }

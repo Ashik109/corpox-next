@@ -1,20 +1,22 @@
 'use client'
-import HeaderNav from '../../components/header/HeaderNav'
-import { useState, useEffect } from 'react';
+
 import Link from 'next/link'
-import React from 'react'
-import { HeaderDotSidebarTrigger, HeaderMobileMenuTrigger, HeaderSearchTrigger } from '../components/HeaderPanelTriggers';
+import { useEffect, useState } from 'react'
+import HeaderNav from '../../components/header/HeaderNav'
+import { HeaderDotSidebarTrigger, HeaderMobileMenuTrigger, HeaderSearchTrigger } from '../components/HeaderPanelTriggers'
 
 interface HeaderOneProps {
     className?: string;
     logoSrc?: string;
     logoAlt?: string;
+    ctaHref?: string;
 }
 
 function HeaderConstruction({
     className = "",
     logoSrc = "",
     logoAlt = "",
+    ctaHref = "/contact",
 }: HeaderOneProps) {
     const [isSticky, setIsSticky] = useState(false);
     const logoLight = logoSrc || "/assets/images/logo/construction-logo.svg";
@@ -37,36 +39,38 @@ function HeaderConstruction({
         };
     }, []);
     return (
-        <header className={`tmp-header header-default header-sticky header-one ${isSticky ? 'sticky' : ''} ${className}`}>
+        <header className={`tmp-header header-default header-left-align header-sticky-smooth header-sticky${isSticky ? ' sticky' : ''}${className ? ` ${className}` : ''}`}>
             <div className="container position-relative">
-                <div className="row align-items-center row--0">
-                    <div className="col-xl-2 col-lg-2 col-md-6 col-4">
-                        <div className="logo">
-                            <Link href="/">
-                                <img
-                                    className="logo-light"
-                                    src={logoLight}
-                                    alt={logoText}
-                                />
-                                <img
-                                    className="logo-dark"
-                                    src={logoDark}
-                                    alt={logoText}
-                                />
-                            </Link>
+                <div className="row align-items-center">
+                    <div className="col-lg-9 col-md-6 col-4 position-static">
+                        <div className="header-left d-flex">
+                            <div className="logo">
+                                <Link href="/">
+                                    <img
+                                        className="logo-light"
+                                        src={logoLight}
+                                        alt={logoText}
+                                    />
+                                    <img
+                                        className="logo-dark"
+                                        src={logoDark}
+                                        alt={logoText}
+                                    />
+                                </Link>
+                            </div>
+                            <HeaderNav />
                         </div>
                     </div>
-                    <div className="col-xl-10 col-lg-10 col-md-6 col-8 position-static">
+                    <div className="col-lg-3 col-md-6 col-8">
                         <div className="header-right with-search">
-                            <HeaderNav />
                             {/* Start Header Btn  */}
                             <div className="header-btn">
                                 <HeaderSearchTrigger />
                                 <div className="dot-btn">
                                     <HeaderDotSidebarTrigger />
                                 </div>
-                                <Link className="tmp-btn round" target="_blank" href="/contact">
-                                    Start Free Trial
+                                <Link className="tmp-btn" target="_blank" href={ctaHref}>
+                                    REQUEST A QUOTE
                                 </Link>
                             </div>
                             {/* End Header Btn  */}

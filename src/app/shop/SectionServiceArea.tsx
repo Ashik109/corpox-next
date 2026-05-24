@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import ShopAddToCartButton from '../../components/shop/ShopAddToCartButton'
 function SectionServiceArea() {
   return (
     <>
@@ -121,8 +122,8 @@ function SectionServiceArea() {
       <div className="right-content-area-shop">
       <div className="shop-filter-area mb--30">
       <p>Showing 1-9 of 19 results</p>
-      <select className="form-select" aria-label="Default select example">
-      <option selected>Default sorting</option>
+      <select className="form-select" aria-label="Default select example" defaultValue="">
+      <option value="">Default sorting</option>
       <option value="1">One</option>
       <option value="2">Two</option>
       <option value="3">Three</option>
@@ -154,7 +155,7 @@ function SectionServiceArea() {
       <p className="stock">In Stock: 42</p>
       </div>
       <div className="button-area">
-      <Link href="javascript:void(0)" className="tmp-btn cart-btn btn-primary">Add To Cart <i className="feather-shopping-cart"></i></Link>
+      <ShopAddToCartButton />
       </div>
       </div>
       </div>
@@ -184,7 +185,7 @@ function SectionServiceArea() {
       <p className="stock">In Stock: 99</p>
       </div>
       <div className="button-area">
-      <Link href="javascript:void(0)" className="tmp-btn cart-btn btn-primary">Add To Cart <i className="feather-shopping-cart"></i></Link>
+      <ShopAddToCartButton />
       </div>
       </div>
       </div>
@@ -214,7 +215,7 @@ function SectionServiceArea() {
       <p className="stock">In Stock: 49</p>
       </div>
       <div className="button-area">
-      <Link href="javascript:void(0)" className="tmp-btn cart-btn btn-primary">Add To Cart <i className="feather-shopping-cart"></i></Link>
+      <ShopAddToCartButton />
       </div>
       </div>
       </div>
@@ -244,7 +245,7 @@ function SectionServiceArea() {
       <p className="stock">In Stock: 38</p>
       </div>
       <div className="button-area">
-      <Link href="javascript:void(0)" className="tmp-btn cart-btn btn-primary">Add To Cart <i className="feather-shopping-cart"></i></Link>
+      <ShopAddToCartButton />
       </div>
       </div>
       </div>
@@ -274,7 +275,7 @@ function SectionServiceArea() {
       <p className="stock">In Stock: 150</p>
       </div>
       <div className="button-area">
-      <Link href="javascript:void(0)" className="tmp-btn cart-btn btn-primary">Add To Cart <i className="feather-shopping-cart"></i></Link>
+      <ShopAddToCartButton />
       </div>
       </div>
       </div>
@@ -304,7 +305,7 @@ function SectionServiceArea() {
       <p className="stock">In Stock: 19</p>
       </div>
       <div className="button-area">
-      <Link href="javascript:void(0)" className="tmp-btn cart-btn btn-primary">Add To Cart <i className="feather-shopping-cart"></i></Link>
+      <ShopAddToCartButton />
       </div>
       </div>
       </div>

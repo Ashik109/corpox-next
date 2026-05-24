@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import ShopAddToCartButton from '../../components/shop/ShopAddToCartButton'
 function SectionRelatedProductArea() {
   return (
     <>
@@ -45,7 +46,7 @@ function SectionRelatedProductArea() {
       <p className="stock">In Stock: 42</p>
       </div>
       <div className="button-area">
-      <Link href="javascript:void(0)" className="tmp-btn cart-btn btn-primary">Add To Cart <i className="feather-shopping-cart"></i></Link>
+      <ShopAddToCartButton />
       </div>
       </div>
       </div>
@@ -75,7 +76,7 @@ function SectionRelatedProductArea() {
       <p className="stock">In Stock: 42</p>
       </div>
       <div className="button-area">
-      <Link href="javascript:void(0)" className="tmp-btn cart-btn btn-primary">Add To Cart <i className="feather-shopping-cart"></i></Link>
+      <ShopAddToCartButton />
       </div>
       </div>
       </div>
@@ -105,7 +106,7 @@ function SectionRelatedProductArea() {
       <p className="stock">In Stock: 42</p>
       </div>
       <div className="button-area">
-      <Link href="javascript:void(0)" className="tmp-btn cart-btn btn-primary">Add To Cart <i className="feather-shopping-cart"></i></Link>
+      <ShopAddToCartButton />
       </div>
       </div>
       </div>
