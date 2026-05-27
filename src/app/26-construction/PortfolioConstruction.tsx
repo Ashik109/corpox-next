@@ -34,11 +34,11 @@ function PortfolioConstruction() {
                     {projects.map(([image, title, category], index) => (
                         <div className="col-lg-6 col-md-6 col-sm-12 tmp-jump__item" data-aos="fade-up" data-aos-duration="700" data-aos-delay={index * 100} key={title}>
                             <div className="single-project-style-three invers-anime">
-                                <Link className="thumbnail" href="/project-details">
+                                <Link className="thumbnail" href="/portfolio/brand-refresh-venture">
                                     <img loading="lazy" src={`/assets/images/portfolio/${image}`} alt={title} />
                                 </Link>
                                 <div className="inner-content tmponhover">
-                                    <Link href="/project-details">
+                                    <Link href="/portfolio/brand-refresh-venture">
                                         <h4 className="title">{title}</h4>
                                     </Link>
                                     <span>{category}</span>

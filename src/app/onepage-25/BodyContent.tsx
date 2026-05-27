@@ -23,7 +23,7 @@ function BodyContent() {
       <div id="service">
         <ServicesArchitecture />
       </div>
-      <div id="blog">
+      <div id="blog" className='tmp-section-gapBottom'>
         <BlogArchitecture />
       </div>
     </>

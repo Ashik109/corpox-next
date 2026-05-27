@@ -22,7 +22,7 @@ function Sidebar({ detailRoute, phone }: { detailRoute: string; phone: string })
           <ul className="single-categories">
             {services.map((s) => (
               <li key={s.slug} className="tmponhover">
-                <Link href={`${detailRoute}/${s.slug}`}>{s.title} <i className="far fa-long-arrow-right" /></Link>
+                <Link href={`${detailRoute}/${s.slug}`}>{s.title} <i className="fa fa-long-arrow-right" /></Link>
               </li>
             ))}
           </ul>

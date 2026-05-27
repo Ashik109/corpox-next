@@ -1721,7 +1721,7 @@ export default function MainNav({ homeActive = false }: MainNavProps) {
             <li className="with-megamenu has-menu-child-item">
                 <Link href="/#">
                     Pages
-                    {/* <i class="feather-more-vertical"></i> */}
+                    
                 </Link>
                 <div className="tmp-megamenu with-mega-item-2 full-width-mega">
                     <div className="wrapper">
@@ -1854,22 +1854,22 @@ export default function MainNav({ homeActive = false }: MainNavProps) {
                             <div className="col-xl-2 col-lg-3 single-mega-item">
                                 <ul className="mega-menu-item">
                                     <li>
-                                        <Link href="/portfolio-details-two/brand-refresh-venture">
+                                        <Link href="/portfolio/brand-refresh-venture">
                                             Portfolio Details Two
                                         </Link>
                                     </li>
                                     <li>
-                                        <Link href="/portfolio-details-three/brand-refresh-venture">
+                                        <Link href="/portfolio/brand-refresh-venture">
                                             Portfolio Details Video
                                         </Link>
                                     </li>
                                     <li>
-                                        <Link href="/portfolio-details-three/brand-refresh-venture">
+                                        <Link href="/portfolio/brand-refresh-venture">
                                             Portfolio Details Video
                                         </Link>
                                     </li>
                                     <li>
-                                        <Link href="/portfolio-details-four/brand-refresh-venture">
+                                        <Link href="/portfolio/brand-refresh-venture">
                                             Portfolio Details Slider
                                         </Link>
                                     </li>
@@ -2148,28 +2148,28 @@ export default function MainNav({ homeActive = false }: MainNavProps) {
                         </Link>
                     </li>
                     <li className="has-third-lev">
-                        <Link href="/portfolio-details/brand-refresh-venture">Portfolio Details</Link>
+                        <Link href="/portfolio/brand-refresh-venture">Portfolio Details</Link>
                         <ul className="submenu">
                             <li>
-                                <Link href="/portfolio-details/brand-refresh-venture">Portfolio Details</Link>
+                                <Link href="/portfolio/brand-refresh-venture">Portfolio Details</Link>
                             </li>
                             <li>
-                                <Link href="/portfolio-details-two/brand-refresh-venture">
+                                <Link href="/portfolio/brand-refresh-venture">
                                     Portfolio Details Two
                                 </Link>
                             </li>
                             <li>
-                                <Link href="/portfolio-details-three/brand-refresh-venture">
+                                <Link href="/portfolio/brand-refresh-venture">
                                     Portfolio Details Video
                                 </Link>
                             </li>
                             <li>
-                                <Link href="/portfolio-details-five/brand-refresh-venture">
+                                <Link href="/portfolio/brand-refresh-venture">
                                     Portfolio Details Video 2
                                 </Link>
                             </li>
                             <li>
-                                <Link href="/portfolio-details-four/brand-refresh-venture">
+                                <Link href="/portfolio/brand-refresh-venture">
                                     Portfolio Details Slider
                                 </Link>
                             </li>
