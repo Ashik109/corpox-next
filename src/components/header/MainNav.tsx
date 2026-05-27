@@ -2048,7 +2048,7 @@ export default function MainNav({ homeActive = false }: MainNavProps) {
                                         </Link>
                                     </li>
                                     <li>
-                                        <Link href="/service/management-leadership">
+                                        <Link href="/service-details/">
                                             Service Details center
                                         </Link>
                                     </li>
