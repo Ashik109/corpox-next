@@ -433,6 +433,7 @@ function getSidebarLogo(pathname: string | null) {
 export default function HeaderPanelManager() {
   const [activePanel, setActivePanel] = useState<PanelName>('')
   const [openMobileSection, setOpenMobileSection] = useState<string>('Home')
+  const [openNested, setOpenNested] = useState<Record<string, boolean>>({})
   const [mobileDemoTab, setMobileDemoTab] = useState<'multipage' | 'onepage'>('multipage')
   const [searchValue, setSearchValue] = useState('')
   const router = useRouter()
@@ -459,6 +460,10 @@ export default function HeaderPanelManager() {
   }, [isOnepageRoute])
 
   const closePanels = () => setActivePanel('')
+
+  const toggleNested = (key: string) => {
+    setOpenNested((prev) => ({ ...prev, [key]: !prev[key] }))
+  }
 
   useEffect(() => {
     const handleClick = (event: MouseEvent) => {
@@ -952,8 +957,17 @@ export default function HeaderPanelManager() {
                       <MenuLinkItem item={item} key={`${item[0]}-${item[1]}-${itemIndex}`} onNavigate={closePanels} />
                     ))}
                     <li className="has-third-lev">
-                      <Link href="/#" onClick={(event) => event.preventDefault()}>Portfolio Details</Link>
-                      <ul className="submenu">
+                      <a
+                        href="/#"
+                        onClick={(event) => {
+                          event.preventDefault()
+                          toggleNested('project-portfolio-details')
+                        }}
+                        aria-expanded={!!openNested['project-portfolio-details']}
+                      >
+                        Portfolio Details
+                      </a>
+                      <ul className="submenu" style={{ display: openNested['project-portfolio-details'] ? 'block' : 'none' }}>
                         {projectDetailLinks.map((item, itemIndex) => (
                           <MenuLinkItem item={item} key={`${item[0]}-${item[1]}-${itemIndex}`} onNavigate={closePanels} />
                         ))}
@@ -979,8 +993,17 @@ export default function HeaderPanelManager() {
                       <MenuLinkItem item={item} key={`${item[0]}-${item[1]}-${itemIndex}`} onNavigate={closePanels} />
                     ))}
                     <li className="has-third-lev">
-                      <Link href="/#" onClick={(event) => event.preventDefault()}>Blog Details</Link>
-                      <ul className="submenu">
+                      <a
+                        href="/#"
+                        onClick={(event) => {
+                          event.preventDefault()
+                          toggleNested('blog-blog-details')
+                        }}
+                        aria-expanded={!!openNested['blog-blog-details']}
+                      >
+                        Blog Details
+                      </a>
+                      <ul className="submenu" style={{ display: openNested['blog-blog-details'] ? 'block' : 'none' }}>
                         {blogDetailLinks.map((item, itemIndex) => (
                           <MenuLinkItem item={item} key={`${item[0]}-${item[1]}-${itemIndex}`} onNavigate={closePanels} />
                         ))}

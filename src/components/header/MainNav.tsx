@@ -2,6 +2,7 @@
 
 import Link from 'next/link'
 import { useState } from 'react'
+import { portfolioProjects } from '../../data/portfolioProjects'
 
 type DemoTab = 'multipage' | 'onepage'
 
@@ -2148,31 +2149,13 @@ export default function MainNav({ homeActive = false }: MainNavProps) {
                         </Link>
                     </li>
                     <li className="has-third-lev">
-                        <Link href="/portfolio/brand-refresh-venture">Portfolio Details</Link>
+                        <Link href="/portfolio">Portfolio Details</Link>
                         <ul className="submenu">
-                            <li>
-                                <Link href="/portfolio/brand-refresh-venture">Portfolio Details</Link>
-                            </li>
-                            <li>
-                                <Link href="/portfolio/brand-refresh-venture">
-                                    Portfolio Details Two
-                                </Link>
-                            </li>
-                            <li>
-                                <Link href="/portfolio/brand-refresh-venture">
-                                    Portfolio Details Video
-                                </Link>
-                            </li>
-                            <li>
-                                <Link href="/portfolio/brand-refresh-venture">
-                                    Portfolio Details Video 2
-                                </Link>
-                            </li>
-                            <li>
-                                <Link href="/portfolio/brand-refresh-venture">
-                                    Portfolio Details Slider
-                                </Link>
-                            </li>
+                            {portfolioProjects.slice(0, 6).map((p) => (
+                                <li key={p.slug}>
+                                    <Link href={`/portfolio/${p.slug}`}>{p.title}</Link>
+                                </li>
+                            ))}
                         </ul>
                     </li>
                 </ul>

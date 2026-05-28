@@ -10,6 +10,7 @@ import ContactSolar from '../22-solar/ContactSolar'
 import VideoSolar from '../22-solar/VideoSolar'
 import BlogSolar from '../22-solar/BlogSolar'
 import BrandSolar from '../22-solar/BrandSolar'
+import FooterSolar from '../22-solar/FooterSolar'
 
 function BodyContent() {
   return (
@@ -36,6 +37,7 @@ function BodyContent() {
         <BlogSolar />
       </div>
       <BrandSolar />
+      <FooterSolar />
     </>
   )
 }

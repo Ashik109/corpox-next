@@ -1,4 +1,6 @@
 import Link from 'next/link'
+import { portfolioProjects } from '../../data/portfolioProjects'
+
 const cases = [
     ["24.webp", "Business Growth"],
     ["25.webp", "Startup Solution"],
@@ -31,21 +33,26 @@ function PortfolioArchitecture() {
                     </div>
                 </div>
                 <div className="row g-5 mt--10 tmp_jump_animation-wrapper">
-                    {cases.map(([image, title], index) => (
-                        <div className="col-lg-6 col-md-6 col-sm-12 tmp-jump__item" data-aos="fade-up" data-aos-duration="700" data-aos-delay={index * 100} key={title}>
-                            <div className="single-project-style-three invers-anime">
-                                <Link className="thumbnail" href="/project-details">
-                                    <img loading="lazy" src={`/assets/images/portfolio/${image}`} alt={title} />
-                                </Link>
-                                <div className="inner-content tmponhover">
-                                    <Link href="/project-details">
-                                        <h4 className="title">{title}</h4>
+                    {cases.map(([image, title], index) => {
+                        const project = portfolioProjects[index]
+                        const href = project ? `/portfolio/${project.slug}` : '/portfolio'
+
+                        return (
+                            <div className="col-lg-6 col-md-6 col-sm-12 tmp-jump__item" data-aos="fade-up" data-aos-duration="700" data-aos-delay={index * 100} key={title}>
+                                <div className="single-project-style-three invers-anime">
+                                    <Link className="thumbnail" href={href}>
+                                        <img loading="lazy" src={`/assets/images/portfolio/${image}`} alt={title} />
                                     </Link>
-                                    <span>Business Strategy</span>
+                                    <div className="inner-content tmponhover">
+                                        <Link href={href}>
+                                            <h4 className="title">{title}</h4>
+                                        </Link>
+                                        <span>Business Strategy</span>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                    ))}
+                        )
+                    })}
                 </div>
             </div>
         </div>
