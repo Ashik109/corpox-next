@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import InnerPageLayout from '../../components/inner-pages/InnerPageLayout'
 import OnepageDemoHeader from '../components/OnepageDemoHeader'
+import FooterConstruction from '../26-construction/FooterConstruction'
 import BodyContent from './BodyContent'
 
 export const metadata: Metadata = {
@@ -9,7 +10,10 @@ export const metadata: Metadata = {
 
 export default function Page() {
   return (
-    <InnerPageLayout header={<OnepageDemoHeader demo="26" lightMode={false} />}>
+    <InnerPageLayout
+      header={<OnepageDemoHeader demo="26" lightMode={false} />}
+      footer={<FooterConstruction />}
+    >
       <BodyContent />
     </InnerPageLayout>
   )

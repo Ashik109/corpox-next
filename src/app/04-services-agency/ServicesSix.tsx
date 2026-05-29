@@ -38,7 +38,7 @@ function ServicesSix() {
                                 </div>
                                 <div className="content">
                                     <h4 className="title w-600">
-                                        <Link href="/service/management-leadership">Key Management</Link>
+                                        <Link href="/service-details/management-leadership">Key Management</Link>
                                     </h4>
                                     <p className="description mb--0">
                                         As you move to the cloud, you need to use new approaches to
@@ -47,7 +47,7 @@ function ServicesSix() {
                                     <div className="discover-btn">
                                         <Link
                                             className="tmp-btn mt--20 round btn-small btn-border hover-icon-reverse"
-                                            href="/service/financial-growth"
+                                            href="/service-details/financial-growth"
                                         >
                                             <span className="icon-reverse-wrapper">
                                                 <span className="btn-text">Discover services</span>
@@ -76,7 +76,7 @@ function ServicesSix() {
                                 </div>
                                 <div className="content">
                                     <h4 className="title w-600">
-                                        <Link href="/service/digital-transformation">Assured Workloads</Link>
+                                        <Link href="/service-details/digital-transformation">Assured Workloads</Link>
                                     </h4>
                                     <p className="description mb--0">
                                         applications, and data, while supporting objectives.
@@ -84,7 +84,7 @@ function ServicesSix() {
                                     <div className="discover-btn">
                                         <Link
                                             className="tmp-btn mt--20 round btn-small btn-border hover-icon-reverse"
-                                            href="/service/management-leadership"
+                                            href="/service-details/management-leadership"
                                         >
                                             <span className="icon-reverse-wrapper">
                                                 <span className="btn-text">Discover services</span>
@@ -113,7 +113,7 @@ function ServicesSix() {
                                 </div>
                                 <div className="content">
                                     <h4 className="title w-600">
-                                        <Link href="/service/financial-growth">Policy Intelligence</Link>
+                                        <Link href="/service-details/financial-growth">Policy Intelligence</Link>
                                     </h4>
                                     <p className="description mb--0">
                                         capabilities to help meet your digital sovereignty requirements.
@@ -121,7 +121,7 @@ function ServicesSix() {
                                     <div className="discover-btn">
                                         <Link
                                             className="tmp-btn mt--20 round btn-small btn-border hover-icon-reverse"
-                                            href="/service/digital-transformation"
+                                            href="/service-details/digital-transformation"
                                         >
                                             <span className="icon-reverse-wrapper">
                                                 <span className="btn-text">Discover services</span>
@@ -147,7 +147,7 @@ function ServicesSix() {
                                 </div>
                                 <div className="content">
                                     <h4 className="title w-600">
-                                        <Link href="/service/management-leadership">Risk Protection</Link>
+                                        <Link href="/service-details/management-leadership">Risk Protection</Link>
                                     </h4>
                                     <p className="description mb--0">
                                         Your SecOps teams are drowning weight of multiple tools.
@@ -155,7 +155,7 @@ function ServicesSix() {
                                     <div className="discover-btn">
                                         <Link
                                             className="tmp-btn mt--20 round btn-small btn-border hover-icon-reverse"
-                                            href="/service/management-leadership"
+                                            href="/service-details/management-leadership"
                                         >
                                             <span className="icon-reverse-wrapper">
                                                 <span className="btn-text">Discover services</span>
@@ -181,7 +181,7 @@ function ServicesSix() {
                                 </div>
                                 <div className="content">
                                     <h4 className="title w-600">
-                                        <Link href="/service/financial-growth">Security Command</Link>
+                                        <Link href="/service-details/financial-growth">Security Command</Link>
                                     </h4>
                                     <p className="description mb--0">
                                         There are many variations variations of passages available.
@@ -189,7 +189,7 @@ function ServicesSix() {
                                     <div className="discover-btn">
                                         <Link
                                             className="tmp-btn mt--20 round btn-small btn-border hover-icon-reverse"
-                                            href="/service/digital-transformation"
+                                            href="/service-details/digital-transformation"
                                         >
                                             <span className="icon-reverse-wrapper">
                                                 <span className="btn-text">Discover services</span>
@@ -215,7 +215,7 @@ function ServicesSix() {
                                 </div>
                                 <div className="content">
                                     <h4 className="title w-600">
-                                        <Link href="/service/management-leadership">Awarded Design</Link>
+                                        <Link href="/service-details/management-leadership">Awarded Design</Link>
                                     </h4>
                                     <p className="description mb--0">
                                         threat intelligence while automating response to achieve a
@@ -224,7 +224,7 @@ function ServicesSix() {
                                     <div className="discover-btn">
                                         <Link
                                             className="tmp-btn mt--20 round btn-small btn-border hover-icon-reverse"
-                                            href="/service/financial-growth"
+                                            href="/service-details/financial-growth"
                                         >
                                             <span className="icon-reverse-wrapper">
                                                 <span className="btn-text">Discover services</span>
@@ -250,7 +250,7 @@ function ServicesSix() {
                                 </div>
                                 <div className="content">
                                     <h4 className="title w-600">
-                                        <Link href="/service/digital-transformation">Investigate, and Respond</Link>
+                                        <Link href="/service-details/digital-transformation">Investigate, and Respond</Link>
                                     </h4>
                                     <p className="description mb--0">
                                         Traditional security models are insufficient for protecting.
@@ -258,7 +258,7 @@ function ServicesSix() {
                                     <div className="discover-btn">
                                         <Link
                                             className="tmp-btn mt--20 round btn-small btn-border hover-icon-reverse"
-                                            href="/service/management-leadership"
+                                            href="/service-details/management-leadership"
                                         >
                                             <span className="icon-reverse-wrapper">
                                                 <span className="btn-text">Discover services</span>
@@ -284,7 +284,7 @@ function ServicesSix() {
                                 </div>
                                 <div className="content">
                                     <h4 className="title w-600">
-                                        <Link href="/service/management-leadership">Center Database</Link>
+                                        <Link href="/service-details/management-leadership">Center Database</Link>
                                     </h4>
                                     <p className="description mb--0">
                                         Your organization depends on business critical web.
@@ -292,7 +292,7 @@ function ServicesSix() {
                                     <div className="discover-btn">
                                         <Link
                                             className="tmp-btn mt--20 round btn-small btn-border hover-icon-reverse"
-                                            href="/service/financial-growth"
+                                            href="/service-details/financial-growth"
                                         >
                                             <span className="icon-reverse-wrapper">
                                                 <span className="btn-text">Discover services</span>
@@ -318,7 +318,7 @@ function ServicesSix() {
                                 </div>
                                 <div className="content">
                                     <h4 className="title w-600">
-                                        <Link href="/service/digital-transformation">&amp; More</Link>
+                                        <Link href="/service-details/digital-transformation">&amp; More</Link>
                                     </h4>
                                     <p className="description mb--0">
                                         Access 8.5M+ <br /> vector icons &amp; stickers
@@ -326,7 +326,7 @@ function ServicesSix() {
                                     <div className="discover-btn">
                                         <Link
                                             className="tmp-btn mt--20 round btn-small btn-border hover-icon-reverse"
-                                            href="/service/management-leadership"
+                                            href="/service-details/management-leadership"
                                         >
                                             <span className="icon-reverse-wrapper">
                                                 <span className="btn-text">Discover services</span>

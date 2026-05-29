@@ -6,10 +6,10 @@ import { useEffect, useState } from 'react'
 import { DemoGrid, multipageDemos, onepageDemos } from '../../components/header/OnepageNav'
 
 const searchItems = [
-  { title: 'Awarded Design', href: '/service/management-leadership', image: '/assets/images/services/serviice-01.jpg', keywords: 'service business consultancy awarded design' },
-  { title: 'Design & Creative', href: '/service/digital-transformation', image: '/assets/images/services/serviice-02.jpg', keywords: 'service business consultancy design creative' },
-  { title: 'App Development', href: '/service/financial-growth', image: '/assets/images/services/serviice-03.jpg', keywords: 'service business consultancy app development' },
-  { title: 'UI/UX Design', href: '/service/management-leadership', image: '/assets/images/services/serviice-04.jpg', keywords: 'service business consultancy ui ux design' },
+  { title: 'Awarded Design', href: '/service-details/management-leadership', image: '/assets/images/services/serviice-01.jpg', keywords: 'service business consultancy awarded design' },
+  { title: 'Design & Creative', href: '/service-details/digital-transformation', image: '/assets/images/services/serviice-02.jpg', keywords: 'service business consultancy design creative' },
+  { title: 'App Development', href: '/service-details/financial-growth', image: '/assets/images/services/serviice-03.jpg', keywords: 'service business consultancy app development' },
+  { title: 'UI/UX Design', href: '/service-details/management-leadership', image: '/assets/images/services/serviice-04.jpg', keywords: 'service business consultancy ui ux design' },
 ] as const
 
 const popularTags = ['Service', 'Business', 'Consultancy'] as const
@@ -24,10 +24,10 @@ const pagesColumns: readonly MenuLink[][] = [
     ['Our Service Three', '/our-service-three'],
     ['Our Service Four', '/our-service-four'],
     ['Our Service Five', '/our-service-five'],
-    ['Service Details Two', '/service/management-leadership'],
-    ['Service Details Three', '/service/management-leadership'],
-    ['Service Details Four', '/service/management-leadership'],
-    ['Service Details', '/service/management-leadership'],
+    ['Service Details Two', '/service-details-two/financial-growth'],
+    ['Service Details Three', '/service-details-three/digital-transformation'],
+    ['Service Details Four', '/service-details-four/digital-transformation'],
+    ['Service Details', '/service-details/management-leadership'],
     ['Our Team', '/team'],
     ['Our Team Two', '/team-two'],
     ['Our History', '/our-history', 'New'],
@@ -94,11 +94,11 @@ const serviceLayoutLinks: readonly MenuLink[] = [
 ] as const
 
 const serviceDetailLinks: readonly MenuLink[] = [
-  ['Service Details', '/service/management-leadership', 'Popular'],
-  ['Service Details center', '/service/management-leadership'],
-  ['Service Details Two', '/service/management-leadership'],
-  ['Service Details Three', '/service/management-leadership'],
-  ['Service Details Four', '/service/management-leadership'],
+  ['Service Details', '/service-details/management-leadership', 'Popular'],
+  ['Service Details center', '/service-details-center/financial-growth'],
+  ['Service Details Two', '/service-details-two/digital-transformation'],
+  ['Service Details Three', '/service-details-three/financial-growth'],
+  ['Service Details Four', '/service-details-four/digital-transformation'],
   ['Service List Style', '/#', 'Coming'],
   ['Service Details Six', '/#', 'Coming'],
 ] as const
@@ -142,7 +142,7 @@ const elementsColumns: readonly MenuLink[][] = [
     ['Style Guide', '/style-guide', 'Hot'],
     ['Button Page', '/button'],
     ['Our Service', '/service'],
-    ['Service Details', '/service/management-leadership'],
+    ['Service Details', '/service-details/management-leadership'],
     ['Accordion Style', '/accordion'],
     ['Progressbar', '/progressbar'],
     ['Blog Grid', '/blog-grid'],

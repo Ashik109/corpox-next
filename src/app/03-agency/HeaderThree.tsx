@@ -1807,24 +1807,24 @@ function HeaderThree({
                                                         <Link href="/our-service-five">Our Service Five</Link>
                                                     </li>
                                                     <li>
-                                                        <Link href="/service/management-leadership">
+                                                        <Link href="/service-details-two/financial-growth">
                                                             Service Details Two
                                                         </Link>
                                                     </li>
                                                     <li>
                                                         {" "}
-                                                        <Link href="/service/management-leadership">
+                                                        <Link href="/service-details-three/digital-transformation">
                                                             Service Details Three
                                                         </Link>
                                                     </li>
                                                     <li>
                                                         {" "}
-                                                        <Link href="/service/management-leadership">
+                                                        <Link href="/service-details-four/digital-transformation">
                                                             Service Details Four
                                                         </Link>
                                                     </li>
                                                     <li>
-                                                        <Link href="/service/management-leadership">Service Details</Link>
+                                                        <Link href="/service-details/management-leadership">Service Details</Link>
                                                     </li>
                                                     <li>
                                                         <Link href="/team">Our Team</Link>
@@ -2085,30 +2085,30 @@ function HeaderThree({
                                                 <h3 className="tmp-short-title">Service Details</h3>
                                                 <ul className="mega-menu-item">
                                                     <li>
-                                                        <Link href="/service/management-leadership">
+                                                        <Link href="/service-details/management-leadership">
                                                             Service Details{" "}
                                                             <span className="tmp-badge-card">Popular</span>
                                                         </Link>
                                                     </li>
                                                     <li>
-                                                        <Link href="/service/management-leadership">
+                                                        <Link href="/service-details-center/financial-growth">
                                                             Service Details center
                                                         </Link>
                                                     </li>
                                                     <li>
-                                                        <Link href="/service/management-leadership">
+                                                        <Link href="/service-details-two/digital-transformation">
                                                             Service Details Two
                                                         </Link>
                                                     </li>
                                                     <li>
                                                         {" "}
-                                                        <Link href="/service/management-leadership">
+                                                        <Link href="/service-details-three/financial-growth">
                                                             Service Details Three
                                                         </Link>
                                                     </li>
                                                     <li>
                                                         {" "}
-                                                        <Link href="/service/management-leadership">
+                                                        <Link href="/service-details-four/digital-transformation">
                                                             Service Details Four
                                                         </Link>
                                                     </li>
@@ -2298,7 +2298,7 @@ function HeaderThree({
                                                         <Link href="/service">Our Service</Link>
                                                     </li>
                                                     <li>
-                                                        <Link href="/service/management-leadership">Service Details</Link>
+                                                        <Link href="/service-details/management-leadership">Service Details</Link>
                                                     </li>
                                                     <li>
                                                         <Link href="/accordion">Accordion Style</Link>

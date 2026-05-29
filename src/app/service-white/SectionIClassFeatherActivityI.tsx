@@ -6,11 +6,11 @@ function SectionIClassFeatherActivityI() {
 
       <div className="content">
       <h4 className="title w-600">
-      <Link href="/service/management-leadership">Brand Building</Link>
+      <Link href="/service-details/management-leadership">Brand Building</Link>
       </h4>
       <p className="description mb--0">We help businesses create a strong brand identity, enhance visibility, and build lasting customer trust.</p>
       <div className="discover-btn mt--30">
-      <Link className="tmp-btn round btn-small btn-border hover-icon-reverse" href="/service/management-leadership">
+      <Link className="tmp-btn round btn-small btn-border hover-icon-reverse" href="/service-details/management-leadership">
       <span className="icon-reverse-wrapper">
       <span className="btn-text">Discover services</span>
       <span className="btn-icon"><i className="feather-arrow-right"></i></span>

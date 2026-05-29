@@ -34,7 +34,7 @@ function ServicesSolar() {
                         <div className="col-lg-12">
                             <div className="inversweb-service-main-wrapper-list">
                                 {services.map(([image, title], index) => (
-                                    <Link href="/service/management-leadership" className="single-service-wrapper tmponhover" key={`${title}-${index}`}>
+                                    <Link href="/service-details/management-leadership" className="single-service-wrapper tmponhover" key={`${title}-${index}`}>
                                         <div className="thumbnail invers-anime">
                                             <img src={`/assets/images/services/${image}`} alt="" />
                                         </div>

@@ -27,7 +27,7 @@ function BodyContent() {
       <div id="project">
         <CaseStudyTwo />
       </div>
-      <div id="contactus">
+      <div id="contactus" className='tmp-section-gap'>
         <GetInTouch />
       </div>
       <MissionOne />
@@ -37,7 +37,7 @@ function BodyContent() {
       </div>
       <ContactOne />
       <CtaOne />
-      <div id="blog">
+      <div id="blog" className='tmp-section-gapBottom'>
         <BlogTwo />
       </div>
     </>

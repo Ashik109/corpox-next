@@ -58,7 +58,7 @@ function AboutRealEstate() {
                                     &quot;Enimad minim veniam quis nostrud exercitation <br /> llamco laboris. Lorem ipsum dolor sit amet&quot;
                                 </p>
                             </div>
-                            <Link href="/service/management-leadership" className="tmp-btn btn-primary">
+                            <Link href="/service-details/management-leadership" className="tmp-btn btn-primary">
                                 Our Service
                             </Link>
                         </div>

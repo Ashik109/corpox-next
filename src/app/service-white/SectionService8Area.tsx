@@ -28,7 +28,7 @@ function SectionService8Area() {
       </div>
       <div className="content">
       <h4 className="title">
-      <Link href="/service/management-leadership">Cloud based,
+      <Link href="/service-details/management-leadership">Cloud based,
                                                       secured software</Link>
       </h4>
       </div>
@@ -43,7 +43,7 @@ function SectionService8Area() {
       </div>
       <div className="content">
       <h4 className="title">
-      <Link href="/service/management-leadership">Web Application, software</Link>
+      <Link href="/service-details/management-leadership">Web Application, software</Link>
       </h4>
       </div>
       </div>
@@ -57,7 +57,7 @@ function SectionService8Area() {
       </div>
       <div className="content">
       <h4 className="title">
-      <Link href="/service/management-leadership">App based, secured software</Link>
+      <Link href="/service-details/management-leadership">App based, secured software</Link>
       </h4>
       </div>
       </div>
@@ -71,7 +71,7 @@ function SectionService8Area() {
       </div>
       <div className="content">
       <h4 className="title">
-      <Link href="/service/management-leadership">Cloud based,
+      <Link href="/service-details/management-leadership">Cloud based,
                                                       secured software</Link>
       </h4>
       </div>
@@ -86,7 +86,7 @@ function SectionService8Area() {
       </div>
       <div className="content">
       <h4 className="title">
-      <Link href="/service/management-leadership">Web Application, software</Link>
+      <Link href="/service-details/management-leadership">Web Application, software</Link>
       </h4>
       </div>
       </div>
@@ -100,7 +100,7 @@ function SectionService8Area() {
       </div>
       <div className="content">
       <h4 className="title">
-      <Link href="/service/management-leadership">App based, secured software</Link>
+      <Link href="/service-details/management-leadership">App based, secured software</Link>
       </h4>
       </div>
       </div>

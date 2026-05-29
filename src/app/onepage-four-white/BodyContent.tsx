@@ -18,16 +18,20 @@ function BodyContent() {
       <div id="service">
         <ServicesFive />
       </div>
-      <MissionOne />
+      <div className='tmp-section-gap'>
+        <MissionOne />
+      </div>
       <ServicesSix />
       <WhyChooseUsOne />
       <PricingTwo />
       <div id="contactus">
         <GetInTouch />
       </div>
-      <ContactTwo />
+      <div className='tmp-section-gapTop'>
+        <ContactTwo />
+      </div>
       <CtaOne />
-      <div id="blog">
+      <div id="blog" className='tmp-section-gapBottom'>
         <BlogTwo />
       </div>
     </>

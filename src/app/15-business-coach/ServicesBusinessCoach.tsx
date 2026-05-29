@@ -31,14 +31,14 @@ function ServicesBusinessCoach() {
                                 <div className="inner">
                                     <div className="content">
                                         <h4 className="title mb--20">
-                                            <Link href="/service/management-leadership">{service.title}</Link>
+                                            <Link href="/service-details/management-leadership">{service.title}</Link>
                                         </h4>
                                     </div>
                                     <div className="image invers-anime">
                                         <img src={`/assets/images/services/${service.image}`} alt="card Images" />
                                     </div>
                                     <div className="discover-btn">
-                                        <Link className="tmp-btn mt--20 round btn-small btn-border hover-icon-reverse" href="/service/financial-growth">
+                                        <Link className="tmp-btn mt--20 round btn-small btn-border hover-icon-reverse" href="/service-details/financial-growth">
                                             <span className="icon-reverse-wrapper">
                                                 <span className="btn-text">Discover services</span>
                                                 <span className="btn-icon">

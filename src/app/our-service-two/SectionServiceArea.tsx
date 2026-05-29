@@ -28,12 +28,12 @@ function SectionServiceArea() {
       </div>
       <div className="content">
       <h4 className="title w-600">
-      <Link href="/service/management-leadership">Design</Link>
+      <Link href="/service-details/management-leadership">Design</Link>
       </h4>
       <p className="description mb--0">There are many variations variations
                                               of passages of Lorem available.</p>
       <div className="discover-btn mt--20">
-      <Link className="tmp-btn round btn-small btn-border hover-icon-reverse" href="/service/management-leadership">
+      <Link className="tmp-btn round btn-small btn-border hover-icon-reverse" href="/service-details/management-leadership">
       <span className="icon-reverse-wrapper">
       <span className="btn-text">Discover services</span>
       <span className="btn-icon"><i className="feather-arrow-right"></i></span>
@@ -54,12 +54,12 @@ function SectionServiceArea() {
       </div>
       <div className="content">
       <h4 className="title w-600">
-      <Link href="/service/management-leadership">Team</Link>
+      <Link href="/service-details/management-leadership">Team</Link>
       </h4>
       <p className="description mb--0">Passages there are many variations
                                               variations of of Lorem available.</p>
       <div className="discover-btn mt--20">
-      <Link className="tmp-btn round btn-small btn-border hover-icon-reverse" href="/service/management-leadership">
+      <Link className="tmp-btn round btn-small btn-border hover-icon-reverse" href="/service-details/management-leadership">
       <span className="icon-reverse-wrapper">
       <span className="btn-text">Discover services</span>
       <span className="btn-icon"><i className="feather-arrow-right"></i></span>
@@ -80,11 +80,11 @@ function SectionServiceArea() {
       </div>
       <div className="content">
       <h4 className="title w-600">
-      <Link href="/service/management-leadership">Application</Link>
+      <Link href="/service-details/management-leadership">Application</Link>
       </h4>
       <p className="description mb--0">Variations There are many variations of passages of Lorem available.</p>
       <div className="discover-btn mt--20">
-      <Link className="tmp-btn round btn-small btn-border hover-icon-reverse" href="/service/management-leadership">
+      <Link className="tmp-btn round btn-small btn-border hover-icon-reverse" href="/service-details/management-leadership">
       <span className="icon-reverse-wrapper">
       <span className="btn-text">Discover services</span>
       <span className="btn-icon"><i className="feather-arrow-right"></i></span>
@@ -105,12 +105,12 @@ function SectionServiceArea() {
       </div>
       <div className="content">
       <h4 className="title w-600">
-      <Link href="/service/management-leadership">Support</Link>
+      <Link href="/service-details/management-leadership">Support</Link>
       </h4>
       <p className="description mb--0">There are many variations
                                               of passages of Lorem available pro ability.</p>
       <div className="discover-btn mt--20">
-      <Link className="tmp-btn round btn-small btn-border hover-icon-reverse" href="/service/management-leadership">
+      <Link className="tmp-btn round btn-small btn-border hover-icon-reverse" href="/service-details/management-leadership">
       <span className="icon-reverse-wrapper">
       <span className="btn-text">Discover services</span>
       <span className="btn-icon"><i className="feather-arrow-right"></i></span>

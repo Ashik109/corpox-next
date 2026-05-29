@@ -41,7 +41,7 @@ function BodyContent() {
         <ContactBusinessCoach />
       </div>
       <CtaBusinessCoach />
-      <div id="blog">
+      <div id="blog" className='tmp-section-gapBottom'>
         <BlogBusinessCoach />
       </div>
     </>

@@ -28,7 +28,7 @@ function ServicesFour() {
                         <div className="col-lg-12">
                             <div className="inversweb-service-main-wrapper-list">
                                 <Link
-                                    href="/service/management-leadership"
+                                    href="/service-details/management-leadership"
                                     className="single-service-wrapper tmponhover"
                                 >
                                     <div className="thumbnail invers-anime">
@@ -39,7 +39,7 @@ function ServicesFour() {
                                     </div>
                                 </Link>
                                 <Link
-                                    href="/service/financial-growth"
+                                    href="/service-details/financial-growth"
                                     className="single-service-wrapper tmponhover"
                                 >
                                     <div className="thumbnail invers-anime">
@@ -50,7 +50,7 @@ function ServicesFour() {
                                     </div>
                                 </Link>
                                 <Link
-                                    href="/service/digital-transformation"
+                                    href="/service-details/digital-transformation"
                                     className="single-service-wrapper tmponhover"
                                 >
                                     <div className="thumbnail invers-anime">
@@ -61,7 +61,7 @@ function ServicesFour() {
                                     </div>
                                 </Link>
                                 <Link
-                                    href="/service/management-leadership"
+                                    href="/service-details/management-leadership"
                                     className="single-service-wrapper tmponhover"
                                 >
                                     <div className="thumbnail invers-anime">
@@ -72,7 +72,7 @@ function ServicesFour() {
                                     </div>
                                 </Link>
                                 <Link
-                                    href="/service/financial-growth"
+                                    href="/service-details/financial-growth"
                                     className="single-service-wrapper tmponhover"
                                 >
                                     <div className="thumbnail invers-anime">
@@ -83,7 +83,7 @@ function ServicesFour() {
                                     </div>
                                 </Link>
                                 <Link
-                                    href="/service/digital-transformation"
+                                    href="/service-details/digital-transformation"
                                     className="single-service-wrapper tmponhover"
                                 >
                                     <div className="thumbnail invers-anime">
@@ -94,7 +94,7 @@ function ServicesFour() {
                                     </div>
                                 </Link>
                                 <Link
-                                    href="/service/management-leadership"
+                                    href="/service-details/management-leadership"
                                     className="single-service-wrapper tmponhover"
                                 >
                                     <div className="thumbnail invers-anime">
@@ -105,7 +105,7 @@ function ServicesFour() {
                                     </div>
                                 </Link>
                                 <Link
-                                    href="/service/management-leadership"
+                                    href="/service-details/management-leadership"
                                     className="single-service-wrapper tmponhover"
                                 >
                                     <div className="thumbnail invers-anime">

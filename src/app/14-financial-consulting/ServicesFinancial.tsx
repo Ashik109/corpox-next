@@ -24,16 +24,16 @@ function ServicesFinancial() {
                             <div className="card-box card-style-1 text-left tmponhover">
                                 <div className="inner">
                                     <div className="image invers-anime">
-                                        <Link href="/service/management-leadership">
+                                        <Link href="/service-details/management-leadership">
                                             <img loading="lazy" src={`/assets/images/services/${service.image}`} alt="card Images" />
                                         </Link>
                                     </div>
                                     <div className="content">
                                         <h4 className="title mb--20">
-                                            <Link href="/service/financial-growth">{service.title}</Link>
+                                            <Link href="/service-details/financial-growth">{service.title}</Link>
                                         </h4>
                                         <div className="discover-btn">
-                                            <Link className="tmp-btn mt--0 round btn-small btn-border hover-icon-reverse" href="/service/digital-transformation">
+                                            <Link className="tmp-btn mt--0 round btn-small btn-border hover-icon-reverse" href="/service-details/digital-transformation">
                                                 <span className="icon-reverse-wrapper">
                                                     <span className="btn-text">Discover services</span>
                                                     <span className="btn-icon">

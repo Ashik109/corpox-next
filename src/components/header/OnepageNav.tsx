@@ -23,6 +23,14 @@ const navItems = [
   { href: "#contactus", label: "Contact" },
 ];
 
+const serviceDetailLinks = [
+  { href: "/service-details/management-leadership", label: "Service Details", badge: "Popular" },
+  { href: "/service-details-center/financial-growth", label: "Service Details center" },
+  { href: "/service-details-two/digital-transformation", label: "Service Details Two" },
+  { href: "/service-details-three/financial-growth", label: "Service Details Three" },
+  { href: "/service-details-four/digital-transformation", label: "Service Details Four" },
+];
+
 export const multipageDemos: DemoItem[] = [
   { href: "/01-index-consulting", image: "/assets/images/demo/01-business-consulting.webp", label: "Business Consulting", badge: { label: "Popular", className: "success" } },
   { href: "/white-01-index-consulting", image: "/assets/images/demo/white-01-business-consulting.webp", label: "Business Consulting", badge: { label: "Popular", className: "success" } },
@@ -219,7 +227,8 @@ export default function OnepageNav() {
                 current === id ? "current" : "",
                 isHome ? "with-megamenu has-menu-child-item" : "",
                 id === "about" ? "with-megamenu" : "",
-                ["service", "project", "team", "blog"].includes(id) ? "has-droupdown" : "",
+                id === "service" ? "with-megamenu has-menu-child-item" : "",
+                ["project", "team", "blog"].includes(id) ? "has-droupdown" : "",
                 id === "service" ? "position-relative" : "",
               ].filter(Boolean).join(" ")}
             >
@@ -271,6 +280,32 @@ export default function OnepageNav() {
                             </span>
                           </div>
                         </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              ) : null}
+              {id === "service" ? (
+                <div className="tmp-megamenu width-small-mega">
+                  <div className="wrapper">
+                    <div className="row row--15">
+                      <div className="col-lg-12 single-mega-item">
+                        <h3 className="tmp-short-title">Service Details</h3>
+                        <ul className="mega-menu-item">
+                          {serviceDetailLinks.map((link) => (
+                            <li key={link.href}>
+                              <Link href={link.href}>
+                                {link.label}
+                                {link.badge ? (
+                                  <>
+                                    {" "}
+                                    <span className="tmp-badge-card">{link.badge}</span>
+                                  </>
+                                ) : null}
+                              </Link>
+                            </li>
+                          ))}
+                        </ul>
                       </div>
                     </div>
                   </div>

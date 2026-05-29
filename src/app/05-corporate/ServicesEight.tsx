@@ -30,7 +30,7 @@ function ServicesEight() {
                                 </div>
                                 <div className="content">
                                     <h4 className="title w-600">
-                                        <Link href="/service/management-leadership">Business Solution</Link>
+                                        <Link href="/service-details/management-leadership">Business Solution</Link>
                                     </h4>
                                     <p className="description mb--0">
                                         There are many variations variations of passages of Lorem
@@ -39,7 +39,7 @@ function ServicesEight() {
                                     <div className="discover-btn mt--20">
                                         <Link
                                             className="tmp-btn round btn-small btn-border hover-icon-reverse"
-                                            href="/service/financial-growth"
+                                            href="/service-details/financial-growth"
                                         >
                                             <span className="icon-reverse-wrapper">
                                                 <span className="btn-text">Discover services</span>
@@ -68,7 +68,7 @@ function ServicesEight() {
                                 </div>
                                 <div className="content">
                                     <h4 className="title w-600">
-                                        <Link href="/service/digital-transformation">Creative Ideas</Link>
+                                        <Link href="/service-details/digital-transformation">Creative Ideas</Link>
                                     </h4>
                                     <p className="description mb--0">
                                         Passages there are many variations variations of of Lorem
@@ -77,7 +77,7 @@ function ServicesEight() {
                                     <div className="discover-btn mt--20">
                                         <Link
                                             className="tmp-btn round btn-small btn-border hover-icon-reverse"
-                                            href="/service/management-leadership"
+                                            href="/service-details/management-leadership"
                                         >
                                             <span className="icon-reverse-wrapper">
                                                 <span className="btn-text">Discover services</span>
@@ -106,7 +106,7 @@ function ServicesEight() {
                                 </div>
                                 <div className="content">
                                     <h4 className="title w-600">
-                                        <Link href="/service/financial-growth">App Development</Link>
+                                        <Link href="/service-details/financial-growth">App Development</Link>
                                     </h4>
                                     <p className="description mb--0">
                                         Variations There are many variations of passages of Lorem
@@ -115,7 +115,7 @@ function ServicesEight() {
                                     <div className="discover-btn mt--20">
                                         <Link
                                             className="tmp-btn round btn-small btn-border hover-icon-reverse"
-                                            href="/service/digital-transformation"
+                                            href="/service-details/digital-transformation"
                                         >
                                             <span className="icon-reverse-wrapper">
                                                 <span className="btn-text">Discover services</span>
@@ -144,7 +144,7 @@ function ServicesEight() {
                                 </div>
                                 <div className="content">
                                     <h4 className="title w-600">
-                                        <Link href="/service/management-leadership">Market Research</Link>
+                                        <Link href="/service-details/management-leadership">Market Research</Link>
                                     </h4>
                                     <p className="description mb--0">
                                         There are many variations of passages of Lorem available pro
@@ -153,7 +153,7 @@ function ServicesEight() {
                                     <div className="discover-btn mt--20">
                                         <Link
                                             className="tmp-btn round btn-small btn-border hover-icon-reverse"
-                                            href="/service/management-leadership"
+                                            href="/service-details/management-leadership"
                                         >
                                             <span className="icon-reverse-wrapper">
                                                 <span className="btn-text">Discover services</span>

@@ -8,11 +8,13 @@ import { HeaderDotSidebarTrigger, HeaderMobileMenuTrigger, HeaderSearchTrigger }
 interface HeaderAiAgencyProps {
     className?: string;
     variant?: "overlay" | "light";
+    navVariant?: "main" | "onepage";
 }
 
 function HeaderAiAgency({
     className = "",
     variant = "overlay",
+    navVariant,
 }: HeaderAiAgencyProps) {
     const [isSticky, setIsSticky] = useState(false);
 
@@ -43,7 +45,7 @@ function HeaderAiAgency({
                     </div>
                     <div className="col-xl-10 col-lg-10 col-md-6 col-8 position-static">
                         <div className="header-right with-search">
-                            <HeaderNav />
+                            <HeaderNav variant={navVariant} />
                             <div className="header-btn">
                                 <HeaderSearchTrigger />
                                 <div className="dot-btn">

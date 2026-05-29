@@ -401,7 +401,7 @@ c-0.703,1.213-0.543,2.688-0.404,3.406C20.229,6.225,20.387,5.914,20.573,5.593z"
                                 </p>
                             </div>
 
-                            <Link href="/service/management-leadership" className="tmp-btn btn-primary">
+                            <Link href="/service-details/management-leadership" className="tmp-btn btn-primary">
                                 Our Service
                             </Link>
                         </div>

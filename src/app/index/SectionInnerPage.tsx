@@ -166,7 +166,7 @@ function SectionInnerPage() {
       </div>
       <div className="single-slick-slide">
       <div className="single-demo tmponhover bg-card">
-      <Link target="_blank" href="/service/management-leadership">
+      <Link target="_blank" href="/service-details/management-leadership">
       <div className="thumbnail">
       <img className="image-dark" loading="lazy" src="/assets/images/demo/service-details.webp" alt="Corporate Images" />
       <div className="tmp-preview-wrap">

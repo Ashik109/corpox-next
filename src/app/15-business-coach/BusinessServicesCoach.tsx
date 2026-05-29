@@ -33,7 +33,7 @@ const serviceList = [
 function ServiceRow({ item }: { item: (typeof serviceList)[number] }) {
     const image = (
         <div className={`col-lg-6 ${item.reverse ? "order-1 order-lg-2 order-md-1 order-sm-1" : ""}`}>
-            <Link href="/service/management-leadership" className="thumbnail-service-list invers-anime">
+            <Link href="/service-details/management-leadership" className="thumbnail-service-list invers-anime">
                 <img src={`/assets/images/services/list/${item.image}`} alt="Business consulting" />
             </Link>
         </div>
@@ -49,7 +49,7 @@ function ServiceRow({ item }: { item: (typeof serviceList)[number] }) {
                     <h6 className="title">{item.title}</h6>
                 </div>
                 <p className="disc">{item.text}</p>
-                <Link className="tmp-btn hover-icon-reverse" href="/service/financial-growth">
+                <Link className="tmp-btn hover-icon-reverse" href="/service-details/financial-growth">
                     <span className="icon-reverse-wrapper">
                         <span className="btn-text">See Details</span>
                         <span className="btn-icon">

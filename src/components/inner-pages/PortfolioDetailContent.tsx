@@ -141,7 +141,7 @@ function ProjectFeatures() {
               <div className="service service__style--1 bg-color-blackest radius text-center tmp-border">
                 <div className="icon"><img src={item.icon} alt="service" /></div>
                 <div className="content">
-                  <h4 className="title w-600"><Link href="/service/management-leadership">{item.title}</Link></h4>
+                  <h4 className="title w-600"><Link href="/service-details/management-leadership">{item.title}</Link></h4>
                   <p className="description mb--0">{item.text}</p>
                 </div>
               </div>

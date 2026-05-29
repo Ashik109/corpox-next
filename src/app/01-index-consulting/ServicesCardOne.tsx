@@ -67,7 +67,7 @@ function ServiceCard({ service }: { service: Service }) {
         </div>
         <div className="content">
           <h4 className="title w-600">
-            <Link href="/service/management-leadership">{service.title}</Link>
+            <Link href="/service-details/management-leadership">{service.title}</Link>
           </h4>
           <p className="description mb--0">
             {service.description}
@@ -75,7 +75,7 @@ function ServiceCard({ service }: { service: Service }) {
           <div className="discover-btn mt--30">
             <Link
               className="tmp-btn round btn-small btn-border hover-icon-reverse"
-              href="/service/management-leadership"
+              href="/service-details/management-leadership"
             >
               <span className="icon-reverse-wrapper">
                 <span className="btn-text">Discover services</span>

@@ -25,14 +25,14 @@ function SectionService7Area() {
       <div className="inner">
       <div className="content">
       <h4 className="title mb--20">
-      <Link href="/service/management-leadership">Awarded Design</Link>
+      <Link href="/service-details/management-leadership">Awarded Design</Link>
       </h4>
       </div>
       <div className="image invers-anime">
       <img src="/assets/images/services/galery-image-01.png" alt="card Images" />
       </div>
       <div className="discover-btn">
-      <Link className="tmp-btn mt--20 round btn-small btn-border hover-icon-reverse" href="/service/management-leadership">
+      <Link className="tmp-btn mt--20 round btn-small btn-border hover-icon-reverse" href="/service-details/management-leadership">
       <span className="icon-reverse-wrapper">
       <span className="btn-text">Discover services</span>
       <span className="btn-icon"><i className="feather-arrow-right"></i></span>
@@ -48,14 +48,14 @@ function SectionService7Area() {
       <div className="inner">
       <div className="content">
       <h4 className="title mb--20">
-      <Link href="/service/management-leadership">Design & Creative</Link>
+      <Link href="/service-details/management-leadership">Design & Creative</Link>
       </h4>
       </div>
       <div className="image invers-anime">
       <img src="/assets/images/services/galery-image-02.png" alt="card Images" />
       </div>
       <div className="discover-btn">
-      <Link className="tmp-btn mt--20 round btn-small btn-border hover-icon-reverse" href="/service/management-leadership">
+      <Link className="tmp-btn mt--20 round btn-small btn-border hover-icon-reverse" href="/service-details/management-leadership">
       <span className="icon-reverse-wrapper">
       <span className="btn-text">Discover services</span>
       <span className="btn-icon"><i className="feather-arrow-right"></i></span>
@@ -71,14 +71,14 @@ function SectionService7Area() {
       <div className="inner">
       <div className="content">
       <h4 className="title mb--20">
-      <Link href="/service/management-leadership">App Development</Link>
+      <Link href="/service-details/management-leadership">App Development</Link>
       </h4>
       </div>
       <div className="image invers-anime">
       <img src="/assets/images/services/galery-image-03.png" alt="card Images" />
       </div>
       <div className="discover-btn">
-      <Link className="tmp-btn mt--20 round btn-small btn-border hover-icon-reverse" href="/service/management-leadership">
+      <Link className="tmp-btn mt--20 round btn-small btn-border hover-icon-reverse" href="/service-details/management-leadership">
       <span className="icon-reverse-wrapper">
       <span className="btn-text">Discover services</span>
       <span className="btn-icon"><i className="feather-arrow-right"></i></span>
@@ -94,14 +94,14 @@ function SectionService7Area() {
       <div className="inner">
       <div className="content">
       <h4 className="title mb--20">
-      <Link href="/service/management-leadership">Awarded Design</Link>
+      <Link href="/service-details/management-leadership">Awarded Design</Link>
       </h4>
       </div>
       <div className="image invers-anime">
       <img src="/assets/images/services/galery-image-01.png" alt="card Images" />
       </div>
       <div className="discover-btn">
-      <Link className="tmp-btn mt--20 round btn-small btn-border hover-icon-reverse" href="/service/management-leadership">
+      <Link className="tmp-btn mt--20 round btn-small btn-border hover-icon-reverse" href="/service-details/management-leadership">
       <span className="icon-reverse-wrapper">
       <span className="btn-text">Discover services</span>
       <span className="btn-icon"><i className="feather-arrow-right"></i></span>
@@ -117,14 +117,14 @@ function SectionService7Area() {
       <div className="inner">
       <div className="content">
       <h4 className="title mb--20">
-      <Link href="/service/management-leadership">Design & Creative</Link>
+      <Link href="/service-details/management-leadership">Design & Creative</Link>
       </h4>
       </div>
       <div className="image invers-anime">
       <img src="/assets/images/services/galery-image-02.png" alt="card Images" />
       </div>
       <div className="discover-btn">
-      <Link className="tmp-btn mt--20 round btn-small btn-border hover-icon-reverse" href="/service/management-leadership">
+      <Link className="tmp-btn mt--20 round btn-small btn-border hover-icon-reverse" href="/service-details/management-leadership">
       <span className="icon-reverse-wrapper">
       <span className="btn-text">Discover services</span>
       <span className="btn-icon"><i className="feather-arrow-right"></i></span>
@@ -140,14 +140,14 @@ function SectionService7Area() {
       <div className="inner">
       <div className="content">
       <h4 className="title mb--20">
-      <Link href="/service/management-leadership">App Development</Link>
+      <Link href="/service-details/management-leadership">App Development</Link>
       </h4>
       </div>
       <div className="image invers-anime">
       <img src="/assets/images/services/galery-image-03.png" alt="card Images" />
       </div>
       <div className="discover-btn">
-      <Link className="tmp-btn mt--20 round btn-small btn-border hover-icon-reverse" href="/service/management-leadership">
+      <Link className="tmp-btn mt--20 round btn-small btn-border hover-icon-reverse" href="/service-details/management-leadership">
       <span className="icon-reverse-wrapper">
       <span className="btn-text">Discover services</span>
       <span className="btn-icon"><i className="feather-arrow-right"></i></span>

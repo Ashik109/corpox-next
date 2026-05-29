@@ -35,11 +35,11 @@ function ServicesHRWebsite() {
                                 </div>
                                 <div className="content">
                                     <h4 className="title w-600">
-                                        <Link href="/service/management-leadership">{service.title}</Link>
+                                        <Link href="/service-details/management-leadership">{service.title}</Link>
                                     </h4>
                                     <p className="description mb--0">{service.description}</p>
                                     <div className="discover-btn mt--20">
-                                        <Link className="tmp-btn round btn-small btn-border hover-icon-reverse" href="/service/financial-growth">
+                                        <Link className="tmp-btn round btn-small btn-border hover-icon-reverse" href="/service-details/financial-growth">
                                             <span className="icon-reverse-wrapper">
                                                 <span className="btn-text">Discover services</span>
                                                 <span className="btn-icon">

@@ -40,7 +40,7 @@ function ServiceContent({ icon, title, text }: { icon: string; title: string; te
                 <h6 className="title">{title}</h6>
             </div>
             <p className="disc">{text}</p>
-            <Link className="tmp-btn hover-icon-reverse" href="/service/management-leadership">
+            <Link className="tmp-btn hover-icon-reverse" href="/service-details/management-leadership">
                 <span className="icon-reverse-wrapper">
                     <span className="btn-text">See Details</span>
                     <span className="btn-icon">
@@ -57,7 +57,7 @@ function ServiceContent({ icon, title, text }: { icon: string; title: string; te
 
 function ServiceImage({ image }: { image: string }) {
     return (
-        <Link href="/service/financial-growth" className="thumbnail-service-list invers-anime">
+        <Link href="/service-details/financial-growth" className="thumbnail-service-list invers-anime">
             <img src={`/assets/images/services/list/${image}`} alt="Business consulting" />
         </Link>
     );

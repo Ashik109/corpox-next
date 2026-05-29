@@ -39,7 +39,7 @@ function BodyContent() {
         <AppointmentAgencyThirteen />
       </div>
       <TestimonialAgencyThirteen />
-      <div id="blog">
+      <div id="blog" className='tmp-section-gapBottom'>
         <BlogAgencyThirteen />
       </div>
     </>

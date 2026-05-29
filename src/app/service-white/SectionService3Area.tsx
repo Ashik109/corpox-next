@@ -24,15 +24,15 @@ function SectionService3Area() {
       <div className="card-box card-style-1 text-left tmponhover">
       <div className="inner">
       <div className="image invers-anime">
-      <Link href="/service/management-leadership">
+      <Link href="/service-details/management-leadership">
       <img loading="lazy" src="/assets/images/services/serviice-01.jpg" alt="card Images" />
       </Link>
       </div>
       <div className="content">
-      <h4 className="title mb--20"><Link href="/service/management-leadership">Awarded Design</Link>
+      <h4 className="title mb--20"><Link href="/service-details/management-leadership">Awarded Design</Link>
       </h4>
       <div className="discover-btn">
-      <Link className="tmp-btn mt--0 round btn-small btn-border hover-icon-reverse" href="/service/management-leadership">
+      <Link className="tmp-btn mt--0 round btn-small btn-border hover-icon-reverse" href="/service-details/management-leadership">
       <span className="icon-reverse-wrapper">
       <span className="btn-text">Discover services</span>
       <span className="btn-icon"><i className="feather-arrow-right"></i></span>
@@ -48,16 +48,16 @@ function SectionService3Area() {
       <div className="card-box card-style-1 text-left tmponhover">
       <div className="inner">
       <div className="image invers-anime">
-      <Link href="/service/management-leadership">
+      <Link href="/service-details/management-leadership">
       <img loading="lazy" src="/assets/images/services/serviice-02.jpg" alt="card Images" />
       </Link>
       </div>
       <div className="content">
-      <h4 className="title mb--20"><Link href="/service/management-leadership">Design &
+      <h4 className="title mb--20"><Link href="/service-details/management-leadership">Design &
                                                       Creative</Link>
       </h4>
       <div className="discover-btn">
-      <Link className="tmp-btn mt--0 round btn-small btn-border hover-icon-reverse" href="/service/management-leadership">
+      <Link className="tmp-btn mt--0 round btn-small btn-border hover-icon-reverse" href="/service-details/management-leadership">
       <span className="icon-reverse-wrapper">
       <span className="btn-text">Discover services</span>
       <span className="btn-icon"><i className="feather-arrow-right"></i></span>
@@ -73,15 +73,15 @@ function SectionService3Area() {
       <div className="card-box card-style-1 text-left tmponhover">
       <div className="inner">
       <div className="image invers-anime">
-      <Link href="/service/management-leadership">
+      <Link href="/service-details/management-leadership">
       <img loading="lazy" src="/assets/images/services/serviice-03.jpg" alt="card Images" />
       </Link>
       </div>
       <div className="content">
-      <h4 className="title mb--20"><Link href="/service/management-leadership">App Development</Link>
+      <h4 className="title mb--20"><Link href="/service-details/management-leadership">App Development</Link>
       </h4>
       <div className="discover-btn">
-      <Link className="tmp-btn mt--0 round btn-small btn-border hover-icon-reverse" href="/service/management-leadership">
+      <Link className="tmp-btn mt--0 round btn-small btn-border hover-icon-reverse" href="/service-details/management-leadership">
       <span className="icon-reverse-wrapper">
       <span className="btn-text">Discover services</span>
       <span className="btn-icon"><i className="feather-arrow-right"></i></span>
@@ -97,15 +97,15 @@ function SectionService3Area() {
       <div className="card-box card-style-1 text-left tmponhover">
       <div className="inner">
       <div className="image invers-anime">
-      <Link href="/service/management-leadership">
+      <Link href="/service-details/management-leadership">
       <img loading="lazy" src="/assets/images/services/serviice-04.jpg" alt="card Images" />
       </Link>
       </div>
       <div className="content">
-      <h4 className="title mb--20"><Link href="/service/management-leadership">Web Design</Link>
+      <h4 className="title mb--20"><Link href="/service-details/management-leadership">Web Design</Link>
       </h4>
       <div className="discover-btn">
-      <Link className="tmp-btn mt--0 round btn-small btn-border hover-icon-reverse" href="/service/management-leadership">
+      <Link className="tmp-btn mt--0 round btn-small btn-border hover-icon-reverse" href="/service-details/management-leadership">
       <span className="icon-reverse-wrapper">
       <span className="btn-text">Discover services</span>
       <span className="btn-icon"><i className="feather-arrow-right"></i></span>
@@ -121,15 +121,15 @@ function SectionService3Area() {
       <div className="card-box card-style-1 text-left tmponhover">
       <div className="inner">
       <div className="image invers-anime">
-      <Link href="/service/management-leadership">
+      <Link href="/service-details/management-leadership">
       <img loading="lazy" src="/assets/images/services/serviice-01.jpg" alt="card Images" />
       </Link>
       </div>
       <div className="content">
-      <h4 className="title mb--20"><Link href="/service/management-leadership">Awarded Design</Link>
+      <h4 className="title mb--20"><Link href="/service-details/management-leadership">Awarded Design</Link>
       </h4>
       <div className="discover-btn">
-      <Link className="tmp-btn mt--0 round btn-small btn-border hover-icon-reverse" href="/service/management-leadership">
+      <Link className="tmp-btn mt--0 round btn-small btn-border hover-icon-reverse" href="/service-details/management-leadership">
       <span className="icon-reverse-wrapper">
       <span className="btn-text">Discover services</span>
       <span className="btn-icon"><i className="feather-arrow-right"></i></span>
@@ -145,16 +145,16 @@ function SectionService3Area() {
       <div className="card-box card-style-1 text-left tmponhover">
       <div className="inner">
       <div className="image invers-anime">
-      <Link href="/service/management-leadership">
+      <Link href="/service-details/management-leadership">
       <img loading="lazy" src="/assets/images/services/serviice-02.jpg" alt="card Images" />
       </Link>
       </div>
       <div className="content">
-      <h4 className="title mb--20"><Link href="/service/management-leadership">Design &
+      <h4 className="title mb--20"><Link href="/service-details/management-leadership">Design &
                                                       Creative</Link>
       </h4>
       <div className="discover-btn">
-      <Link className="tmp-btn mt--0 round btn-small btn-border hover-icon-reverse" href="/service/management-leadership">
+      <Link className="tmp-btn mt--0 round btn-small btn-border hover-icon-reverse" href="/service-details/management-leadership">
       <span className="icon-reverse-wrapper">
       <span className="btn-text">Discover services</span>
       <span className="btn-icon"><i className="feather-arrow-right"></i></span>
@@ -170,15 +170,15 @@ function SectionService3Area() {
       <div className="card-box card-style-1 text-left tmponhover">
       <div className="inner">
       <div className="image invers-anime">
-      <Link href="/service/management-leadership">
+      <Link href="/service-details/management-leadership">
       <img loading="lazy" src="/assets/images/services/serviice-03.jpg" alt="card Images" />
       </Link>
       </div>
       <div className="content">
-      <h4 className="title mb--20"><Link href="/service/management-leadership">App Development</Link>
+      <h4 className="title mb--20"><Link href="/service-details/management-leadership">App Development</Link>
       </h4>
       <div className="discover-btn">
-      <Link className="tmp-btn mt--0 round btn-small btn-border hover-icon-reverse" href="/service/management-leadership">
+      <Link className="tmp-btn mt--0 round btn-small btn-border hover-icon-reverse" href="/service-details/management-leadership">
       <span className="icon-reverse-wrapper">
       <span className="btn-text">Discover services</span>
       <span className="btn-icon"><i className="feather-arrow-right"></i></span>
@@ -194,15 +194,15 @@ function SectionService3Area() {
       <div className="card-box card-style-1 text-left tmponhover">
       <div className="inner">
       <div className="image invers-anime">
-      <Link href="/service/management-leadership">
+      <Link href="/service-details/management-leadership">
       <img loading="lazy" src="/assets/images/services/serviice-04.jpg" alt="card Images" />
       </Link>
       </div>
       <div className="content">
-      <h4 className="title mb--20"><Link href="/service/management-leadership">Web Design</Link>
+      <h4 className="title mb--20"><Link href="/service-details/management-leadership">Web Design</Link>
       </h4>
       <div className="discover-btn">
-      <Link className="tmp-btn mt--0 round btn-small btn-border hover-icon-reverse" href="/service/management-leadership">
+      <Link className="tmp-btn mt--0 round btn-small btn-border hover-icon-reverse" href="/service-details/management-leadership">
       <span className="icon-reverse-wrapper">
       <span className="btn-text">Discover services</span>
       <span className="btn-icon"><i className="feather-arrow-right"></i></span>

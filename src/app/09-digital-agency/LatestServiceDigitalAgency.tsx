@@ -64,7 +64,7 @@ function LatestServiceDigitalAgency() {
                                                     <Link href="#">{service.title}</Link>
                                                 </h4>
                                                 <p className="description mb--0">{service.back}</p>
-                                                <Link className="btn-read-more mt--10 d-block" href="/service/management-leadership">
+                                                <Link className="btn-read-more mt--10 d-block" href="/service-details/management-leadership">
                                                     <span>Read More</span>
                                                 </Link>
                                             </div>

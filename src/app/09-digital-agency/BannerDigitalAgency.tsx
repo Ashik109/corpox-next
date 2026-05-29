@@ -22,7 +22,7 @@ const bannerCards = [
 
 function GoButton() {
     return (
-        <Link href="/service/management-leadership" className="mdbutton mdbutton--fenrir">
+        <Link href="/service-details/management-leadership" className="mdbutton mdbutton--fenrir">
             <svg aria-hidden="true" className="btnprogress" width="70" height="70" viewBox="0 0 70 70">
                 <path
                     className="btnprogress__circle"
@@ -80,13 +80,13 @@ function BannerDigitalAgency() {
                                     <div className="inv-card content-overlay">
                                         <div className="inner">
                                             <div className="thumbnail">
-                                                <Link href="/service/financial-growth">
+                                                <Link href="/service-details/financial-growth">
                                                     <img src={card.image} alt="Portfolio Images" />
                                                 </Link>
                                             </div>
                                             <div className="content">
                                                 <h4 className="title">
-                                                    <Link href="/service/digital-transformation">{card.title}</Link>
+                                                    <Link href="/service-details/digital-transformation">{card.title}</Link>
                                                 </h4>
                                                 <div className="view-button">
                                                     <GoButton />

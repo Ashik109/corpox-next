@@ -70,7 +70,7 @@ function ServiceTabsBusinessThree() {
                                             <div className={`tab-pane fade advance-tab-content-1 ${active === index ? "active show" : ""}`} role="tabpanel" key={tab.image}>
                                                 <div className="thumbnail over-gradient-primary invers-anime">
                                                     <img loading="lazy" src={`/assets/images/about/${tab.image}`} alt="advance-tab" />
-                                                    <Link href="/service/management-leadership" className="tmp-btn btn-primary">
+                                                    <Link href="/service-details/management-leadership" className="tmp-btn btn-primary">
                                                         View Details
                                                     </Link>
                                                 </div>

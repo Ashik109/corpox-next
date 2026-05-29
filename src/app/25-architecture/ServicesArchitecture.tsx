@@ -48,7 +48,7 @@ function ServiceContent({ service }: { service: (typeof services)[number] }) {
                 <h6 className="title">{service.title}</h6>
             </div>
             <p className="disc">{service.text}</p>
-            <Link className="tmp-btn hover-icon-reverse" href="/service/management-leadership">
+            <Link className="tmp-btn hover-icon-reverse" href="/service-details/management-leadership">
                 <span className="icon-reverse-wrapper">
                     <span className="btn-text">See Details</span>
                     <span className="btn-icon">
@@ -65,7 +65,7 @@ function ServiceContent({ service }: { service: (typeof services)[number] }) {
 
 function ServiceImage({ service }: { service: (typeof services)[number] }) {
     return (
-        <Link className="thumbnail-service-list invers-anime" href="/service/financial-growth">
+        <Link className="thumbnail-service-list invers-anime" href="/service-details/financial-growth">
             <img src={`/assets/images/services/list/${service.image}`} alt={service.alt} />
         </Link>
     );
@@ -91,7 +91,7 @@ function ServicesArchitecture() {
                                 </h2>
                             </div>
                             <div className="tmp-load-more d-flex justify-content-center" data-aos="fade-up" data-aos-duration="700" data-aos-delay="150">
-                                <Link className="tmp-btn btn-large hover-icon-reverse" href="/service/management-leadership">
+                                <Link className="tmp-btn btn-large hover-icon-reverse" href="/service-details/management-leadership">
                                     <span className="icon-reverse-wrapper">
                                         <span className="btn-text">View More Services</span>
                                         <span className="btn-icon">

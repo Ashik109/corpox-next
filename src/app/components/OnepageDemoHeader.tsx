@@ -120,7 +120,7 @@ export default function OnepageDemoHeader({ demo, lightMode = false }: OnepageDe
       case "23":
         return <HeaderEvent className={WHITE_HEADER_ON_LIGHT} />;
       case "24":
-        return <HeaderAiAgency className={WHITE_HEADER_ON_LIGHT} variant="light" />;
+        return <HeaderAiAgency className={WHITE_HEADER_ON_LIGHT} variant="light" navVariant="main" />;
       case "25":
         return <HeaderArchitecture className={WHITE_HEADER_OVER_HERO} ctaHref="/contact-white" />;
       case "26":
@@ -207,7 +207,7 @@ export default function OnepageDemoHeader({ demo, lightMode = false }: OnepageDe
     case "23":
       return <HeaderEvent />;
     case "24":
-      return <HeaderAiAgency />;
+      return <HeaderAiAgency navVariant="main" />;
     case "25":
       return <HeaderArchitecture />;
     case "26":

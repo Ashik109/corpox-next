@@ -28,7 +28,7 @@ function ServicesFive({ className = ""}: ServicesFiveProps ) {
                                     </div>
                                     <div className="content">
                                         <h4 className="title">
-                                            <Link href="/service/management-leadership">
+                                            <Link href="/service-details/management-leadership">
                                                 Cloud based, secured software
                                             </Link>
                                         </h4>
@@ -47,7 +47,7 @@ function ServicesFive({ className = ""}: ServicesFiveProps ) {
                                     </div>
                                     <div className="content">
                                         <h4 className="title">
-                                            <Link href="/service/financial-growth">Web Application, software</Link>
+                                            <Link href="/service-details/financial-growth">Web Application, software</Link>
                                         </h4>
                                     </div>
                                 </div>
@@ -64,7 +64,7 @@ function ServicesFive({ className = ""}: ServicesFiveProps ) {
                                     </div>
                                     <div className="content">
                                         <h4 className="title">
-                                            <Link href="/service/digital-transformation">App based, secured software</Link>
+                                            <Link href="/service-details/digital-transformation">App based, secured software</Link>
                                         </h4>
                                     </div>
                                 </div>

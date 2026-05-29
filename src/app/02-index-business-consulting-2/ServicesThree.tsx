@@ -49,7 +49,7 @@ function ServicesThree() {
                                 <div className="row g-5 align-items-center">
                                     <div className="col-lg-6">
                                         <Link
-                                            href="/service/management-leadership"
+                                            href="/service-details/management-leadership"
                                             className="thumbnail-service-list invers-anime"
                                         >
                                             <img
@@ -76,7 +76,7 @@ function ServicesThree() {
                                             </p>
                                             <Link
                                                 className="tmp-btn hover-icon-reverse"
-                                                href="/service/financial-growth"
+                                                href="/service-details/financial-growth"
                                             >
                                                 <span className="icon-reverse-wrapper">
                                                     <span className="btn-text">See Details</span>
@@ -117,7 +117,7 @@ function ServicesThree() {
                                             </p>
                                             <Link
                                                 className="tmp-btn hover-icon-reverse"
-                                                href="/service/digital-transformation"
+                                                href="/service-details/digital-transformation"
                                             >
                                                 <span className="icon-reverse-wrapper">
                                                     <span className="btn-text">See Details</span>
@@ -133,7 +133,7 @@ function ServicesThree() {
                                     </div>
                                     <div className="col-lg-6 order-1 order-lg-2 order-md-1 order-sm-1">
                                         <Link
-                                            href="/service/management-leadership"
+                                            href="/service-details/management-leadership"
                                             className="thumbnail-service-list invers-anime"
                                         >
                                             <img
@@ -153,7 +153,7 @@ function ServicesThree() {
                                 <div className="row g-5 align-items-center">
                                     <div className="col-lg-6">
                                         <Link
-                                            href="/service/financial-growth"
+                                            href="/service-details/financial-growth"
                                             className="thumbnail-service-list invers-anime"
                                         >
                                             <img
@@ -180,7 +180,7 @@ function ServicesThree() {
                                             </p>
                                             <Link
                                                 className="tmp-btn hover-icon-reverse"
-                                                href="/service/digital-transformation"
+                                                href="/service-details/digital-transformation"
                                             >
                                                 <span className="icon-reverse-wrapper">
                                                     <span className="btn-text">See Details</span>
@@ -221,7 +221,7 @@ function ServicesThree() {
                                             </p>
                                             <Link
                                                 className="tmp-btn hover-icon-reverse"
-                                                href="/service/management-leadership"
+                                                href="/service-details/management-leadership"
                                             >
                                                 <span className="icon-reverse-wrapper">
                                                     <span className="btn-text">See Details</span>
@@ -237,7 +237,7 @@ function ServicesThree() {
                                     </div>
                                     <div className="col-lg-6 order-1 order-lg-2 order-md-1 order-sm-1">
                                         <Link
-                                            href="/service/management-leadership"
+                                            href="/service-details/management-leadership"
                                             className="thumbnail-service-list invers-anime"
                                         >
                                             <img
